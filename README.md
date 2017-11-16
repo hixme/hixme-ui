@@ -1,2 +1,4 @@
-# hixme-ui
-UI component library of the hixme ecosystem
+hixme-ui
+===============
+
+Component library for the Hixme ecosystem.
