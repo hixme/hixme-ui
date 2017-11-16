@@ -32,15 +32,14 @@
     "ui-library",
     "javascript"
   ],
-  "author": "hixme.com <tech@hixme.com>",
+  "author": "hixme.com",
   "contributors": [
-    "Billy Montgomery <billy.montgomery@hixme.com>",
-    "Joel Iniguez <joel.iniguez@hixme.com>",
-    "Will Morgan <will.morgan@hixme.com>",
-    "Rodrigo Munoz <will.morgan@hixme.com>",
-    "Calvin Cieslak <calvin.cieslak@hixme.com>",
-    "David Cotelessa <david.cotelessa@hixme.com>",
-    "Bill Tran <bill.tran@hixme.com>"
+    "Billy Montgomery",
+    "Joel Iniguez",
+    "Will Morgan",
+    "Rodrigo Munoz",
+    "Calvin Cieslak",
+    "David Cotelessa"
   ],
   "devDependencies": {
     "babel": "^6.23.0",

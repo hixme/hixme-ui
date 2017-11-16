@@ -27,13 +27,13 @@
     "node",
     "javascript"
   ],
-  "author": "hixme.com <tech@hixme.com>",
+  "author": "hixme.com",
   "contributors": [
-    "Joel Iniguez <joel.iniguez@hixme.com>",
-    "Billy Montgomery <billy.montgomery@hixme.com>",
-    "Will Morgan <will.morgan@hixme.com>",
-    "Rodrigo Munoz <will.morgan@hixme.com>",
-    "Calvin Cieslak <calvin.cieslak@hixme.com>"
+    "Joel Iniguez",
+    "Billy Montgomery",
+    "Will Morgan",
+    "Rodrigo Munoz",
+    "Calvin Cieslak"
   ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
