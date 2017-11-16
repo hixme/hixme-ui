@@ -95,6 +95,7 @@ const defaults = {
   fontFamily: fontFamily.normal,
   backgroundColor: colors.white,
   borderRadius,
+  borderColor: colors.grey110,
   titleFontSize: titleFontSizes.default,
 }
 
@@ -120,11 +121,21 @@ export const colorTheme = {
 }
 
 const theme = {
+  colors: colorTheme,
   fontFamily,
   titleFontSizes,
-  textColors: colorTheme,
-  backgroundColors: colorTheme,
-  borderColors: colorTheme,
+  textColors: {
+    ...colorTheme,
+    default: defaults.textColor,
+  },
+  backgroundColors: {
+    ...colorTheme,
+    default: defaults.backgroundColor,
+  },
+  borderColors: {
+    ...colorTheme,
+    default: defaults.borderColor,
+  },
   gradients,
   buttonFontSizes,
   buttonHeights,
@@ -135,3 +146,6 @@ const theme = {
 }
 
 export default theme
+
+export ThemeProvider from './ThemeProvider'
+

@@ -1,7 +1,7 @@
 {
-  "name": "@hixme-ui/theme",
+  "name": "@hixme-ui/theme-props",
   "version": "1.1.1",
-  "description": "hixme-ui theme",
+  "description": "hixme-ui theme props getters",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -29,8 +29,8 @@
   ],
   "author": "hixme.com <tech@hixme.com>",
   "contributors": [
-    "Joel Iniguez <joel.iniguez@hixme.com>",
     "Billy Montgomery <billy.montgomery@hixme.com>",
+    "Joel Iniguez <joel.iniguez@hixme.com>",
     "Will Morgan <will.morgan@hixme.com>",
     "Rodrigo Munoz <will.morgan@hixme.com>",
     "Calvin Cieslak <calvin.cieslak@hixme.com>"
@@ -59,7 +59,7 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-config-standard-react": "^2.2.0",
-    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-promise": "^1.0.8",
@@ -76,10 +76,5 @@
     "sinon-chai": "^2.8.0",
     "webpack": "^3.5.5"
   },
-  "license": "MIT",
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "styled-components": "^2.2.2"
-  }
+  "license": "MIT"
 }
