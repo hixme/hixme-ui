@@ -9,7 +9,7 @@ npm i --save @hixme-ui/theme
 HUI theme colors and defaults
 
 ```javascript
-import theme from '@hixme-ui/theme
+import theme from '@hixme-ui/theme'
 
 const primary = theme.colors.primary
 ```
