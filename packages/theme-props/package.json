@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/theme-props",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "hixme-ui theme props getters",
   "main": "lib/index.js",
   "scripts": {
