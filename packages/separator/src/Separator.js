@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { PropTypes } from 'prop-types'
 
@@ -9,7 +8,7 @@ import themeProps from '@hixme-ui/theme-props'
 const Separator = styled.div`
   width: 100%;
   height: ${props => props.size};
-  background: ${props => {
+  background: ${(props) => {
     if (props.background) return props.background
     return themeProps(props, colorTheme.lighter)
   }};
@@ -29,7 +28,7 @@ Separator.propTypes = {
 
   size: PropTypes.string,
   margin: PropTypes.string,
-  padding: PropTypes.string
+  padding: PropTypes.string,
 }
 
 Separator.defaultProps = {
@@ -42,7 +41,7 @@ Separator.defaultProps = {
 
   size: '2px',
   margin: '15px 0',
-  padding: '0'
+  padding: '0',
 }
 
 Separator.displayName = 'hui:Separator'
