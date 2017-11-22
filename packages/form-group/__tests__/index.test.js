@@ -1,13 +1,13 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { ThemeProvider } from '@hixme-ui/theme'
-import Input from '../src/index.js'
+import FormGroup from '../src/index.js'
 
-test('Input', () => {
+test(`${FormGroup.displayName}`, () => {
   const component = renderer.create(
-    (<ThemeProvider><Input /></ThemeProvider>),
+    (<FormGroup><span>Hello</span></FormGroup>),
   )
 
   const tree = component.toJSON()
-  expect(tree.type).toBe('input')
+  expect(tree.type).toBe('div')
 })
+
