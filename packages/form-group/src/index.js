@@ -1,5 +1,3 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const FormGroup = styled.div`
@@ -15,11 +13,7 @@ const FormGroup = styled.div`
   }
 `
 
-FormGroup.displayName = 'hui:FormGroup`
+FormGroup.displayName = 'hui:FormGroup'
 FormGroup.huiName = 'FormGroup'
-
-FormGroup.propTypes = {
-  children: PropTypes.any.isRequired,
-}
 
 export default FormGroup

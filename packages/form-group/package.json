@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/form-group",
-  "version": "1.1.13",
+  "version": "1.0.0",
   "description": "hixme-ui form group container",
   "publishConfig": {
     "access": "public"
@@ -8,8 +8,8 @@
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --recursive",
-    "test:watch": "npm test -- --watch",
+    "test": "jest",
+    "test:watch": "npm test --watch",
     "test:examples": "node examples/",
     "jest": "jest",
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
@@ -62,7 +62,7 @@
     "codecov": "^1.0.1",
     "cross-env": "^4.0.0",
     "debug": "^2.2.0",
-    "enzyme": "^2.0.0",
+    "enzyme": "^2.9.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-standard": "^5.1.0",
@@ -88,8 +88,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^15.6.1",
+    "react": "^15.6.2",
     "styled-components": "^2.2.2"
   }
 }
