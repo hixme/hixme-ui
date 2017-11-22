@@ -15,7 +15,11 @@ const FormGroupDocs = () => (
     </FormGroup>
     <pre>
       &lt;FormGroup&gt;
-      &lt;Input /&gt;
+      <br />
+        &lt;label&gt;Name&lt;/label&gt;
+      <br />
+        &lt;Input name='name' /&gt;
+      <br />
       &lt;/FormGroup&gt;
     </pre>
   </div>
