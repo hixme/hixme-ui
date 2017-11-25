@@ -34,6 +34,10 @@ const fontSizes = {
   smallest: '8px',
 }
 
+const fontWeights = {
+  default: 'normal',
+}
+
 const titleFontSizes = {
   jumbo: '38px',
   larger: '36px',
@@ -93,6 +97,7 @@ const defaults = {
   buttonHeight: buttonHeights.default,
   textColor: colors.grey30,
   fontFamily: fontFamily.normal,
+  fontWeight: fontWeights.default,
   backgroundColor: colors.white,
   borderRadius,
   borderColor: colors.grey110,
@@ -122,12 +127,6 @@ export const colorTheme = {
 
 const theme = {
   colors: colorTheme,
-  fontFamily,
-  titleFontSizes,
-  textColors: {
-    ...colorTheme,
-    default: defaults.textColor,
-  },
   backgroundColors: {
     ...colorTheme,
     default: defaults.backgroundColor,
@@ -136,13 +135,20 @@ const theme = {
     ...colorTheme,
     default: defaults.borderColor,
   },
-  gradients,
   buttonFontSizes,
   buttonHeights,
   buttonMinWidths,
-  fontSizes,
   defaults,
+  fontSizes,
+  fontFamily,
+  fontWeights,
+  gradients,
   shadows,
+  textColors: {
+    ...colorTheme,
+    default: defaults.textColor,
+  },
+  titleFontSizes,
 }
 
 export default theme
