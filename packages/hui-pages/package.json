@@ -5,7 +5,9 @@
   "dependencies": {
     "@hixme-ui/form-group": "^1.0.0",
     "@hixme-ui/input": "^1.0.0",
+    "@hixme-ui/text": "^1.0.0",
     "@hixme-ui/theme": "^1.0.0",
+    "normalize.css": "^7.0.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-flexbox-grid": "^2.0.0",
