@@ -25,11 +25,7 @@ const TextBase = styled.span`
     if (props.center) return 'center'
     return 'flex-start'
   }};
-  line-height: ${(props) => {
-    if (props.lineHeight) return props.lineHeight
-    if (props.label) return '19px'
-    return 'inherit'
-  }};
+  line-height: ${props => props.lineHeight || 'inherit'};
   text-align: ${(props) => {
     if (props.left) return 'left'
     if (props.center) return 'center'
@@ -45,11 +41,7 @@ const TextBase = styled.span`
     return 'none'
   }};
   text-overflow: ${props => props.textOverflow || 'inherit'};
-  user-select: ${(props) => {
-    if (props.userSelect) return props.userSelect
-    if (props.label) return 'none'
-    return 'inherit'
-  }};
+  user-select: ${props => props.userSelect || 'inherit'};
   white-space: ${props => props.whiteSpace || 'inherit'};
   width: ${(props) => {
     if (props.right || props.left || props.center) return '100%'

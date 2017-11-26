@@ -4,8 +4,13 @@ import TextBase from './TextBase'
 
 export const TextLink = TextBase.withComponent('a')
 export const Paragraph = TextBase.withComponent('p')
-export const Label = TextBase.withComponent('label')
 
+export const LabelBase = TextBase.withComponent('label')
+export const Label = LabelBase.extend`
+  color: #394651;
+  line-height: 19px;
+  user-select: none;
+`
 const Text = ({
   a,
   p,
@@ -13,7 +18,6 @@ const Text = ({
   ...props
 }) => {
   let Tag = TextBase
-  const addProps = {}
 
   if (a || props.href) {
     Tag = TextLink
