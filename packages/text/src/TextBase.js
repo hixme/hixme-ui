@@ -1,7 +1,11 @@
 import styled from 'styled-components'
-import { getTextColor, getFontSize, getFontWeight } from '@hixme-ui/theme-props'
+import {
+  getTextColor,
+  getFontSize,
+  getFontWeight,
+} from '@hixme-ui/theme-props'
 
-const Text = styled.span`
+const TextBase = styled.span`
   color: ${props => props.color || getTextColor(props)};
   font-size: ${props => props.fontSize || getFontSize(props)};
   font-weight: ${props => props.fontWeight || getFontWeight(props)}
@@ -36,7 +40,7 @@ const Text = styled.span`
   }};
 `
 
-Text.displayName = 'hui:Text'
-Text.huiName = 'Text'
+TextBase.displayName = 'hui:TextBase'
+TextBase.huiName = 'TextBase'
 
-export default Text
+export default TextBase
