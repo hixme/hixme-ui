@@ -90,6 +90,7 @@
   "license": "MIT",
   "dependencies": {
     "@hixme-ui/theme-props": "^1.0.0",
+    "prop-types": "^15.6.0",
     "react": "^15.6.2",
     "styled-components": "^2.2.2"
   }
