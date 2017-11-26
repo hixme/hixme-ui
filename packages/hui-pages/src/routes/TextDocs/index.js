@@ -23,6 +23,11 @@ const TextDocs = () => (
     <Text error>Error text</Text>
     <br />
     {`<Text error>Error text</Text>`}
+    <br />
+    <br />
+    <Text error>Label</Text>
+    <br />
+    {`<Text label>Name</Text>`}
   </div>
 )
 
