@@ -25,7 +25,7 @@ const TextDocs = () => (
     {`<Text error>Error text</Text>`}
     <br />
     <br />
-    <Text error>Label</Text>
+    <Text label>Label</Text>
     <br />
     {`<Text label>Name</Text>`}
     <br />
