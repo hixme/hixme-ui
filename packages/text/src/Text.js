@@ -15,7 +15,7 @@ const Text = ({
   let Tag = TextBase
   const addProps = {}
 
-  if (a) {
+  if (a || props.href) {
     Tag = TextLink
   } else if (p) {
     Tag = Paragraph
@@ -33,11 +33,13 @@ Text.propTypes = {
   a: PropTypes.bool,
   p: PropTypes.bool,
   label: PropTypes.bool,
+  href: PropTypes.string,
 }
 Text.defaultProps = {
   a: false,
   p: false,
   label: false,
+  href: null,
 }
 
 export default Text
