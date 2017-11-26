@@ -1,10 +1,10 @@
 import Text, {
-  Anchor as _Anchor,
+  TextLink as _TextLink,
   Paragraph as _Paragraph,
   Label as _Label,
 } from './Text'
 
-export const Anchor = _Anchor
+export const TextLink = _TextLink
 export const Paragraph = _Paragraph
 export const Label = _Label
 

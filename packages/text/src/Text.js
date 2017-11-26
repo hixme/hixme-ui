@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import TextBase from './TextBase'
 
-export const Anchor = TextBase.withComponent('a')
+export const TextLink = TextBase.withComponent('a')
 export const Paragraph = TextBase.withComponent('p')
 export const Label = TextBase.withComponent('label')
 
@@ -13,9 +13,10 @@ const Text = ({
   ...props
 }) => {
   let Tag = TextBase
+  const addProps = {}
 
   if (a) {
-    Tag = Anchor
+    Tag = TextLink
   } else if (p) {
     Tag = Paragraph
   } else if (label) {
