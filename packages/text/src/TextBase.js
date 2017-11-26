@@ -25,6 +25,11 @@ const TextBase = styled.span`
     if (props.center) return 'center'
     return 'flex-start'
   }};
+  line-height: ${(props) => {
+    if (props.lineHeight) return props.lineHeight
+    if (props.label) return '19px'
+    return 'inherit'
+  }};
   text-align: ${(props) => {
     if (props.left) return 'left'
     if (props.center) return 'center'

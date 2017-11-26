@@ -68,6 +68,7 @@ import Text, {
 |                 | cursor          | string      |
 |                 | display         | string      |
 |                 | fontWeight      | string      |
+|                 | lineHeight      | string      |
 |                 | userSelect      | string      |
 |                 | textIndent      | string      |
 |                 | textOverflow    | string      |
