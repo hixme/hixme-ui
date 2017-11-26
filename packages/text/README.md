@@ -7,13 +7,18 @@ npm i --save @hixme-ui/text
 ## Usage
 
 ```javascript
-import Text from '@hixme-ui/text'
+import Text, {
+ TextLink,
+ Paragraph,
+ Label,
+} from '@hixme-ui/text'
 
 // text success
 <Text success>I said good day sir!</Text>
 
 // paragraph warning
 <Text p warning>Are you sure?</Text>
+<Paragraph warning>Are you sure?</Paragraph>
 ```
 
 ## Props
@@ -63,3 +68,8 @@ import Text from '@hixme-ui/text'
 |                 | cursor          | string      |
 |                 | display         | string      |
 |                 | fontWeight      | string      |
+|                 | userSelect      | string      |
+|                 | textIndent      | string      |
+|                 | textOverflow    | string      |
+|                 | whiteSpace      | string      |
+|                 | wordBreak       | string      |
