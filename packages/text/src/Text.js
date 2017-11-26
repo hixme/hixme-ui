@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import TextBase from './TextBase'
 
-const Anchor = TextBase.withComponent('a')
-const Paragraph = TextBase.withComponent('p')
-const Label = TextBase.withComponent('label')
+export const Anchor = TextBase.withComponent('a')
+export const Paragraph = TextBase.withComponent('p')
+export const Label = TextBase.withComponent('label')
 
 const Text = ({
   a,
