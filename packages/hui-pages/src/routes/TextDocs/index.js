@@ -28,6 +28,10 @@ const TextDocs = () => (
     <Text error>Label</Text>
     <br />
     {`<Text label>Name</Text>`}
+    <br />
+    <Text a primary href="//hui.hixme.com/text">Text Link</Text>
+    <br />
+    {`<Text a primary href="//hui.hixme.com/text">Text Link</Text>`}
   </div>
 )
 
