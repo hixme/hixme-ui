@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/form-group",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "hixme-ui form group container",
   "publishConfig": {
     "access": "public"
