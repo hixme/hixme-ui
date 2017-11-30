@@ -16,7 +16,7 @@ import Separator from '@hixme-ui/separator'
 ## Props
 
 | Name            | Type        |
----------------------------------
+| --------------- | ----------- |
 | height          | string      |
 | margin          | string      |
 | padding         | string      |
