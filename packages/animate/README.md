@@ -17,7 +17,7 @@ import Animate from '@hixme-ui/animate'
 Add any animation from [https://daneden.github.io/animate.css/](Animate.css) as a boolean prop.
 
 | Name            | Type        |
----------------------------------
+| --------------- | ----------- |
 | time            | string      |
 | delay           | string      |
 | count           | string      |

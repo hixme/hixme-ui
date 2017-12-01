@@ -16,7 +16,7 @@ import Input from '@hixme-ui/input'
 ## Props
 
 | Name            | Type        |
----------------------------------
+| --------------- | ----------- |
 | textarea        | bool        |
 | phone           | bool        |
 | date            | bool        |
