@@ -10,6 +10,7 @@ export const getBorderColor = getThemePropsComposer('borderColors', 'inherit')
 export const getBackgroundColor = getThemePropsComposer('backgroundColors', 'inherit')
 export const getFontFamily = getThemePropsComposer('fontFamily', 'inherit')
 export const getFontSize = getThemePropsComposer('fontSizes', 'inherit')
+export const getFontWeight = getThemePropsComposer('fontWeights', 'inherit')
 export const getTextColor = getThemePropsComposer('textColors', 'inherit')
 
 export default getThemePropsComposer()

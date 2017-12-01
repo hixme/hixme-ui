@@ -13,15 +13,12 @@ const FormGroupDocs = () => (
       <label>Name</label>
       <Input name="name" />
     </FormGroup>
-    <pre>
-      &lt;FormGroup&gt;
-      <br />
-        &lt;label&gt;Name&lt;/label&gt;
-      <br />
-        &lt;Input name='name' /&gt;
-      <br />
-      &lt;/FormGroup&gt;
-    </pre>
+    {`
+      <FormGroup>\n
+        <label>Name</label>
+        <Input name='name' />
+      </FormGroup>
+    `}
   </div>
 )
 
