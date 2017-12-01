@@ -14,14 +14,14 @@ import Animate from '@hixme-ui/animate'
 ```
 
 ## Props
-Add any animation from [https://daneden.github.io/animate.css/](Animate.css) as a boolean prop.
+Add any animation from [http://daneden.github.io/animate.css](Animate.css) as a boolean prop.
 
-| Name            | Type        |
-| --------------- | ----------- |
-| time            | string      |
-| delay           | string      |
-| count           | string      |
-| trigger         | string      |
-| display         | string      |
+| Name            | Type        | Default        |
+| --------------- | ----------- | -------------- |
+| time            | string      | '1s'           |
+| delay           | string      | '0s'           | 
+| count           | string      | '1'            |
+| trigger         | boolean     | true           |
+| display         | string      | 'inline-block' |
 
 
