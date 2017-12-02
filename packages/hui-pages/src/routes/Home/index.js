@@ -18,6 +18,8 @@ class App extends Component {
               <Link to='/form-group'>Form Group</Link>
               <br />
               <Link to='/text'>Text</Link>
+              <br />
+              <Link to='/title'>Title</Link>
             </Col>
           </Row>
         </div>
