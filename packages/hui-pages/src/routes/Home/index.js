@@ -15,6 +15,8 @@ class App extends Component {
         <div>
           <Row>
             <Col xs={12} sm={3} md={2} lg={1}>
+              <Link to='/content-container'>ContentContainer</Link>
+              <br />
               <Link to='/form-group'>Form Group</Link>
               <br />
               <Link to='/text'>Text</Link>
