@@ -18,7 +18,7 @@ export const TitleSmall = TitleBase.withComponent('h2').extend`
 export const TitleSmaller = TitleBase.withComponent('h3').extend`
   font-size: ${props => props.fontSize || '20px'};
 `
-export const TitleSmallest = TitleBase.withComponent('h3').extend`
+export const TitleSmallest = TitleBase.withComponent('h4').extend`
   font-size: ${props => props.fontSize || '18px'};
 `
 
