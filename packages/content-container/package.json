@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "test": "jest",
-    "test:watch": "npm test --watch",
+    "test:watch": "jest --watchAll o",
     "test:examples": "node examples/",
     "jest": "jest",
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
