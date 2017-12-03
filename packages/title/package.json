@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/title",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "hixme-ui title component. Like <Text />, but bigger.",
   "publishConfig": {
     "access": "public"
@@ -42,7 +42,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.0.0",
+    "@hixme-ui/theme": "^1.2.1",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -89,8 +89,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme-props": "^1.0.0",
-    "@hixme-ui/text": "^1.0.0",
+    "@hixme-ui/text": "^1.2.1",
+    "@hixme-ui/theme-props": "^1.2.1",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
     "styled-components": "^2.2.2"

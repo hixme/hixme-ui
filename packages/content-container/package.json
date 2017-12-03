@@ -1,7 +1,7 @@
 {
-  "name": "@hixme-ui/text",
+  "name": "@hixme-ui/content-container",
   "version": "1.2.1",
-  "description": "hixme-ui text component. For all your communictation needs.",
+  "description": "hixme-ui ContentContainer component",
   "publishConfig": {
     "access": "public"
   },
@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "test": "jest",
-    "test:watch": "npm test --watch",
+    "test:watch": "jest --watchAll",
     "test:examples": "node examples/",
     "jest": "jest",
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
@@ -89,7 +89,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme-props": "^1.2.1",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
     "styled-components": "^2.2.2"

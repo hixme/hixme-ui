@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-flexbox-grid';
 import { Link } from 'react-router-dom'
+
 import logo from './logo.svg'
 import './App.css'
 
@@ -13,12 +14,17 @@ class App extends Component {
           <h1 className="App-title">Welcome to the HUI</h1>
         </header>
         <div>
-          <Row>
-            <Col xs={12} sm={3} md={2} lg={1}>
+          <Row center='xs' style={{ padding: '20px' }}>
+            <Col xs={12}>
+              <Link to='/content-container'>ContentContainer</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/form-group'>Form Group</Link>
-              <br />
+            </Col>
+            <Col xs={12}>
               <Link to='/text'>Text</Link>
-              <br />
+            </Col>
+            <Col xs={12}>
               <Link to='/title'>Title</Link>
             </Col>
           </Row>
