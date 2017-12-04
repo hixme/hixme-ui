@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home';
 import ContentContainerDocs from './ContentContainerDocs';
 import FormGroupDocs from './FormGroupDocs';
+import SeparatorDocs from './SeparatorDocs';
 import TextDocs from './TextDocs';
 import TitleDocs from './TitleDocs';
 import NotFound from './NotFound';
@@ -17,6 +18,7 @@ const Routes = (props) => (
     <ContentContainer>
       <Route path="/content-container" component={ContentContainerDocs} />
       <Route path="/form-group" component={FormGroupDocs} />
+      <Route path="/separator" component={SeparatorDocs} />
       <Route path="/text" component={TextDocs} />
       <Route path="/title" component={TitleDocs} />
     </ContentContainer>

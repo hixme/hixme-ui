@@ -22,6 +22,9 @@ class App extends Component {
               <Link to='/form-group'>Form Group</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/separator'>Separator</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/text'>Text</Link>
             </Col>
             <Col xs={12}>
