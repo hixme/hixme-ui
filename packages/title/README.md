@@ -4,7 +4,8 @@
 npm i --save @hixme-ui/title
 ```
 
-Title extends the @hixme/text component properties
+Title extends the @hixme/text component properties. Defaults to
+font size of 34px. Margin and padding default to 0px.
 
 
 ## Usage
@@ -17,13 +18,18 @@ import Title from '@hixme-ui/title'
 
 <Title jumbo>Jumbo title for attention</Title>
 
+// use <Text> props as usual
+<Title primary>Primary color title</Title>
+
 ```
 
 ## Props
 
-| Name            | Type        |
-|-----------------|-------------|
-| jumbo           | bool        |
-| small           | bool        |
-| smaller         | bool        |
-| smallest        | bool        |
+| Name            | Type        | Value    |
+|-----------------|-------------|----------|
+| jumbo           | bool        | 38px     |
+| small           | bool        | 28px     |
+| smaller         | bool        | 20px     |
+| smallest        | bool        | 18px     |
+| margin          | string      | 0px      |
+| padding         | string      | 0px      |

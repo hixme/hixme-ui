@@ -2,7 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { TextBase } from '@hixme-ui/text'
 
-export const TitleBase = TextBase.withComponent('h1')
+export const TitleBase = TextBase.withComponent('h1').extend`
+  margin: ${props => props.margin || '0px'};
+  padding: ${props => props.padding || '0px'};
+`
+
 export const TitleDefault = TitleBase.extend`
   font-size: ${props => props.fontSize || '34px'};
 `
