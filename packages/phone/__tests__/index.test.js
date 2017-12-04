@@ -7,9 +7,8 @@ describe('Phone', () => {
   const component = renderer.create(
       (<ThemeProvider><Phone number='8881234567' /></ThemeProvider>),
     )
-
   const tree = component.toJSON()
-  console.log(tree)
+
   it('Should be an a tag', () => {
     expect(tree.type).toBe('a')
   })
@@ -21,5 +20,13 @@ describe('Phone', () => {
 
   it('Should render children with phone number', () => {
     expect(tree.children[0]).toBe('(888) 123 - 4567')
+  })
+})
+
+
+describe('Phone.format', () => {
+  it('Should be a function', () => {
+    expect(Phone.format).toBeDefined()
+    expect(Phone.format('8881234567')).toBe('(888) 123 - 4567')
   })
 })

@@ -19,3 +19,14 @@ import Phone from '@hixme-ui/phone'
 
 ```
 
+## Phone.format
+
+Phone has a format function it uses to display the phone format, and is
+accessible if needed outside of the JSX
+
+```javascript
+import Phone from '@hixme-ui/phone'
+
+Phone.format('8881234567')
+// outputs string (888) 123 - 4567
+```
