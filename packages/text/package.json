@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/text",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "hixme-ui text component. For all your communictation needs.",
   "publishConfig": {
     "access": "public"
@@ -42,7 +42,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.2.1",
+    "@hixme-ui/theme": "^1.3.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -89,7 +89,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme-props": "^1.2.1",
+    "@hixme-ui/theme-props": "^1.3.0",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
     "styled-components": "^2.2.2"
