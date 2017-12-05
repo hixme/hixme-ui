@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import {
-  bouceOut,
+  bounceOut,
   bounce,
   bounceIn,
   bounceInDown,
@@ -79,7 +79,7 @@ import {
 } from 'react-animations'
 
 const chooseReactAnimation = (props) => {
-  if (props.bouceOut) return bouceOut
+  if (props.bounceOut) return bounceOut
   if (props.bounce) return bounce
   if (props.bounceIn) return bounceIn
   if (props.bounceInDown) return bounceInDown
@@ -177,6 +177,10 @@ const Animate = styled.div`
   animation-play-state: ${(props) => {
     if (props.trigger) return 'running'
     return 'paused'
+  }};
+  animation-fill-mode: ${(props) => {
+    if (props.fillMode) return props.fillMode
+    return 'none'
   }};
   display: ${(props) => {
     if (props.display) return props.display
