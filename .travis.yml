@@ -2,4 +2,5 @@ language: node_js
 node_js:
   - "6.10"
 script:
-  - lerna bootstrap
+  - npm install
+  - node node_modules/lerna/bin/lerna.js bootstrap
