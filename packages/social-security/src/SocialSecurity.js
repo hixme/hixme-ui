@@ -7,8 +7,10 @@ const SocialSecurity = ({
   ...props
 }) => <Text {...props}>{number}</Text>
 
-SocialSecurity.format = function formatSocialSecurityNumber(number) {
-  return number
+SocialSecurity.format = function formatSocialSecurityNumber(number, { showFull = false } = {}) {
+  return showFull ?
+    number.replace(/(\d{3})(\d{2})(\d{4})/, '$1-$2-$3') :
+    `***-**-${number.slice(-4)}`
 }
 
 SocialSecurity.displayName = 'hui:SocialSecurity'
