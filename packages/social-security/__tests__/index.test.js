@@ -3,6 +3,22 @@ import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
 import SocialSecurity from '../src/index.js'
 
+describe('SocialSecurity', () => {
+  const component = renderer.create(
+      (<ThemeProvider><SocialSecurity number='123456789' /></ThemeProvider>),
+    )
+  const tree = component.toJSON()
+
+  it('Should be an a tag', () => {
+    expect(tree.type).toBe('span')
+  })
+
+  it('Should render children with social security number', () => {
+    expect(tree.children[0]).toBe('***-**-6789')
+  })
+})
+
+
 describe('SocialSecurity.format', () => {
   it('Should be a function', () => {
     expect(SocialSecurity.format).toBeDefined()
