@@ -19,7 +19,7 @@ import SocialSecurity from '@hixme-ui/social-security'
 
 ```
 
-## SocialSecurity.format()
+## SocialSecurity.format(number, { showFull = false })
 
 SocialSecurity has a format function it uses to display, and is
 accessible if needed outside of the JSX
@@ -29,4 +29,8 @@ import SocialSecurity from '@hixme-ui/social-security'
 
 Phone.format('123456789')
 // outputs string ***-**-6789
+
+
+Phone.format('123456789', { showFull: true })
+// outputs string 123-45-6789
 ```

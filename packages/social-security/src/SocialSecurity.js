@@ -5,7 +5,7 @@ import Text from '@hixme-ui/text'
 const SocialSecurity = ({
   number,
   ...props
-}) => <Text {...props}>{SocialSecurity.format(number)}</Text>
+}) => <Text {...props}>{SocialSecurity.format(number, props)}</Text>
 
 SocialSecurity.format = function formatSocialSecurityNumber(number, { showFull = false } = {}) {
   return showFull ?
