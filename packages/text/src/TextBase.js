@@ -8,7 +8,7 @@ import {
 const TextBase = styled.span`
   color: ${props => props.color || getTextColor(props)};
   font-size: ${props => props.fontSize || getFontSize(props)};
-  font-weight: ${props => props.fontWeight || getFontWeight(props)}
+  font-weight: ${props => props.fontWeight || getFontWeight(props)};
   border-bottom: ${(props) => {
     if (props.dashed) return '1px dashed'
     return 'none'
@@ -30,7 +30,6 @@ const TextBase = styled.span`
     if (props.left) return 'left'
     if (props.center) return 'center'
     if (props.right) return 'right'
-
     return 'inherit'
   }};
   text-indent: ${props => props.textIndent || 'inherit'};
