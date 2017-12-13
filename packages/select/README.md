@@ -6,15 +6,24 @@ npm i --save @hixme-ui/select
 
 ## Usage
 
+### Using children options
 ```javascript
 import Select from '@hixme-ui/select'
 
-<Select> {console.log()}}>
+<Select>
   <option value='hello'>Hello</option>
   <option value='goodbye'>Goodbye</option>
 </Select>
 
+// Outputs
+<select>
+  <option value='hello'>Hello</option>
+  <option value='goodbye'>Goodbye</option>
+</select>
+```
 
+### Using a list to build options
+```
 <Select list={[{
   id: 0,
   name: 'Zero'
@@ -27,7 +36,7 @@ import Select from '@hixme-ui/select'
 
 ## Props
 
-| Name            | Type        |
-| --------------- | ----------- |
-| list            | array       |
+| Name            | Type        | Default   |
+| --------------- | ----------- | --------- |
+| list            | array       | undefined |
 
