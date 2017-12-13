@@ -12,6 +12,18 @@ const SelectDocs = () => (
     <br />
     {`<Select list={[{id: 0, name:'test'}]} />`}
     <br />
+    <br />
+    <br />
+    <Select>
+      <option value='hello'>Hello</option>
+      <option value='goodbye'>Goodbye</option>
+    </Select>
+    <br />
+    {`<Select>
+      <option value='hello'>Hello</option>
+      <option value='goodbye'>Goodbye</option>
+    </Select>`}
+
   </div>
 )
 
