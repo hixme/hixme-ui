@@ -9,15 +9,15 @@ npm i --save @hixme-ui/separator
 ```javascript
 import Separator from '@hixme-ui/separator'
 
-<Separator />
-
+<Separator margin='20px 0' size='1px' />
 ```
 
 ## Props
 
-| Name            | Type        |
-| --------------- | ----------- |
-| height          | string      |
-| margin          | string      |
-| padding         | string      |
+| Name            | Type        | Default            |
+| --------------- | ----------- | ------------------ |
+| size            | string      | '2px'              |
+| margin          | string      | '15px 0'           |
+| padding         | string      | '0'                |
+| background      | string      | colorTheme.lighter |
 
