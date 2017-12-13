@@ -10,7 +10,6 @@ npm i --save @hixme-ui/animate
 import Animate from '@hixme-ui/animate'
 
 <Animate bounce time='1s' />
-
 ```
 
 ## Props
@@ -23,5 +22,7 @@ Add any animation from [http://daneden.github.io/animate.css](Animate.css) as a 
 | count           | string      | '1'            |
 | trigger         | boolean     | true           |
 | display         | string      | 'inline-block' |
+| fillMode        | string      | 'none'         |
+
 
 
