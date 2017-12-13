@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Separator from '@hixme-ui/separator'
-import Text from '@hixme-ui/text'
 
 const SeparatorDocs = () => (
   <div>
