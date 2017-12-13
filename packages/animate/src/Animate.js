@@ -184,7 +184,7 @@ const Animate = styled.div`
   }};
   display: ${(props) => {
     if (props.display) return props.display
-    return 'inline-block'
+    return 'inherit'
   }};
 `
 
