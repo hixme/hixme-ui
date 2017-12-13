@@ -1,13 +1,13 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Input from '../src/index.js'
+import Select from '../src/Select'
 
-test('Input', () => {
+test('Select', () => {
   const component = renderer.create(
-    (<ThemeProvider><Input /></ThemeProvider>),
+    (<ThemeProvider><Select list={[{ id: 0, name: 'name' }]} /></ThemeProvider>),
   )
 
   const tree = component.toJSON()
-  expect(tree.type).toBe('input')
+  expect(tree.type).toBe('select')
 })
