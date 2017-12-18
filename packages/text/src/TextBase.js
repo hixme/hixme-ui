@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 import {
-  getTextColor,
+  getFontFamily,
   getFontSize,
   getFontWeight,
+  getTextColor,
 } from '@hixme-ui/theme-props'
 
 const TextBase = styled.span`
   color: ${props => props.color || getTextColor(props)};
+  font-family: ${props => props.fontFamily || getFontFamily(props)};
   font-size: ${props => props.fontSize || getFontSize(props)};
   font-weight: ${props => props.fontWeight || getFontWeight(props)};
   border-bottom: ${(props) => {
