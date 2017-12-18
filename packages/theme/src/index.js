@@ -20,7 +20,7 @@ const gradients = {
   red: 'linear-gradient(0deg, #DE293C 0%, #FF7272 100%)',
   yellow: 'linear-gradient(-1deg, #FF8C00 0%, #F3C200 100%)',
   blue: 'linear-gradient(-1deg, #2583C4 0%, #30A0EE 100%)',
-  grey: 'linear-gradient(180deg, #CCD2D6 0%, #a4adb3 100%);',
+  grey: 'linear-gradient(180deg, #CCD2D6 0%, #a4adb3 100%)',
 }
 
 const fontSizes = {
