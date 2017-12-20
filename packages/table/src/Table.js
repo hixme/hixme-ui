@@ -6,6 +6,23 @@ const Table = styled.table`
   font-family: 'Avenir-Next_Demi', 'HelveticaNeue-Medium', 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   border-collapse: collapse;
 
+  tbody {
+    tr {
+      &.highlight:nth-child(even),
+      &.highlight:nth-child(odd) {
+        background-color: ${props => (props.striped ? '#e0f3ee' : 'white')};
+      }
+
+      &:nth-child(even) {
+        background-color: ${props => (props.striped ? '#f2f6f9' : 'white')};
+      }
+
+      &:nth-child(odd) {
+        background-color: white;
+      }
+    }
+  }
+
   th, td {
     padding: 15px;
     height: 46px;
@@ -53,28 +70,6 @@ const Table = styled.table`
         border-bottom-right-radius: 6px;
       }
     }
-
-    ${(props) => {
-      if (props.striped) {
-        return `tbody {
-          tr {
-            &.highlight:nth-child(even),
-            &.highlight:nth-child(odd) {
-              background-color: #e0f3ee;
-            }
-
-            &:nth-child(even) {
-              background-color: #f2f6f9;
-            }
-
-            &:nth-child(odd) {
-              background-color: white;
-            }
-          }
-        }`
-      }
-      return null
-    }}
   }
 `
 
