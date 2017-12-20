@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { getFontFamily } from '@hixme-ui/theme-props'
-
 /* eslint-disable max-len */
 const Table = styled.table`
   width: 100%;
