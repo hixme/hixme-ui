@@ -11,7 +11,9 @@ const DocsHeader = ({
     <Grid fluid style={{ padding: '0' }}>
       <Row style={{ margin: '20px 0 30px 0' }}>
         <Col>
-          <Text light cursor='pointer' onClick={history.goBack}>{'< Back to Home'}</Text>
+          <Text a light cursor='pointer' onClick={history.goBack}>
+            {'< Back to Home'}
+          </Text>
         </Col>
       </Row>
     </Grid>
