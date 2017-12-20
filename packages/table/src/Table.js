@@ -1,49 +1,12 @@
 import styled from 'styled-components'
 
+import { getFontFamily } from '@hixme-ui/theme-props'
+
 /* eslint-disable max-len */
 const Table = styled.table`
   width: 100%;
   font-family: 'Avenir-Next_Demi', 'HelveticaNeue-Medium', 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   border-collapse: collapse;
-
-  tbody {
-    tr {
-      &.highlight:nth-child(even),
-      &.highlight:nth-child(odd) {
-        background-color: ${props => (props.striped ? '#e0f3ee' : 'white')};
-      }
-
-      &:nth-child(even) {
-        background-color: ${props => (props.striped ? '#f2f6f9' : 'white')};
-      }
-
-      &:nth-child(odd) {
-        background-color: white;
-      }
-    }
-  }
-
-  th, td {
-    padding: 15px;
-    height: 46px;
-  }
-
-  td {
-    color: #3a4951;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: -0.1px;
-    line-height: 16px;
-  }
-
-  tr {
-    background-color: white;
-    border-bottom: 1px solid #DBE2E8;
-
-    &.highlight {
-      background-color: #e0f3ee;
-    }
-  }
 
   thead {
     tr {
@@ -70,6 +33,36 @@ const Table = styled.table`
         border-bottom-right-radius: 6px;
       }
     }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: ${props => (props.striped ? '#f2f6f9' : 'white')};
+      }
+
+      &:nth-child(odd) {
+        background-color: white;
+      }
+    }
+  }
+
+  th, td {
+    padding: 15px;
+    height: 46px;
+  }
+
+  td {
+    color: #3a4951;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    line-height: 16px;
+  }
+
+  tr {
+    background-color: white;
+    border-bottom: 1px solid #DBE2E8;
   }
 `
 
