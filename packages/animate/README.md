@@ -21,8 +21,7 @@ Add any animation from [http://daneden.github.io/animate.css](Animate.css) as a 
 | delay           | string      | '0s'           | 
 | count           | string      | '1'            |
 | trigger         | boolean     | true           |
-| display         | string      | 'inline-block' |
+| display         | string      | 'inherit'      |
 | fillMode        | string      | 'none'         |
-
 
 
