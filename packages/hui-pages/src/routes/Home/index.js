@@ -34,6 +34,9 @@ class App extends Component {
               <Link to='/separator'>Separator</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/table'>Table</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/text'>Text</Link>
             </Col>
             <Col xs={12}>
