@@ -8,7 +8,7 @@ const DocsHeader = ({
   history
 }) => {
   return (
-    <Grid fluid>
+    <Grid fluid style={{ padding: '0' }}>
       <Row style={{ margin: '20px 0 30px 0' }}>
         <Col>
           <Text light cursor='pointer' onClick={history.goBack}>{'< Back to Home'}</Text>
