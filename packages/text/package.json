@@ -91,7 +91,7 @@
   "dependencies": {
     "@hixme-ui/theme-props": "^1.3.0",
     "prop-types": "^15.6.0",
-    "react": "^15.6.2",
+    "react": "^16.0.0",
     "styled-components": "^2.2.2"
   }
 }
