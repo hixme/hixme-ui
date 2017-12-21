@@ -20,7 +20,7 @@ const TextBase = styled.span`
     if (props.a) return 'pointer'
     return 'auto'
   }};
-  display: ${props => props.display || 'inline-flex'};
+  ${props => props.display && `display: ${props.display}`};
   justify-content: ${(props) => {
     if (props.right) return 'flex-end'
     if (props.left) return 'flex-start'
