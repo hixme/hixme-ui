@@ -1,15 +1,15 @@
 {
-  "name": "@hixme-ui/form-group",
-  "version": "1.2.0",
-  "description": "hixme-ui form group container",
+  "name": "@hixme-ui/table",
+  "version": "1.0.0",
+  "description": "hixme-ui Table component",
   "publishConfig": {
     "access": "public"
   },
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "jest",
-    "test:watch": "npm test --watch",
+    "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --recursive",
+    "test:watch": "npm test -- --watch",
     "test:examples": "node examples/",
     "jest": "jest",
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
@@ -42,6 +42,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
+    "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -61,7 +62,7 @@
     "codecov": "^1.0.1",
     "cross-env": "^4.0.0",
     "debug": "^2.2.0",
-    "enzyme": "^2.9.1",
+    "enzyme": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-standard": "^5.1.0",
@@ -87,6 +88,9 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@hixme-ui/theme": "^1.3.0",
+    "@hixme-ui/theme-props": "^1.3.0",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "styled-components": "^2.2.2"
   }

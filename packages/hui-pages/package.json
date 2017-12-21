@@ -9,6 +9,7 @@
     "@hixme-ui/input": "^1.0.0",
     "@hixme-ui/select": "^1.0.0",
     "@hixme-ui/separator": "^1.0.0",
+    "@hixme-ui/table": "^1.0.0",
     "@hixme-ui/text": "^1.0.0",
     "@hixme-ui/theme": "^1.0.0",
     "@hixme-ui/title": "^1.0.0",
