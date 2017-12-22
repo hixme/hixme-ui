@@ -1,39 +1,42 @@
 import React from 'react'
+import { Grid, Row, Col } from 'react-flexbox-grid'
+import Highlight from 'react-highlight'
 
 import Text from '@hixme-ui/text'
 
+import DocsTitle from '../../components/DocsTitle'
+
 const TextDocs = () => (
-  <div>
-    <h1>Text</h1>
-    <div>
-      A fun text wrapper for applying various colors, sizes, and styles with ease
-    </div>
-    <br />
-    <br />
-    <Text primary>Primary text</Text>
-    <br />
-    {`<Text primary>Primary text</Text>`}
-    <br />
-    <br />
-    <Text warning>Warning text</Text>
-    <br />
-    {`<Text warning>Warning text</Text>`}
-    <br />
-    <br />
-    <Text error>Error text</Text>
-    <br />
-    {`<Text error>Error text</Text>`}
-    <br />
-    <br />
-    <Text label>Label</Text>
-    <br />
-    {`<Text label>Name</Text>`}
-    <br />
-    <br />
-    <Text a primary href="//hui.hixme.com/text">Text Link</Text>
-    <br />
-    {`<Text a primary href="//hui.hixme.com/text">Text Link</Text>`}
-  </div>
+  <Grid fluid>
+    <DocsTitle
+      title='Text' 
+      subtitle='A fun text wrapper for applying various colors, sizes, and styles with ease.' 
+    />
+    <Row>
+      <Col xs={12}>
+        <Text primary>Primary text</Text>
+        <Highlight className='html'>
+          {`<Text primary>Primary text</Text>`}
+        </Highlight>
+        <Text warning>Warning text</Text>
+        <Highlight className='html'>
+          {`<Text warning>Warning text</Text>`}
+        </Highlight>
+        <Text error>Error text</Text>
+        <Highlight className='html'>
+          {`<Text error>Error text</Text>`}
+        </Highlight>
+        <Text label>Label</Text>
+        <Highlight className='html'>
+          {`<Text label>Name</Text>`}
+        </Highlight>
+        <Text a primary href="//hui.hixme.com/typography">Text Link</Text>
+        <Highlight className='html'>
+          {`<Text a primary href="//hui.hixme.com/typography">Text Link</Text>`}
+        </Highlight>
+      </Col>
+    </Row>
+  </Grid>
 )
 
 export default TextDocs
