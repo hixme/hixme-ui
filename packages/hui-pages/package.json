@@ -17,11 +17,23 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-flexbox-grid": "^2.0.0",
-    "react-highlight": "github:briancappello/react-highlight#react-v16-compiled",
+    "react-highlight": "git+ssh://git@github.com:briancappello/react-highlight#react-v16-compiled",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "styled-components": "^2.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-config-standard-react": "^2.2.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-promise": "^1.0.8",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^1.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
