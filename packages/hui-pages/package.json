@@ -17,7 +17,7 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-flexbox-grid": "^2.0.0",
-    "react-highlight": "git+ssh://git@github.com:briancappello/react-highlight#react-v16-compiled",
+    "react-highlight": "github:briancappello/react-highlight#react-v16-compiled",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
