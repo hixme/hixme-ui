@@ -27,7 +27,7 @@ const SelectDocs = () => (
           <Highlight>
             {`<Select 
   list={[
-    {id: 0, name:'Hello'}, 
+    {id: 0, name: 'Hello'}, 
     {id: 1, name: 'Goodbye'}
   ]} 
 />`}
