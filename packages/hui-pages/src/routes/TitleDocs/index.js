@@ -1,35 +1,68 @@
 import React from 'react'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Title from '@hixme-ui/title'
 
+import DocsTitle from '../../components/DocsTitle'
+
 const TitleDocs = () => (
   <div>
-    <Title>Title</Title>
-    <br />
-    <br />
-    <Title>Title default</Title>
-    <br />
-    {`<Title>Title default</Title>`}
-    <br />
-    <br />
-    <Title jumbo>Title jumbo</Title>
-    <br />
-    {`<Title jumbo>Title jumbo</Title>`}
-    <br />
-    <br />
-    <Title small>Title small</Title>
-    <br />
-    {`<Title small>Title small</Title>`}
-    <br />
-    <br />
-    <Title smaller>Title smaller</Title>
-    <br />
-    {`<Title smaller>Title smaller</Title>`}
-    <br />
-    <br />
-    <Title smallest>Title smallest</Title>
-    <br />
-    {`<Title smallest>Title smallest</Title>`}
+    <DocsTitle
+      title='Title'
+      subtitle='A text wrapper for applying styles and sizes to title tags. Extends Text.'
+    />
+    <Grid fluid>
+      <Row center='xs' middle='xs'>
+        <Col xs={6}>
+          <Title>Title default</Title>
+        </Col>
+        <Col xs={6}>
+          <code>
+            {'<Title>Title default</Title>'}
+          </code>
+        </Col>
+      </Row>
+      <Row center='xs' middle='xs'>
+        <Col xs={6}>
+          <Title jumbo>Title jumbo</Title>
+        </Col>
+        <Col xs={6}>
+          <code>
+            {'<Title jumbo>Title jumbo</Title>'}
+          </code>
+        </Col>
+      </Row>
+      <Row center='xs' middle='xs'>
+        <Col xs={6}>
+          <Title small>Title small</Title>
+        </Col>
+        <Col xs={6}>
+          <code>
+            {'<Title small>Title small</Title>'}
+          </code>
+        </Col>
+      </Row>
+      <Row center='xs' middle='xs'>
+        <Col xs={6}>
+          <Title smaller>Title smaller</Title>
+        </Col>
+        <Col xs={6}>
+          <code>
+            {'<Title smaller>Title smaller</Title>'}
+          </code>
+        </Col>
+      </Row>
+      <Row center='xs' middle='xs'>
+        <Col xs={6}>
+          <Title smallest>Title smallest</Title>
+        </Col>
+        <Col xs={6}>
+          <code>
+            {'<Title smallest>Title smallest</Title>'}
+          </code>
+        </Col>
+      </Row>
+    </Grid>
   </div>
 )
 
