@@ -1,12 +1,11 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import Highlight from 'react-highlight'
 
 import Table from '@hixme-ui/table'
 import Text from '@hixme-ui/text'
 import Title from '@hixme-ui/title'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
 const TextDocs = () => (
   <Grid fluid>
@@ -17,25 +16,25 @@ const TextDocs = () => (
     <Row>
       <Col xs={12}>
         <Text primary>Primary text</Text>
-        <Highlight className='html'>
+        <Code>
           {'<Text primary>Primary text</Text>'}
-        </Highlight>
+        </Code>
         <Text warning>Warning text</Text>
-        <Highlight className='html'>
+        <Code>
           {'<Text warning>Warning text</Text>'}
-        </Highlight>
+        </Code>
         <Text error>Error text</Text>
-        <Highlight className='html'>
+        <Code>
           {'<Text error>Error text</Text>'}
-        </Highlight>
+        </Code>
         <Text label>Label</Text>
-        <Highlight className='html'>
+        <Code>
           {'<Text label>Name</Text>'}
-        </Highlight>
+        </Code>
         <Text a primary href='//hui.hixme.com/typography'>Text Link</Text>
-        <Highlight className='html'>
+        <Code>
           {'<Text a primary href="//hui.hixme.com/typography">Text Link</Text>'}
-        </Highlight>
+        </Code>
       </Col>
     </Row>
     <Row style={{ margin: '40px 0 10px' }}>

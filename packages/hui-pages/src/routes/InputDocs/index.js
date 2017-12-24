@@ -1,12 +1,11 @@
 import React from 'react'
 import { Grid, Row } from 'react-flexbox-grid'
-import Highlight from 'react-highlight'
 
 import Input from '@hixme-ui/input'
 import Table from '@hixme-ui/table'
 import Title from '@hixme-ui/title'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
 const InputDocs = () => (
   <div>
@@ -17,9 +16,9 @@ const InputDocs = () => (
     <Grid fluid>
       <Row>
         <Input type='email' required />
-        <Highlight>
+        <Code>
           {'<Input type=\'email\' required />'}
-        </Highlight>
+        </Code>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>

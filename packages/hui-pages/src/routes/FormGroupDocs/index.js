@@ -1,28 +1,28 @@
 import React from 'react'
-import Highlight from 'react-highlight'
 
 import FormGroup from '@hixme-ui/form-group'
 import Input from '@hixme-ui/input'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
+/* eslint-disable jsx-a11y/label-has-for */
 const FormGroupDocs = () => (
   <div>
     <DocsTitle
-      title='Form Group' 
-      subtitle='Gives proper spacing for a grouping of label, form fields, and error messages' 
+      title='Form Group'
+      subtitle='Gives proper spacing for a grouping of label, form fields, and error messages'
     />
     <FormGroup>
       <label>Name</label>
-      <Input name="name" />
+      <Input name='name' />
     </FormGroup>
-    <Highlight>
+    <Code>
       {`<FormGroup>
   <label>Name</label>
   <Input name='name' />
 </FormGroup>
 `}
-    </Highlight>
+    </Code>
   </div>
 )
 

@@ -6,7 +6,7 @@ import Table from '@hixme-ui/table'
 import Text from '@hixme-ui/text'
 import Title from '@hixme-ui/title'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
 const SeparatorDocs = () => (
   <div>
@@ -17,9 +17,9 @@ const SeparatorDocs = () => (
     <Grid fluid>
       <Row>
         <Separator />
-        <code>
+        <Code>
           {'<Separator />'}
-        </code>
+        </Code>
       </Row>
       <Row style={{ marginTop: '40px' }}>
         <Text thin p>
@@ -27,9 +27,9 @@ const SeparatorDocs = () => (
           from the theme.
         </Text>
         <Separator size='4px' primary />
-        <code>
+        <Code>
           {'<Separator size=\'4px\' primary />'}
-        </code>
+        </Code>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>

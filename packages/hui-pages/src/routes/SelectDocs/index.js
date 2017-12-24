@@ -1,5 +1,4 @@
 import React from 'react'
-import Highlight from 'react-highlight'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Select from '@hixme-ui/select'
@@ -7,7 +6,7 @@ import Table from '@hixme-ui/table'
 import Text from '@hixme-ui/text'
 import Title from '@hixme-ui/title'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
 const SelectDocs = () => (
   <div>
@@ -24,26 +23,26 @@ const SelectDocs = () => (
       <Row>
         <Col xs={12} sm={6}>
           <Select list={[{ id: 0, name: 'Hello' }, { id: 1, name: 'Goodbye' }]} />
-          <Highlight>
+          <Code>
             {`<Select 
   list={[
     {id: 0, name: 'Hello'}, 
     {id: 1, name: 'Goodbye'}
   ]} 
 />`}
-          </Highlight>
+          </Code>
         </Col>
         <Col xs={12} sm={6}>
           <Select>
             <option value='hello'>Hello</option>
             <option value='goodbye'>Goodbye</option>
           </Select>
-          <Highlight>
+          <Code>
             {`<Select>
   <option value='hello'>Hello</option>
   <option value='goodbye'>Goodbye</option>
 </Select>`}
-          </Highlight>
+          </Code>
         </Col>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>

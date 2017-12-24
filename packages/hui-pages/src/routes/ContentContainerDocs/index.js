@@ -1,11 +1,10 @@
 import React from 'react'
 import { Grid, Row } from 'react-flexbox-grid'
-import Highlight from 'react-highlight'
 
 import Table from '@hixme-ui/table'
 import Title from '@hixme-ui/title'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
 const ContentContainerDocs = () => (
   <div>
@@ -13,16 +12,18 @@ const ContentContainerDocs = () => (
       title='Content Container'
       subtitle='A container component that imposes a max width on its contents'
     />
-    <Highlight>
-      {`<ContentContainer>
+    <Grid fluid>
+      <Row>
+        <Code>
+          {`<ContentContainer>
   <h1>Something very wide</h1>
   <p>
     Lorem ipsum...
   </p>
 </ContentContainer>
 `}
-    </Highlight>
-    <Grid fluid>
+        </Code>
+      </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
         <Table striped>
