@@ -8,8 +8,8 @@ import SyntaxHighlighter from 'react-syntax-highlighter/prism'
 import { hopscotch } from 'react-syntax-highlighter/styles/prism'
 
 const StyledBorder = styled.div`
-  border-radius: 5px;
-  border: 1px ${theme.colors.lighter} solid;
+  border-radius: 4px;
+  border: 1px ${theme.colors.light} solid;
   > pre {
     margin: 0 !important;
     border-radius: 3px;

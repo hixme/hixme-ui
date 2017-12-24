@@ -13,7 +13,7 @@ const ContentContainerDocs = () => (
       subtitle='A container component that imposes a max width on its contents'
     />
     <Grid fluid>
-      <Row>
+      <Row center='xs'>
         <Code>
           {`<ContentContainer>
   <h1>Something very wide</h1>
