@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Title from '@hixme-ui/title'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
 const TitleDocs = () => (
   <div>
@@ -17,9 +17,9 @@ const TitleDocs = () => (
           <Title>Title default</Title>
         </Col>
         <Col xs={6}>
-          <code>
+          <Code>
             {'<Title>Title default</Title>'}
-          </code>
+          </Code>
         </Col>
       </Row>
       <Row center='xs' middle='xs'>
@@ -27,9 +27,9 @@ const TitleDocs = () => (
           <Title jumbo>Title jumbo</Title>
         </Col>
         <Col xs={6}>
-          <code>
+          <Code>
             {'<Title jumbo>Title jumbo</Title>'}
-          </code>
+          </Code>
         </Col>
       </Row>
       <Row center='xs' middle='xs'>
@@ -37,9 +37,9 @@ const TitleDocs = () => (
           <Title small>Title small</Title>
         </Col>
         <Col xs={6}>
-          <code>
+          <Code>
             {'<Title small>Title small</Title>'}
-          </code>
+          </Code>
         </Col>
       </Row>
       <Row center='xs' middle='xs'>
@@ -47,9 +47,9 @@ const TitleDocs = () => (
           <Title smaller>Title smaller</Title>
         </Col>
         <Col xs={6}>
-          <code>
+          <Code>
             {'<Title smaller>Title smaller</Title>'}
-          </code>
+          </Code>
         </Col>
       </Row>
       <Row center='xs' middle='xs'>
@@ -57,9 +57,9 @@ const TitleDocs = () => (
           <Title smallest>Title smallest</Title>
         </Col>
         <Col xs={6}>
-          <code>
+          <Code>
             {'<Title smallest>Title smallest</Title>'}
-          </code>
+          </Code>
         </Col>
       </Row>
     </Grid>

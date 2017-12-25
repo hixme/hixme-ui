@@ -1,11 +1,11 @@
 import React from 'react'
-import { Grid, Row } from 'react-flexbox-grid'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Checkbox from '@hixme-ui/checkbox'
 import Table from '@hixme-ui/table'
 import Title from '@hixme-ui/title'
 
-import DocsTitle from '../../components/DocsTitle'
+import { Code, DocsTitle } from '../../components'
 
 const CheckboxDocs = () => (
   <div>
@@ -13,12 +13,26 @@ const CheckboxDocs = () => (
       title='Checkbox'
       subtitle='A Hixme UI styled checkbox component'
     />
-    <Checkbox defaultChecked text='Checkbox with a label' />
-    <br />
-    <Checkbox defaultChecked small text='Small checkbox with a label' />
-    <br />
-    <Checkbox disabled text='Disabled checkbox' />
     <Grid fluid>
+      <Row center='xs' style={{ marginBottom: '40px' }}>
+        <Col xs>
+          <Checkbox defaultChecked text='Checkbox with a label' />
+        </Col>
+        <Col xs>
+          <Checkbox defaultChecked small text='Small checkbox with a label' />
+        </Col>
+        <Col xs>
+          <Checkbox disabled text='Disabled checkbox' />
+        </Col>
+      </Row>
+      <Row center='xs'>
+        <Code>
+          {`<Checkbox defaultChecked text='Checkbox with a label' />
+<Checkbox defaultChecked small text='Small checkbox with a label' />
+<Checkbox disabled text='Disabled checkbox' />
+`}
+        </Code>
+      </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
         <Table striped>

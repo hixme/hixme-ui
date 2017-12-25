@@ -13,25 +13,43 @@ const TextDocs = () => (
       title='Text'
       subtitle='A fun text wrapper for applying various colors, sizes, and styles with ease.'
     />
-    <Row>
-      <Col xs={12}>
+    <Row center='sm' start='xs' middle='xs'>
+      <Col xs={12} sm={4}>
         <Text primary>Primary text</Text>
+      </Col>
+      <Col xs={12} sm={8}>
         <Code>
           {'<Text primary>Primary text</Text>'}
         </Code>
+      </Col>
+      <Col xs={12} sm={4}>
         <Text warning>Warning text</Text>
+      </Col>
+      <Col xs={12} sm={8}>
         <Code>
           {'<Text warning>Warning text</Text>'}
         </Code>
+      </Col>
+      <Col xs={12} sm={4}>
         <Text error>Error text</Text>
+      </Col>
+      <Col xs={12} sm={8}>
         <Code>
           {'<Text error>Error text</Text>'}
         </Code>
+      </Col>
+      <Col xs={12} sm={4}>
         <Text label>Label</Text>
+      </Col>
+      <Col xs={12} sm={8}>
         <Code>
           {'<Text label>Name</Text>'}
         </Code>
+      </Col>
+      <Col xs={12} sm={4}>
         <Text a primary href='//hui.hixme.com/typography'>Text Link</Text>
+      </Col>
+      <Col xs={12} sm={8}>
         <Code>
           {'<Text a primary href="//hui.hixme.com/typography">Text Link</Text>'}
         </Code>
