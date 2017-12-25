@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import theme from '@hixme-ui/theme'
 
 const StyledLabel = styled.span`
-  cursor: pointer;
+  cursor: ${props => (props.disabled ? 'default' : 'pointer')};
   display: inline-block;
-  color: #4a5b64;
+  color: ${props => (props.disabled ? theme.colors.light : theme.colors.default)};
   margin: 0 0 0 16px;
   vertical-align: top;
 `

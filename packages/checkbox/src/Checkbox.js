@@ -74,7 +74,7 @@ export default class Checkbox extends Component {
       <label>
         <StyledCheckbox type='checkbox' {...this.getProps()} />
         <StyledFakeCheckbox small={this.props.small} disabled={this.props.disabled} />
-        <StyledLabel>{this.props.text}</StyledLabel>
+        <StyledLabel disabled={this.props.disabled}>{this.props.text}</StyledLabel>
       </label>
     )
   }
