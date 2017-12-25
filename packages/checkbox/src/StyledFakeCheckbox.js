@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import theme from '@hixme-ui/theme'
 
 const StyledFakeCheckbox = styled.span`
   cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
@@ -10,7 +9,7 @@ const StyledFakeCheckbox = styled.span`
   display: inline-block;
   vertical-align: top;
   position: relative;
-  background: ${props => (props.disabled ? theme.colors.lightest : 'white')};
+  background: ${props => (props.disabled ? '#f9fafb' : 'white')};
   font-size: 0;
   line-height: 0;
   &:after {
