@@ -8,6 +8,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter/prism'
 import { hopscotch } from 'react-syntax-highlighter/styles/prism'
 
 const StyledBorder = styled.div`
+  ${props => props.margin && (`margin: ${props.margin};`)}
   border-radius: 4px;
   border: 1px ${theme.colors.light} solid;
   > pre {
@@ -16,8 +17,8 @@ const StyledBorder = styled.div`
   }
 `
 
-const Code = ({ children }) => (
-  <StyledBorder>
+const Code = ({ children, ...restProps }) => (
+  <StyledBorder {...restProps}>
     <SyntaxHighlighter language='jsx' style={hopscotch}>
       {children}
     </SyntaxHighlighter>
