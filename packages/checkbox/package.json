@@ -87,6 +87,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@hixme-ui/theme": "^1.5.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-animations": "^1.0.0",
