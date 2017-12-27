@@ -55,17 +55,20 @@ const getAnimate = ({ animate, heavyShadow }) => {
   return ''
 }
 
+const getTextAlign = ({ textAlign, textLeft, textCenter, textRight }) => {
+  if (textLeft) return 'text-align: left'
+  if (textCenter) return 'text-align: center'
+  if (textRight) return 'text-align: right'
+  if (textAlign) return `text-align: ${textAlign}`
+  return ''
+}
+
 const ContainerBase = styled.div`
-  text-align: ${({ textLeft, textCenter, textRight }) => {
-    if (textLeft) return 'left'
-    if (textCenter) return 'center'
-    if (textRight) return 'right'
-    return 'inherit'
-  }};
   background: ${(props) => {
     if (props.background) return props.background
     return getBackgroundColor(props, 'none')
   }};
+  ${getTextAlign}
   ${getFlexProps}
   ${({ width }) => width && `width: ${width};`}
   ${({ height }) => height && `height: ${height};`}
