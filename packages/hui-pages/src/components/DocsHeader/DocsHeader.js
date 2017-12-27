@@ -6,19 +6,17 @@ import Text from '@hixme-ui/text'
 
 const DocsHeader = ({
   history
-}) => {
-  return (
-    <Grid fluid style={{ padding: '0' }}>
-      <Row style={{ margin: '20px 0 30px 0' }}>
-        <Col>
-          <Text a light cursor='pointer' onClick={history.goBack}>
-            {'< Back to Home'}
-          </Text>
-        </Col>
-      </Row>
-    </Grid>
-  )
-}
+}) => (
+  <Grid fluid style={{ padding: '0' }}>
+    <Row style={{ margin: '20px 0 30px 0' }}>
+      <Col>
+        <Text a light cursor='pointer' onClick={history.goBack}>
+          {'< Back to Home'}
+        </Text>
+      </Col>
+    </Row>
+  </Grid>
+)
 
 DocsHeader.displayName = 'DocsHeader'
 export default withRouter(DocsHeader)
