@@ -56,10 +56,10 @@ const getAnimate = ({ animate, heavyShadow }) => {
 }
 
 const getTextAlign = ({ textAlign, textLeft, textCenter, textRight }) => {
-  if (textLeft) return 'text-align: left'
-  if (textCenter) return 'text-align: center'
-  if (textRight) return 'text-align: right'
-  if (textAlign) return `text-align: ${textAlign}`
+  if (textLeft) return 'text-align: left;'
+  if (textCenter) return 'text-align: center;'
+  if (textRight) return 'text-align: right;'
+  if (textAlign) return `text-align: ${textAlign};`
   return ''
 }
 

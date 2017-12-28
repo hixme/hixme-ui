@@ -7,7 +7,7 @@ const getPadding = (props, defaultValue) => {
 
   // paddingSides applies padding-left and padding-right
   if (paddingSides) {
-    output += `padding-left: ${paddingSides};padding-right: ${paddingSides}`
+    output += `padding-left: ${paddingSides};padding-right: ${paddingSides};`
   }
 
   // apply the rest of the padding properties
