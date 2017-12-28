@@ -1,39 +1,104 @@
 import React from 'react'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
+import Table from '@hixme-ui/table'
 import Text from '@hixme-ui/text'
+import Title from '@hixme-ui/title'
+
+import { Code, DocsTitle } from '../../components'
 
 const TextDocs = () => (
-  <div>
-    <h1>Text</h1>
-    <div>
-      A fun text wrapper for applying various colors, sizes, and styles with ease
-    </div>
-    <br />
-    <br />
-    <Text primary>Primary text</Text>
-    <br />
-    {`<Text primary>Primary text</Text>`}
-    <br />
-    <br />
-    <Text warning>Warning text</Text>
-    <br />
-    {`<Text warning>Warning text</Text>`}
-    <br />
-    <br />
-    <Text error>Error text</Text>
-    <br />
-    {`<Text error>Error text</Text>`}
-    <br />
-    <br />
-    <Text label>Label</Text>
-    <br />
-    {`<Text label>Name</Text>`}
-    <br />
-    <br />
-    <Text a primary href="//hui.hixme.com/text">Text Link</Text>
-    <br />
-    {`<Text a primary href="//hui.hixme.com/text">Text Link</Text>`}
-  </div>
+  <Grid fluid>
+    <DocsTitle
+      title='Text'
+      subtitle='A fun text wrapper for applying various colors, sizes, and styles with ease.'
+    />
+    <Row center='sm' start='xs' middle='xs'>
+      <Col xs={12} sm={4}>
+        <Text primary>Primary text</Text>
+      </Col>
+      <Col xs={12} sm={8}>
+        <Code>
+          {'<Text primary>Primary text</Text>'}
+        </Code>
+      </Col>
+      <Col xs={12} sm={4}>
+        <Text warning>Warning text</Text>
+      </Col>
+      <Col xs={12} sm={8}>
+        <Code>
+          {'<Text warning>Warning text</Text>'}
+        </Code>
+      </Col>
+      <Col xs={12} sm={4}>
+        <Text error>Error text</Text>
+      </Col>
+      <Col xs={12} sm={8}>
+        <Code>
+          {'<Text error>Error text</Text>'}
+        </Code>
+      </Col>
+      <Col xs={12} sm={4}>
+        <Text label>Label</Text>
+      </Col>
+      <Col xs={12} sm={8}>
+        <Code>
+          {'<Text label>Name</Text>'}
+        </Code>
+      </Col>
+      <Col xs={12} sm={4}>
+        <Text a primary href='//hui.hixme.com/typography'>Text Link</Text>
+      </Col>
+      <Col xs={12} sm={8}>
+        <Code>
+          {'<Text a primary href="//hui.hixme.com/typography">Text Link</Text>'}
+        </Code>
+      </Col>
+    </Row>
+    <Row style={{ margin: '40px 0 10px' }}>
+      <Title smaller>Font Sizes</Title>
+    </Row>
+    <Row>
+      <Table striped style={{ width: 'unset' }}>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Font Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>smallest</td>
+            <td>{'8px'}</td>
+          </tr>
+          <tr>
+            <td>smaller</td>
+            <td>{'10px'}</td>
+          </tr>
+          <tr>
+            <td>small</td>
+            <td>{'12px'}</td>
+          </tr>
+          <tr>
+            <td>medium</td>
+            <td>{'16px'}</td>
+          </tr>
+          <tr>
+            <td>large</td>
+            <td>{'18px'}</td>
+          </tr>
+          <tr>
+            <td>larger</td>
+            <td>{'20px'}</td>
+          </tr>
+          <tr>
+            <td>jumbo</td>
+            <td>{'22px'}</td>
+          </tr>
+        </tbody>
+      </Table>
+    </Row>
+  </Grid>
 )
 
 export default TextDocs
