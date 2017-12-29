@@ -6,6 +6,7 @@ import DocsHeader from '../components/DocsHeader/DocsHeader'
 
 import Home from './Home'
 import CheckboxDocs from './CheckboxDocs'
+import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
 import FormGroupDocs from './FormGroupDocs'
 import InputDocs from './InputDocs'
@@ -23,6 +24,7 @@ const Routes = (props) => (
     <Route path="/" exact component={Home} />
     <ContentContainer>
       <DocsHeader />
+      <Route path="/container" component={ContainerDocs} />
       <Route path="/content-container" component={ContentContainerDocs} />
       <Route path="/checkbox" component={CheckboxDocs} />
       <Route path="/form-group" component={FormGroupDocs} />

@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container it has 20px padding by default 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it renders with a 1px solid red outline when withOutline is true 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: none;
+  outline: 1px solid red;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it renders with no padding when noPadding is true 1`] = `
+.c0 {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should contain 30px padding and margin: 2px 8px 3px 7px 1`] = `
+.c0 {
+  background: none;
+  padding: 30px;
+  margin: 2px 8px 3px 7px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should contain 100px width and 200px height 1`] = `
+.c0 {
+  background: none;
+  width: 100px;
+  height: 200px;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height="200px"
+  muted={false}
+  width="100px"
+/>
+`;
+
+exports[`Container it should contain a min-height of 20px and max-height of 100px 1`] = `
+.c0 {
+  background: none;
+  max-height: 100px;
+  min-height: 20px;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should contain a min-width of 20px and max-width of 100px 1`] = `
+.c0 {
+  background: none;
+  max-width: 100px;
+  min-width: 20px;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should contain text-align: center again 1`] = `
+.c0 {
+  background: none;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should contain text-align: left 1`] = `
+.c0 {
+  background: none;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should contain text-align: left again 1`] = `
+.c0 {
+  background: none;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should contain text-align: right 1`] = `
+.c0 {
+  background: none;
+  text-align: right;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render a red border-color 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: none;
+  border-color: red;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with 2 pixel dashed border 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: none;
+  border: 2px dashed;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with 6px border radius 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with 80px left and right margins and padding 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with align-items: center 1`] = `
+.c0 {
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with background: black 1`] = `
+.c0 {
+  background: black;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with background: white 1`] = `
+.c0 {
+  background: white;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={true}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with border: 130px solid purple 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: 130px solid purple;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with bottom margin of 16px 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 16px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with bottom padding of 16px 1`] = `
+.c0 {
+  background: none;
+  padding: 10px;
+  padding-bottom: 16px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with display: flex 1`] = `
+.c0 {
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with flex-direction: column 1`] = `
+.c0 {
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with justify-content: flex-start 1`] = `
+.c0 {
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 20px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with left margin of 30px 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 30px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with left padding of 30px 1`] = `
+.c0 {
+  background: none;
+  padding: 10px;
+  padding-left: 30px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with right margin of 90px 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  margin: 10px;
+  margin-right: 90px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with right padding of 90px 1`] = `
+.c0 {
+  background: none;
+  padding: 10px;
+  padding-right: 90px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with top margin of 36px 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 36px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
+exports[`Container it should render with top padding of 36px 1`] = `
+.c0 {
+  background: none;
+  padding: 10px;
+  padding-top: 36px;
+  border: none;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;

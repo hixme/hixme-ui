@@ -19,6 +19,9 @@ class App extends Component {
               <Link to='/checkbox'>Checkbox</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/container'>Container</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/content-container'>ContentContainer</Link>
             </Col>
             <Col xs={12}>
