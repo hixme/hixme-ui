@@ -86,6 +86,7 @@ import Container from '@hixme-ui/container'
 | paddingTop      | string      | Apply CSS padding-top properties            |
 | paddingBottom   | string      | Apply CSS padding-bottom properties         |
 | paddingSides    | string      | Apply CSS padding-left and right properties |
+| noPadding       | bool        | Remove default padding from container       |
 
 
 ## Width
@@ -140,7 +141,6 @@ import Container from '@hixme-ui/container'
 | Name            | Type        | Description                           |
 | --------------- | ----------- | ------------------------------------- |
 | withOutline     | bool        | Add 1px solid red outline             |
-| noPadding       | bool        | Remove default padding from container |
 | shadow          | bool        | Add box shadow to container           |
 | heavyShadow     | bool        | Add heavy box shadow to container     |
 | animate         | bool        | Add animation property to container   |
