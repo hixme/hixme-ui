@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // hixme-ui
-// import FlexContainer from '../FlexContainer'
+import Container from '@hixme-ui/container'
 import Text from '@hixme-ui/text'
 
 import { fontFamily, colorTheme } from '@hixme-ui/theme'
@@ -68,20 +68,20 @@ class Price extends Text {
     }
 
     return (
-      <FlexContainer alignContent='flex-start'>
-        <FlexContainer margin='5px 0' alignItems='center' justifyContent='flex-start' direction='column'>
-          <FlexContainer>
+      <Container flex alignStart>
+        <Container flex alignCenter flexColumn margin='5px 0'>
+          <Container noPadding>
             <span id='dollar-sign' {...dollarSignProps}>$</span>
             <span id='dollars' {...dollarProps}>{this.getValue().dollars}</span>
             <span id='cents' {...centProps}>.{this.getValue().cents}</span>
-          </FlexContainer>
+          </Container>
           {this.props.label !== '' &&
-          <FlexContainer margin='-10px 0 0 0'>
-            <Text id='label' fontSize='8pt' light>{this.props.label}</Text>
-          </FlexContainer>
-            }
-        </FlexContainer>
-      </FlexContainer>
+            <Container margin='-10px 0 0 0'>
+              <Text id='label' fontSize='8pt' light>{this.props.label}</Text>
+            </Container>
+          }
+        </Container>
+      </Container>
     )
   }
 }
