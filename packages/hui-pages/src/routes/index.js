@@ -1,6 +1,8 @@
 // src/routes.js
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+import ContentContainer from '@hixme-ui/content-container'
 
 import DocsHeader from '../components/DocsHeader/DocsHeader'
 
@@ -17,26 +19,26 @@ import TitleDocs from './TitleDocs'
 import TableDocs from './TableDocs'
 import NotFound from './NotFound'
 
-import ContentContainer from '@hixme-ui/content-container'
-
-const Routes = (props) => (
-  <Switch>
-    <Route path="/" exact component={Home} />
-    <ContentContainer>
-      <DocsHeader />
-      <Route path="/container" component={ContainerDocs} />
-      <Route path="/content-container" component={ContentContainerDocs} />
-      <Route path="/checkbox" component={CheckboxDocs} />
-      <Route path="/form-group" component={FormGroupDocs} />
-      <Route path="/input" component={InputDocs} />
-      <Route path="/select" component={SelectDocs} />
-      <Route path="/separator" component={SeparatorDocs} />
-      <Route path="/table" component={TableDocs} />
-      <Route path="/text" component={TextDocs} />
-      <Route path="/title" component={TitleDocs} />
-    </ContentContainer>
-    <Route component={NotFound} />
-  </Switch>
+const Routes = () => (
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Switch>
+      <Route path={'/'} exact component={Home} />
+      <ContentContainer>
+        <DocsHeader />
+        <Route path={'/container'} component={ContainerDocs} />
+        <Route path={'/content-container'} component={ContentContainerDocs} />
+        <Route path={'/checkbox'} component={CheckboxDocs} />
+        <Route path={'/form-group'} component={FormGroupDocs} />
+        <Route path={'/input'} component={InputDocs} />
+        <Route path={'/select'} component={SelectDocs} />
+        <Route path={'/separator'} component={SeparatorDocs} />
+        <Route path={'/table'} component={TableDocs} />
+        <Route path={'/text'} component={TextDocs} />
+        <Route path={'/title'} component={TitleDocs} />
+      </ContentContainer>
+      <Route component={NotFound} />
+    </Switch>
+  </BrowserRouter>
 )
 
 export default Routes
