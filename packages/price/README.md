@@ -18,12 +18,12 @@ import Price from '@hixme-ui/price'
 
 ## Props
 
-Because the Price component extends [Text](https://github.com/hixme/hixme-ui/tree/master/packages/text), any Text style boolean property is available to the Price component.
-
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
 | value           | string      | N/A            |
 | label           | string      | N/A            | 
+
+Additionally, the Price component will take any color boolean from the theme.
 
 
 
