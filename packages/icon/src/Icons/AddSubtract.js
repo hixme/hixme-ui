@@ -6,10 +6,10 @@ class AddSubtract extends BaseIcon {
   static defaultProps = {
     width: 24,
     height: 24,
-    viewBox: '0 0 24 24'
+    viewBox: '0 0 24 24',
   }
 
-  render () {
+  render() {
     return (
       <svg {...this.getSvgProps()}>
         <path

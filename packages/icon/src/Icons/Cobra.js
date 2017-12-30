@@ -6,10 +6,10 @@ class CobraIcon extends BaseIcon {
   static defaultProps = {
     width: 34,
     height: 34,
-    viewBox: '0 0 34 34'
+    viewBox: '0 0 34 34',
   }
 
-  render () {
+  render() {
     return (
       <svg {...this.getSvgProps()}>
         <path

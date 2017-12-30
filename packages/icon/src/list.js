@@ -127,7 +127,7 @@ const iconList = {
   visible: Visible,
   x: X,
   xCircle: XCircle,
-  xShield: XShield
+  xShield: XShield,
 }
 
 iconList.menu = Bars
