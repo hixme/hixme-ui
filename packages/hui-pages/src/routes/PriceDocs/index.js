@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row, Col } from 'react-flexbox-grid'
+import { Grid, Row } from 'react-flexbox-grid'
 
 import Price from '@hixme-ui/price'
 import Table from '@hixme-ui/table'
@@ -11,17 +11,15 @@ const PriceDocs = () => (
   <div>
     <DocsTitle
       title='Price'
-      subtitle='A Hixme UI styled checkbox component'
+      subtitle='A Hixme UI styled price component'
     />
     <Grid fluid>
       <Row center='xs' style={{ marginBottom: '40px' }}>
-        <Col xs>
-          <div />
-        </Col>
+        <Price value={46.93} label='hixme-ui' />
       </Row>
       <Row center='xs'>
         <Code>
-          {'<Price value={46.93} />'}
+          {'<Price value={46.93} label=\'hixme-ui\' />'}
         </Code>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
@@ -40,7 +38,13 @@ const PriceDocs = () => (
               <td>value</td>
               <td>number</td>
               <td>N/A</td>
-              <td>Assigns a class to the Price component</td>
+              <td>Price value</td>
+            </tr>
+            <tr>
+              <td>label</td>
+              <td>string</td>
+              <td>N/A</td>
+              <td>Applies a label beneath the styled price</td>
             </tr>
           </tbody>
         </Table>
