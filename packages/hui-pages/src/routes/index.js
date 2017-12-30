@@ -4,8 +4,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import ContentContainer from '@hixme-ui/content-container'
 
-import ContentContainer from '@hixme-ui/content-container'
-
 import DocsHeader from '../components/DocsHeader/DocsHeader'
 
 import Home from './Home'
