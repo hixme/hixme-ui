@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import 'normalize.css'
+
 import registerServiceWorker from './registerServiceWorker'
 import AppContainer from './containers/AppContainer'
 import Routes from './routes'
-
-import 'normalize.css'
 
 ReactDOM.render(
   (<AppContainer>
     <Routes />
   </AppContainer>),
-  document.getElementById('root')
+  document.getElementById('root'),
 )
 registerServiceWorker()
