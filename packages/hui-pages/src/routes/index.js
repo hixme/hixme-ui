@@ -7,27 +7,29 @@ import ContentContainer from '@hixme-ui/content-container'
 import DocsHeader from '../components/DocsHeader/DocsHeader'
 
 import Home from './Home'
-import ButtonDocs from './ButtonDocs'
-import BulletListDocs from './BulletListDocs'
+
 import AnimateDocs from './AnimateDocs'
-import CheckboxDocs from './CheckboxDocs'
+import BulletListDocs from './BulletListDocs'
+import ButtonDocs from './ButtonDocs'
 import CardDocs from './CardDocs'
+import CheckboxDocs from './CheckboxDocs'
 import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
 import CurrencyDocs from './CurrencyDocs'
 import FormGroupDocs from './FormGroupDocs'
 import FormsDocs from './FormsDocs'
-import LabelDocs from './LabelDocs'
+import IconDocs from './IconDocs'
 import InputDocs from './InputDocs'
+import LabelDocs from './LabelDocs'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
 import PriceDocs from './PriceDocs'
 import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
 import SocialSecurityDocs from './SocialSecurityDocs'
+import TableDocs from './TableDocs'
 import TextDocs from './TextDocs'
 import TitleDocs from './TitleDocs'
-import TableDocs from './TableDocs'
 import NotFound from './NotFound'
 
 const Routes = () => (
@@ -36,16 +38,17 @@ const Routes = () => (
       <Route path='/' exact component={Home} />
       <ContentContainer>
         <DocsHeader />
-        <Route path='/button' component={ButtonDocs} />
-        <Route path='/bullet-list' component={BulletListDocs} />
         <Route path='/animate' component={AnimateDocs} />
+        <Route path='/bullet-list' component={BulletListDocs} />
+        <Route path='/button' component={ButtonDocs} />
         <Route path='/card' component={CardDocs} />
+        <Route path='/checkbox' component={CheckboxDocs} />
         <Route path='/container' component={ContainerDocs} />
         <Route path='/content-container' component={ContentContainerDocs} />
-        <Route path='/checkbox' component={CheckboxDocs} />
         <Route path='/currency' component={CurrencyDocs} />
         <Route path='/form-group' component={FormGroupDocs} />
         <Route path='/forms' component={FormsDocs} />
+        <Route path='/icon' component={IconDocs} />
         <Route path='/input' component={InputDocs} />
         <Route path='/label' component={LabelDocs} />
         <Route path='/percentage' component={PercentageDocs} />
