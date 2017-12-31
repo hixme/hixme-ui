@@ -16,6 +16,7 @@
     "@hixme-ui/content-container": "^1.0.0",
     "@hixme-ui/checkbox": "^1.0.0",
     "@hixme-ui/form-group": "^1.0.0",
+    "@hixme-ui/icon": "^1.0.0",
     "@hixme-ui/input": "^1.0.0",
     "@hixme-ui/price": "^1.0.0",
     "@hixme-ui/select": "^1.0.0",

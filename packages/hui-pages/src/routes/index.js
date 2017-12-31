@@ -11,6 +11,7 @@ import CheckboxDocs from './CheckboxDocs'
 import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
 import FormGroupDocs from './FormGroupDocs'
+import IconDocs from './IconDocs'
 import InputDocs from './InputDocs'
 import PriceDocs from './PriceDocs'
 import SelectDocs from './SelectDocs'
@@ -30,6 +31,7 @@ const Routes = () => (
         <Route path='/content-container' component={ContentContainerDocs} />
         <Route path='/checkbox' component={CheckboxDocs} />
         <Route path='/form-group' component={FormGroupDocs} />
+        <Route path='/icon' component={IconDocs} />
         <Route path='/input' component={InputDocs} />
         <Route path='/price' component={PriceDocs} />
         <Route path='/select' component={SelectDocs} />
