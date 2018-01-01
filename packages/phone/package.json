@@ -91,5 +91,16 @@
     "@hixme-ui/text": "^1.7.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": -10
+      }
+    }
   }
 }
