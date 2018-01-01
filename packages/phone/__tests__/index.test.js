@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Phone from '../src/index.js'
+import Phone from '../src'
 
 describe('Phone', () => {
   const component = renderer.create(
