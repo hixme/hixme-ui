@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Separator Margin Should have 15px top and bottom margin by default 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Margin Should take margin prop 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 30px;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Padding Should have 0 padding by default 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Padding Should take padding prop 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 30px;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Should have 2px border-radius 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Should have 100% width 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Should have default color of "lighter" from the theme 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Size Should have default size of 2px 1`] = `
+.c0 {
+  width: 100%;
+  height: 2px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="2px"
+/>
+`;
+
+exports[`Separator Size Should take size prop 1`] = `
+.c0 {
+  width: 100%;
+  height: 4px;
+  background: #B9C5CD;
+  border: 0px solid rgba(0,0,0,0);
+  margin: 15px 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+<div
+  className="c0"
+  default={false}
+  size="4px"
+/>
+`;
