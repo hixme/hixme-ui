@@ -9,5 +9,5 @@ test('Component', () => {
   )
 
   const tree = component.toJSON()
-  expect(tree.type).toBe('div')
+  expect(tree.type).toBe('table')
 })
