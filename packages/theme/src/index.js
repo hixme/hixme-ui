@@ -72,13 +72,29 @@ const buttonMinWidths = {
   jumbo: '100px',
 }
 
+const buttonTextColors = {
+  default: colors.white,
+}
+
+const buttonGradientColors = {
+  primary: gradients.teal,
+  secondary: gradients.grey,
+  default: gradients.teal,
+  red: gradients.red,
+  blue: gradients.blue,
+  gold: gradients.yellow,
+}
+
 const shadows = {
   medium: '0px 5px 9px 0px rgba(56,59,60,0.22);',
-  low: '0px 2px 6px 0px rgba(56,59,60,0.18);',
+  default: '0px 2px 6px 0px rgba(56,59,60,0.18);',
   none: '0px 0px 0px 0px rgba(0,0,0,0);',
 }
 
-const borderRadius = '4px'
+const buttonBorderRadius = {
+  none: '0',
+  default: '4px',
+}
 
 /* eslint-disable max-len */
 export const fontFamily = {
@@ -99,7 +115,6 @@ const defaults = {
   fontFamily: fontFamily.normal,
   fontWeight: fontWeights.default,
   backgroundColor: colors.white,
-  borderRadius,
   borderColor: colors.grey110,
   titleFontSize: titleFontSizes.default,
 }
@@ -125,6 +140,10 @@ export const colorTheme = {
   lightest: colors.grey130,
 }
 
+const outlineButtonColors = {
+  ...colorTheme,
+}
+
 const theme = {
   colors: colorTheme,
   backgroundColors: {
@@ -135,9 +154,13 @@ const theme = {
     ...colorTheme,
     default: defaults.borderColor,
   },
+  buttonTextColors,
+  buttonGradientColors,
   buttonFontSizes,
   buttonHeights,
   buttonMinWidths,
+  buttonBorderRadius,
+  outlineButtonColors,
   defaults,
   fontSizes,
   fontFamily,
@@ -154,4 +177,3 @@ const theme = {
 export default theme
 
 export ThemeProvider from './ThemeProvider'
-

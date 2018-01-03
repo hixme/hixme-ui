@@ -172,6 +172,7 @@ const Animate = styled.div`
   }};
   animation-iteration-count: ${(props) => {
     if (props.count) return props.count
+    if (props.infinite) return 'infinite'
     return '1'
   }};
   animation-play-state: ${(props) => {

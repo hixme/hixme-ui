@@ -16,6 +16,9 @@ class App extends Component {
         <div>
           <Row center='xs' style={{ padding: '20px' }}>
             <Col xs={12}>
+              <Link to='/button'>Button</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/checkbox'>Checkbox</Link>
             </Col>
             <Col xs={12}>
