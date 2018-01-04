@@ -4,9 +4,9 @@ import {
   getOutlineButtonColor,
  } from '@hixme-ui/theme-props'
 
-import BaseButton from './BaseButton'
+import GradientButton from './GradientButton'
 
-const OutlineButton = BaseButton.extend`
+const OutlineButton = GradientButton.extend`
   :hover:enabled {
     box-shadow: ${props => getShadow(props)};
   };

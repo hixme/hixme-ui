@@ -9,7 +9,7 @@ import {
   getShadow,
  } from '@hixme-ui/theme-props'
 
-const BaseButton = styled.button`
+const GradientButton = styled.button`
   transition: all .25s ease;
   :hover:enabled {
     background-size: 100%;
@@ -36,10 +36,11 @@ const BaseButton = styled.button`
   justify-content: center;
   align-items: center;
   background-size: 200%;
+  border-style: none;
   outline: none;
   cursor: pointer;
   padding: 0.25em 1em;
   border-radius: ${props => getButtonBorderRadius(props)};
 `
 
-export default BaseButton
+export default GradientButton

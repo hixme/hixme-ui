@@ -29,6 +29,7 @@ import { Button, OutlineButton } from '@hixme-ui/checkbox'
 | blue            | boolean     | false          |
 | gold            | boolean     | false          |
 | disabled        | boolean     | false          |
+| block           | boolean     | false          |
 
 
 ## OutlineButton Props
@@ -55,3 +56,4 @@ import { Button, OutlineButton } from '@hixme-ui/checkbox'
 | lighter         | boolean     | false          |
 | lightest        | boolean     | false          |
 | disabled        | boolean     | false          |
+| block           | boolean     | false          |

@@ -1,119 +1,82 @@
 import React from 'react'
-import { Button, OutlineButton } from '@hixme-ui/button'
+import { Grid, Row, Col } from 'react-flexbox-grid'
+import Button from '@hixme-ui/button'
 
 import Text from '@hixme-ui/text'
 
 import { Code, DocsTitle } from '../../components'
 
+const padded = {
+  padding: '10px',
+}
+
 const ButtonDocs = () => (
   <div>
-    <DocsTitle
-      title='Button'
-      subtitle='A gradient button component, with five color gradients'
-    />
+    <Grid fluid>
 
-    <Text>Color options:</Text>
-    <br />
-    <br />
+      <DocsTitle
+        title='Button'
+        subtitle='A button component, with five color gradients,
+        and outline option. Outine buttons use the colorTheme'
+      />
 
-    <Button>DEFAULT</Button>
-    <br />
-    <br />
+      <Row center='xs'>
+        <Col>
+          <div style={padded}>
+            <Button>default</Button>
+          </div>
+          <div style={padded}>
+            <Button secondary>secondary</Button>
+          </div>
+          <div style={padded}>
+            <Button blue>blue</Button>
+          </div>
+          <div style={padded}>
+            <Button red>red</Button>
+          </div>
+          <div style={padded}>
+            <Button gold>gold</Button>
+          </div>
+        </Col>
 
-    <Button secondary>SECONDARY</Button>
-    <br />
-    <br />
+        <Col>
+          <div style={padded}>
+            <Button mini light outline>mini light outline</Button>
+          </div>
+          <div style={padded}>
+            <Button small green outline secondary>small green outline</Button>
+          </div>
+          <div style={padded}>
+            <Button outline blue>blue button</Button>
+          </div>
+          <div style={padded}>
+            <Button large outline red>large outline red</Button>
+          </div>
+          <div style={padded}>
+            <Button jumbo outline purple>jumbo outline purple</Button>
+          </div>
+        </Col>
 
-    <Button red >RED</Button>
-    <br />
-    <br />
+      </Row>
 
-    <Button blue>BLUE</Button>
-    <br />
-    <br />
 
-    <Button gold>GOLD</Button>
-    <br />
-    <br />
+      <Code style={{ margin: '10px' }}>
+        {`import Button from '@hixme-ui/button'
 
-    <Text>Size options</Text>
-    <br />
-    <br />
+<Button blue>blue</Button>
 
-    <Button mini blue>Mini</Button>
-    <br />
-    <br />
-
-    <Button small blue>Small</Button>
-    <br />
-    <br />
-
-    <Button blue>Default</Button>
-    <br />
-    <br />
-
-    <Button large blue>Large</Button>
-    <br />
-    <br />
-
-    <Button jumbo blue>Jumbo</Button>
-    <br />
-    <br />
-
-    <Button jumbo disabled blue>Jumbo Disabled</Button>
-    <br />
-    <br />
-
-    <DocsTitle
-      title='Outline Button'
-      subtitle='An Outline button component, using colorTheme'
-    />
-
-    <OutlineButton>DEFAULT</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton red>RED</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton blue>BLUE</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton green>GREEN</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton primary>PRIMARY</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton purple>PURPLE</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton mini purple>Mini</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton small purple>Small</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton purple>Default</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton large purple>Large</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton jumbo purple>Jumbo</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton jumbo disabled purple>Jumbo Disabled</OutlineButton>
-    <br />
-    <br />
-    <OutlineButton jumbo light>Light Jumbo Disabled</OutlineButton>
-    <br />
-    <br />
-
-    <Code>
-      {`<Button blue>Blue</Button>
-<OutlineButton jumbo disabled purple>Jumbo Disabled</OutlineButton>
+<Button
+  jumbo
+  disabled
+  purple
+  outline
+  block
+>
+  jumbo disabled purple outline block
+</Button>
 `}
-    </Code>
+      </Code>
+    </Grid>
   </div>
 )
 
