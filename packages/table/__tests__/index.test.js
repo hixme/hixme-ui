@@ -5,9 +5,13 @@ import Component from '../src/index.js'
 
 test('Component', () => {
   const component = renderer.create(
-    (<ThemeProvider><Component /></ThemeProvider>),
+    <ThemeProvider>
+      <Component>
+        something
+      </Component>
+    </ThemeProvider>
   )
 
   const tree = component.toJSON()
-  expect(tree.type).toBe('table')
+  expect(tree.type).toBe('div')
 })
