@@ -43,4 +43,7 @@ const GradientButton = styled.button`
   border-radius: ${props => getButtonBorderRadius(props)};
 `
 
+GradientButton.displayName = 'hui:GradientButton'
+GradientButton.huiName = 'GradientButton'
+
 export default GradientButton

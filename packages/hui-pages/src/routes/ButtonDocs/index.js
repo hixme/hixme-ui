@@ -2,8 +2,6 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import Button from '@hixme-ui/button'
 
-import Text from '@hixme-ui/text'
-
 import { Code, DocsTitle } from '../../components'
 
 const padded = {
