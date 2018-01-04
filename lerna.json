@@ -1,6 +1,7 @@
 {
   "lerna": "2.1.0",
   "commands": {
+    "allowBranch": "master",
     "publish": {
       "ignore": [
         "hui-pages"
