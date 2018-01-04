@@ -20,7 +20,7 @@ Add any animation from [http://daneden.github.io/animate.css](Animate.css) as a 
 | time            | string      | '1s'           |
 | delay           | string      | '0s'           | 
 | count           | string      | '1'            |
-| trigger         | boolean     | true           |
+| trigger         | boolean     | false          |
 | display         | string      | 'inherit'      |
 | fillMode        | string      | 'none'         |
 
