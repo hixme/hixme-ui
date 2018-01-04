@@ -25,14 +25,14 @@ const AnimateDocs = () => (
     <Grid fluid>
       <Row center='xs' style={{ margin: '60px 0 40px 0' }}>
         <Col xs>
-          <Animate trigger delay='1s' count='3' display='inline-block'>
+          <Animate trigger delay='1s' count='4' display='inline-block'>
             <Square />
           </Animate>
         </Col>
       </Row>
       <Row center='xs'>
         <Code>
-          {`<Animate trigger delay='1s' count='3'>
+          {`<Animate trigger delay='1s' count='4'>
   <Square />
 </Animate>`}
         </Code>
@@ -50,16 +50,16 @@ const AnimateDocs = () => (
           Different animation styles are added as camelCase boolean props. For example:
         </Text>
       </Row>
-      <Row center='xs' style={{ margin: '60px 0 40px 0' }}>
+      <Row center='xs' style={{ margin: '20px 0 40px 0' }}>
         <Col xs>
-          <Animate rubberBand trigger delay='4s' display='inline-block'>
+          <Animate rubberBand trigger delay='7s' display='inline-block'>
             <Square />
           </Animate>
         </Col>
       </Row>
       <Row center='xs'>
         <Code>
-          {`<Animate rubberBand trigger delay='4s'>
+          {`<Animate rubberBand trigger delay='7s'>
   <Square />
 </Animate>`}
         </Code>
@@ -79,7 +79,7 @@ const AnimateDocs = () => (
             <tr>
               <td>[Animate.css animation name]</td>
               <td>bool</td>
-              <td>bounceIn = true</td>
+              <td>bounce = true</td>
               <td>Animation style</td>
             </tr>
             <tr>
