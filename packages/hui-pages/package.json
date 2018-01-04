@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@hixme-ui/animate": "^1.&.0",
     "@hixme-ui/container": "^1.0.0",
     "@hixme-ui/content-container": "^1.0.0",
     "@hixme-ui/checkbox": "^1.0.0",
