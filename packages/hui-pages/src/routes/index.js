@@ -8,6 +8,7 @@ import DocsHeader from '../components/DocsHeader/DocsHeader'
 
 import Home from './Home'
 import ButtonDocs from './ButtonDocs'
+import AnimateDocs from './AnimateDocs'
 import CheckboxDocs from './CheckboxDocs'
 import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
@@ -28,6 +29,7 @@ const Routes = () => (
       <ContentContainer>
         <DocsHeader />
         <Route path='/button' component={ButtonDocs} />
+        <Route path='/animate' component={AnimateDocs} />
         <Route path='/container' component={ContainerDocs} />
         <Route path='/content-container' component={ContentContainerDocs} />
         <Route path='/checkbox' component={CheckboxDocs} />

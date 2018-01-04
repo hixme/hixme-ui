@@ -3,4 +3,4 @@ node_js:
   - "6.10"
 script:
   - npm install
-  - node node_modules/lerna/bin/lerna.js bootstrap
+  - node node_modules/lerna/bin/lerna.js bootstrap --loglevel silly

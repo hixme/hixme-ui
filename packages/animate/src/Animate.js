@@ -162,10 +162,11 @@ const chooseReactAnimation = (props) => {
 const animationStyle = props => keyframes`${chooseReactAnimation(props)}`
 
 const Animate = styled.div`
-  animation: ${(props) => {
+  animation: ${animationStyle};
+  animation-duration: ${(props) => {
     if (props.time) return props.time
     return '1s'
-  }} ${animationStyle};
+  }};
   animation-delay: ${(props) => {
     if (props.delay) return props.delay
     return '0s'
