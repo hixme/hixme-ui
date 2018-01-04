@@ -1,5 +1,4 @@
 {
-  "npmClient": "yarn",
   "dependencies": {
     "react": "^16.0.0"
   },

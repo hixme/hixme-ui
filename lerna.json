@@ -1,5 +1,6 @@
 {
   "lerna": "2.1.0",
+  "npmClient": "yarn",
   "commands": {
     "allowBranch": "master",
     "publish": {
