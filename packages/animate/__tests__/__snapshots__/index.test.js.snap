@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Animate Count Should have default count of 1 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Count Should take count prop 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Delay Should have default display of inherit 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Delay Should take display prop 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="c0"
+  display="inline-flex"
+/>
+`;
+
+exports[`Animate Display Should have default display of inherit 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Display Should take display prop 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="c0"
+  display="inline-flex"
+/>
+`;
+
+exports[`Animate Fill Mode Should have default fill mode of none 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Fill Mode Should take fillMode prop 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Time Should have 1s default time 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Time Should take time prop 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Trigger Should have default trigger of false 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Animate Trigger Should take trigger prop 1`] = `
+.c0 {
+  -webkit-animation: hdAbiq;
+  animation: hdAbiq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  display: inherit;
+}
+
+<div
+  className="c0"
+/>
+`;
