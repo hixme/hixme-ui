@@ -1,24 +1,57 @@
-# hixme-ui checkbox
+# hixme-ui button
 
 ```bash
-npm i --save @hixme-ui/checkbox
+npm i --save @hixme-ui/button
 ```
 
 ## Usage
 
 ```javascript
-import Checkbox from '@hixme-ui/checkbox'
+import { Button, OutlineButton } from '@hixme-ui/checkbox'
 
-<Checkbox text='Checkbox Label' />
+<Button mini blue>I am small and blue</Button>
+
+<OutlineButton jumbo green>Do it</OutlineButton>
+
 ```
 
-## Props
+## Button Props
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
-| text            | string      | N/A            |
-| small           | boolean     | false          | 
+| mini            | boolean     | false          |
+| small           | boolean     | false          |
+| large           | boolean     | false          |
+| jumbo           | boolean     | false          |
+| primary         | boolean     | false          |
+| secondary       | boolean     | false          |
+| red             | boolean     | false          |
+| blue            | boolean     | false          |
+| gold            | boolean     | false          |
 | disabled        | boolean     | false          |
 
 
+## OutlineButton Props
 
+| Name            | Type        | Default        |
+| --------------- | ----------- | -------------- |
+| mini            | boolean     | false          |
+| small           | boolean     | false          |
+| large           | boolean     | false          |
+| jumbo           | boolean     | false          |
+| primary         | boolean     | false          |
+| success         | boolean     | false          |
+| warning         | boolean     | false          |
+| error           | boolean     | false          |
+| muted           | boolean     | false          |
+| white           | boolean     | false          |
+| black           | boolean     | false          |
+| red             | boolean     | false          |
+| blue            | boolean     | false          |
+| purple          | boolean     | false          |
+| yellow          | boolean     | false          |
+| green           | boolean     | false          |
+| light           | boolean     | false          |
+| lighter         | boolean     | false          |
+| lightest        | boolean     | false          |
+| disabled        | boolean     | false          |

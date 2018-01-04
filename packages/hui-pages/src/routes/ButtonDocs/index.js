@@ -105,6 +105,9 @@ const ButtonDocs = () => (
     <OutlineButton jumbo disabled purple>Jumbo Disabled</OutlineButton>
     <br />
     <br />
+    <OutlineButton jumbo light>Light Jumbo Disabled</OutlineButton>
+    <br />
+    <br />
 
     <Code>
       {`<Button blue>Blue</Button>

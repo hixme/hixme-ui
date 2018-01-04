@@ -142,6 +142,7 @@ export const colorTheme = {
 
 const outlineButtonColors = {
   ...colorTheme,
+  default: colors.grey110,
 }
 
 const theme = {
