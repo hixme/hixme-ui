@@ -6,6 +6,7 @@ hixme-ui
 Another React component library, built to facilitate the
 [Hixme](https://hixme.com/) ecosystem. We hope you enjoy your time here.
 
+[Website](https://hixme.github.io/hixme-ui)
 
 # Getting started
 
