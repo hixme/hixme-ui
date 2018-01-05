@@ -58,8 +58,9 @@ const AppContainer = () => (
 
 ## Built With
 
-* [React](https://reactjs.org/) - javascript component base
-* [Styled Components](https://www.styled-components.com) - for CSS management
+* [React](https://reactjs.org/) - Javascript component framework
+* [Styled Components](https://www.styled-components.com) - CSS management
+* [Jest](https://facebook.github.io/jest/) - Testing framework
 
 
 ## Contributing
