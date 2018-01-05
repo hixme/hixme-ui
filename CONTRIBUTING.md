@@ -1,7 +1,9 @@
 # Contributing
 
 Hey, thanks for caring!
+
 Open a PR at https://github.com/hixme/hixme-ui
+
 
 ## Project setup
 
@@ -10,6 +12,7 @@ dependencies.
 
 ```bash
 git clone git@github.com:hixme/hixme-ui.git
+cd hixme-ui
 npm install
 npm run bootstrap
 ```
