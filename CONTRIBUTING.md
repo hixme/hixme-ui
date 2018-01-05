@@ -1,6 +1,7 @@
 # Contributing
 
 Hey, thanks for caring!
+Open a PR at https://github.com/hixme/hixme-ui
 
 ## Project setup
 
