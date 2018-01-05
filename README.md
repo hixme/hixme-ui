@@ -3,12 +3,13 @@ hixme-ui
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![Build Status](https://travis-ci.org/hixme/hixme-ui.svg?branch=master)](https://travis-ci.org/hixme/hixme-ui)
 
-Just another React component library, built to facilitate the
+Another React component library, built to facilitate the
 [Hixme](https://hixme.com/) ecosystem. We hope you enjoy your time here.
+
 
 # Getting started
 
-Install the theme and your needed component
+Install the theme and your needed components.
 
 ```bash
 npm install --save @hixme-ui/theme @hixme-ui/container @hixme-ui/title
