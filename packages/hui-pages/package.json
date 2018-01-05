@@ -33,14 +33,14 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-syntax-highlighter": "^6.1.1",
-    "styled-components": "^2.2.3"
+    "styled-components": "^2.3.3"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-config-standard-react": "^2.2.0",
-    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-promise": "^1.0.8",
