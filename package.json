@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "lerna": "^2.0.0"
+  },
+  "scripts": {
+    "lint": "lerna run lint --parallel",
+    "test": "lerna run test --parallel --no-sort",
+    "bootstrap": "lerna bootstrap --hoist"
   }
 }
