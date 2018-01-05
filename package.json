@@ -8,7 +8,7 @@
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna clean --yes",
     "lint": "lerna run lint --parallel --no-sort ",
-    "test": "lerna run test --parallel --no-sort",
+    "test": "lerna run test --parallel --no-sort --ignore hui-pages",
     "refresh": "npm run clean && npm run bootstrap"
   }
 }
