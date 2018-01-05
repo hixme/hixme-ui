@@ -64,7 +64,7 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-config-standard-react": "^2.2.0",
-    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-promise": "^1.0.8",
@@ -86,6 +86,6 @@
     "@hixme-ui/theme-props": "^1.8.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "styled-components": "^2.2.2"
+    "styled-components": "^2.3.3"
   }
 }
