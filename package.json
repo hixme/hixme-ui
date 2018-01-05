@@ -1,7 +1,6 @@
 {
   "name": "@hixme-ui/repo",
   "description": "Base repo manamangement. Nothing to see here",
-  "private": true,
   "devDependencies": {
     "lerna": "^2.0.0"
   },
