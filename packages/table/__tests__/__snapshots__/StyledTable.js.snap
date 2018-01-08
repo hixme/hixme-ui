@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledTable Should have all necessary global styles 1`] = `
+.c0 {
+  width: 100%;
+  min-width: 350px;
+  font-family: 'Avenir-Next_Demi','HelveticaNeue-Medium','Helvetica Neue Medium','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  border-collapse: collapse;
+}
+
+.c0 thead tr {
+  background-color: #f2f6f9;
+  border-radius: 6px;
+  border-color: transparent;
+}
+
+.c0 thead th {
+  color: #8f9da8;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.32px;
+  -moz-letter-spacing: -0.32px;
+  -ms-letter-spacing: -0.32px;
+  letter-spacing: -0.32px;
+  line-height: 19px;
+  vertical-align: top;
+}
+
+.c0 thead th:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.c0 thead th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.c0 tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.c0 tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.c0 th,
+.c0 td {
+  padding: 15px;
+  height: 46px;
+}
+
+.c0 td {
+  color: #3a4951;
+  font-size: 12px;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+  line-height: 16px;
+}
+
+.c0 tr {
+  background-color: white;
+  border-bottom: 1px solid #DBE2E8;
+}
+
+<table
+  className="c0"
+/>
+`;
