@@ -32,7 +32,7 @@ const SocialSecurityDocs = () => (
           </Row>
           <Row center='xs'>
             <Code>
-              {`<SocialSecurity number=\'123456789\'
+              {`<SocialSecurity number='123456789'
                 showFull />`}
             </Code>
           </Row>
