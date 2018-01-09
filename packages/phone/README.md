@@ -3,6 +3,7 @@
 ```bash
 npm i --save @hixme-ui/phone
 ```
+[View it live](https://hixme.github.io/hixme-ui/phone)
 
 Phone extends the [@hixme/text](https://github.com/hixme/hixme-ui/tree/master/packages/text)
 to provide phone formatting and linking
