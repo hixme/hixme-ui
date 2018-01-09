@@ -14,6 +14,7 @@ const PriceDocs = () => (
       subtitle='A Hixme UI styled price component'
     />
     <Grid fluid>
+      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
       <Row center='xs' style={{ marginBottom: '40px' }}>
         <Price value={46.93} label='hixme-ui' />
       </Row>

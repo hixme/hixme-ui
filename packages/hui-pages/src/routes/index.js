@@ -18,6 +18,7 @@ import PhoneDocs from './PhoneDocs'
 import PriceDocs from './PriceDocs'
 import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
+import SocialSecurityDocs from './SocialSecurityDocs'
 import TextDocs from './TextDocs'
 import TitleDocs from './TitleDocs'
 import TableDocs from './TableDocs'
@@ -40,6 +41,7 @@ const Routes = () => (
         <Route path='/price' component={PriceDocs} />
         <Route path='/select' component={SelectDocs} />
         <Route path='/separator' component={SeparatorDocs} />
+        <Route path='/social-security' component={SocialSecurityDocs} />
         <Route path='/table' component={TableDocs} />
         <Route path='/text' component={TextDocs} />
         <Route path='/title' component={TitleDocs} />

@@ -7,7 +7,7 @@ import Title from '@hixme-ui/title'
 
 import { Code, DocsTitle } from '../../components'
 
-const PriceDocs = () => (
+const PhoneDocs = () => (
   <div>
     <DocsTitle
       title='Phone'
@@ -15,7 +15,7 @@ const PriceDocs = () => (
     />
     <Grid fluid>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
-      <Row center='xs' style={{ marginBottom: '40px' }}>
+      <Row center='xs' style={{ marginBottom: '20px' }}>
         <Phone number='8881234567' />
       </Row>
       <Row center='xs'>
@@ -48,5 +48,5 @@ const PriceDocs = () => (
   </div>
 )
 
-export default PriceDocs
+export default PhoneDocs
 
