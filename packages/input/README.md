@@ -9,6 +9,7 @@ implementations.
 ```bash
 npm i --save @hixme-ui/input
 ```
+[View it live](https://hixme.github.io/hixme-ui/input)
 
 ## Props
 

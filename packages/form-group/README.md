@@ -3,6 +3,7 @@
 ```bash
 npm i --save @hixme-ui/form-group
 ```
+[View it live](https://hixme.github.io/hixme-ui/form-group)
 
 ## Usage
 

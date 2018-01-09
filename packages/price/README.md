@@ -5,6 +5,7 @@
 ```bash
 npm i --save @hixme-ui/price
 ```
+[View it live](https://hixme.github.io/hixme-ui/price)
 
 ## Usage
 

@@ -3,6 +3,7 @@
 ```bash
 npm i --save @hixme-ui/title
 ```
+[View it live](https://hixme.github.io/hixme-ui/title)
 
 Title extends the @hixme/text component properties. Defaults to
 font size of 34px. Margin and padding default to 0px.
