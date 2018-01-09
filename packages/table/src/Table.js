@@ -13,7 +13,11 @@ const Table = ({ children }) => (
 )
 
 Table.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+}
+
+Table.defaultProps = {
+  children: null,
 }
 
 Table.huiName = 'Table'
