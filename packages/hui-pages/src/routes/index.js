@@ -14,6 +14,7 @@ import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
 import FormGroupDocs from './FormGroupDocs'
 import InputDocs from './InputDocs'
+import PhoneDocs from './PhoneDocs'
 import PriceDocs from './PriceDocs'
 import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
@@ -35,6 +36,7 @@ const Routes = () => (
         <Route path='/checkbox' component={CheckboxDocs} />
         <Route path='/form-group' component={FormGroupDocs} />
         <Route path='/input' component={InputDocs} />
+        <Route path='/phone' component={PhoneDocs} />
         <Route path='/price' component={PriceDocs} />
         <Route path='/select' component={SelectDocs} />
         <Route path='/separator' component={SeparatorDocs} />
