@@ -8,11 +8,11 @@ const DocsHeader = () => (
   <Grid fluid style={{ padding: '0' }}>
     <Row style={{ margin: '20px 0 30px 0' }}>
       <Col>
-        <Text light>
-          <Link to='/'>
+        <Link to='/'>
+          <Text light>
             {'< Back to Home'}
-          </Link>
-        </Text>
+          </Text>
+        </Link>
       </Col>
     </Row>
   </Grid>
