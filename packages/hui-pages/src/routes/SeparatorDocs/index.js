@@ -21,6 +21,7 @@ const SeparatorDocs = () => (
           {'<Separator />'}
         </Code>
       </Row>
+      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
       <Row style={{ marginTop: '40px' }}>
         <Text thin p>
           The default size is 2px, but you can specify your own size. Additionally, you can apply any color prop

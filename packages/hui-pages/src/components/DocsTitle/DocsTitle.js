@@ -4,6 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Text from '@hixme-ui/text'
 import Title from '@hixme-ui/title'
+import GithubComponentLink from '../GithubComponentLink'
 
 const DocsTitle = ({
   title,
@@ -12,6 +13,11 @@ const DocsTitle = ({
   <Grid fluid>
     <Row center='xs'>
       <Title>{title}</Title>
+    </Row>
+    <Row center='xs'>
+      <Col xs={12} sm={8}>
+        <GithubComponentLink />
+      </Col>
     </Row>
     <Row center='xs' style={{ marginBottom: '20px' }}>
       <Col xs={12} sm={8}>

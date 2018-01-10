@@ -3,6 +3,7 @@
 ```bash
 npm i --save @hixme-ui/social-security
 ```
+[View it live](https://hixme.github.io/hixme-ui/social-security)
 
 Phone extends the [@hixme/text](https://github.com/hixme/hixme-ui/tree/master/packages/text)
 to provide social security number formatting

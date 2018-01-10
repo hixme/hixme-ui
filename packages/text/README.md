@@ -3,6 +3,7 @@
 ```bash
 npm i --save @hixme-ui/text
 ```
+[View it live](https://hixme.github.io/hixme-ui/text)
 
 ## Usage
 

@@ -6,6 +6,7 @@ hixme-ui
 Another React component library, built to facilitate the
 [Hixme](https://hixme.com/) ecosystem. We hope you enjoy your time here.
 
+[Website](https://hixme.github.io/hixme-ui)
 
 # Getting started
 
@@ -17,7 +18,6 @@ npm install --save @hixme-ui/theme @hixme-ui/container @hixme-ui/title
 
 Add the theme via the theme provider and begin using HUI components
 
-*file.js*
 ```javascript
 import { ThemeProvider } from 'hixme-ui/theme'
 import Container from 'hixme-ui/container'
@@ -54,3 +54,19 @@ const AppContainer = () => (
 * [theme](https://github.com/hixme/hixme-ui/tree/master/packages/theme)
 * [theme-props](https://github.com/hixme/hixme-ui/tree/master/packages/theme-props)
 * [title](https://github.com/hixme/hixme-ui/tree/master/packages/title)
+
+
+## Built With
+
+* [React](https://reactjs.org/) - Javascript component framework
+* [Styled Components](https://www.styled-components.com) - CSS management
+* [Jest](https://facebook.github.io/jest/) - Testing framework
+
+
+## Contributing
+
+Please read
+[CONTRIBUTING.md](https://github.com/hixme/hixme-ui/blob/master/CONTRIBUTING.md)
+for project development notes.
+
+

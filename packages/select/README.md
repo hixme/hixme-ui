@@ -3,6 +3,7 @@
 ```bash
 npm i --save @hixme-ui/select
 ```
+[View it live](https://hixme.github.io/hixme-ui/select)
 
 ## Usage
 

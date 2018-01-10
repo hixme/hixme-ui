@@ -3,6 +3,7 @@
 ```bash
 npm i --save @hixme-ui/checkbox
 ```
+[View it live](https://hixme.github.io/hixme-ui/checkbox)
 
 ## Usage
 

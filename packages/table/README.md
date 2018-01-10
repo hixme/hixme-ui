@@ -5,6 +5,7 @@
 ```bash
 npm i --save @hixme-ui/table
 ```
+[View it live](https://hixme.github.io/hixme-ui/table)
 
 ## Usage
 

@@ -37,6 +37,9 @@ class App extends Component {
               <Link to='/input'>Input</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/phone'>Phone</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/price'>Price</Link>
             </Col>
             <Col xs={12}>
@@ -44,6 +47,9 @@ class App extends Component {
             </Col>
             <Col xs={12}>
               <Link to='/separator'>Separator</Link>
+            </Col>
+            <Col xs={12}>
+              <Link to='/social-security'>Social Security</Link>
             </Col>
             <Col xs={12}>
               <Link to='/table'>Table</Link>
