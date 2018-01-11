@@ -25,3 +25,4 @@ import ContentContainer from '@hixme-ui/content-container'
 | contentWidth    | string      | '900px'        |
 | contentPadding  | string      | '20px'         |
 | contentMargin   | string      | '0 auto'       |
+| height          | string      | N/A            |
