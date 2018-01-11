@@ -48,6 +48,18 @@ const ContentContainerDocs = () => (
               <td>{'\'20px\''}</td>
               <td>Container padding value</td>
             </tr>
+            <tr>
+              <td>contentMargin</td>
+              <td>string</td>
+              <td>{'\'0 auto\''}</td>
+              <td>Container margin value</td>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>string</td>
+              <td>N/A</td>
+              <td>Container height value</td>
+            </tr>
           </tbody>
         </Table>
       </Row>
