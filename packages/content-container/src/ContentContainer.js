@@ -13,6 +13,7 @@ const ContentContainer = styled.div`
     if (props.contentMargin) return props.contentMargin
     return '0 auto'
   }};
+  ${props => props.height && `height: ${props.height};`}
 `
 
 export default ContentContainer
