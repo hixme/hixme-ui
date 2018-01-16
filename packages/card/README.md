@@ -26,7 +26,6 @@ import Card from '@hixme-ui/card'
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
 | background      | string      | white          |
-| padding         | string      | 20px           |
 | rounded         | string      | true           |
 | shadow          | string      | true           |
 
