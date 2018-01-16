@@ -4,9 +4,9 @@ import {
   getOutlineButtonColor,
  } from '@hixme-ui/theme-props'
 
-import GradientButton from './GradientButton'
+import ButtonBase from './ButtonBase'
 
-const OutlineButton = GradientButton.extend`
+const OutlineButton = ButtonBase.extend`
   :hover:enabled {
     box-shadow: ${props => getShadow(props)};
   };
@@ -17,7 +17,7 @@ const OutlineButton = GradientButton.extend`
   color: ${props => getOutlineButtonColor(props)};
   background: white;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
 `
 
 OutlineButton.displayName = 'hui:OutlineButton'

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import Button from '@hixme-ui/button'
+import Text from '@hixme-ui/text'
 
 import { Code, DocsTitle } from '../../components'
 
@@ -15,7 +16,8 @@ const ButtonDocs = () => (
       <DocsTitle
         title='Button'
         subtitle='A button component, with five color gradients,
-        and outline option. Outine buttons use the colorTheme'
+        and outline option. Outine buttons use the colorTheme. Any button may
+        be a submit button, just add submitting (bool) and submittingText (string)'
       />
 
       <Row center='xs'>
@@ -35,6 +37,17 @@ const ButtonDocs = () => (
           <div style={padded}>
             <Button gold>gold</Button>
           </div>
+          <div style={padded}>
+            <Button gold>
+              <Text bold blue>Gold button, blue text</Text>
+            </Button>
+          </div>
+          <div style={padded}>
+            <Button block submitting>default</Button>
+          </div>
+          <div style={padded}>
+            <Button block submitting={false} submittingText='Processing...'>Not Processing</Button>
+          </div>
         </Col>
 
         <Col>
@@ -48,10 +61,18 @@ const ButtonDocs = () => (
             <Button outline blue>blue button</Button>
           </div>
           <div style={padded}>
+            <Button outline blue block submitting>Click to send</Button>
+          </div>
+          <div style={padded}>
+            <Button outline blue block submitting submittingText='Processing request'>Click to send</Button>
+          </div>
+          <div style={padded}>
             <Button large outline red>large outline red</Button>
           </div>
           <div style={padded}>
-            <Button jumbo outline purple>jumbo outline purple</Button>
+            <Button jumbo outline purple>
+              <Text blue>Purple outline, blue text</Text>
+            </Button>
           </div>
         </Col>
 
@@ -60,6 +81,7 @@ const ButtonDocs = () => (
 
       <Code style={{ margin: '10px' }}>
         {`import Button from '@hixme-ui/button'
+import Text from '@hixme-ui/text'
 
 <Button blue>blue</Button>
 
@@ -72,6 +94,23 @@ const ButtonDocs = () => (
 >
   jumbo disabled purple outline block
 </Button>
+
+<Button
+  jumbo
+  type='submit'
+  purple
+  outline
+  block
+  submitting={false}
+  submittingText='Doing that thing...'
+>
+  Update
+</Button>
+
+<Button gold>
+  <Text bold blue>Gold button, blue text</Text>
+</Button>
+
 `}
       </Code>
     </Grid>

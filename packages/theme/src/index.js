@@ -81,6 +81,8 @@ const buttonGradientColors = {
   secondary: gradients.grey,
   default: gradients.teal,
   red: gradients.red,
+  danger: gradients.red,
+  error: gradients.red,
   blue: gradients.blue,
   gold: gradients.yellow,
 }
@@ -125,6 +127,7 @@ export const colorTheme = {
   success: colors.teal,
   warning: colors.yellow,
   error: colors.red,
+  danger: colors.red,
   muted: colors.grey110,
 
   white: colors.white,
