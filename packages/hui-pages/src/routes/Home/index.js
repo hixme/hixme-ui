@@ -25,6 +25,9 @@ class App extends Component {
               <Link to='/checkbox'>Checkbox</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/card'>Card</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/container'>Container</Link>
             </Col>
             <Col xs={12}>
