@@ -11,10 +11,23 @@ const ContainerDocs = () => (
     <Card>
       <Text>I am in a card.</Text>
     </Card>
+    <br />
     <Code>
       {`<Card>
-      <Text>I am in a card.</Text>
-    </Card>`}
+  <Text>I am in a card.</Text>
+</Card>`}
+    </Code>
+
+    <br />
+    <br />
+    <Card background='#eee' width='300px'>
+      <Text>I am in a fixed width card with a background.</Text>
+    </Card>
+    <br />
+    <Code>
+      {`<Card background='#eee' width='300px'>
+  <Text>I am in a fixed width card with a background.</Text>
+</Card>`}
     </Code>
   </div>
 )
