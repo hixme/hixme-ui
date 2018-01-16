@@ -6,11 +6,10 @@ const Card = props => <Container {...props} />
 Card.displayName = 'hui:Card'
 Card.huiName = 'Card'
 
-Card.propTypes = {}
 Card.defaultProps = {
   rounded: true,
-  white: true,
   shadow: true,
+  white: true,
 }
 
 export default Card
