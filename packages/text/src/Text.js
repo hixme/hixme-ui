@@ -2,8 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import TextBase from './TextBase'
 
-export const TextLink = TextBase.withComponent('a')
 export const Paragraph = TextBase.withComponent('p')
+
+export const TextLink = TextBase.withComponent('a')
+export const HyperLink = TextLink.extend`
+  cursor: pointer;
+`
 
 export const LabelBase = TextBase.withComponent('label')
 export const Label = LabelBase.extend`
@@ -11,6 +15,7 @@ export const Label = LabelBase.extend`
   line-height: 19px;
   user-select: none;
 `
+
 const Text = ({
   a,
   p,
@@ -20,7 +25,7 @@ const Text = ({
   let Tag = TextBase
 
   if (a || props.href) {
-    Tag = TextLink
+    Tag = HyperLink
   } else if (p) {
     Tag = Paragraph
   } else if (label) {
