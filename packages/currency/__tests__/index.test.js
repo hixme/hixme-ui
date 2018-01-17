@@ -103,8 +103,17 @@ describe('Currency', () => {
     })
   })
 
-  describe('round prop', function() {
-    it('should not round to significant numbers', function() {
+  describe('round prop', () => {
+    it('should round to significant numbers', () => {
+      const component = renderer.create(
+        (<ThemeProvider><Currency round>1236.78901</Currency></ThemeProvider>),
+      )
+
+      const tree = component.toJSON()
+      expect(tree.children[0]).toBe('$1,237')
+    })
+
+    it('should round to significant numbers', () => {
       const component = renderer.create(
         (<ThemeProvider><Currency round>123456.78901</Currency></ThemeProvider>),
       )
