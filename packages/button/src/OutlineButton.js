@@ -17,7 +17,7 @@ const OutlineButton = ButtonBase.extend`
   color: ${props => getOutlineButtonColor(props)};
   background: white;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
 `
 
 OutlineButton.displayName = 'hui:OutlineButton'
