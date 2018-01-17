@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/card",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "hixme-ui Card component",
   "publishConfig": {
     "access": "public"
@@ -39,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.0.0",
+    "@hixme-ui/theme": "^1.9.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -81,7 +81,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.8.1",
+    "@hixme-ui/container": "^1.9.1",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
   }
