@@ -1,0 +1,25 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react",
+    "airbnb"
+  ],
+  "plugins" : [
+    "babel"
+  ],
+  "env"     : {
+    "browser" : true,
+    "jest": true
+  },
+  "rules" : {
+    "semi" : [2, "never"],
+    "max-len" : [2, 120, 2, { "ignoreUrls": true }],
+    "react/jsx-space-before-closing" : [0, "always"],
+    "jsx-quotes" : [2, "prefer-single"],
+
+    "react/jsx-filename-extension" : 0,
+    "react/jsx-closing-bracket-location" : 1,
+    "react/forbid-prop-types" : 0
+  }
+}
