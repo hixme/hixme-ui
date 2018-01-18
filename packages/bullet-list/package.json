@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/bullet-list",
-  "version": "1.11.0",
+  "version": "1.0.0",
   "description": "hixme-ui BulletList component",
   "publishConfig": {
     "access": "public"
