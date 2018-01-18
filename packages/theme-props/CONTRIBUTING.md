@@ -1,3 +1,3 @@
 # Contributing
 
-Open a PR at https://bitbucket.org/hixme/hixme-ui.
+Open a PR at https://github.com/hixme/hixme-ui.
