@@ -34,10 +34,16 @@ class App extends Component {
               <Link to='/content-container'>ContentContainer</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/currency'>Currency</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/form-group'>Form Group</Link>
             </Col>
             <Col xs={12}>
               <Link to='/input'>Input</Link>
+            </Col>
+            <Col xs={12}>
+              <Link to='/percentage'>Percentage</Link>
             </Col>
             <Col xs={12}>
               <Link to='/phone'>Phone</Link>

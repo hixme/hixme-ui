@@ -1,7 +1,7 @@
 {
-  "name": "@hixme-ui/button",
-  "version": "1.9.2",
-  "description": "hixme-ui Button component",
+  "name": "@hixme-ui/percentage",
+  "version": "1.0.0",
+  "description": "hixme-ui Percentage component",
   "publishConfig": {
     "access": "public"
   },
@@ -39,6 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
+    "@hixme-ui/theme": "^1.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -79,10 +80,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^1.9.1",
-    "@hixme-ui/theme-props": "^1.8.1",
+    "@hixme-ui/text": "^1.0.0",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "styled-components": "^2.3.3"
+    "react": "^16.0.0"
   }
 }
