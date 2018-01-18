@@ -7,10 +7,10 @@ import { Code, DocsTitle } from '../../components'
 
 const BulletListDocs = () => {
   const myUnorderedList = [
-    'One item',
-    'Two item',
-    'Red item',
-    'Blue item',
+    'One fish',
+    'Two fish',
+    'Red fish',
+    'Blue fish',
   ]
 
   return (
@@ -23,10 +23,10 @@ const BulletListDocs = () => {
         <Row center='xs'>
           <Code>
             {`const myUnorderedList = [
-  'One item',
-  'Two item',
-  'Red item',
-  'Blue item',
+  'One fish',
+  'Two fish',
+  'Red fish',
+  'Blue fish',
 ]
 
 <BulletList bulletArray={myUnorderedList} />`}

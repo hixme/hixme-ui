@@ -11,10 +11,10 @@ npm i --save @hixme-ui/bullet-list
 import BulletList from '@hixme-ui/bullet-list'
 
 const myUnorderedList = [
-  'One item',
-  'Two item',
-  'Red item',
-  'Blue item',
+  'One fish',
+  'Two fish',
+  'Red fish',
+  'Blue fish',
 ]
 
 <BulletList bulletArray={myUnorderedList} />

@@ -5,10 +5,10 @@ import { ThemeProvider } from '@hixme-ui/theme'
 import BulletList from '../src/index'
 
 const myUnorderedList = [
-  'One item',
-  'Two item',
-  'Red item',
-  'Blue item',
+  'One fish',
+  'Two fish',
+  'Red fish',
+  'Blue fish',
 ]
 
 describe('BulletList bulletArray={myUnorderedList}', () => {
