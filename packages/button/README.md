@@ -8,7 +8,7 @@ npm i --save @hixme-ui/button
 ## Usage
 
 ```javascript
-import { Button, OutlineButton } from '@hixme-ui/checkbox'
+import { Button, OutlineButton } from '@hixme-ui/button'
 
 <Button mini blue>I am small and blue</Button>
 
