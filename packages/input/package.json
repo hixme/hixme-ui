@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/input",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "hixme-ui Input component",
   "publishConfig": {
     "access": "public"
@@ -80,8 +80,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^1.9.1",
-    "@hixme-ui/theme-props": "^1.8.1",
+    "@hixme-ui/theme": "^1.10.0",
+    "@hixme-ui/theme-props": "^1.10.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-maskedinput": "^4.0.0",
