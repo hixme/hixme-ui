@@ -1,46 +1,23 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import theme, { ThemeProvider } from '@hixme-ui/theme'
+import { ThemeProvider } from '@hixme-ui/theme'
 
-import 'jest-styled-components'
+import BulletList from '../src/index'
 
-import Button from '../src/index'
+const myUnorderedList = [
+  'One item',
+  'Two item',
+  'Red item',
+  'Blue item',
+]
 
-describe('Button', () => {
+describe('BulletList bulletArray={myUnorderedList}', () => {
   test('renders', () => {
     const component = renderer.create(
-      <ThemeProvider><Button /></ThemeProvider>,
+      <ThemeProvider><BulletList bulletArray={myUnorderedList} /></ThemeProvider>,
     )
 
     const tree = component.toJSON()
-    expect(tree.type).toBe('button')
+    expect(tree.type).toBe('div')
   })
-
-  test('has default padding', () => {
-    const component = renderer.create(
-      <ThemeProvider><Button /></ThemeProvider>,
-    )
-
-    const tree = component.toJSON()
-    expect(tree).toHaveStyleRule('padding', '0.25em 1em')
-  })
-
-  test('outline has white background', () => {
-    const component = renderer.create(
-      <ThemeProvider><Button outline/></ThemeProvider>,
-    )
-
-    const tree = component.toJSON()
-    expect(tree).toHaveStyleRule('background', 'white')
-  })
-
-  test('outline has blue text, border', () => {
-    const component = renderer.create(
-      <ThemeProvider><Button blue outline/></ThemeProvider>,
-    )
-    const tree = component.toJSON()
-    expect(tree).toHaveStyleRule('color', theme.outlineButtonColors.blue)
-    expect(tree).toHaveStyleRule('border-color', theme.outlineButtonColors.blue)
-  })
-
 })
