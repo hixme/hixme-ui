@@ -8,6 +8,7 @@ import DocsHeader from '../components/DocsHeader/DocsHeader'
 
 import Home from './Home'
 import ButtonDocs from './ButtonDocs'
+import BulletListDocs from './BulletListDocs'
 import AnimateDocs from './AnimateDocs'
 import CheckboxDocs from './CheckboxDocs'
 import CardDocs from './CardDocs'
@@ -34,6 +35,7 @@ const Routes = () => (
       <ContentContainer>
         <DocsHeader />
         <Route path='/button' component={ButtonDocs} />
+        <Route path='/bullet-list' component={BulletListDocs} />
         <Route path='/animate' component={AnimateDocs} />
         <Route path='/card' component={CardDocs} />
         <Route path='/container' component={ContainerDocs} />
