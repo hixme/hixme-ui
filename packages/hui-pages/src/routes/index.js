@@ -13,8 +13,10 @@ import CheckboxDocs from './CheckboxDocs'
 import CardDocs from './CardDocs'
 import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
+import CurrencyDocs from './CurrencyDocs'
 import FormGroupDocs from './FormGroupDocs'
 import InputDocs from './InputDocs'
+import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
 import PriceDocs from './PriceDocs'
 import SelectDocs from './SelectDocs'
@@ -37,8 +39,10 @@ const Routes = () => (
         <Route path='/container' component={ContainerDocs} />
         <Route path='/content-container' component={ContentContainerDocs} />
         <Route path='/checkbox' component={CheckboxDocs} />
+        <Route path='/currency' component={CurrencyDocs} />
         <Route path='/form-group' component={FormGroupDocs} />
         <Route path='/input' component={InputDocs} />
+        <Route path='/percentage' component={PercentageDocs} />
         <Route path='/phone' component={PhoneDocs} />
         <Route path='/price' component={PriceDocs} />
         <Route path='/select' component={SelectDocs} />
