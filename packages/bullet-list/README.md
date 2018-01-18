@@ -17,7 +17,7 @@ const myUnorderedList = [
   'Blue item',
 ]
 
-<BulletList bulletListArray={myUnorderedList} />
+<BulletList bulletArray={myUnorderedList} />
 ```
 
 ## BulletList Props
