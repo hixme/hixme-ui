@@ -7,7 +7,7 @@ import Container from '@hixme-ui/container'
 import Text from '@hixme-ui/text'
 
 const Circle = styled.span`
-  borderRadius: 50%;
+  border-radius: 50%;
   width: 6px;
   height: 6px;
   background: #2eae8f;
