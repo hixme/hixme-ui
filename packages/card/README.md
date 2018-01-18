@@ -21,7 +21,7 @@ import Card from '@hixme-ui/card'
 </Card>
 ```
 
-## Default Card Props
+## Props
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
