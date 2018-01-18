@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import TextBase from './TextBase'
 
 export const Paragraph = TextBase.withComponent('p')
+export const TextDiv = TextBase.withComponent('div')
 
 export const TextLink = TextBase.withComponent('a')
 export const HyperLink = TextLink.extend`
@@ -18,8 +19,9 @@ export const Label = LabelBase.extend`
 
 const Text = ({
   a,
-  p,
+  div,
   label,
+  p,
   ...props
 }) => {
   let Tag = TextBase
@@ -28,6 +30,8 @@ const Text = ({
     Tag = HyperLink
   } else if (p) {
     Tag = Paragraph
+  } else if (div) {
+    Tag = TextDiv
   } else if (label) {
     Tag = Label
   }
@@ -40,15 +44,17 @@ Text.huiName = 'Text'
 
 Text.propTypes = {
   a: PropTypes.bool,
-  p: PropTypes.bool,
-  label: PropTypes.bool,
+  div: PropTypes.bool,
   href: PropTypes.string,
+  label: PropTypes.bool,
+  p: PropTypes.bool,
 }
 Text.defaultProps = {
   a: false,
-  p: false,
-  label: false,
+  div: false,
   href: null,
+  label: false,
+  p: false,
 }
 
 export default Text
