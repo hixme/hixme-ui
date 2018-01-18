@@ -65,3 +65,27 @@ above will round to the nearest thousand
 // outputs 123,000.00
 ```
 
+## Format
+
+Currency has a static format function if needed outside of a JSX context.
+
+```javascript
+Currency.format({
+  value: 12.34
+})
+// outputs $12.34
+
+Currency.format({
+  value: 1200.34,
+  hideCents: true,
+})
+// outputs $1,200
+
+
+Currency.format({
+  value: 1234.5678,
+  hideCommas: true,
+  defaultSymbol: '#',
+})
+// outputs $1234.57
+```
