@@ -34,3 +34,20 @@ import Input from '@hixme-ui/percentage'
 // outputs 89%
 ```
 
+## Formatter
+
+Percentage has a static formatter function if needed outside of a JSX context.
+
+```javascript
+Percentage.format({
+  value: 0.1234
+})
+// outputs 12.34%
+
+Percentage.format({
+  value: 0.1234,
+  hideDecimals: true,
+})
+// outputs 12%
+
+```

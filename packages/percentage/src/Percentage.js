@@ -16,8 +16,7 @@ const Percentage = ({
   })}</Text>
 )
 
-Percentage.format = (props) => {
-  const { value, children, hideDecimals } = props
+Percentage.format = ({ value, children, hideDecimals }) => {
   let displayValue = parseFloat(value || children)
 
   displayValue *= 100
