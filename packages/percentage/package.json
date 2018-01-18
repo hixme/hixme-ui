@@ -1,7 +1,7 @@
 {
-  "name": "@hixme-ui/currency",
-  "version": "1.9.1",
-  "description": "hixme-ui Currency component",
+  "name": "@hixme-ui/percentage",
+  "version": "1.0.0",
+  "description": "hixme-ui Percentage component",
   "publishConfig": {
     "access": "public"
   },
