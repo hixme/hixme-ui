@@ -40,6 +40,9 @@ class App extends Component {
               <Link to='/currency'>Currency</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/email'>Email</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/form-group'>Form Group</Link>
             </Col>
             <Col xs={12}>
