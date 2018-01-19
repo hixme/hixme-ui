@@ -1,29 +1,24 @@
-# Price
-
-## Installation
+# hixme-ui icon
 
 ```bash
-npm i --save @hixme-ui/price
+npm i --save @hixme-ui/icon
 ```
+[View it live](https://hixme.github.io/hixme-ui/icon)
 
 ## Usage
 
-```js
-import Price from '@hixme-ui/price'
+```javascript
+import Icon from '@hixme-ui/icon'
 
-<Price value={46.93} />
-<Price value={-46.93} />
-<Price primary value={46.93} label='Hixme UI' />
+<Icon menu />
 ```
 
 ## Props
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
-| value           | string      | N/A            |
-| label           | string      | N/A            | 
-
-Additionally, the Price component will take any color boolean from the theme.
-
+| color           | string      | black          |
+| size            | number      | 1              |
+| fontSize        | number      | 14             |
 
 
