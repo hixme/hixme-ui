@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { getTextColor } from '@hixme-ui/theme-props'
+
 import TextBase from './TextBase'
 
 export const Paragraph = TextBase.withComponent('p')
@@ -12,7 +14,7 @@ export const HyperLink = TextLink.extend`
 
 export const LabelBase = TextBase.withComponent('label')
 export const Label = LabelBase.extend`
-  color: #394651;
+  color: ${props => props.color || getTextColor(props, '#394651')};
   line-height: 19px;
   user-select: none;
 `
