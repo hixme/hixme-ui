@@ -9,7 +9,7 @@ const DocsHeader = () => (
     <Row style={{ margin: '20px 0 30px 0' }}>
       <Col>
         <Link to='/'>
-          <Text light>
+          <Text light cursor='pointer'>
             {'< Back to Home'}
           </Text>
         </Link>
