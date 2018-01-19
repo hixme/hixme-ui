@@ -1,13 +1,13 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Component from '../src/index.js'
+import Icon from '../src/index'
 
-test('Component', () => {
+test('Icon', () => {
   const component = renderer.create(
-    (<ThemeProvider><Component /></ThemeProvider>),
+    (<ThemeProvider><Icon menu /></ThemeProvider>),
   )
 
   const tree = component.toJSON()
-  expect(tree.type).toBe('div')
+  expect(tree.type).toBe('span')
 })
