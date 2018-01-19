@@ -12,17 +12,25 @@ const EmailDocs = () => (
       <Row center='xs' style={{ marginBottom: '30px' }}>
         <Email address='user@email.com' />
       </Row>
-      <Row center='xs'>
+      <Row center='xs' style={{ marginBottom: '30px' }}>
         <Code>
           {'<Email address=\'user@email.com\' />'}
         </Code>
       </Row>
       <Row center='xs' style={{ marginBottom: '30px' }}>
-        <Email address='user@email.com'>User</Email>
+        <Email address='user@email.com'>User email link</Email>
+      </Row>
+      <Row center='xs' style={{ marginBottom: '30px' }}>
+        <Code>
+          {'<Email address=\'user@email.com\'>User email link</Email>'}
+        </Code>
+      </Row>
+      <Row center='xs' style={{ marginBottom: '30px' }}>
+        <Email address='user@email.com' purple>User email link</Email>
       </Row>
       <Row center='xs'>
         <Code>
-          {'<Email address=\'user@email.com\'>User</Email>'}
+          {'<Email address=\'user@email.com\' purple>User email link</Email>'}
         </Code>
       </Row>
     </Grid>
