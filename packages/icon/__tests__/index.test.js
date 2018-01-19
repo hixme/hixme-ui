@@ -3,11 +3,13 @@ import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
 import Icon from '../src/index'
 
-test('Icon', () => {
-  const component = renderer.create(
-    (<ThemeProvider><Icon menu /></ThemeProvider>),
-  )
+describe('Icon', () => {
+  it('should be a span', () => {
+    const component = renderer.create(
+      (<ThemeProvider><Icon menu /></ThemeProvider>),
+    )
 
-  const tree = component.toJSON()
-  expect(tree.type).toBe('span')
+    const tree = component.toJSON()
+    expect(tree.type).toBe('span')
+  })
 })
