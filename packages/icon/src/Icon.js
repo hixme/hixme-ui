@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import theme from '@hixme-ui/theme'
 
 import getTextColor from '@hixme-ui/theme-props'
 
@@ -21,6 +22,7 @@ const getIcon = (props) => {
 }
 
 const getFontSize = ({ fontSize, size }) => `${fontSize * size}px`
+const getIconColor = props => getTextColor({ theme, ...props }, theme.textColors.default)
 
 const Icon = (props) => {
   const { color } = props
@@ -28,8 +30,8 @@ const Icon = (props) => {
   return (
     <StyledIconContainer size={getFontSize(props)}>
       <UseIcon
-        color={color || getTextColor(props, 'black')}
-        fill={color || getTextColor(props, 'black')}
+        color={color || getIconColor(props)}
+        fill={color || getIconColor(props)}
         style={{ maxHeight: getFontSize(props) }}
       />
     </StyledIconContainer>
@@ -47,7 +49,7 @@ Icon.propTypes = {
 }
 
 Icon.defaultProps = {
-  color: '',
+  color: null,
   size: 1,
   fontSize: 14,
 }
