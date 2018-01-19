@@ -4,9 +4,12 @@ import PropTypes from 'prop-types'
 import StyledTable from './StyledTable'
 import OverflowContainer from './OverflowContainer'
 
-const Table = ({ children }) => (
+const Table = ({
+  children,
+  striped,
+}) => (
   <OverflowContainer>
-    <StyledTable>
+    <StyledTable striped={striped}>
       {children}
     </StyledTable>
   </OverflowContainer>
@@ -14,10 +17,12 @@ const Table = ({ children }) => (
 
 Table.propTypes = {
   children: PropTypes.node,
+  striped: PropTypes.bool,
 }
 
 Table.defaultProps = {
   children: null,
+  striped: false,
 }
 
 Table.huiName = 'Table'
