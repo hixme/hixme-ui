@@ -76,8 +76,7 @@
     "react-addons-test-utils": "^15.0.0",
     "react-test-renderer": "^16.0.0",
     "regenerator-runtime": "^0.11.0",
-    "rimraf": "^2.6.1",
-    "webpack": "^3.5.5"
+    "rimraf": "^2.6.1"
   },
   "license": "MIT",
   "dependencies": {
