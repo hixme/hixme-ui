@@ -49,6 +49,9 @@ class App extends Component {
               <Link to='/forms'>Form Components</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/icon'>Icon</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/input'>Input</Link>
             </Col>
             <Col xs={12}>

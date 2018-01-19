@@ -1,7 +1,7 @@
 {
-  "name": "@hixme-ui/card",
-  "version": "1.11.0",
-  "description": "hixme-ui Card component",
+  "name": "@hixme-ui/icon",
+  "version": "1.0.0",
+  "description": "hixme-ui Icon component",
   "publishConfig": {
     "access": "public"
   },
@@ -39,7 +39,6 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.11.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -80,8 +79,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.11.0",
+    "@hixme-ui/theme": "^1.3.0",
+    "@hixme-ui/theme-props": "^1.3.0",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "styled-components": "^2.3.3"
   }
 }
