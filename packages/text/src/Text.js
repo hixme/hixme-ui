@@ -15,7 +15,7 @@ export const HyperLink = TextLink.extend`
 export const LabelBase = TextBase.withComponent('label')
 export const Label = LabelBase.extend`
   color: ${props => props.color || getTextColor(props, '#394651')};
-  line-height: 19px;
+  line-height: ${props => props.lineHeight || '19px'};
   user-select: none;
 `
 
