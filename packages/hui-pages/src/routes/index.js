@@ -16,6 +16,8 @@ import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
 import CurrencyDocs from './CurrencyDocs'
 import FormGroupDocs from './FormGroupDocs'
+import FormsDocs from './FormsDocs'
+import LabelDocs from './LabelDocs'
 import InputDocs from './InputDocs'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
@@ -43,7 +45,9 @@ const Routes = () => (
         <Route path='/checkbox' component={CheckboxDocs} />
         <Route path='/currency' component={CurrencyDocs} />
         <Route path='/form-group' component={FormGroupDocs} />
+        <Route path='/forms' component={FormsDocs} />
         <Route path='/input' component={InputDocs} />
+        <Route path='/label' component={LabelDocs} />
         <Route path='/percentage' component={PercentageDocs} />
         <Route path='/phone' component={PhoneDocs} />
         <Route path='/price' component={PriceDocs} />

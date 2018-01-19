@@ -43,7 +43,13 @@ class App extends Component {
               <Link to='/form-group'>Form Group</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/forms'>Form Components</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/input'>Input</Link>
+            </Col>
+            <Col xs={12}>
+              <Link to='/label'>Label</Link>
             </Col>
             <Col xs={12}>
               <Link to='/percentage'>Percentage</Link>
