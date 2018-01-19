@@ -17,9 +17,18 @@ const IconDocs = () => (
       <Row center='xs' style={{ marginBottom: '30px' }}>
         <Icon menu size={3} primary />
       </Row>
-      <Row center='xs'>
+      <Row center='xs' style={{ marginBottom: '30px' }}>
         <Code>
           {'<Icon menu size={3} />'}
+        </Code>
+      </Row>
+
+      <Row center='xs' style={{ marginBottom: '30px' }}>
+        <Icon menu fontSize={42} building />
+      </Row>
+      <Row center='xs'>
+        <Code>
+          {'<Icon menu fontSize={42} building />'}
         </Code>
       </Row>
     </Grid>
