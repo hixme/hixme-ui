@@ -9,44 +9,38 @@ import StyledIconContainer from './StyledIconContainer'
 
 const icons = Object.keys(iconList)
 
-const Icon = ({
-  color,
-  size,
-  fontSize,
-  ...restProps
-}) => {
-  const getIcon = () => {
-    const iconName = icons.find(name => restProps[name])
+const getIcon = (props) => {
+  const iconName = icons.find(name => props[name])
 
-    if (!iconName) {
-      console.warn('hixme-ui:Icon - icon not provided or not found`') // eslint-disable-line no-console
-    } else {
-      return iconList[iconName]
-    }
-    return null
+  if (!iconName) {
+    console.warn('hixme-ui:Icon - icon not provided or not found`') // eslint-disable-line no-console
+  } else {
+    return iconList[iconName]
   }
+  return null
+}
 
-  const UseIcon = getIcon()
-  const getFontSize = () => `${fontSize * size}px`
+const getFontSize = ({ fontSize, size }) => `${fontSize * size}px`
 
+const Icon = (props) => {
+  const { color } = props
+  const UseIcon = getIcon(props)
   return (
-    <StyledIconContainer size={getFontSize()}>
+    <StyledIconContainer size={getFontSize(props)}>
       <UseIcon
-        color={color || getTextColor(restProps)}
-        fill={color || getTextColor(restProps)}
-        style={{ maxHeight: getFontSize() }}
+        color={color || getTextColor(props, 'black')}
+        fill={color || getTextColor(props, 'black')}
+        style={{ maxHeight: getFontSize(props) }}
       />
     </StyledIconContainer>
   )
 }
 
-Icon.huiName = 'Icon'
 Icon.displayName = 'hui:Icon'
+Icon.huiName = 'Icon'
 
+/* eslint-disable react/no-unused-prop-types */
 Icon.propTypes = {
-  /**
-   * options
-   */
   color: PropTypes.string,
   size: PropTypes.number,
   fontSize: PropTypes.number,
