@@ -18,13 +18,14 @@ const LineContainer = styled.div`
   line-height: 25px;
 `
 
+/* eslint-disable react/no-array-index-key */
 const BulletList = ({
   bulletArray,
   ...restProps
 }) => (
   <LineContainer>
-    {bulletArray.map(item => (
-      <Container flex noPadding id='bullet-item' key={item.key}>
+    {bulletArray.map((item, index) => (
+      <Container flex noPadding id='bullet-item' key={`bullet-list-${index}`}>
         <Container flex noPadding>
           <Circle />
         </Container>
