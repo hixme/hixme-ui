@@ -1,7 +1,7 @@
 {
-  "name": "@hixme-ui/text",
-  "version": "1.11.0",
-  "description": "hixme-ui text component. For all your communictation needs.",
+  "name": "@hixme-ui/email",
+  "version": "1.0.0",
+  "description": "hixme-ui Email component",
   "publishConfig": {
     "access": "public"
   },
@@ -9,10 +9,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "test": "jest",
-    "test:watch": "npm test --watch",
-    "test:examples": "node examples/",
-    "jest": "jest",
-    "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
+    "test:watch": "npm test -- --watch",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "flow": "flow",
@@ -42,6 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
+    "@hixme-ui/theme": "^1.11.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -73,18 +71,16 @@
     "flow-bin": "^0.45.0",
     "husky": "^0.13.3",
     "jest": "^21.2.1",
+    "jest-styled-components": "^4.9.0",
     "react-addons-test-utils": "^15.0.0",
     "react-test-renderer": "^16.0.0",
     "regenerator-runtime": "^0.11.0",
-    "rimraf": "^2.6.1",
-    "webpack": "^3.5.5"
+    "rimraf": "^2.6.1"
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^1.11.0",
-    "@hixme-ui/theme-props": "^1.11.0",
+    "@hixme-ui/text": "^1.11.0",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "styled-components": "^2.3.3"
+    "react": "^16.0.0"
   }
 }

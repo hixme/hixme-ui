@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import theme from '@hixme-ui/theme'
 import { getTextColor } from '@hixme-ui/theme-props'
 
 import TextBase from './TextBase'
@@ -9,6 +10,7 @@ export const TextDiv = TextBase.withComponent('div')
 
 export const TextLink = TextBase.withComponent('a')
 export const HyperLink = TextLink.extend`
+  color: ${props => props.color || getTextColor(props, theme.textColors.primary)};
   cursor: pointer;
 `
 

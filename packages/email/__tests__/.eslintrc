@@ -1,0 +1,9 @@
+{
+  "env": {
+    "jest": true
+  },
+  "plugins": [
+    "babel",
+    "jest"
+  ]
+}
