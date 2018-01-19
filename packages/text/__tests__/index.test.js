@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Text from '../src/index.js'
+import Text from '../src'
 
 test('Input', () => {
   const component = renderer.create(
