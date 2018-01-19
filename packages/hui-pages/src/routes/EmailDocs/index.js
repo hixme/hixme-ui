@@ -26,11 +26,11 @@ const EmailDocs = () => (
         </Code>
       </Row>
       <Row center='xs' style={{ marginBottom: '30px' }}>
-        <Email address='user@email.com' purple>User email link</Email>
+        <Email address='user@email.com' purple medium>User email link</Email>
       </Row>
       <Row center='xs'>
         <Code>
-          {'<Email address=\'user@email.com\' purple>User email link</Email>'}
+          {'<Email address=\'user@email.com\' purple medium>User email link</Email>'}
         </Code>
       </Row>
     </Grid>
