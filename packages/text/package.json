@@ -42,7 +42,6 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.11.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -82,6 +81,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@hixme-ui/theme": "^1.11.0",
     "@hixme-ui/theme-props": "^1.11.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
