@@ -9,7 +9,7 @@ import {
 const TextBase = styled.span`
   color: ${props => props.color || getTextColor(props)};
   font-family: ${props => props.fontFamily || getFontFamily(props)};
-  font-size: ${props => props.fontSize || getFontSize(props)};
+  font-size: ${props => props.fontSize || getFontSize(props, 'inherit')};
   font-weight: ${props => props.fontWeight || getFontWeight(props)};
   border-bottom: ${(props) => {
     if (props.dashed) return '1px dashed'
