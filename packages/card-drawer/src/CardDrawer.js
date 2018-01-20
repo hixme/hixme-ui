@@ -4,10 +4,14 @@ import Collapsible from 'react-collapsible'
 import { Row, Col } from 'react-flexbox-grid'
 
 // hixme-ui
-import Card from '@hixme-ui/card'
 import Icon from '@hixme-ui/icon'
 
+// Styled components
+import ChevronRow from './ChevronRow'
 import Disabled from './Disabled'
+import InnerContent from './InnerContent'
+import StyledCard from './StyledCard'
+import StyledTrigger from './StyledTrigger'
 
 const CardDrawer = ({
   cardContent,
@@ -16,55 +20,48 @@ const CardDrawer = ({
   disabled,
   hideArrow,
   open,
-}) => {
-  const cardClass = open ? classes.cardOpen : classes.cardClosed
-  return (
-    <Disabled disabled={disabled}>
-      {collapsible ?
-        <Collapsible
-          easing='ease'
-          open
-          triggerClassName={classes.trigger}
-          triggerOpenedClassName={classes.triggerOpen}
-          contentInnerClassName={classes.innerContent}
-          contentOuterClassName={classes.outerContent}
-          trigger={
-            <Card className={classes.card} rounded shadow>
-              {hideArrow ?
-                <Row middle='xs'>
-                  <Col xs={12}>{cardHeader}</Col>
-                </Row> :
-                <Row middle='xs'>
-                  <Col xs={11}>{cardHeader}</Col>
-                  <Col xs={1}>
-                    <Row className={classes.downIcon} center='xs' style={{ margin: '0 0 7px 0' }}>
-                      <Icon arrowRight size={1.25} />
-                    </Row>
-                  </Col>
-                </Row>
-            }
-            </Card>
-          }
-          transitionTime={250}
-        >
-          <div>
-            {cardContent}
-          </div>
-        </Collapsible> :
-        <div>
-          <Card className={cardClass} round shadow>
-            {cardHeader}
-          </Card>
-          {open &&
-          <div className={classes.innerContent}>
-            {cardContent}
-          </div>
+}) => (
+  <Disabled disabled={disabled}>
+    {collapsible ?
+      <Collapsible
+        easing='ease'
+        open
+        trigger={
+          <StyledTrigger rounded shadow>
+            {hideArrow ?
+              <Row middle='xs'>
+                <Col xs={12}>{cardHeader}</Col>
+              </Row> :
+              <Row middle='xs'>
+                <Col xs={11}>{cardHeader}</Col>
+                <Col xs={1}>
+                  <ChevronRow open={open} center='xs' style={{ margin: '0 0 7px 0' }}>
+                    <Icon arrowRight size={1.25} />
+                  </ChevronRow>
+                </Col>
+              </Row>
+              }
+          </StyledTrigger>
         }
+        transitionTime={250}
+      >
+        <div>
+          {cardContent}
         </div>
+      </Collapsible> :
+      <div>
+        <StyledCard round shadow open={open}>
+          {cardHeader}
+        </StyledCard>
+        {open &&
+          <InnerContent>
+            {cardContent}
+          </InnerContent>
+        }
+      </div>
       }
-    </Disabled>
+  </Disabled>
   )
-}
 
 CardDrawer.propTypes = {
   cardContent: PropTypes.node,

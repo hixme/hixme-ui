@@ -6,7 +6,7 @@ const Disabled = styled.div`
      position: relative;
      cursor: not-allowed;
 
-     $:before {
+     &:before {
        content: '';
        width: 100%;
        height: 100%;
