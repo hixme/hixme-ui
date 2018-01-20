@@ -86,6 +86,6 @@
     "react": "^16.0.0",
     "react-collapsible": "^2.0.3",
     "react-flexbox-grid": "^2.0.0",
-    "styled-components": "^2.4.0"
+    "styled-components": "^2.3.3"
   }
 }

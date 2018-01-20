@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Collapsible from 'react-collapsible'
-import { Row, Col } from 'react-flexbox-grid'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 // hixme-ui
 import Icon from '@hixme-ui/icon'
@@ -28,19 +28,21 @@ const CardDrawer = ({
         open
         trigger={
           <StyledTrigger rounded shadow>
-            {hideArrow ?
-              <Row middle='xs'>
-                <Col xs={12}>{cardHeader}</Col>
-              </Row> :
-              <Row middle='xs'>
-                <Col xs={11}>{cardHeader}</Col>
-                <Col xs={1}>
-                  <ChevronRow open={open} center='xs' style={{ margin: '0 0 7px 0' }}>
-                    <Icon arrowRight size={1.25} />
-                  </ChevronRow>
-                </Col>
-              </Row>
+            <Grid fluid>
+              {hideArrow ?
+                <Row middle='xs'>
+                  <Col xs={12}>{cardHeader}</Col>
+                </Row> :
+                <Row middle='xs'>
+                  <Col xs={11}>{cardHeader}</Col>
+                  <Col xs={1}>
+                    <ChevronRow open={open} center='xs' style={{ margin: '0 0 7px 0' }}>
+                      <Icon arrowRight size={1.25} />
+                    </ChevronRow>
+                  </Col>
+                </Row>
               }
+            </Grid>
           </StyledTrigger>
         }
         transitionTime={250}
@@ -61,7 +63,7 @@ const CardDrawer = ({
       </div>
       }
   </Disabled>
-  )
+)
 
 CardDrawer.propTypes = {
   cardContent: PropTypes.node,
