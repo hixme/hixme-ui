@@ -25,6 +25,7 @@ import LabelDocs from './LabelDocs'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
 import PriceDocs from './PriceDocs'
+import RadioButtonDocs from './RadioButtonDocs'
 import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
 import SocialSecurityDocs from './SocialSecurityDocs'
@@ -56,6 +57,7 @@ const Routes = () => (
         <Route path='/percentage' component={PercentageDocs} />
         <Route path='/phone' component={PhoneDocs} />
         <Route path='/price' component={PriceDocs} />
+        <Route path='/radio-button' component={RadioButtonDocs} />
         <Route path='/select' component={SelectDocs} />
         <Route path='/separator' component={SeparatorDocs} />
         <Route path='/social-security' component={SocialSecurityDocs} />
