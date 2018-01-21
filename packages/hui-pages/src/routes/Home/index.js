@@ -67,6 +67,9 @@ class App extends Component {
               <Link to='/price'>Price</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/radio-button'>Radio Button</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/select'>Select</Link>
             </Col>
             <Col xs={12}>
