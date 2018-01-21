@@ -84,10 +84,10 @@
     "@hixme-ui/form-group": "^1.0.0",
     "@hixme-ui/input": "^1.0.0",
     "@hixme-ui/label": "^1.12.0",
+    "@hixme-ui/radio-button": "^1.0.0",
     "@hixme-ui/select": "^1.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-maskedinput": "^4.0.0",
     "styled-components": "^2.3.3"
   }
 }
