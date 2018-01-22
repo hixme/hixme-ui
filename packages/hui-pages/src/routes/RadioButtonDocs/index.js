@@ -15,13 +15,13 @@ const RadioDocs = () => (
     <Grid fluid>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
       <Row center='xs' style={{ marginBottom: '20px' }}>
-        <RadioButton name='gender' text='Male' />
-        <RadioButton name='gender' text='Female' />
+        <RadioButton name='gender' text='Male' value='Male' />
+        <RadioButton name='gender' text='Female' value='Female' />
       </Row>
       <Row center='xs'>
         <Code>
           {`<RadioButton name='gender' text='Male' />
-  <RadioButton name='gender' text='Female' />
+<RadioButton name='gender' text='Female' />
 `}
         </Code>
       </Row>
