@@ -41,15 +41,15 @@ describe('RadioButton', () => {
     })
   })
 
-  describe('Fake radio display', function() {
-    const FakeRadio = tree.children[1]
+  describe('Radio display', function() {
+    const RadioDisplay = tree.children[1]
 
     it('should be a span', function() {
-      expect(FakeRadio.type).toBe('span')
+      expect(RadioDisplay.type).toBe('span')
     })
 
     it('should have prop className with fakeRadio', function() {
-      expect(FakeRadio.props.className.includes('fakeRadio')).toBe(true)
+      expect(RadioDisplay.props.className.includes('hui-radioDisplay')).toBe(true)
     })
   })
 

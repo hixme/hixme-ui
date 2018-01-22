@@ -8,14 +8,14 @@ const RadioInput = styled.input`
     left: -9999px;
     top: -9999px;
     &:checked ~ {
-      .fakeRadio {
+      .hui-radioDisplay {
         &:after {
           opacity: 1;
         }
       }
     }
     &:focus ~ {
-      .fakeRadio {
+      .hui-radioDisplay {
         outline: none;
         border-color: #2fb699;
         box-shadow: 0 0 10px #2fb699;
@@ -34,7 +34,7 @@ const RadioText = LabelBase.extend`
   vertical-align: top;
 `
 
-const FakeRadio = styled.span`
+const RadioDisplay = styled.span`
   cursor: pointer;
   border-radius: 50%;
   border: 1px solid #b9c5cd;
@@ -74,7 +74,7 @@ const RadioButton = (props) => {
   return (
     <label htmlFor={radioId(props)}>
       <RadioInput name={props.name} type='radio' {...restProps} id={radioId(props)} />
-      <FakeRadio className='fakeRadio' />
+      <RadioDisplay className='hui-radioDisplay' />
       {props.text && <RadioText>{text}</RadioText>}
     </label>
   )
