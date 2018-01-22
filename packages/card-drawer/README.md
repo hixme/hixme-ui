@@ -1,32 +1,45 @@
-# hixme-ui card
+# hixme-ui card-drawer
 
 ```bash
-npm i --save @hixme-ui/card
+npm i --save @hixme-ui/card-drawer
 ```
-[View it live](https://hixme.github.io/hixme-ui/card)
+[View it live](https://hixme.github.io/hixme-ui/card-drawer)
 
-Card is an implementation of [Container](https://hixme.github.io/hixme-ui/container
-that defaults to having a white background, rounded corners, and a drop shadow. It
-supports all the properties available for
-[Container](https://hixme.github.io/hixme-ui/container)
-
+CardDrawer is an accordion component implemented with [Card](https://hixme.github.io/hixme-ui/card) and [react-collapsible](https://github.com/glennflanagan/react-collapsible).
 
 ## Usage
 
 ```javascript
-import Card from '@hixme-ui/card'
+import CardDrawer from '@hixme-ui/card-drawer'
 
-<Card padding='30px' shadow>
-  <p>Default card component</p>
-</Card>
+// Using react-collapsible
+<CardDrawer collapsible cardHeader='Drawer title'>
+  <p>Drawer content</p>
+</CardDrawer>
+
+// Always open, static CardDrawer
+<CardDrawer open cardHeader='Drawer title'>
+  <p>Drawer content</p>
+</CardDrawer>
+
+// You can also supply the content to the cardContent prop
+<CardDrawer
+  collapsible
+  cardHeader='Drawer title'
+  cardContent={
+    <p>Drawer content</p>
+  }
+/>
 ```
 
 ## Props
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
-| background      | string      | white          |
-| rounded         | string      | true           |
-| shadow          | string      | true           |
-
+| cardContent     | node        | null           |
+| cardHeader      | string      | null           |
+| children        | node        | N/A            |
+| collapsible     | boolean     | false          |
+| disabled        | boolean     | false          | 
+| hideArrow       | boolean     | false          |
 

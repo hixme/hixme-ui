@@ -12,7 +12,7 @@ const CardDrawerDocs = () => (
     <DocsTitle title='Card Drawer' subtitle='An accordion component implemented using Card and react-collapsible' />
     <Row style={{ margin: '20px 0 50px 0' }}>
       <Col xs={12}>
-        <Container lighter rounded padding='30px 50px'>
+        <Container lightest rounded padding='30px 50px'>
           <CardDrawer cardHeader='Card Drawer Title' collapsible>
             <Container>
               <Text>I am in a card drawer</Text>
@@ -26,7 +26,29 @@ const CardDrawerDocs = () => (
         <Code>
           {`<CardDrawer cardHeader='Card Drawer Title' collapsible>
   <Container>
-    <Text>I am in a card.</Text>
+    <Text>I am in a card drawer</Text>
+  </Container>
+</CardDrawer>`}
+        </Code>
+      </Col>
+    </Row>
+    <Row style={{ margin: '20px 0 50px 0' }}>
+      <Col xs={12}>
+        <Container lightest rounded padding='30px 50px'>
+          <CardDrawer open cardHeader='Card Drawer Title'>
+            <Container>
+              <Text>I am in a card drawer</Text>
+            </Container>
+          </CardDrawer>
+        </Container>
+      </Col>
+    </Row>
+    <Row center='xs'>
+      <Col xs={12} sm={8}>
+        <Code>
+          {`<CardDrawer open cardHeader='Card Drawer Title'>
+  <Container>
+    <Text>I am in a card drawer</Text>
   </Container>
 </CardDrawer>`}
         </Code>
