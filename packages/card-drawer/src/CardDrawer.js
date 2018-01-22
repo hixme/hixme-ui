@@ -45,7 +45,6 @@ class CardDrawer extends Component {
     }
   }
 
-
   render() {
     const {
       cardContent,
