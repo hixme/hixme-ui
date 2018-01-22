@@ -62,7 +62,7 @@ class CardDrawer extends Component {
 
     const toggleDrawer = () => {
       this.setState(prevState => ({
-        open: !prevState,
+        open: !prevState.open,
       }))
     }
 
