@@ -1,6 +1,6 @@
 import StyledCard from './StyledCard'
 
-const StyledTrigger = StyledCard.extends`
+const StyledTrigger = StyledCard.extend`
   user-select: none;
   cursor: pointer;
 `

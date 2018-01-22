@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 import { Row } from 'react-flexbox-grid'
 
-const StyledRow = styled(Row)
-
-const ChevronRow = StyledRow.extends`
+const ChevronRow = styled(Row)`
   transform: ${props => (props.open ? 'rotate(270deg)' : 'rotate(90deg)')};
   transition: transform .25s ease;
 `
