@@ -3,7 +3,6 @@ import { Grid, Row } from 'react-flexbox-grid'
 
 import Container from '@hixme-ui/container'
 import RadioButton from '@hixme-ui/radio-button'
-import Title from '@hixme-ui/title'
 
 import { Code, DocsTitle } from '../../components'
 
