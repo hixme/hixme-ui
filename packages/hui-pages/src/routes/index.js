@@ -13,6 +13,7 @@ import BulletListDocs from './BulletListDocs'
 import ButtonDocs from './ButtonDocs'
 import CardDocs from './CardDocs'
 import CheckboxDocs from './CheckboxDocs'
+import CloseButtonDocs from './CloseButtonDocs'
 import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
 import CurrencyDocs from './CurrencyDocs'
@@ -45,6 +46,7 @@ const Routes = () => (
         <Route path='/button' component={ButtonDocs} />
         <Route path='/card' component={CardDocs} />
         <Route path='/checkbox' component={CheckboxDocs} />
+        <Route path='/close-button' component={CloseButtonDocs} />
         <Route path='/container' component={ContainerDocs} />
         <Route path='/content-container' component={ContentContainerDocs} />
         <Route path='/currency' component={CurrencyDocs} />
