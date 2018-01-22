@@ -75,7 +75,7 @@ const RadioButton = (props) => {
     <label htmlFor={radioId(props)}>
       <RadioInput name={props.name} type='radio' {...restProps} id={radioId(props)} />
       <RadioDisplay className='hui-radioDisplay' />
-      {props.text && <RadioText>{text}</RadioText>}
+      {props.text && <RadioText htmlFor={radioId(props)}>{text}</RadioText>}
     </label>
   )
 }
