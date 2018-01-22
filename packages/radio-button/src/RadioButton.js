@@ -68,11 +68,15 @@ export function radioId({
   return `hui:rb-${name.toString()}-${text.toString()}-${value.toString()}`
 }
 
+const getRootProps = props => ['style']
+    .filter(p => props[p])
+    .reduce((memo, key) => ({ ...memo, [key]: props[key] }), {})
+
 const RadioButton = (props) => {
   const { text, name, ...restProps } = props
 
   return (
-    <label htmlFor={radioId(props)}>
+    <label htmlFor={radioId(props)} {...(getRootProps(props))}>
       <RadioInput name={props.name} type='radio' {...restProps} id={radioId(props)} />
       <RadioDisplay className='hui-radioDisplay' />
       {props.text && <RadioText htmlFor={radioId(props)}>{text}</RadioText>}
