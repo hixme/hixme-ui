@@ -80,12 +80,12 @@
   "license": "MIT",
   "dependencies": {
     "@hixme-ui/card": "^1.12.0",
+    "@hixme-ui/container": "^1.11.0",
     "@hixme-ui/icon": "^1.12.0",
     "@hixme-ui/theme": "^1.11.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-collapsible": "^2.0.3",
-    "react-flexbox-grid": "^2.0.0",
     "styled-components": "^2.3.3"
   }
 }

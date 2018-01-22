@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Collapsible from 'react-collapsible'
-import { Grid, Row, Col } from 'react-flexbox-grid'
 
 // hixme-ui
+import Container from '@hixme-ui/container'
 import Icon from '@hixme-ui/icon'
 
 // Styled components
@@ -77,21 +77,19 @@ class CardDrawer extends Component {
             triggerOpenedClassName={TriggerClassName}
             trigger={
               <StyledTrigger open={open} rounded shadow className={TriggerClassName}>
-                <Grid fluid>
-                  {hideArrow ?
-                    <Row middle='xs'>
-                      <Col xs={12}>{cardHeader}</Col>
-                    </Row> :
-                    <Row middle='xs'>
-                      <Col xs={11}>{cardHeader}</Col>
-                      <Col xs={1}>
-                        <ChevronRow open={open} center='xs' style={{ margin: '0 0 7px 0' }}>
-                          <Icon arrowRight size={1.25} />
-                        </ChevronRow>
-                      </Col>
-                    </Row>
-                  }
-                </Grid>
+                {hideArrow ?
+                  <Container flex noPadding alignCenter>
+                    {cardHeader}
+                  </Container> :
+                  <Container flex noPadding justifySpaceBetween alignCenter>
+                    <Container flex noPadding>{cardHeader}</Container>
+                    <Container flex noPadding>
+                      <ChevronRow open={open} center='xs' style={{ margin: '0 0 7px 0' }}>
+                        <Icon arrowRight size={1.25} />
+                      </ChevronRow>
+                    </Container>
+                  </Container>
+                }
               </StyledTrigger>
             }
             transitionTime={250}
