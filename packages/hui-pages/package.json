@@ -19,6 +19,7 @@
     "@hixme-ui/card": "^1.0.0",
     "@hixme-ui/card-drawer": "^1.0.0",
     "@hixme-ui/checkbox": "^1.0.0",
+    "@hixme-ui/close-button": "^1.0.0",
     "@hixme-ui/container": "^1.0.0",
     "@hixme-ui/content-container": "^1.0.0",
     "@hixme-ui/currency": "^1.0.0",
