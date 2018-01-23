@@ -9,6 +9,7 @@ import DocsHeader from '../components/DocsHeader/DocsHeader'
 import Home from './Home'
 
 import AnimateDocs from './AnimateDocs'
+import BenefitPriceDocs from './BenefitPriceDocs'
 import BulletListDocs from './BulletListDocs'
 import ButtonDocs from './ButtonDocs'
 import CardDocs from './CardDocs'
@@ -41,6 +42,7 @@ const Routes = () => (
       <ContentContainer>
         <DocsHeader />
         <Route path='/animate' component={AnimateDocs} />
+        <Route path='/benefit-price' component={BenefitPriceDocs} />
         <Route path='/bullet-list' component={BulletListDocs} />
         <Route path='/button' component={ButtonDocs} />
         <Route path='/card' component={CardDocs} />
