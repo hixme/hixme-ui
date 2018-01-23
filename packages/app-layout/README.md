@@ -34,13 +34,14 @@ const HeaderContent = () => (
 
 ## Props
 
-| Name             | Type        | Default        |
-| ---------------- | ----------- | -------------- |
-| sidebarWidth     | string      | '225px'        |
-| children         | node        | N/A            |
-| HeaderComponent  | function    | () => null     |
-| SidebarComponent | function    | () => null     |
-| open             | boolean     | false          |
-| fixed            | boolean     | false          |
+| Name                   | Type        | Default        |
+| ---------------------- | ----------- | -------------- |
+| sidebarWidth           | string      | '225px'        |
+| children               | node        | N/A            |
+| HeaderComponent        | function    | () => null     |
+| SidebarComponent       | function    | () => null     |
+| open                   | boolean     | false          |
+| fixed                  | boolean     | false          |
+| contentBackgroundColor | string      | '#E5ECF1'      |
 
 

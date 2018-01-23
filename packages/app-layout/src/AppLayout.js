@@ -21,6 +21,7 @@ class AppLayout extends Component {
     open: PropTypes.bool,
     sidebarWidth: PropTypes.string,
     fixed: PropTypes.bool,
+    contentBackgroundColor: PropTypes.string,
   }
 
   static defaultProps = {
@@ -29,6 +30,7 @@ class AppLayout extends Component {
     SidebarComponent: () => null,
     sidebarWidth: '225px',
     fixed: false,
+    contentBackgroundColor: '#E5ECF1',
   }
 
   state = { open: this.props.open }
@@ -40,6 +42,7 @@ class AppLayout extends Component {
       children,
       fixed,
       sidebarWidth,
+      contentBackgroundColor,
     } = this.props
 
     const {
@@ -59,7 +62,7 @@ class AppLayout extends Component {
             <SidebarComponent />
           </AppSidebar>
         </StyledSidebar>
-        <StyledMain open={open} sidebarWidth={sidebarWidth}>
+        <StyledMain open={open} sidebarWidth={sidebarWidth} contentBackgroundColor={contentBackgroundColor}>
           <AppHeader open={open} sidebarWidth={sidebarWidth} toggleSidebar={toggleSidebar} fixed={fixed}>
             <HeaderComponent />
           </AppHeader>

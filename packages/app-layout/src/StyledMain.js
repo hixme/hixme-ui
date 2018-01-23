@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledMain = styled.div`
-  background: #E5ECF1;
+  ${props => props.contentBackgroundColor && `background-color: ${props.contentBackgroundColor};`}
   margin-left: ${props => (props.open ? props.sidebarWidth : '0')};
   min-height: 100%;
   position: relative;
