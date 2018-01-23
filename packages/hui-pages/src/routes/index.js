@@ -2,9 +2,12 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+import AppLayout from '@hixme-ui/app-layout'
 import ContentContainer from '@hixme-ui/content-container'
 
 import DocsHeader from '../components/DocsHeader/DocsHeader'
+import Sidebar from '../components/Sidebar'
+import MenuHeader from '../components/MenuHeader'
 
 import Home from './Home'
 
@@ -38,39 +41,41 @@ import NotFound from './NotFound'
 
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <Switch>
-      <Route path='/' exact component={Home} />
-      <ContentContainer>
-        <DocsHeader />
-        <Route path='/animate' component={AnimateDocs} />
-        <Route path='/bullet-list' component={BulletListDocs} />
-        <Route path='/button' component={ButtonDocs} />
-        <Route path='/card' component={CardDocs} />
-        <Route path='/card-drawer' component={CardDrawerDocs} />
-        <Route path='/checkbox' component={CheckboxDocs} />
-        <Route path='/close-button' component={CloseButtonDocs} />
-        <Route path='/container' component={ContainerDocs} />
-        <Route path='/content-container' component={ContentContainerDocs} />
-        <Route path='/currency' component={CurrencyDocs} />
-        <Route path='/email' component={EmailDocs} />
-        <Route path='/form-group' component={FormGroupDocs} />
-        <Route path='/forms' component={FormsDocs} />
-        <Route path='/icon' component={IconDocs} />
-        <Route path='/input' component={InputDocs} />
-        <Route path='/label' component={LabelDocs} />
-        <Route path='/percentage' component={PercentageDocs} />
-        <Route path='/phone' component={PhoneDocs} />
-        <Route path='/price' component={PriceDocs} />
-        <Route path='/radio-button' component={RadioButtonDocs} />
-        <Route path='/select' component={SelectDocs} />
-        <Route path='/separator' component={SeparatorDocs} />
-        <Route path='/social-security' component={SocialSecurityDocs} />
-        <Route path='/table' component={TableDocs} />
-        <Route path='/text' component={TextDocs} />
-        <Route path='/title' component={TitleDocs} />
-      </ContentContainer>
-      <Route component={NotFound} />
-    </Switch>
+    <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Sidebar} fixed open>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <ContentContainer>
+          <DocsHeader />
+          <Route path='/animate' component={AnimateDocs} />
+          <Route path='/bullet-list' component={BulletListDocs} />
+          <Route path='/button' component={ButtonDocs} />
+          <Route path='/card' component={CardDocs} />
+          <Route path='/card-drawer' component={CardDrawerDocs} />
+          <Route path='/checkbox' component={CheckboxDocs} />
+          <Route path='/close-button' component={CloseButtonDocs} />
+          <Route path='/container' component={ContainerDocs} />
+          <Route path='/content-container' component={ContentContainerDocs} />
+          <Route path='/currency' component={CurrencyDocs} />
+          <Route path='/email' component={EmailDocs} />
+          <Route path='/form-group' component={FormGroupDocs} />
+          <Route path='/forms' component={FormsDocs} />
+          <Route path='/icon' component={IconDocs} />
+          <Route path='/input' component={InputDocs} />
+          <Route path='/label' component={LabelDocs} />
+          <Route path='/percentage' component={PercentageDocs} />
+          <Route path='/phone' component={PhoneDocs} />
+          <Route path='/price' component={PriceDocs} />
+          <Route path='/radio-button' component={RadioButtonDocs} />
+          <Route path='/select' component={SelectDocs} />
+          <Route path='/separator' component={SeparatorDocs} />
+          <Route path='/social-security' component={SocialSecurityDocs} />
+          <Route path='/table' component={TableDocs} />
+          <Route path='/text' component={TextDocs} />
+          <Route path='/title' component={TitleDocs} />
+        </ContentContainer>
+        <Route component={NotFound} />
+      </Switch>
+    </AppLayout>
   </BrowserRouter>
 )
 

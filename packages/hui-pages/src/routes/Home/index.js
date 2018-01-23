@@ -14,7 +14,7 @@ class App extends Component {
           <h1 className='App-title'>Welcome to the HUI</h1>
         </header>
         <div>
-          <Row center='xs' style={{ padding: '20px' }}>
+          <Row center='xs' style={{ width: '100%', padding: '20px' }}>
             <Col xs={12}>
               <Link to='/animate'>Animate</Link>
             </Col>
