@@ -13,6 +13,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/bullet-list'>
           <Text primary cursor='pointer'>
@@ -20,6 +22,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/button'>
           <Text primary cursor='pointer'>
@@ -27,6 +31,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/checkbox'>
           <Text primary cursor='pointer'>
@@ -34,6 +40,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/card'>
           <Text primary cursor='pointer'>
@@ -41,6 +49,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/container'>
           <Text primary cursor='pointer'>
@@ -48,6 +58,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/content-container'>
           <Text primary cursor='pointer'>
@@ -55,6 +67,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/currency'>
           <Text primary cursor='pointer'>
@@ -62,6 +76,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/email'>
           <Text primary cursor='pointer'>
@@ -69,6 +85,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/form-group'>
           <Text primary cursor='pointer'>
@@ -76,6 +94,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/forms'>
           <Text primary cursor='pointer'>
@@ -83,6 +103,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/icon'>
           <Text primary cursor='pointer'>
@@ -90,6 +112,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/input'>
           <Text primary cursor='pointer'>
@@ -97,6 +121,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/label'>
           <Text primary cursor='pointer'>
@@ -104,6 +130,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/percentage'>
           <Text primary cursor='pointer'>
@@ -111,6 +139,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/phone'>
           <Text primary cursor='pointer'>
@@ -118,6 +148,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/price'>
           <Text primary cursor='pointer'>
@@ -125,6 +157,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/radio-button'>
           <Text primary cursor='pointer'>
@@ -132,6 +166,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/select'>
           <Text primary cursor='pointer'>
@@ -139,6 +175,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/separator'>
           <Text primary cursor='pointer'>
@@ -146,6 +184,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/social-security'>
           <Text primary cursor='pointer'>
@@ -153,6 +193,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/table'>
           <Text primary cursor='pointer'>
@@ -160,6 +202,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/text'>
           <Text primary cursor='pointer'>
@@ -167,6 +211,8 @@ const Sidebar = () => (
           </Text>
         </Link>
       </Col>
+    </Row>
+    <Row>
       <Col xs={12}>
         <Link to='/title'>
           <Text primary cursor='pointer'>

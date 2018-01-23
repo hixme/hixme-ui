@@ -38,7 +38,7 @@ import NotFound from './NotFound'
 
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <AppLayout SidebarComponent={Sidebar} fixed>
+    <AppLayout SidebarComponent={Sidebar} fixed open>
       <Switch>
         <Route path='/' exact component={Home} />
         <ContentContainer>
