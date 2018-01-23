@@ -5,7 +5,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 const Sidebar = () => (
   <Grid fluid>
-    <Row style={{ padding: '20px' }}>
+    <Row>
       <Col xs={12}>
         <Link to='/animate'>
           <Text primary cursor='pointer'>

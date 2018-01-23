@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import AppHeader from './components/AppHeader'
 import AppSidebar from './components/AppSidebar'
@@ -7,6 +8,10 @@ import AppSidebar from './components/AppSidebar'
 import StyledSidebar from './StyledSidebar'
 import StyledMain from './StyledMain'
 import StyledContent from './StyledContent'
+
+const AppLayoutOuterDiv = styled.div`
+  height: 100%;
+`
 
 class AppLayout extends Component {
   static propTypes = {
@@ -48,7 +53,7 @@ class AppLayout extends Component {
     }
 
     return (
-      <div>
+      <AppLayoutOuterDiv>
         <StyledSidebar sidebarWidth={sidebarWidth}>
           <AppSidebar>
             <SidebarComponent />
@@ -62,7 +67,7 @@ class AppLayout extends Component {
             {children}
           </StyledContent>
         </StyledMain>
-      </div>
+      </AppLayoutOuterDiv>
     )
   }
 }
