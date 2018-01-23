@@ -7,7 +7,6 @@
   },
   "main": "lib/index.js",
   "scripts": {
-  "scripts": {
     "clean": "rimraf lib",
     "test": "jest",
     "test:watch": "npm test -- --watch",
