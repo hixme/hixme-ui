@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/title",
-  "version": "1.12.0",
+  "version": "1.13.1",
   "description": "hixme-ui title component. Like <Text />, but bigger.",
   "publishConfig": {
     "access": "public"
@@ -82,7 +82,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.12.0",
+    "@hixme-ui/text": "^1.13.1",
     "@hixme-ui/theme-props": "^1.11.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
