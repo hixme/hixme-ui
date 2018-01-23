@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/button",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "hixme-ui Button component",
   "publishConfig": {
     "access": "public"

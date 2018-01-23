@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/card",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "hixme-ui Card component",
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/text",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "hixme-ui text component. For all your communictation needs.",
   "publishConfig": {
     "access": "public"

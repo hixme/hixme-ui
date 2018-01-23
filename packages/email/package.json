@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/email",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "hixme-ui Email component",
   "publishConfig": {
     "access": "public"
@@ -79,7 +79,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.12.0",
+    "@hixme-ui/text": "^1.13.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
   }
