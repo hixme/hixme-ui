@@ -12,15 +12,35 @@ AppLayout is an all-in-one menu and sidebar.
 ```javascript
 import AppLayout from '@hixme-ui/app-layout'
 
-<AppLayout>
+const SidebarContent = () => (
+  <div>
+    {/* sidebar stuff */}
+  </div>
+)
+
+const HeaderContent = () => (
+  <div>
+    {/* header stuff */}
+  </div>
+)
+
+<AppLayout 
+  HeaderComponent={HeaderContent} 
+  SidebarComponent={SidebarContent}
+>
   {children}
 </AppLayout>
 ```
 
 ## Props
 
-| Name            | Type        | Default        |
-| --------------- | ----------- | -------------- |
-| sidebarWidth    | string      | '225px'        |
+| Name             | Type        | Default        |
+| ---------------- | ----------- | -------------- |
+| sidebarWidth     | string      | '225px'        |
+| children         | node        | N/A            |
+| HeaderComponent  | function    | () => null     |
+| SidebarComponent | function    | () => null     |
+| open             | boolean     | false          |
+| fixed            | boolean     | false          |
 
 
