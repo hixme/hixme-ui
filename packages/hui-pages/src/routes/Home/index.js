@@ -31,6 +31,9 @@ class App extends Component {
               <Link to='/card'>Card</Link>
             </Col>
             <Col xs={12}>
+              <Link to='/card-drawer'>CardDrawer</Link>
+            </Col>
+            <Col xs={12}>
               <Link to='/close-button'>Close Button</Link>
             </Col>
             <Col xs={12}>

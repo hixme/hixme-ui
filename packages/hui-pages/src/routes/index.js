@@ -12,6 +12,7 @@ import AnimateDocs from './AnimateDocs'
 import BulletListDocs from './BulletListDocs'
 import ButtonDocs from './ButtonDocs'
 import CardDocs from './CardDocs'
+import CardDrawerDocs from './CardDrawerDocs'
 import CheckboxDocs from './CheckboxDocs'
 import CloseButtonDocs from './CloseButtonDocs'
 import ContainerDocs from './ContainerDocs'
@@ -45,6 +46,7 @@ const Routes = () => (
         <Route path='/bullet-list' component={BulletListDocs} />
         <Route path='/button' component={ButtonDocs} />
         <Route path='/card' component={CardDocs} />
+        <Route path='/card-drawer' component={CardDrawerDocs} />
         <Route path='/checkbox' component={CheckboxDocs} />
         <Route path='/close-button' component={CloseButtonDocs} />
         <Route path='/container' component={ContainerDocs} />

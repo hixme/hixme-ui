@@ -1,18 +1,15 @@
 {
-  "name": "@hixme-ui/price",
-  "version": "1.13.1",
-  "description": "hixme-ui Price component",
+  "name": "@hixme-ui/card-drawer",
+  "version": "1.0.0",
+  "description": "hixme-ui CardDrawer component",
   "publishConfig": {
     "access": "public"
   },
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --recursive",
+    "test": "jest",
     "test:watch": "npm test -- --watch",
-    "test:examples": "node examples/",
-    "jest": "jest",
-    "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "flow": "flow",
@@ -55,9 +52,6 @@
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.1.0",
-    "chai-enzyme": "^0.4.0",
     "codecov": "^1.0.1",
     "cross-env": "^4.0.0",
     "debug": "^2.2.0",
@@ -68,6 +62,7 @@
     "eslint-config-standard-react": "^2.2.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^21.5.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-promise": "^1.0.8",
     "eslint-plugin-react": "^6.10.3",
@@ -76,23 +71,21 @@
     "flow-bin": "^0.45.0",
     "husky": "^0.13.3",
     "jest": "^21.2.1",
-    "mocha": "^3.3.0",
+    "jest-styled-components": "^4.9.0",
     "react-addons-test-utils": "^15.0.0",
     "react-test-renderer": "^16.0.0",
     "regenerator-runtime": "^0.11.0",
-    "rimraf": "^2.6.1",
-    "sinon": "^1.17.3",
-    "sinon-chai": "^2.8.0",
-    "webpack": "^3.5.5"
+    "rimraf": "^2.6.1"
   },
   "license": "MIT",
   "dependencies": {
+    "@hixme-ui/card": "^1.12.0",
     "@hixme-ui/container": "^1.11.0",
-    "@hixme-ui/text": "^1.13.1",
+    "@hixme-ui/icon": "^1.12.0",
     "@hixme-ui/theme": "^1.11.0",
-    "@hixme-ui/theme-props": "^1.11.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
+    "react-collapsible": "^2.0.3",
     "styled-components": "^2.3.3"
   }
 }
