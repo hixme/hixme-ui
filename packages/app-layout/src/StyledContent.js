@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledContent = styled.div`
-  padding: 56px 0 0 0;
+  ${props => props.fixed && 'padding: 56px 0 0 0;'}
   @media print {
     padding: 0;
   }

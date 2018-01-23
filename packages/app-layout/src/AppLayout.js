@@ -15,43 +15,50 @@ class AppLayout extends Component {
     SidebarComponent: PropTypes.func,
     open: PropTypes.bool,
     sidebarWidth: PropTypes.string,
+    fixed: PropTypes.bool,
   }
 
   static defaultProps = {
     open: false,
-    HeaderComponent: null,
-    SidebarComponent: null,
+    HeaderComponent: () => null,
+    SidebarComponent: () => null,
     sidebarWidth: '225px',
+    fixed: false,
   }
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      open: props.open,
-    }
-  }
+  state = { open: this.props.open }
 
   render() {
     const {
-      children,
       HeaderComponent,
       SidebarComponent,
-      open,
+      children,
+      fixed,
       sidebarWidth,
     } = this.props
 
+    const {
+      open,
+    } = this.state
+
+    const toggleSidebar = () => {
+      this.setState(prevState => ({
+        open: !prevState.open,
+      }))
+    }
+
     return (
       <div>
-        <StyledSidebar>
+        <StyledSidebar sidebarWidth={sidebarWidth}>
           <AppSidebar>
             <SidebarComponent />
           </AppSidebar>
         </StyledSidebar>
         <StyledMain open={open} sidebarWidth={sidebarWidth}>
-          <AppHeader sidebarWidth={sidebarWidth}>
+          <AppHeader open={open} sidebarWidth={sidebarWidth} toggleSidebar={toggleSidebar} fixed={fixed}>
             <HeaderComponent />
           </AppHeader>
-          <StyledContent open={open}>
+          <StyledContent fixed={fixed}>
             {children}
           </StyledContent>
         </StyledMain>

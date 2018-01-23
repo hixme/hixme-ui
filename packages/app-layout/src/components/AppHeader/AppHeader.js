@@ -8,15 +8,13 @@ import StyledIcon from './StyledIcon'
 
 export const AppHeader = ({
   children,
-  companyName,
   fixed,
-  onToggleSidebar,
+  toggleSidebar,
   open,
   sidebarWidth,
-  ...restProps
 }) => (
-  <StyledHeaderContainer open={open} fixed={fixed} {...restProps}>
-    <StyledIcon onClick={onToggleSidebar}>
+  <StyledHeaderContainer open={open} fixed={fixed} sidebarWidth={sidebarWidth}>
+    <StyledIcon onClick={toggleSidebar}>
       <Icon menu light size={1.6} />
     </StyledIcon>
     {children}
@@ -25,20 +23,19 @@ export const AppHeader = ({
 
 AppHeader.propTypes = {
   children: PropTypes.node,
-  companyName: PropTypes.string,
   fixed: PropTypes.bool,
-  onToggleSidebar: PropTypes.func,
+  toggleSidebar: PropTypes.func,
   open: PropTypes.bool,
-  sidebarWidth: PropTypes.string.isRequired,
+  sidebarWidth: PropTypes.string,
 }
 
 /* eslint-disable no-console */
 AppHeader.defaultProps = {
   children: null,
-  companyName: 'Company Name',
   fixed: true,
-  onToggleSidebar: () => console.error('AppHeader: Sidebar toggle implementation not found'),
+  toggleSidebar: () => console.error('AppHeader: Sidebar toggle implementation not found'),
   open: false,
+  sidebarWidth: '225px',
 }
 
 export default AppHeader

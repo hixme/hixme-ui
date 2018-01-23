@@ -6,7 +6,7 @@ const StyledSidebar = styled.div`
   bottom: 0;
   left: 0;
   top: 0;
-  width: $sidebarWidth;
+  ${props => props.sidebarWidth && `width: ${props.sidebarWidth};`}
   @media print {
     display: none;
   }
