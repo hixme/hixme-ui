@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/social-security",
-  "version": "1.12.0",
+  "version": "1.13.1",
   "description": "hixme-ui social security component for consistent formatting.",
   "publishConfig": {
     "access": "public"
@@ -82,7 +82,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.12.0",
+    "@hixme-ui/text": "^1.13.1",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
   }
