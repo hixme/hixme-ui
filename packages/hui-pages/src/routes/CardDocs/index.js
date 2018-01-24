@@ -5,7 +5,7 @@ import Text from '@hixme-ui/text'
 
 import { Code, DocsTitle } from '../../components'
 
-const ContainerDocs = () => (
+const CardDocs = () => (
   <div>
     <DocsTitle title='Card' subtitle='A card component offering layout and styling options' />
     <Card>
@@ -32,5 +32,5 @@ const ContainerDocs = () => (
   </div>
 )
 
-export default ContainerDocs
+export default CardDocs
 
