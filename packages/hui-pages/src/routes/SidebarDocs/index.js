@@ -5,6 +5,8 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import Button from '@hixme-ui/button'
 import Container from '@hixme-ui/container'
 import Sidebar from '@hixme-ui/sidebar'
+import Table from '@hixme-ui/table'
+import Title from '@hixme-ui/title'
 
 import { Code, DocsTitle } from '../../components'
 
@@ -56,6 +58,53 @@ class SidebarDocs extends Component {
   </Container>
 </Sidebar>`}
               </Code>
+            </Col>
+          </Row>
+          <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
+          <Row>
+            <Col xs={12}>
+              <Table striped>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>open</td>
+                    <td>boolean</td>
+                    <td>false</td>
+                    <td>Open state of the sidebar</td>
+                  </tr>
+                  <tr>
+                    <td>children</td>
+                    <td>node</td>
+                    <td>N/A</td>
+                    <td>Sidebar content</td>
+                  </tr>
+                  <tr>
+                    <td>header</td>
+                    <td>string</td>
+                    <td>N/A</td>
+                    <td>Sidebar header</td>
+                  </tr>
+                  <tr>
+                    <td>onClose</td>
+                    <td>function</td>
+                    <td>N/A</td>
+                    <td>Function attached to close button</td>
+                  </tr>
+                  <tr>
+                    <td>sidebarWidth</td>
+                    <td>string</td>
+                    <td>{"'300px'"}</td>
+                    <td>Width of sidebar</td>
+                  </tr>
+                </tbody>
+              </Table>
             </Col>
           </Row>
         </Grid>
