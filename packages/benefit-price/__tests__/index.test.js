@@ -1,8 +1,46 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import chai from 'chai'
 import { ThemeProvider } from '@hixme-ui/theme'
 import BenefitPrice from '../src/index'
+import getLabel from '../src/getLabel'
+import getPrice from '../src/getPrice'
 import 'jest-styled-components'
+
+describe('getPrice: Should calculate price for the given pay cycle', () => {
+  describe('Default Export', () => {
+    const { expect } = chai
+    
+    test('Should be of type function', () => {
+      expect(getPrice).to.be.an('function')
+    })
+    test('Correctly calculates price for a sample values', () => {
+      expect(getPrice(78, 26)).to.equal(36)
+    })
+  })
+})
+
+describe('getLabel: Should return the associated string label for the given pay cycle', () => {
+  describe('Default Export', () => {
+    const { expect } = chai
+    
+    test('Should be of type function', () => {
+      expect(getPrice).to.be.an('function')
+    })
+    test('monthly', () => {
+      expect(getLabel(12)).to.equal('monthly')
+    })
+    test('semi-monthly', () => {
+      expect(getLabel(24)).to.equal('semi-monthly')
+    })
+    test('bi-weekly', () => {
+      expect(getLabel(26)).to.equal('bi-weekly')
+    })
+    test('weekly', () => {
+      expect(getLabel(52)).to.equal('weekly')
+    })
+ })
+})
 
 describe('BenefitPrice', () => {
   test('it renders', () => {
