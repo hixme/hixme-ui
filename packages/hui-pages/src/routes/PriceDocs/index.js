@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row } from 'react-flexbox-grid'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Price from '@hixme-ui/price'
 import Table from '@hixme-ui/table'
@@ -25,30 +25,32 @@ const PriceDocs = () => (
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
-        <Table striped>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>value</td>
-              <td>number</td>
-              <td>N/A</td>
-              <td>Price value</td>
-            </tr>
-            <tr>
-              <td>label</td>
-              <td>string</td>
-              <td>N/A</td>
-              <td>Applies a label beneath the styled price</td>
-            </tr>
-          </tbody>
-        </Table>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>value</td>
+                <td>number</td>
+                <td>N/A</td>
+                <td>Price value</td>
+              </tr>
+              <tr>
+                <td>label</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Applies a label beneath the styled price</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
       </Row>
     </Grid>
   </div>

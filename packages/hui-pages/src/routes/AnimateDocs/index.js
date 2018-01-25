@@ -66,60 +66,62 @@ const AnimateDocs = () => (
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
-        <Table striped>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>[Animate.css animation name]</td>
-              <td>bool</td>
-              <td>bounce = true</td>
-              <td>Animation style</td>
-            </tr>
-            <tr>
-              <td>time</td>
-              <td>string</td>
-              <td>{"'1s'"}</td>
-              <td>Time it takes for the animating to run</td>
-            </tr>
-            <tr>
-              <td>delay</td>
-              <td>string</td>
-              <td>{"'0s'"}</td>
-              <td>Time delay before the animation begins to run</td>
-            </tr>
-            <tr>
-              <td>count</td>
-              <td>string</td>
-              <td>{"'1s'"}</td>
-              <td>Number of times the animation will run</td>
-            </tr>
-            <tr>
-              <td>trigger</td>
-              <td>bool</td>
-              <td>false</td>
-              <td>Play/paused state of the animation</td>
-            </tr>
-            <tr>
-              <td>display</td>
-              <td>string</td>
-              <td>{"'inherit'"}</td>
-              <td>CSS display property</td>
-            </tr>
-            <tr>
-              <td>fillMode</td>
-              <td>string</td>
-              <td>{"'none'"}</td>
-              <td>Specifies a style for the element when the animation is not playing</td>
-            </tr>
-          </tbody>
-        </Table>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>[Animate.css animation name]</td>
+                <td>bool</td>
+                <td>bounce = true</td>
+                <td>Animation style</td>
+              </tr>
+              <tr>
+                <td>time</td>
+                <td>string</td>
+                <td>{"'1s'"}</td>
+                <td>Time it takes for the animating to run</td>
+              </tr>
+              <tr>
+                <td>delay</td>
+                <td>string</td>
+                <td>{"'0s'"}</td>
+                <td>Time delay before the animation begins to run</td>
+              </tr>
+              <tr>
+                <td>count</td>
+                <td>string</td>
+                <td>{"'1s'"}</td>
+                <td>Number of times the animation will run</td>
+              </tr>
+              <tr>
+                <td>trigger</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Play/paused state of the animation</td>
+              </tr>
+              <tr>
+                <td>display</td>
+                <td>string</td>
+                <td>{"'inherit'"}</td>
+                <td>CSS display property</td>
+              </tr>
+              <tr>
+                <td>fillMode</td>
+                <td>string</td>
+                <td>{"'none'"}</td>
+                <td>Specifies a style for the element when the animation is not playing</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
       </Row>
     </Grid>
   </div>

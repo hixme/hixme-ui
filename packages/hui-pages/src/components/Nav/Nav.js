@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Text from '@hixme-ui/text'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
-const Sidebar = () => (
+const Nav = () => (
   <Grid fluid>
     <Row>
       <Col xs={12}>
@@ -187,6 +187,15 @@ const Sidebar = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/sidebar'>
+          <Text primary cursor='pointer'>
+            Sidebar
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/social-security'>
           <Text primary cursor='pointer'>
             Social Security
@@ -224,6 +233,6 @@ const Sidebar = () => (
   </Grid>
 )
 
-Sidebar.displayName = 'Sidebar'
+Nav.displayName = 'Nav'
 
-export default Sidebar
+export default Nav
