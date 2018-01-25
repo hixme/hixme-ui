@@ -6,7 +6,7 @@ import AppLayout from '@hixme-ui/app-layout'
 import ContentContainer from '@hixme-ui/content-container'
 
 import DocsHeader from '../components/DocsHeader/DocsHeader'
-import Sidebar from '../components/Sidebar'
+import Nav from '../components/Nav'
 import MenuHeader from '../components/MenuHeader'
 
 import Home from './Home'
@@ -42,7 +42,7 @@ import TitleDocs from './TitleDocs'
 
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Sidebar} fixed open>
+    <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Nav} fixed open>
       <Switch>
         <Route path='/' exact component={Home} />
         <ContentContainer>
