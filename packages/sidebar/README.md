@@ -10,16 +10,25 @@ npm i --save @hixme-ui/sidebar
 ```javascript
 import Sidebar from '@hixme-ui/sidebar'
 
-<Sidebar>
-  <p>Content goes here</p>
+<Sidebar
+  open={open}
+  header='Header'
+  onClose={toggleSidebar}
+>
+  Content
 </Sidebar>
 ```
 
 ## Default Props
 
-| Name            | Type        | Default        |
-| --------------- | ----------- | -------------- |
-| padding         | string      | 20px           |
-| background      | string      | none           |
+| Name          | Type      | Default  |
+| ------------- | --------- | -------- |
+| children      | node      | N/A      |
+| header        | string    | N/A      |
+| onClose       | function  | N/A      |
+| open          | boolean   | false    |
+| sidebarWidth  | string    | '300px'  |
+| style         | object    | N/A      |
+| topOffset     | number    | 58       |
 
 
