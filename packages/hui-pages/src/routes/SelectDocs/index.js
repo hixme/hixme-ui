@@ -47,24 +47,26 @@ const SelectDocs = () => (
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
-        <Table striped>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>list</td>
-              <td>array</td>
-              <td>N/A</td>
-              <td>Array populated with ID and Name for each option on the Select component</td>
-            </tr>
-          </tbody>
-        </Table>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>list</td>
+                <td>array</td>
+                <td>N/A</td>
+                <td>Array populated with ID and Name for each option on the Select component</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
       </Row>
     </Grid>
   </div>

@@ -29,72 +29,75 @@ const CheckboxDocs = () => (
         <Code>
           {`<Checkbox defaultChecked text='Checkbox with a label' />
 <Checkbox defaultChecked small text='Small checkbox with a label' />
-<Checkbox disabled text='Disabled checkbox' />
-`}
+<Checkbox disabled text='Disabled checkbox' />`}
         </Code>
       </Row>
-      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
+      <Row style={{ margin: '40px 0 20px 0' }}>
+        <Title smaller>Props</Title>
+      </Row>
       <Row center='xs'>
-        <Table striped>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>className</td>
-              <td>string</td>
-              <td>N/A</td>
-              <td>Assigns a class to the Checkbox component</td>
-            </tr>
-            <tr>
-              <td>name</td>
-              <td>string</td>
-              <td>N/A</td>
-              <td>Checkbox name</td>
-            </tr>
-            <tr>
-              <td>text</td>
-              <td>string</td>
-              <td>{'\'Checkbox\''}</td>
-              <td>Checkbox label</td>
-            </tr>
-            <tr>
-              <td>small</td>
-              <td>bool</td>
-              <td>false</td>
-              <td>Small checkbox size</td>
-            </tr>
-            <tr>
-              <td>defaultChecked</td>
-              <td>bool</td>
-              <td>false</td>
-              <td>Checkbox component default state</td>
-            </tr>
-            <tr>
-              <td>checked</td>
-              <td>bool</td>
-              <td>false</td>
-              <td>Checkbox component current state</td>
-            </tr>
-            <tr>
-              <td>onChange</td>
-              <td>func</td>
-              <td>N/A</td>
-              <td>A {'function'} that fires on checkbox change</td>
-            </tr>
-            <tr>
-              <td>disabled</td>
-              <td>boll</td>
-              <td>false</td>
-              <td>Disabled state of the checkbox</td>
-            </tr>
-          </tbody>
-        </Table>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>className</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Assigns a class to the Checkbox component</td>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Checkbox name</td>
+              </tr>
+              <tr>
+                <td>text</td>
+                <td>string</td>
+                <td>{'\'Checkbox\''}</td>
+                <td>Checkbox label</td>
+              </tr>
+              <tr>
+                <td>small</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Small checkbox size</td>
+              </tr>
+              <tr>
+                <td>defaultChecked</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Checkbox component default state</td>
+              </tr>
+              <tr>
+                <td>checked</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Checkbox component current state</td>
+              </tr>
+              <tr>
+                <td>onChange</td>
+                <td>func</td>
+                <td>N/A</td>
+                <td>A {'function'} that fires on checkbox change</td>
+              </tr>
+              <tr>
+                <td>disabled</td>
+                <td>boll</td>
+                <td>false</td>
+                <td>Disabled state of the checkbox</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
       </Row>
     </Grid>
   </div>
