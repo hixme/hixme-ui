@@ -27,17 +27,18 @@ import FormsDocs from './FormsDocs'
 import IconDocs from './IconDocs'
 import InputDocs from './InputDocs'
 import LabelDocs from './LabelDocs'
+import NotFound from './NotFound'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
 import PriceDocs from './PriceDocs'
 import RadioButtonDocs from './RadioButtonDocs'
 import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
+import SidebarDocs from './SidebarDocs'
 import SocialSecurityDocs from './SocialSecurityDocs'
 import TableDocs from './TableDocs'
 import TextDocs from './TextDocs'
 import TitleDocs from './TitleDocs'
-import NotFound from './NotFound'
 
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -68,6 +69,7 @@ const Routes = () => (
           <Route path='/radio-button' component={RadioButtonDocs} />
           <Route path='/select' component={SelectDocs} />
           <Route path='/separator' component={SeparatorDocs} />
+          <Route path='/sidebar' component={SidebarDocs} />
           <Route path='/social-security' component={SocialSecurityDocs} />
           <Route path='/table' component={TableDocs} />
           <Route path='/text' component={TextDocs} />
