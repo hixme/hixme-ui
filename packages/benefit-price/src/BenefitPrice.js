@@ -13,10 +13,10 @@ const BenefitPrice = ({
   <Price
     value={getPrice(value, payCycle)}
     label={getLabel(payCycle)}
-    {...restProps} 
+    {...restProps}
   />
 )
-      
+
 BenefitPrice.displayName = 'hui:BenefitPrice'
 BenefitPrice.huiName = 'BenefitPrice'
 
