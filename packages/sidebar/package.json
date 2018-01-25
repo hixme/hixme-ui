@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "test": "jest",
-    "test:watch": "npm test -- --watch",
+    "test:watch": "npm test -- --watch --verbose",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "flow": "flow",
