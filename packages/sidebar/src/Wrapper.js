@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     margin-top: ${props.topOffset}px;
   `}
   position: fixed;
-  margin-right: ${props => (props.open ? `-${props.sidebarWidth}` : '0')};
+  margin-right: ${props => (props.open ? '0' : `-${props.sidebarWidth}`)};
   background: #fff;
   background-color: #fff;
   box-shadow: 0 1px 3px #b9c5cd;

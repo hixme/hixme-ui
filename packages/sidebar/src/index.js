@@ -1,5 +1,5 @@
-export Content from './Content'
-export Header from './Header'
+export StyledSidebarContent from './StyledSidebarContent'
+export StyledSidebarHeader from './StyledSidebarHeader'
 export IconSpan from './IconSpan'
 export Wrapper from './Wrapper'
 

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 // hixme-ui
 import CloseButton from '@hixme-ui/close-button'
 
-import Content from './Content'
-import Header from './Header'
 import IconSpan from './IconSpan'
+import StyledSidebarContent from './StyledSidebarContent'
+import StyledSidebarHeader from './StyledSidebarHeader'
 import Wrapper from './Wrapper'
 
 const Sidebar = ({
@@ -19,17 +19,17 @@ const Sidebar = ({
   topOffset,
 }) => (
   <Wrapper topOffset={topOffset} open={open} sidebarWidth={sidebarWidth} style={style}>
-    <Header>
+    <StyledSidebarHeader>
       <h3>
         {header}
         <IconSpan>
           <CloseButton onClick={onClose} noLabel />
         </IconSpan>
       </h3>
-    </Header>
-    <Content>
+    </StyledSidebarHeader>
+    <StyledSidebarContent>
       {children}
-    </Content>
+    </StyledSidebarContent>
   </Wrapper>
 )
 
