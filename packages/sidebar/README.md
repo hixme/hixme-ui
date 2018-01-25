@@ -31,4 +31,3 @@ import Sidebar from '@hixme-ui/sidebar'
 | style         | object    | N/A      |
 | topOffset     | number    | 58       |
 
-

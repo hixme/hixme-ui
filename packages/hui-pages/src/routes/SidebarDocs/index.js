@@ -60,8 +60,10 @@ class SidebarDocs extends Component {
               </Code>
             </Col>
           </Row>
-          <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
-          <Row>
+          <Row style={{ margin: '40px 0 20px 0' }}>
+            <Title smaller>Props</Title>
+          </Row>
+          <Row center='xs'>
             <Col xs={12}>
               <Table striped>
                 <thead>
@@ -102,6 +104,18 @@ class SidebarDocs extends Component {
                     <td>string</td>
                     <td>{"'300px'"}</td>
                     <td>Width of sidebar</td>
+                  </tr>
+                  <tr>
+                    <td>style</td>
+                    <td>object</td>
+                    <td>N/A</td>
+                    <td>Additional styles</td>
+                  </tr>
+                  <tr>
+                    <td>topOffset</td>
+                    <td>number</td>
+                    <td>58</td>
+                    <td>Number of pixels to offset the sidebar from the top of the page</td>
                   </tr>
                 </tbody>
               </Table>
