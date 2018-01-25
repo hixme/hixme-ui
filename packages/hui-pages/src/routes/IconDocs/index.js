@@ -110,7 +110,7 @@ const IconDocs = () => (
             props[color] = true
           }
           return (
-            <Col xs={6} sm={3} style={{ margin: '15px 0' }}>
+            <Col xs={6} sm={3} style={{ margin: '15px 0' }} key={`icon-${name}`}>
               <Icon {...props} size={2} />
               <br />
               <Text>{name}</Text>
