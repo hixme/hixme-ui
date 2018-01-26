@@ -44,10 +44,10 @@ import TitleDocs from './TitleDocs'
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Nav} fixed open>
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <ContentContainer>
-          <DocsHeader />
+      <ContentContainer>
+        <DocsHeader />
+        <Switch>
+          <Route path='/' exact component={Home} />
           <Route path='/animate' component={AnimateDocs} />
           <Route path='/benefit-price' component={BenefitPriceDocs} />
           <Route path='/bullet-list' component={BulletListDocs} />
@@ -76,9 +76,9 @@ const Routes = () => (
           <Route path='/table' component={TableDocs} />
           <Route path='/text' component={TextDocs} />
           <Route path='/title' component={TitleDocs} />
-        </ContentContainer>
-        <Route component={NotFound} />
-      </Switch>
+          <Route component={NotFound} />
+        </Switch>
+      </ContentContainer>
     </AppLayout>
   </BrowserRouter>
 )
