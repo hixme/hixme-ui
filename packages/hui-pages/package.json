@@ -41,6 +41,7 @@
     "@hixme-ui/text": "^1.0.0",
     "@hixme-ui/theme": "^1.0.0",
     "@hixme-ui/title": "^1.0.0",
+    "@hixme-ui/upload-box": "^1.0.0",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",

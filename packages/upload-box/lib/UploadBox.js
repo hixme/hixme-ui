@@ -44,6 +44,14 @@ var _theme = require('@hixme-ui/theme');
 
 var _theme2 = _interopRequireDefault(_theme);
 
+var _StyledIcon = require('./StyledIcon');
+
+var _StyledIcon2 = _interopRequireDefault(_StyledIcon);
+
+var _StyledUploadContent = require('./StyledUploadContent');
+
+var _StyledUploadContent2 = _interopRequireDefault(_StyledUploadContent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var textColors = _theme2.default.textColors;
@@ -81,13 +89,13 @@ var UploadBox = function UploadBox(_ref) {
         _container2.default,
         { noPadding: true, flex: compact, justifyCenter: compact, alignCenter: compact },
         _react2.default.createElement(
-          'div',
-          { style: { margin: compact ? '0 18px' : '0', position: 'relative', top: compact ? '6px' : '0' } },
+          _StyledIcon2.default,
+          { compact: compact },
           _react2.default.createElement(_icon2.default, { cloudUpload: true, lighter: true, size: 3.4 })
         ),
         _react2.default.createElement(
-          'div',
-          { style: { margin: compact ? '0 18px' : '0' } },
+          _StyledUploadContent2.default,
+          { compact: compact },
           _react2.default.createElement(
             _title2.default,
             { smaller: true, primary: isDragActive, style: { margin: compact ? '0' : '0 0 0.9em' } },
