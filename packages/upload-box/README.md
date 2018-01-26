@@ -1,33 +1,26 @@
-# hixme-ui sidebar
+# hixme-ui upload-box
 
 ```bash
-npm i --save @hixme-ui/sidebar
+npm i --save @hixme-ui/upload-box
 ```
-[View it live](https://hixme.github.io/hixme-ui/sidebar)
+[View it live](https://hixme.github.io/hixme-ui/upload-box)
 
 ## Usage
 
 ```javascript
-import Sidebar from '@hixme-ui/sidebar'
+import UploadBox from '@hixme-ui/upload-box'
 
-<Sidebar
-  open={open}
-  header='Header'
-  onClose={toggleSidebar}
->
-  Content
-</Sidebar>
+<UploadBox
+  compact
+  onDrop={doSomething}
+/>
 ```
 
 ## Default Props
 
 | Name          | Type      | Default  |
 | ------------- | --------- | -------- |
-| children      | node      | N/A      |
-| header        | string    | N/A      |
-| onClose       | function  | N/A      |
-| open          | boolean   | false    |
-| sidebarWidth  | string    | '300px'  |
-| style         | object    | N/A      |
-| topOffset     | number    | 58       |
+| compact       | boolean   | false    |
+| value         | string    | ''       |
+| onDrop        | function  | N/A      |
 
