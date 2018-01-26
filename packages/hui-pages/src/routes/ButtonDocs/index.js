@@ -79,8 +79,9 @@ const ButtonDocs = () => (
       </Row>
 
 
-      <Code style={{ margin: '10px' }}>
-        {`import Button from '@hixme-ui/button'
+      <div style={{ margin: '10px' }}>
+        <Code>
+          {`import Button from '@hixme-ui/button'
 import Text from '@hixme-ui/text'
 
 <Button blue>blue</Button>
@@ -109,10 +110,9 @@ import Text from '@hixme-ui/text'
 
 <Button gold>
   <Text bold blue>Gold button, blue text</Text>
-</Button>
-
-`}
-      </Code>
+</Button>`}
+        </Code>
+      </div>
     </Grid>
   </div>
 )
