@@ -50,7 +50,7 @@ const UploadBox = ({
           </Title>
           {value ?
             <Text primary fontSize='16px' style={{ textDecoration: 'underline' }}>{value}</Text> :
-            <Text lighter fontSize='16px'>file here or <Text span dashed primary>browse</Text></Text>
+            <Text lighter fontSize='16px'>file here or <Text dashed primary>browse</Text></Text>
           }
         </StyledUploadContent>
       </Container>

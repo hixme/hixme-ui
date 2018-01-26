@@ -111,7 +111,7 @@ var UploadBox = function UploadBox(_ref) {
             'file here or ',
             _react2.default.createElement(
               _text2.default,
-              { span: true, dashed: true, primary: true },
+              { dashed: true, primary: true },
               'browse'
             )
           )
