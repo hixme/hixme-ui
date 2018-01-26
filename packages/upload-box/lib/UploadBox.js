@@ -124,7 +124,9 @@ UploadBox.propTypes = {
 
 UploadBox.defaultProps = {
   compact: false,
-  onDrop: function onDrop() {},
+  onDrop: function onDrop() {
+    return null;
+  },
   value: ''
 };
 

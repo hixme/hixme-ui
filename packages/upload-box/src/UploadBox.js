@@ -8,6 +8,9 @@ import Text from '@hixme-ui/text'
 import Title from '@hixme-ui/title'
 import theme from '@hixme-ui/theme'
 
+import StyledIcon from './StyledIcon'
+import StyledUploadContent from './StyledUploadContent'
+
 const { textColors } = theme
 
 const dropzoneDefaultStyles = {
@@ -38,16 +41,18 @@ const UploadBox = ({
   >
     {({ isDragActive }) => (
       <Container noPadding flex={compact} justifyCenter={compact} alignCenter={compact}>
-        <div style={{ margin: compact ? '0 18px' : '0', position: 'relative', top: compact ? '6px' : '0' }}>
+        <StyledIcon compact={compact}>
           <Icon cloudUpload lighter size={3.4} />
-        </div>
-        <div style={{ margin: compact ? '0 18px' : '0' }}>
-          <Title smaller primary={isDragActive} style={{ margin: compact ? '0' : '0 0 0.9em' }}>Drag & Drop</Title>
+        </StyledIcon>
+        <StyledUploadContent compact={compact}>
+          <Title smaller primary={isDragActive} style={{ margin: compact ? '0' : '0 0 0.9em' }}>
+            Drag & Drop
+          </Title>
           {value ?
             <Text primary fontSize='16px' style={{ textDecoration: 'underline' }}>{value}</Text> :
             <Text lighter fontSize='16px'>file here or <Text span dashed primary>browse</Text></Text>
           }
-        </div>
+        </StyledUploadContent>
       </Container>
     )}
   </Dropzone>
