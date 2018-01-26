@@ -6,7 +6,7 @@ import AppLayout from '@hixme-ui/app-layout'
 import ContentContainer from '@hixme-ui/content-container'
 
 import DocsHeader from '../components/DocsHeader/DocsHeader'
-import Sidebar from '../components/Sidebar'
+import Nav from '../components/Nav'
 import MenuHeader from '../components/MenuHeader'
 
 import Home from './Home'
@@ -28,21 +28,22 @@ import FormsDocs from './FormsDocs'
 import IconDocs from './IconDocs'
 import InputDocs from './InputDocs'
 import LabelDocs from './LabelDocs'
+import NotFound from './NotFound'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
 import PriceDocs from './PriceDocs'
 import RadioButtonDocs from './RadioButtonDocs'
 import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
+import SidebarDocs from './SidebarDocs'
 import SocialSecurityDocs from './SocialSecurityDocs'
 import TableDocs from './TableDocs'
 import TextDocs from './TextDocs'
 import TitleDocs from './TitleDocs'
-import NotFound from './NotFound'
 
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Sidebar} fixed open>
+    <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Nav} fixed open>
       <Switch>
         <Route path='/' exact component={Home} />
         <ContentContainer>
@@ -70,6 +71,7 @@ const Routes = () => (
           <Route path='/radio-button' component={RadioButtonDocs} />
           <Route path='/select' component={SelectDocs} />
           <Route path='/separator' component={SeparatorDocs} />
+          <Route path='/sidebar' component={SidebarDocs} />
           <Route path='/social-security' component={SocialSecurityDocs} />
           <Route path='/table' component={TableDocs} />
           <Route path='/text' component={TextDocs} />

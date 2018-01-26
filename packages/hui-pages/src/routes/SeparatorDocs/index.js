@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row } from 'react-flexbox-grid'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Separator from '@hixme-ui/separator'
 import Table from '@hixme-ui/table'
@@ -34,42 +34,44 @@ const SeparatorDocs = () => (
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
-        <Table striped>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>size</td>
-              <td>string</td>
-              <td>{'\'2px\''}</td>
-              <td>Separator height</td>
-            </tr>
-            <tr>
-              <td>background</td>
-              <td>string</td>
-              <td>N/A</td>
-              <td>Specify your own color for the separator</td>
-            </tr>
-            <tr>
-              <td>margin</td>
-              <td>string</td>
-              <td>N/A</td>
-              <td>Margin around the separator</td>
-            </tr>
-            <tr>
-              <td>padding</td>
-              <td>string</td>
-              <td>N/A</td>
-              <td>Padding for the separator</td>
-            </tr>
-          </tbody>
-        </Table>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>size</td>
+                <td>string</td>
+                <td>{'\'2px\''}</td>
+                <td>Separator height</td>
+              </tr>
+              <tr>
+                <td>background</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Specify your own color for the separator</td>
+              </tr>
+              <tr>
+                <td>margin</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Margin around the separator</td>
+              </tr>
+              <tr>
+                <td>padding</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Padding for the separator</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
 
       </Row>
     </Grid>

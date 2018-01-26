@@ -40,30 +40,32 @@ const SocialSecurityDocs = () => (
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
-        <Table striped>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>number</td>
-              <td>string</td>
-              <td>N/A</td>
-              <td>Social security number</td>
-            </tr>
-            <tr>
-              <td>showFull</td>
-              <td>boolean</td>
-              <td>false</td>
-              <td>Show full number</td>
-            </tr>
-          </tbody>
-        </Table>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>number</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Social security number</td>
+              </tr>
+              <tr>
+                <td>showFull</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Show full number</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
       </Row>
     </Grid>
   </div>

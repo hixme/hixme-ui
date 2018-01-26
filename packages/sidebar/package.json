@@ -1,15 +1,15 @@
 {
-  "name": "@hixme-ui/close-button",
+  "name": "@hixme-ui/sidebar",
   "version": "1.0.0",
-  "description": "hixme-ui CloseButton component",
+  "description": "hixme-ui Sidebar component",
   "publishConfig": {
     "access": "public"
   },
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "BABEL_ENV=test jest",
-    "test:watch": "npm test -- --watch",
+    "test": "jest",
+    "test:watch": "npm test -- --watch --verbose",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "flow": "flow",
@@ -43,6 +43,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
     "babel-jest": "^21.2.0",
+    "babel-loader": "^6.2.0",
     "babel-plugin-transform-runtime": "^6.3.13",
     "babel-polyfill": "^6.9.0",
     "babel-preset-es2015": "^6.3.13",
@@ -71,22 +72,19 @@
     "husky": "^0.13.3",
     "jest": "^21.2.1",
     "jest-styled-components": "^4.9.0",
-    "raf": "^3.4.0",
     "react-addons-test-utils": "^15.0.0",
     "react-test-renderer": "^16.0.0",
     "regenerator-runtime": "^0.11.0",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "webpack": "^3.5.5"
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.11.0",
-    "@hixme-ui/icon": "^1.12.0",
-    "@hixme-ui/text": "^1.11.0",
+    "@hixme-ui/close-button": "^1.0.0",
     "@hixme-ui/theme": "^1.11.0",
     "@hixme-ui/theme-props": "^1.11.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.1.1",
     "styled-components": "^2.3.3"
   }
 }

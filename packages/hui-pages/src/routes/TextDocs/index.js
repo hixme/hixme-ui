@@ -55,48 +55,48 @@ const TextDocs = () => (
         </Code>
       </Col>
     </Row>
-    <Row style={{ margin: '40px 0 10px' }}>
-      <Title smaller>Font Sizes</Title>
-    </Row>
-    <Row>
-      <Table striped style={{ width: 'unset' }}>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Font Size</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>smallest</td>
-            <td>{'8px'}</td>
-          </tr>
-          <tr>
-            <td>smaller</td>
-            <td>{'10px'}</td>
-          </tr>
-          <tr>
-            <td>small</td>
-            <td>{'12px'}</td>
-          </tr>
-          <tr>
-            <td>medium</td>
-            <td>{'16px'}</td>
-          </tr>
-          <tr>
-            <td>large</td>
-            <td>{'18px'}</td>
-          </tr>
-          <tr>
-            <td>larger</td>
-            <td>{'20px'}</td>
-          </tr>
-          <tr>
-            <td>jumbo</td>
-            <td>{'22px'}</td>
-          </tr>
-        </tbody>
-      </Table>
+    <Row center='xs'>
+      <Col xs={12} sm={6}>
+        <Title smaller style={{ margin: '40px 0 20px 0' }}>Font Sizes</Title>
+        <Table striped style={{ width: 'unset' }}>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Font Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>smallest</td>
+              <td>{'8px'}</td>
+            </tr>
+            <tr>
+              <td>smaller</td>
+              <td>{'10px'}</td>
+            </tr>
+            <tr>
+              <td>small</td>
+              <td>{'12px'}</td>
+            </tr>
+            <tr>
+              <td>medium</td>
+              <td>{'16px'}</td>
+            </tr>
+            <tr>
+              <td>large</td>
+              <td>{'18px'}</td>
+            </tr>
+            <tr>
+              <td>larger</td>
+              <td>{'20px'}</td>
+            </tr>
+            <tr>
+              <td>jumbo</td>
+              <td>{'22px'}</td>
+            </tr>
+          </tbody>
+        </Table>
+      </Col>
     </Row>
   </Grid>
 )
