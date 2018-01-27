@@ -42,7 +42,7 @@ const RadioDisplay = styled.span`
   height: 18px;
   display: inline-block;
   position: relative;
-  background: $white;
+  background: #fff;
   font-size: 0;
   line-height: 0;
   vertical-align: top;
