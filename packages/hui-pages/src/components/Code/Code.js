@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import theme from '@hixme-ui/theme'
 
 import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { hopscotch } from 'react-syntax-highlighter/styles/prism'
+import { tomorrow } from 'react-syntax-highlighter/styles/prism'
 
 const StyledBorder = styled.div`
   ${props => props.margin && (`margin: ${props.margin};`)}
@@ -18,8 +18,8 @@ const StyledBorder = styled.div`
 `
 
 const Code = ({ children, ...restProps }) => (
-  <StyledBorder {...restProps}>
-    <SyntaxHighlighter language='jsx' style={hopscotch}>
+  <StyledBorder>
+    <SyntaxHighlighter language='jsx' style={tomorrow} {...restProps}>
       {children}
     </SyntaxHighlighter>
   </StyledBorder>

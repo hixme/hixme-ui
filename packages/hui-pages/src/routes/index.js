@@ -45,10 +45,10 @@ import UploadBoxDocs from './UploadBoxDocs'
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Nav} fixed open>
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <ContentContainer>
-          <DocsHeader />
+      <ContentContainer>
+        <DocsHeader />
+        <Switch>
+          <Route path='/' exact component={Home} />
           <Route path='/animate' component={AnimateDocs} />
           <Route path='/benefit-price' component={BenefitPriceDocs} />
           <Route path='/bullet-list' component={BulletListDocs} />
@@ -78,9 +78,9 @@ const Routes = () => (
           <Route path='/text' component={TextDocs} />
           <Route path='/title' component={TitleDocs} />
           <Route path='/upload-box' component={UploadBoxDocs} />
-        </ContentContainer>
-        <Route component={NotFound} />
-      </Switch>
+          <Route component={NotFound} />
+        </Switch>
+      </ContentContainer>
     </AppLayout>
   </BrowserRouter>
 )
