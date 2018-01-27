@@ -40,6 +40,7 @@ import SocialSecurityDocs from './SocialSecurityDocs'
 import TableDocs from './TableDocs'
 import TextDocs from './TextDocs'
 import TitleDocs from './TitleDocs'
+import UploadBoxDocs from './UploadBoxDocs'
 
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -76,6 +77,7 @@ const Routes = () => (
           <Route path='/table' component={TableDocs} />
           <Route path='/text' component={TextDocs} />
           <Route path='/title' component={TitleDocs} />
+          <Route path='/upload-box' component={UploadBoxDocs} />
           <Route component={NotFound} />
         </Switch>
       </ContentContainer>

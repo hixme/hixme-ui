@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["StyledIcon","StyledUploadContent","default"],"mappings":";;;;;;;;;;;;;;;;;;;;;QAAOA,U;QACAC,mB;QAEAC,O","file":"index.js","sourcesContent":["export StyledIcon from './StyledIcon'\nexport StyledUploadContent from './StyledUploadContent'\n\nexport default from './UploadBox'\n"]}

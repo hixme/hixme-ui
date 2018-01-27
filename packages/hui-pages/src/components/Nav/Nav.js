@@ -16,6 +16,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/benefit-price'>
+          <Text primary cursor='pointer'>
+            BenefitPrice
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/bullet-list'>
           <Text primary cursor='pointer'>
             BulletList
@@ -226,6 +235,15 @@ const Nav = () => (
         <Link to='/title'>
           <Text primary cursor='pointer'>
             Title
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
+        <Link to='/upload-box'>
+          <Text primary cursor='pointer'>
+            UploadBox
           </Text>
         </Link>
       </Col>
