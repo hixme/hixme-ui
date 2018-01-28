@@ -23,7 +23,7 @@ const Print = ({
 }) => (
   <Text
     cursor='pointer'
-    light 
+    light
     onClick={handleClick}
   >
     {showLabel && <PrintLabel>{label}</PrintLabel>}
