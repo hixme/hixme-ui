@@ -1,7 +1,7 @@
 # hixme-ui print
 
 ```bash
-npm i --save @hixme-ui/printc
+npm i --save @hixme-ui/print
 ```
 [View it live](https://hixme.github.io/hixme-ui/print)
 
@@ -17,6 +17,6 @@ import Print from '@hixme-ui/print'
 
 | Name            | Type        | Default        |
 |-----------------|-------------|----------------|
-| label           | string      | Print          |
+| label           | string      | 'Print'        |
 | showIcon        | bool        | true           |
 | showLabel       | bool        | true           |
