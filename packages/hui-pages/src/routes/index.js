@@ -22,6 +22,7 @@ import CloseButtonDocs from './CloseButtonDocs'
 import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
 import CurrencyDocs from './CurrencyDocs'
+import DatesDocs from './DatesDocs'
 import EmailDocs from './EmailDocs'
 import FormGroupDocs from './FormGroupDocs'
 import FormsDocs from './FormsDocs'
@@ -60,6 +61,7 @@ const Routes = () => (
           <Route path='/container' component={ContainerDocs} />
           <Route path='/content-container' component={ContentContainerDocs} />
           <Route path='/currency' component={CurrencyDocs} />
+          <Route path='/dates' component={DatesDocs} />
           <Route path='/email' component={EmailDocs} />
           <Route path='/form-group' component={FormGroupDocs} />
           <Route path='/forms' component={FormsDocs} />
