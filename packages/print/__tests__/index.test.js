@@ -6,29 +6,30 @@ import Print from '../src/index'
 
 const defaultProps = {
   label: 'Print',
+  showLabel: true,
+  showIcon: true,
 }
 
 describe('Print', () => {
-  it('it renders', () => {
+  it('should render span', () => {
     const component = renderer.create(
       <ThemeProvider><Print /></ThemeProvider>,
     )
 
     const tree = component.toJSON()
-    expect(tree.type).toBe('a')
+    expect(tree.type).toBe('span')
   })
 
-  /*
-  it('it has default props', () => {
+
+  it('should have default props', () => {
     const component = renderer.create(
       <ThemeProvider><Print /></ThemeProvider>,
     )
 
     const testInstance = component.root
-    expect(testInstance.findByType(CloseButton).props.iconSize).toBe(defaultProps.iconSize)
-    expect(testInstance.findByType(CloseButton).props.label).toBe(defaultProps.label)
-    expect(testInstance.findByType(CloseButton).props.noLabel).toBe(defaultProps.noLabel)
+    expect(testInstance.findByType(Print).props.label).toBe(defaultProps.label)
+    expect(testInstance.findByType(Print).props.showLabel).toBe(defaultProps.showLabel)
+    expect(testInstance.findByType(Print).props.showIcon).toBe(defaultProps.showIcon)
   })
-  */
 })
 
