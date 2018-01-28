@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 
-import Text from '@hixme-ui/text'
+import { TextBase } from '@hixme-ui/text'
 
-class FormatUtcDate extends Text {
+const Time = TextBase.withComponent('time')
+
+class FormatUtcDate extends Component {
   static format(props) {
     const {
       date,
@@ -31,8 +33,9 @@ class FormatUtcDate extends Text {
   }
 
   render() {
+    const { ...restProps } = this.props
     return (
-      <time style={this.getStyles()}>{FormatUtcDate.format(this.props)}</time>
+      <Time {...restProps}>{FormatUtcDate.format(this.props)}</Time>
     )
   }
 }

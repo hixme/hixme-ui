@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 
-import Text from '@hixme-ui/text'
+import { TextBase } from '@hixme-ui/text'
 
-class ReadableDatetime extends Text {
+const Time = TextBase.withComponent('time')
+
+class ReadableDatetime extends Component {
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset
   // The time-zone offset is the difference, in minutes, between UTC and local time.
   // Note that this means that the offset is positive if the local timezone is behind
@@ -17,14 +19,15 @@ class ReadableDatetime extends Text {
   }
 
   render() {
+    const { ...restProps } = this.props
     return (
-      <time style={this.getStyles()}>{this.getTime()}</time>
+      <Time {...restProps}>{this.getTime()}</Time>
     )
   }
 }
 
 ReadableDatetime.propTypes = {
-  datetime: PropTypes.string,
+  datetime: PropTypes.string.isRequired,
   format: PropTypes.string,
 }
 
