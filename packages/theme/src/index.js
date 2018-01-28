@@ -128,7 +128,7 @@ export const colorTheme = {
   warning: colors.yellow,
   error: colors.red,
   danger: colors.red,
-  muted: colors.grey110,
+  muted: colors.grey80,
 
   white: colors.white,
   black: colors.black,
