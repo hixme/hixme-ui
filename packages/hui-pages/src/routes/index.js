@@ -31,6 +31,7 @@ import LabelDocs from './LabelDocs'
 import NotFound from './NotFound'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
+import PrintDocs from './PrintDocs'
 import PriceDocs from './PriceDocs'
 import RadioButtonDocs from './RadioButtonDocs'
 import SelectDocs from './SelectDocs'
@@ -67,6 +68,7 @@ const Routes = () => (
           <Route path='/input' component={InputDocs} />
           <Route path='/label' component={LabelDocs} />
           <Route path='/percentage' component={PercentageDocs} />
+          <Route path='/print' component={PrintDocs} />
           <Route path='/phone' component={PhoneDocs} />
           <Route path='/price' component={PriceDocs} />
           <Route path='/radio-button' component={RadioButtonDocs} />

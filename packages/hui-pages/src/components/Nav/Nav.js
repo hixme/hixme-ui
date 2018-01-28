@@ -169,6 +169,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/print'>
+          <Text primary cursor='pointer'>
+            Print
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/radio-button'>
           <Text primary cursor='pointer'>
             Radio Button
