@@ -23,12 +23,12 @@ const Print = ({
 }) => (
   <Text
     cursor='pointer'
-    muted
+    light 
     onClick={handleClick}
   >
     {showLabel && <PrintLabel>{label}</PrintLabel>}
     {showIcon &&
-      <Icon printer fontSize={22} muted style={{ verticalAlign: 'middle' }} />}
+      <Icon printer fontSize={22} light style={{ verticalAlign: 'middle' }} />}
   </Text>
 )
 
