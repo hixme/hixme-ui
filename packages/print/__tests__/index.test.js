@@ -1,30 +1,27 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Container from '@hixme-ui/container'
 
-import CloseButton from '../src/index'
+import Print from '../src/index'
 
 const defaultProps = {
-  iconSize: 1.8,
-  onClick: () => null,
-  label: 'CLOSE',
-  noLabel: false,
+  label: 'Print',
 }
 
-describe('Container', () => {
-  test('it renders', () => {
+describe('Print', () => {
+  it('it renders', () => {
     const component = renderer.create(
-      <ThemeProvider><CloseButton /></ThemeProvider>,
+      <ThemeProvider><Print /></ThemeProvider>,
     )
 
     const tree = component.toJSON()
-    expect(tree.type).toBe('div')
+    expect(tree.type).toBe('a')
   })
 
-  test('it has defaultProps', () => {
+  /*
+  it('it has default props', () => {
     const component = renderer.create(
-      <ThemeProvider><CloseButton /></ThemeProvider>,
+      <ThemeProvider><Print /></ThemeProvider>,
     )
 
     const testInstance = component.root
@@ -32,5 +29,6 @@ describe('Container', () => {
     expect(testInstance.findByType(CloseButton).props.label).toBe(defaultProps.label)
     expect(testInstance.findByType(CloseButton).props.noLabel).toBe(defaultProps.noLabel)
   })
+  */
 })
 
