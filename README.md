@@ -50,6 +50,7 @@ const AppContainer = () => (
 * [percentage](https://github.com/hixme/hixme-ui/tree/master/packages/percentage)
 * [phone](https://github.com/hixme/hixme-ui/tree/master/packages/phone)
 * [price](https://github.com/hixme/hixme-ui/tree/master/packages/price)
+* [print](https://github.com/hixme/hixme-ui/tree/master/packages/print)
 * [radio-button](https://github.com/hixme/hixme-ui/tree/master/packages/radio-button)
 * [select](https://github.com/hixme/hixme-ui/tree/master/packages/select)
 * [separator](https://github.com/hixme/hixme-ui/tree/master/packages/separator)
@@ -59,6 +60,7 @@ const AppContainer = () => (
 * [theme](https://github.com/hixme/hixme-ui/tree/master/packages/theme)
 * [theme-props](https://github.com/hixme/hixme-ui/tree/master/packages/theme-props)
 * [title](https://github.com/hixme/hixme-ui/tree/master/packages/title)
+* [upload-box](https://github.com/hixme/hixme-ui/tree/master/packages/upload-box)
 
 
 ## Built With
