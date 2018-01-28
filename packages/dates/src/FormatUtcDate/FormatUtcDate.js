@@ -33,9 +33,9 @@ class FormatUtcDate extends Component {
   }
 
   render() {
-    const { ...restProps } = this.props
+    const { datetime, date, format, inputFormat, ...rest } = this.props
     return (
-      <Time {...restProps}>{FormatUtcDate.format(this.props)}</Time>
+      <Time {...rest}>{FormatUtcDate.format(this.props)}</Time>
     )
   }
 }

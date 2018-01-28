@@ -19,9 +19,9 @@ class ReadableDatetime extends Component {
   }
 
   render() {
-    const { ...restProps } = this.props
+    const { datetime, format, ...rest } = this.props
     return (
-      <Time {...restProps}>{this.getTime()}</Time>
+      <Time {...rest}>{this.getTime()}</Time>
     )
   }
 }

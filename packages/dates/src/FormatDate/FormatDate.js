@@ -32,7 +32,7 @@ class FormatDate extends Component {
   }
 
   render() {
-    const { ...rest } = this.props
+    const { datetime, date, format, inputFormat, ...rest } = this.props
     return (
       <Time {...rest}>{FormatDate.format(this.props)}</Time>
     )
