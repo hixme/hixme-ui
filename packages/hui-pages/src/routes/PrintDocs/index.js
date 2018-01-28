@@ -16,20 +16,34 @@ const PriceDocs = () => (
     <Grid fluid>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
       <Row center='xs' style={{ marginBottom: '40px' }}>
-        <Print />
-      </Row>
-      <Row center='xs'>
-        <Code>
-          {'<Print />'}
-        </Code>
+        <Col xs='3'>
+          <Print />
+        </Col>
+        <Col xs='9'>
+          <Code>
+            {'<Print />'}
+          </Code>
+        </Col>
       </Row>
       <Row center='xs' style={{ marginBottom: '40px' }}>
-        <Print label='Print it' />
+        <Col xs='3'>
+          <Print label='Print it' showIcon={false} />
+        </Col>
+        <Col xs='9'>
+          <Code>
+            {'<Print label=\'Print it\' showIcon={false} />'}
+          </Code>
+        </Col>
       </Row>
-      <Row center='xs'>
-        <Code>
-          {'<Print label=\'Print it\' />'}
-        </Code>
+      <Row center='xs' style={{ marginBottom: '40px' }}>
+        <Col xs='3'>
+          <Print showLabel={false} />
+        </Col>
+        <Col xs='9'>
+          <Code>
+            {'<Print showLabel={false}/>'}
+          </Code>
+        </Col>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
@@ -47,20 +61,20 @@ const PriceDocs = () => (
               <tr>
                 <td>label</td>
                 <td>string</td>
-                <td>&quote;Print&quote;</td>
+                <td>&apos;Print&apos;</td>
                 <td>Button label text</td>
               </tr>
               <tr>
                 <td>showLabel</td>
                 <td>bool</td>
                 <td>true</td>
-                <td>Show and hide button text</td>
+                <td>Show or hide button text</td>
               </tr>
               <tr>
                 <td>showIcon</td>
                 <td>bool</td>
                 <td>true</td>
-                <td>Show and hide button icon</td>
+                <td>Show or hide button icon</td>
               </tr>
             </tbody>
           </Table>
