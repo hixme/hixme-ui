@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/checkbox",
-  "version": "1.14.0",
+  "version": "1.14.1",
   "description": "hixme-ui Checkbox component",
   "publishConfig": {
     "access": "public"
@@ -78,7 +78,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^1.14.0",
+    "@hixme-ui/theme": "^1.14.1",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-animations": "^1.0.0",
