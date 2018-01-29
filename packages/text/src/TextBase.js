@@ -18,7 +18,7 @@ const TextBase = styled.span`
   cursor: ${(props) => {
     if (props.cursor) return props.cursor
     if (props.a) return 'pointer'
-    return 'auto'
+    return 'inherit'
   }};
   ${props => props.display && `display: ${props.display}`};
   justify-content: ${(props) => {
