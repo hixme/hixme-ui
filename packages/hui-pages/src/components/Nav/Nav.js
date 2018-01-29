@@ -61,6 +61,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/card-drawer'>
+          <Text primary cursor='pointer'>
+            CardDrawer
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/container'>
           <Text primary cursor='pointer'>
             Container

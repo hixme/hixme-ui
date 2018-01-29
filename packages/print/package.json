@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/print",
-  "version": "1.0.0",
+  "version": "1.14.1",
   "description": "hixme-ui Print component",
   "publishConfig": {
     "access": "public"
@@ -39,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.0.0",
+    "@hixme-ui/theme": "^1.14.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -79,8 +79,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/icon": "^1.14.0",
-    "@hixme-ui/text": "^1.14.0",
+    "@hixme-ui/icon": "^1.14.1",
+    "@hixme-ui/text": "^1.14.1",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "styled-components": "^2.3.3"
