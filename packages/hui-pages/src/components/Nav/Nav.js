@@ -88,6 +88,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/dates'>
+          <Text primary cursor='pointer'>
+            Dates
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/email'>
           <Text primary cursor='pointer'>
             Email
