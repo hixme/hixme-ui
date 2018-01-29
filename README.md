@@ -42,6 +42,7 @@ const AppContainer = () => (
 * [BulletList](https://github.com/hixme/hixme-ui/tree/master/packages/bullet-list)
 * [Button](https://github.com/hixme/hixme-ui/tree/master/packages/button)
 * [Card](https://github.com/hixme/hixme-ui/tree/master/packages/card)
+* [CardDrawer](https://github.com/hixme/hixme-ui/tree/master/packages/card-drawer)
 * [Checkbox](https://github.com/hixme/hixme-ui/tree/master/packages/checkbox)
 * [Container](https://github.com/hixme/hixme-ui/tree/master/packages/container)
 * [ContentContainer](https://github.com/hixme/hixme-ui/tree/master/packages/content-container)
