@@ -1,13 +1,28 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Component from '../src/index.js'
 
-test('Component', () => {
-  const component = renderer.create(
-    (<ThemeProvider><Component /></ThemeProvider>),
-  )
+import Price from '../src/index.js'
 
-  const tree = component.toJSON()
-  expect(tree.type).toBe('div')
+const defaultProps = {
+  label: '',
+}
+
+describe('Price', () => {
+  test('Should render okay', () => {
+    const component = renderer.create(
+      (<ThemeProvider><Price value={46.93} /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('div')
+  })
+
+  test('Should have default props', () => {
+    const component = renderer.create(
+      (<ThemeProvider><Price value={46.93} /></ThemeProvider>),
+    )
+    const testInstance = component.root
+    expect(testInstance.findByType(Price).props.label).toBe(defaultProps.label)
+  })
 })
