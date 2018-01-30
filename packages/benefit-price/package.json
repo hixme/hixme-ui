@@ -8,7 +8,7 @@
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "jest -- -u",
+    "test": "jest",
     "test:watch": "npm test -- --watch",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
