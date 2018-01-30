@@ -56,7 +56,6 @@ exports[`BenefitPrice it has 0px padding by default 1`] = `
   font-size: 8pt;
   font-weight: normal;
   border-bottom: none;
-  cursor: inherit;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -216,7 +215,6 @@ exports[`BenefitPrice it should render with background: none 1`] = `
   font-size: 8pt;
   font-weight: normal;
   border-bottom: none;
-  cursor: inherit;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -376,7 +374,6 @@ exports[`BenefitPrice it should render with display: flex 1`] = `
   font-size: 8pt;
   font-weight: normal;
   border-bottom: none;
-  cursor: inherit;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
