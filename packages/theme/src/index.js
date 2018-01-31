@@ -50,8 +50,8 @@ const titleFontSizes = {
 }
 
 const buttonFontSizes = {
-  mini: fontSizes.smaller,
-  small: fontSizes.small,
+  mini: fontSizes.small,
+  small: fontSizes.default,
   large: fontSizes.large,
   jumbo: fontSizes.jumbo,
 }
