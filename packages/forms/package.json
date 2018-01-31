@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/forms",
-  "version": "1.14.2",
+  "version": "1.14.3",
   "description": "hixme-ui forms category for access to all HUI form components",
   "publishConfig": {
     "access": "public"
@@ -76,13 +76,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/button": "^1.14.1",
-    "@hixme-ui/checkbox": "^1.14.1",
+    "@hixme-ui/button": "^1.14.3",
+    "@hixme-ui/checkbox": "^1.14.3",
     "@hixme-ui/form-group": "^1.14.1",
-    "@hixme-ui/input": "^1.14.2",
-    "@hixme-ui/label": "^1.14.2",
-    "@hixme-ui/radio-button": "^1.14.2",
-    "@hixme-ui/select": "^1.14.2",
+    "@hixme-ui/input": "^1.14.3",
+    "@hixme-ui/label": "^1.14.3",
+    "@hixme-ui/radio-button": "^1.14.3",
+    "@hixme-ui/select": "^1.14.3",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "styled-components": "^2.3.3"

@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/label",
-  "version": "1.14.2",
+  "version": "1.14.3",
   "description": "hixme-ui Label component",
   "publishConfig": {
     "access": "public"
@@ -77,7 +77,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.14.2",
+    "@hixme-ui/text": "^1.14.3",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
   }
