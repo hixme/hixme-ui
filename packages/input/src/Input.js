@@ -7,22 +7,22 @@ import InputBase from './InputBase'
 // pass them onto the Masked component.
 // This is to prevent React errors in the console
 const Masked = InputBase.withComponent(({
-  invalid,
+  date,
+  error,
   large,
   phone,
   search,
   ssn,
-  error,
   ...props
 }) => <MaskedInput {...props} />)
 
 const InputTextarea = InputBase.withComponent('textarea')
 
 const Input = ({
-  phone,
-  ssn,
   date,
   mask,
+  phone,
+  ssn,
   textarea,
   ...props
 }) => {
