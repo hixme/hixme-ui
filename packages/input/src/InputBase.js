@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 import {
   getBorderColor,
-  getTextColor,
 } from '@hixme-ui/theme-props'
 
 const InputBase = styled.input`
@@ -44,7 +43,6 @@ const InputBase = styled.input`
   border-color: ${props => getBorderColor({ ...props })};
   border-radius: 4px;
   box-shadow: inset 0 1px 1px 0 #DBE2E8;
-  color: () => getTextColor()};
   font-size: ${(props) => {
     if (props.large) return '21px'
     return '16px'
