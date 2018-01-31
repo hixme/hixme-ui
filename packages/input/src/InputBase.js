@@ -44,7 +44,7 @@ const InputBase = styled.input`
   border-color: ${props => getBorderColor({ ...props })};
   border-radius: 4px;
   box-shadow: inset 0 1px 1px 0 #DBE2E8;
-  color: ${props => getTextColor(props)};
+  color: () => getTextColor()};
   font-size: ${(props) => {
     if (props.large) return '21px'
     return '16px'
