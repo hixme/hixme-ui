@@ -50,6 +50,30 @@ exports[`BenefitPrice it has 0px padding by default 1`] = `
   border: none;
 }
 
+.c7 {
+  color: #8F9DA8;
+  font-family: inherit;
+  font-size: 8pt;
+  font-weight: normal;
+  border-bottom: none;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: inherit;
+  text-align: inherit;
+  text-indent: inherit;
+  text-transform: none;
+  text-overflow: inherit;
+  -webkit-user-select: inherit;
+  -moz-user-select: inherit;
+  -ms-user-select: inherit;
+  user-select: inherit;
+  white-space: inherit;
+  width: auto;
+  word-break: inherit;
+}
+
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
@@ -68,31 +92,6 @@ exports[`BenefitPrice it has 0px padding by default 1`] = `
   font-size: 13pt;
   font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
   color: #3A4951;
-}
-
-.c7 {
-  color: #8F9DA8;
-  font-family: inherit;
-  font-size: 8pt;
-  font-weight: normal;
-  border-bottom: none;
-  cursor: auto;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  line-height: inherit;
-  text-align: inherit;
-  text-indent: inherit;
-  text-transform: none;
-  text-overflow: inherit;
-  -webkit-user-select: inherit;
-  -moz-user-select: inherit;
-  -ms-user-select: inherit;
-  user-select: inherit;
-  white-space: inherit;
-  width: auto;
-  word-break: inherit;
 }
 
 <div
@@ -210,6 +209,30 @@ exports[`BenefitPrice it should render with background: none 1`] = `
   border: none;
 }
 
+.c7 {
+  color: #8F9DA8;
+  font-family: inherit;
+  font-size: 8pt;
+  font-weight: normal;
+  border-bottom: none;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: inherit;
+  text-align: inherit;
+  text-indent: inherit;
+  text-transform: none;
+  text-overflow: inherit;
+  -webkit-user-select: inherit;
+  -moz-user-select: inherit;
+  -ms-user-select: inherit;
+  user-select: inherit;
+  white-space: inherit;
+  width: auto;
+  word-break: inherit;
+}
+
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
@@ -228,31 +251,6 @@ exports[`BenefitPrice it should render with background: none 1`] = `
   font-size: 13pt;
   font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
   color: #3A4951;
-}
-
-.c7 {
-  color: #8F9DA8;
-  font-family: inherit;
-  font-size: 8pt;
-  font-weight: normal;
-  border-bottom: none;
-  cursor: auto;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  line-height: inherit;
-  text-align: inherit;
-  text-indent: inherit;
-  text-transform: none;
-  text-overflow: inherit;
-  -webkit-user-select: inherit;
-  -moz-user-select: inherit;
-  -ms-user-select: inherit;
-  user-select: inherit;
-  white-space: inherit;
-  width: auto;
-  word-break: inherit;
 }
 
 <div
@@ -370,6 +368,30 @@ exports[`BenefitPrice it should render with display: flex 1`] = `
   border: none;
 }
 
+.c7 {
+  color: #8F9DA8;
+  font-family: inherit;
+  font-size: 8pt;
+  font-weight: normal;
+  border-bottom: none;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: inherit;
+  text-align: inherit;
+  text-indent: inherit;
+  text-transform: none;
+  text-overflow: inherit;
+  -webkit-user-select: inherit;
+  -moz-user-select: inherit;
+  -ms-user-select: inherit;
+  user-select: inherit;
+  white-space: inherit;
+  width: auto;
+  word-break: inherit;
+}
+
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
@@ -388,31 +410,6 @@ exports[`BenefitPrice it should render with display: flex 1`] = `
   font-size: 13pt;
   font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
   color: #3A4951;
-}
-
-.c7 {
-  color: #8F9DA8;
-  font-family: inherit;
-  font-size: 8pt;
-  font-weight: normal;
-  border-bottom: none;
-  cursor: auto;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  line-height: inherit;
-  text-align: inherit;
-  text-indent: inherit;
-  text-transform: none;
-  text-overflow: inherit;
-  -webkit-user-select: inherit;
-  -moz-user-select: inherit;
-  -ms-user-select: inherit;
-  user-select: inherit;
-  white-space: inherit;
-  width: auto;
-  word-break: inherit;
 }
 
 <div

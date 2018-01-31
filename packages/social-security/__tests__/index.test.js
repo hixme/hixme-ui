@@ -28,7 +28,6 @@ describe('SocialSecurity - showFull', () => {
     expect(tree.type).toBe('span')
   })
 
-  console.log(tree)
   it('Should render children with social security number', () => {
     expect(tree.children[0]).toBe('123-45-6789')
   })

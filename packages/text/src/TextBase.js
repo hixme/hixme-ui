@@ -15,11 +15,7 @@ const TextBase = styled.span`
     if (props.dashed) return '1px dashed'
     return 'none'
   }};
-  cursor: ${(props) => {
-    if (props.cursor) return props.cursor
-    if (props.a) return 'pointer'
-    return 'auto'
-  }};
+  ${({ a, cursor }) => (a || cursor) && `cursor: ${(cursor || 'pointer')};`}
   ${props => props.display && `display: ${props.display}`};
   justify-content: ${(props) => {
     if (props.right) return 'flex-end'
