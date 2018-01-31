@@ -3,7 +3,19 @@ import PropTypes from 'prop-types'
 import MaskedInput from 'react-maskedinput'
 import InputBase from './InputBase'
 
-const Masked = InputBase.withComponent(MaskedInput)
+// Remove all styled specific props as to not
+// pass them onto the Masked component.
+// This is to prevent React errors in the console
+const Masked = InputBase.withComponent(({
+  invalid,
+  large,
+  phone,
+  search,
+  ssn,
+  error,
+  ...props
+}) => <MaskedInput {...props} />)
+
 const InputTextarea = InputBase.withComponent('textarea')
 
 const Input = ({
