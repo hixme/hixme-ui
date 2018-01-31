@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/phone",
-  "version": "1.14.1",
+  "version": "1.14.2",
   "description": "hixme-ui phone component for linking and formatting phone numbers.",
   "publishConfig": {
     "access": "public"
@@ -79,7 +79,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.14.1",
+    "@hixme-ui/text": "^1.14.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
   },
