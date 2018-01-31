@@ -7,6 +7,7 @@ import Title from '@hixme-ui/title'
 
 import { Code, DocsTitle } from '../../components'
 
+const rowExampleStyles = { paddingBottom: '15px' }
 const InputDocs = () => (
   <div>
     <DocsTitle
@@ -14,66 +15,69 @@ const InputDocs = () => (
       subtitle='A Hixme UI styled input component'
     />
     <Grid fluid>
-      <Row>
+      <Row style={rowExampleStyles}>
         <Col xs={4}>
           <Input type='email' />
         </Col>
-        <Col xs={6}>
+        <Col xs={8}>
           <Code>
             {'<Input type=\'email\' />'}
           </Code>
         </Col>
       </Row>
 
-      <Row>
+      <Row style={rowExampleStyles}>
         <Col xs={4}>
           <Input search />
         </Col>
-        <Col xs={6}>
+        <Col xs={8}>
           <Code>
             {'<Input search />'}
           </Code>
         </Col>
       </Row>
 
-      <Row>
+      <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input phone error />
+          <Input phone error value='1234567890' onChange={e => console.log(e.target.value)} />
         </Col>
-        <Col xs={6}>
+        <Col xs={8}>
           <Code>
-            {'<Input phone error />'}
+            {`<Input phone error
+    value='1234567890' onChange={e => console.log(e.target.value)} />`}
           </Code>
         </Col>
       </Row>
 
-      <Row>
+      <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input date />
+          <Input date value='01/01/2018' onChange={e => console.log(e.target.value)} />
         </Col>
-        <Col xs={6}>
+        <Col xs={8}>
           <Code>
-            {'<Input date />'}
+            {`<Input date value='01/01/2018'
+  onChange={e => console.log(e.target.value)} />`}
           </Code>
         </Col>
       </Row>
 
-      <Row>
+      <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input ssn />
+          <Input ssn value='123456789' onChange={e => console.log(e.target.value)} />
         </Col>
-        <Col xs={6}>
+        <Col xs={8}>
           <Code>
-            {'<Input ssn />'}
+            {`<Input ssn value='123456789'
+  onChange={e => console.log(e.target.value)} />`}
           </Code>
         </Col>
       </Row>
 
-      <Row>
+      <Row style={rowExampleStyles}>
         <Col xs={4}>
           <Input large />
         </Col>
-        <Col xs={6}>
+        <Col xs={8}>
           <Code>
             {'<Input large />'}
           </Code>
