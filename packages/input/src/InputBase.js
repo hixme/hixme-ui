@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 import {
   getBorderColor,
-  getBackgroundColor,
   getTextColor,
 } from '@hixme-ui/theme-props'
 
@@ -18,9 +17,9 @@ const InputBase = styled.input`
   :invalid {
     border-color: ${props => getBorderColor({ ...props, error: true })};
   };
+  background-color: white;
   background-repeat: no-repeat;
   background-position: ${props => (props.search ? '13px' : '0px')};
-  background-color: ${props => getBackgroundColor(props)};
   background-image: ${(props) => {
     if (props.search) {
       // magnifying glass
