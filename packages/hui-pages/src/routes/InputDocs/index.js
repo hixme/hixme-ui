@@ -15,11 +15,71 @@ const InputDocs = () => (
     />
     <Grid fluid>
       <Row>
-        <Input type='email' required />
-        <Code>
-          {'<Input type=\'email\' required />'}
-        </Code>
+        <Col xs={4}>
+          <Input type='email' />
+        </Col>
+        <Col xs={6}>
+          <Code>
+            {'<Input type=\'email\' />'}
+          </Code>
+        </Col>
       </Row>
+
+      <Row>
+        <Col xs={4}>
+          <Input search />
+        </Col>
+        <Col xs={6}>
+          <Code>
+            {'<Input search />'}
+          </Code>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={4}>
+          <Input phone error />
+        </Col>
+        <Col xs={6}>
+          <Code>
+            {'<Input phone error />'}
+          </Code>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={4}>
+          <Input date />
+        </Col>
+        <Col xs={6}>
+          <Code>
+            {'<Input date />'}
+          </Code>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={4}>
+          <Input ssn />
+        </Col>
+        <Col xs={6}>
+          <Code>
+            {'<Input ssn />'}
+          </Code>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={4}>
+          <Input large />
+        </Col>
+        <Col xs={6}>
+          <Code>
+            {'<Input large />'}
+          </Code>
+        </Col>
+      </Row>
+
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
         <Col xs={12}>
@@ -34,34 +94,26 @@ const InputDocs = () => (
             </thead>
             <tbody>
               <tr>
-                <td>className</td>
-                <td>string</td>
-                <td>N/A</td>
-                <td>Assigns a class to the Input component</td>
-              </tr>
-              <tr>
-                <td>invalid</td>
-                <td>bool</td>
-                <td>N/A</td>
-                <td>When combinded with <code>touched</code>, outline color validation on field touch</td>
-              </tr>
-              <tr>
                 <td>large</td>
                 <td>bool</td>
                 <td>false</td>
                 <td>Large Input field component. Field is regular size by default</td>
               </tr>
               <tr>
-                <td>onFocus</td>
-                <td>func</td>
+                <td>search</td>
+                <td>bool</td>
                 <td>N/A</td>
-                <td>Input field behavior on focus state</td>
+                <td>Input field with search icon</td>
               </tr>
               <tr>
-                <td>onBlur</td>
-                <td>func</td>
+                <td>date</td>
+                <td>bool</td>
                 <td>N/A</td>
-                <td>Input field behavior on blur state</td>
+                <td>
+      Masked input field with formatting for date number
+      <br />
+      ** you can not use the placeholder attribute with masked inputs
+    </td>
               </tr>
               <tr>
                 <td>phone</td>
@@ -74,12 +126,6 @@ const InputDocs = () => (
     </td>
               </tr>
               <tr>
-                <td>search</td>
-                <td>bool</td>
-                <td>N/A</td>
-                <td>Input field with search icon</td>
-              </tr>
-              <tr>
                 <td>ssn</td>
                 <td>bool</td>
                 <td>N/A</td>
@@ -90,16 +136,10 @@ const InputDocs = () => (
     </td>
               </tr>
               <tr>
-                <td>style</td>
-                <td>object</td>
-                <td>N/A</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>touched</td>
+                <td>error</td>
                 <td>bool</td>
-                <td>N/A</td>
-                <td>When combined with <code>invalid</code>, outline color validation on field touch</td>
+                <td>false</td>
+                <td>Render the error state of the input by providing the error prop</td>
               </tr>
             </tbody>
           </Table>
