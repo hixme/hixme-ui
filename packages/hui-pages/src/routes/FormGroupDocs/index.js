@@ -1,9 +1,10 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
-import Title from '@hixme-ui/title'
 import FormGroup from '@hixme-ui/form-group'
 import Input from '@hixme-ui/input'
+import Text from '@hixme-ui/text'
+import Title from '@hixme-ui/title'
 
 import { Code, DocsTitle } from '../../components'
 
@@ -18,11 +19,12 @@ const FormGroupDocs = () => (
       <Row style={{ paddingBottom: '10px' }}>
         <Title small>Examples</Title>
       </Row>
-      <Row>
+      <Row style={{ paddingBottom: '20px' }}>
         <Col xs={4}>
           <FormGroup>
             <label>Name</label>
             <Input name='name' />
+            <Text error>Name is required</Text>
           </FormGroup>
         </Col>
         <Col xs={8}>
@@ -30,6 +32,7 @@ const FormGroupDocs = () => (
             {`<FormGroup>
   <label>Name</label>
   <Input name='name' />
+  <Text error>Name is required</Text>
  </FormGroup>`}
           </Code>
         </Col>
@@ -42,7 +45,10 @@ const FormGroupDocs = () => (
         </Col>
         <Col xs={8}>
           <Code>
-            {`<FormGroup label='Name' error='Name is required'>
+            {`<FormGroup
+  label='Name'
+  error='Name is required'
+>
   <Input name='name' />
 </FormGroup>`}
           </Code>
