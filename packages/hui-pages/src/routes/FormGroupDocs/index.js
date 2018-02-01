@@ -37,15 +37,14 @@ const FormGroupDocs = () => (
       <Row>
         <Col xs={4}>
           <FormGroup label='Name' error='Name is required'>
-            <Input name='name' error />
+            <Input name='name' />
           </FormGroup>
         </Col>
         <Col xs={8}>
           <Code>
-            {`<FormGroup>
-  <label>Name</label>
+            {`<FormGroup label='Name' error='Name is required'>
   <Input name='name' />
- </FormGroup>`}
+</FormGroup>`}
           </Code>
         </Col>
       </Row>
