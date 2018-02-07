@@ -10,6 +10,7 @@ npm i --save @hixme-ui/text
 ```javascript
 import Text, {
  TextLink,
+ HyperLink,
  Paragraph,
  Label,
 } from '@hixme-ui/text'
@@ -75,3 +76,20 @@ import Text, {
 |                 | textOverflow    | string      |
 |                 | whiteSpace      | string      |
 |                 | wordBreak       | string      |
+
+
+# TextLink and HyperLink
+
+These components default to using the <a /> tag as it's rendered form.
+HyperLink goes one step further in defaulting to a cursor pointer and a default primary color
+
+
+```javascript
+import { TextLink, HyperLink } from '@hixme-ui/text'
+
+<TextLink href='#point1' />
+
+<HyperLink href='https://goingsomewhere.com' />
+
+```
+
