@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/print",
-  "version": "1.14.3",
+  "version": "1.14.4",
   "description": "hixme-ui Print component",
   "publishConfig": {
     "access": "public"
@@ -80,7 +80,7 @@
   "license": "MIT",
   "dependencies": {
     "@hixme-ui/icon": "^1.14.3",
-    "@hixme-ui/text": "^1.14.3",
+    "@hixme-ui/text": "^1.14.4",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "styled-components": "^2.3.3"
