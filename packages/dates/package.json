@@ -83,8 +83,10 @@
     "@hixme-ui/text": "^1.14.4",
     "@hixme-ui/theme": "^1.14.3",
     "@hixme-ui/theme-props": "^1.14.1",
-    "moment": "^2.20.0",
+    "moment": "^2.20.0"
+  },
+  "peerDependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "react": "~15 || ~16"
   }
 }

@@ -79,9 +79,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.14.4",
+    "@hixme-ui/text": "^1.14.4"
+  },
+  "peerDependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "react": "~15 || ~16"
   },
   "jest": {
     "collectCoverage": true,

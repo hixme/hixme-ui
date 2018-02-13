@@ -80,8 +80,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.14.3",
+    "@hixme-ui/container": "^1.14.3"
+  },
+  "peerDependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "react": "~15 || ~16"
   }
 }
