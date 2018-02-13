@@ -54,6 +54,49 @@ const CardDrawerDocs = () => (
         </Code>
       </Col>
     </Row>
+    <Row style={{ margin: '60px 0' }}>
+      <Col xs={12}>
+        <Text medium thin>
+          You can also supply cardHeader with your own markup if want something besides a simple string.
+        </Text>
+      </Col>
+    </Row>
+    <Row style={{ margin: '20px 0 50px 0' }}>
+      <Col xs={12}>
+        <Container lightest rounded padding='30px 50px'>
+          <CardDrawer
+            cardHeader={
+              <Container rounded primary dashed>
+                <Text white>My own markup</Text>
+              </Container>
+            }
+            collapsible
+          >
+            <Container>
+              <Text>I am in a card drawer</Text>
+            </Container>
+          </CardDrawer>
+        </Container>
+      </Col>
+    </Row>
+    <Row center='xs'>
+      <Col xs={12} sm={8}>
+        <Code>
+          {`<CardDrawer
+  cardHeader={
+    <Container rounded primary dashed>
+      <Text white>My own markup</Text>
+    </Container>
+  }
+  collapsible
+>
+  <Container>
+    <Text>I am in a card drawer</Text>
+  </Container>
+</CardDrawer>`}
+        </Code>
+      </Col>
+    </Row>
   </Grid>
 )
 
