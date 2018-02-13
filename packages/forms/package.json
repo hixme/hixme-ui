@@ -83,8 +83,10 @@
     "@hixme-ui/label": "^1.14.4",
     "@hixme-ui/radio-button": "^1.14.4",
     "@hixme-ui/select": "^1.14.3",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
     "styled-components": "^2.3.3"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "~15 || ~16"
   }
 }

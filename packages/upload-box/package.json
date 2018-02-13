@@ -85,9 +85,11 @@
     "@hixme-ui/text": "^1.14.4",
     "@hixme-ui/theme": "^1.14.3",
     "@hixme-ui/title": "^1.14.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
     "react-dropzone": "^4.2.7",
     "styled-components": "^2.3.3"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "~15 || ~16"
   }
 }

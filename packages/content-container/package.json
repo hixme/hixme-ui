@@ -79,8 +79,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
     "styled-components": "^2.3.3"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "~15 || ~16"
   }
 }
