@@ -82,12 +82,10 @@ class CardDrawer extends Component {
                     {cardHeader}
                   </Container> :
                   <Container flex noPadding justifySpaceBetween alignCenter>
-                    <Container flex noPadding>{cardHeader}</Container>
-                    <Container flex noPadding>
-                      <ChevronRow open={open} center='xs' style={{ margin: '0 0 7px 0' }}>
-                        <Icon arrowRight size={1.25} />
-                      </ChevronRow>
-                    </Container>
+                    <Container flex noPadding flexGrow={1}>{cardHeader}</Container>
+                    <ChevronRow open={open} center='xs'>
+                      <Icon arrowRight size={1.25} />
+                    </ChevronRow>
                   </Container>
                 }
               </StyledTrigger>
