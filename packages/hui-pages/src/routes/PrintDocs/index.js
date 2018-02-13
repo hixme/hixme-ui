@@ -15,31 +15,31 @@ const PriceDocs = () => (
     />
     <Grid fluid>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
-      <Row center='xs' style={{ marginBottom: '40px' }}>
-        <Col xs='3'>
+      <Row middle='xs' center='xs' style={{ marginBottom: '40px' }}>
+        <Col xs={3}>
           <Print />
         </Col>
-        <Col xs='9'>
+        <Col xs={9}>
           <Code>
             {'<Print />'}
           </Code>
         </Col>
       </Row>
-      <Row center='xs' style={{ marginBottom: '40px' }}>
-        <Col xs='3'>
+      <Row middle='xs' center='xs' style={{ marginBottom: '40px' }}>
+        <Col xs={3}>
           <Print label='Print it' showIcon={false} />
         </Col>
-        <Col xs='9'>
+        <Col xs={9}>
           <Code>
             {'<Print label=\'Print it\' showIcon={false} />'}
           </Code>
         </Col>
       </Row>
-      <Row center='xs' style={{ marginBottom: '40px' }}>
-        <Col xs='3'>
+      <Row middle='xs' center='xs' style={{ marginBottom: '40px' }}>
+        <Col xs={3}>
           <Print showLabel={false} />
         </Col>
-        <Col xs='9'>
+        <Col xs={9}>
           <Code>
             {'<Print showLabel={false}/>'}
           </Code>
