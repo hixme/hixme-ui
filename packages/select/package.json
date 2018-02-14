@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/select",
-  "version": "1.14.3",
+  "version": "1.15.0",
   "description": "hixme-ui Select component",
   "publishConfig": {
     "access": "public"
@@ -78,8 +78,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/input": "^1.14.3",
-    "@hixme-ui/theme": "^1.14.3",
+    "@hixme-ui/input": "^1.15.0",
+    "@hixme-ui/theme": "^1.15.0",
     "@hixme-ui/theme-props": "^1.14.1",
     "react-maskedinput": "^4.0.0",
     "styled-components": "^2.3.3"
