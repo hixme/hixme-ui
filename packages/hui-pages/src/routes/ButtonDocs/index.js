@@ -19,7 +19,7 @@ const ButtonDocs = () => (
         and outline option. Outine buttons use the colorTheme. Any button may
         be a submit button, just add submitting (bool) and submittingText (string)'
       />
-
+      <Button split blue>SplitButton</Button>
       <Row center='xs'>
         <Col>
           <div style={padded}>

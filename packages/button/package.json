@@ -79,6 +79,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@hixme-ui/icon": "^1.15.0",
     "@hixme-ui/theme": "^1.15.0",
     "@hixme-ui/theme-props": "^1.14.1",
     "styled-components": "^2.3.3"
