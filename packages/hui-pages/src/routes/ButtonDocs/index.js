@@ -4,7 +4,9 @@ import Button from '@hixme-ui/button'
 import Card from '@hixme-ui/card'
 import Text from '@hixme-ui/text'
 
-import { Code, DocsTitle, CategoryHeader } from 'components'
+import Code from 'components/Code'
+import DocsTitle from 'components/DocsTitle'
+import CategoryHeader from 'components/CategoryHeader'
 
 const padded = {
   padding: '10px',
