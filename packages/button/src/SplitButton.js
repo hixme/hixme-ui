@@ -32,14 +32,14 @@ class SplitButton extends Component {
     onClick: PropTypes.func,
     onSelect: PropTypes.func,
     children: PropTypes.string,
-    splitContent: PropTypes.node,
+    contentComponent: PropTypes.func,
   }
 
   static defaultProps = {
     onClick: null,
     onSelect: null,
     children: '',
-    splitContent: null,
+    contentComponent: () => null,
   }
 
   constructor(props) {
@@ -77,14 +77,17 @@ class SplitButton extends Component {
   }
 
   render() {
-    const { onClick, onSelect, children, splitContent, ...rest } = this.props
+    const { onClick, onSelect, children, contentComponent, ...rest } = this.props
+    const hasMini = Object.keys(this.props).includes('mini')
+    const ContentComponent = contentComponent
+
     return (
       <SplitButtonContainer>
         <Button outline style={mainButtonStyles} onClick={onClick || onSelect} {...rest}>{children}</Button>
         <Button outline style={toggleButtonStyles} onClick={this.handleTrigger} {...rest}>
-          <Icon arrowDown light size={0.8} />
+          <Icon arrowDown light size={hasMini ? 0.8 : 1} />
         </Button>
-        {this.state.active && splitContent}
+        {this.state.active && <ContentComponent />}
       </SplitButtonContainer>
     )
   }
