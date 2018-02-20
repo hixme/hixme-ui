@@ -2,7 +2,6 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Text from '@hixme-ui/text'
-import Title from '@hixme-ui/title'
 
 import Code from 'components/Code'
 import Nav from 'components/Nav'
