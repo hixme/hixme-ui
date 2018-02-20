@@ -11,15 +11,20 @@ npm i --save @hixme-ui/checkbox
 import Checkbox from '@hixme-ui/checkbox'
 
 <Checkbox text='Checkbox Label' />
+<Checkbox defaultChecked small text='Small checkbox with a label' />
+<Checkbox defaultChecked jumbo text='Jumbo checkbox' />
+<Checkbox disabled text='Disabled checkbox' />
 ```
 
 ## Props
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
-| text            | string      | N/A            |
-| small           | boolean     | false          | 
+| defaultChecked  | boolean     | false          |
 | disabled        | boolean     | false          |
+| jumbo           | boolean     | false          |
+| small           | boolean     | false          | 
+| text            | string      | N/A            |
 
 
 
