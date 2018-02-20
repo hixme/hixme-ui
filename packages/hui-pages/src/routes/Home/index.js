@@ -2,11 +2,12 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Text from '@hixme-ui/text'
-import Title from '@hixme-ui/title'
+
+import Code from 'components/Code'
+import Nav from 'components/Nav'
+import CategoryHeader from 'components/CategoryHeader'
 
 import Logo from '../../assets/logo.png'
-import Nav from '../../components/Nav'
-import Code from '../../components/Code'
 
 const textProps = {
   p: true,
@@ -31,11 +32,7 @@ const App = () => (
         </a>
       </Col>
     </Row>
-    <Row style={{ marginTop: '30px' }}>
-      <Col xs>
-        <Title small>Welcome to the Hixme UI!</Title>
-      </Col>
-    </Row>
+    <CategoryHeader title='Welcome to the Hixme UI!' />
     <Row>
       <Col xs>
         <Text {...textProps}>
@@ -48,11 +45,7 @@ const App = () => (
         </Text>
       </Col>
     </Row>
-    <Row style={{ marginTop: '30px' }}>
-      <Col xs>
-        <Title small>Getting started</Title>
-      </Col>
-    </Row>
+    <CategoryHeader title='Getting started' />
     <Row>
       <Col xs>
         <Text {...textProps}>
@@ -85,11 +78,7 @@ const AppContainer = () => (
   </ThemeProvider>
 )`}
     </Code>
-    <Row style={{ marginTop: '30px' }}>
-      <Col xs>
-        <Title small>Contribution</Title>
-      </Col>
-    </Row>
+    <CategoryHeader title='Contribution' />
     <Row>
       <Col xs>
         <Text {...textProps}>
@@ -99,11 +88,7 @@ const AppContainer = () => (
         </Text>
       </Col>
     </Row>
-    <Row style={{ marginTop: '30px' }}>
-      <Col xs>
-        <Title small>Built With</Title>
-      </Col>
-    </Row>
+    <CategoryHeader title='Built With' />
     <Row>
       <Col xs={12}>
         <Text thin large>
@@ -127,12 +112,8 @@ const AppContainer = () => (
         </Text>
       </Col>
     </Row>
-    <Row style={{ marginTop: '30px' }}>
-      <Col xs>
-        <Title small>HUI Components</Title>
-        <Nav />
-      </Col>
-    </Row>
+    <CategoryHeader title='HUI Components' />
+    <Nav />
   </Grid>
 )
 

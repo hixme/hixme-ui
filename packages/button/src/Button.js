@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import SplitButton from './SplitButton'
 import OutlineButton from './OutlineButton'
 import GradientButton from './GradientButton'
 
 const Button = ({
   children,
   disabled,
+  split,
   outline,
   submitting,
   submittingText,
@@ -20,6 +22,17 @@ const Button = ({
       >
         {submitting ? submittingText : children}
       </OutlineButton>
+    )
+  }
+
+  if (split) {
+    return (
+      <SplitButton
+        {...props}
+        disabled={submitting || disabled}
+      >
+        {submitting ? submittingText : children}
+      </SplitButton>
     )
   }
 
@@ -40,6 +53,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   children: PropTypes.node,
   outline: PropTypes.bool,
+  split: PropTypes.bool,
   submitting: PropTypes.bool,
   submittingText: PropTypes.string,
 }
@@ -48,6 +62,7 @@ Button.defaultProps = {
   disabled: false,
   children: null,
   outline: false,
+  split: false,
   submitting: false,
   submittingText: 'Submitting...',
 }
