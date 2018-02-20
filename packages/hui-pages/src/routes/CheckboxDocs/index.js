@@ -34,6 +34,7 @@ const CheckboxDocs = () => (
         <Code>
           {`<Checkbox defaultChecked text='Checkbox with a label' />
 <Checkbox defaultChecked small text='Small checkbox with a label' />
+<Checkbox defaultChecked jumbo text='Jumbo checkbox' />
 <Checkbox disabled text='Disabled checkbox' />`}
         </Code>
       </Row>
