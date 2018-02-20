@@ -116,4 +116,3 @@ const CheckboxDocs = () => (
 )
 
 export default CheckboxDocs
-

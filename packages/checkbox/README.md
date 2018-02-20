@@ -25,6 +25,3 @@ import Checkbox from '@hixme-ui/checkbox'
 | jumbo           | boolean     | false          |
 | small           | boolean     | false          | 
 | text            | string      | N/A            |
-
-
-
