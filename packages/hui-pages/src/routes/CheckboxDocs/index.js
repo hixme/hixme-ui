@@ -78,6 +78,12 @@ const CheckboxDocs = () => (
                 <td>Small checkbox size</td>
               </tr>
               <tr>
+                <td>jumbo</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Big checkbox size</td>
+              </tr>
+              <tr>
                 <td>defaultChecked</td>
                 <td>bool</td>
                 <td>false</td>
