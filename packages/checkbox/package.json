@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/checkbox",
-  "version": "1.15.1",
+  "version": "1.15.0",
   "description": "hixme-ui Checkbox component",
   "publishConfig": {
     "access": "public"
