@@ -18,28 +18,28 @@ const toggleButtonStyles = {
   padding: '5px',
 }
 
-const SplitButtonContainer = styled.div`
+const MenuButtonContainer = styled.div`
  display: inline-flex;
  justify-content: center;
  position: relative;
  white-space: nowrap;
 `
 
-class SplitButton extends Component {
-  static displayName = 'SplitButton'
+class MenuButton extends Component {
+  static displayName = 'MenuButton'
 
   static propTypes = {
     onClick: PropTypes.func,
-    onSelect: PropTypes.func,
     children: PropTypes.string,
     contentComponent: PropTypes.func,
+    split: PropTypes.bool,
   }
 
   static defaultProps = {
     onClick: null,
-    onSelect: null,
     children: '',
     contentComponent: () => null,
+    split: false,
   }
 
   constructor(props) {
@@ -77,21 +77,31 @@ class SplitButton extends Component {
   }
 
   render() {
-    const { onClick, onSelect, children, contentComponent, ...rest } = this.props
+    const { split, onClick, children, contentComponent, ...rest } = this.props
     const hasMini = Object.keys(this.props).includes('mini')
     const ContentComponent = contentComponent
 
     return (
-      <SplitButtonContainer>
-        <Button outline style={mainButtonStyles} onClick={onClick || onSelect} {...rest}>{children}</Button>
-        <Button outline style={toggleButtonStyles} onClick={this.handleTrigger} {...rest}>
-          <Icon arrowDown light size={hasMini ? 0.8 : 1} />
+      <MenuButtonContainer>
+        <Button
+          outline
+          style={split ? mainButtonStyles : null}
+          onClick={split ? onClick : this.handleTrigger}
+          {...rest}
+        >
+          {children}
+          {!split && <div style={{ marginLeft: '10px' }}><Icon arrowDown light size={hasMini ? 0.8 : 1} /></div>}
         </Button>
+        {split &&
+          <Button outline style={toggleButtonStyles} onClick={this.handleTrigger} {...rest}>
+            <Icon arrowDown light size={hasMini ? 0.8 : 1} />
+          </Button>
+        }
         {this.state.active && <ContentComponent />}
-      </SplitButtonContainer>
+      </MenuButtonContainer>
     )
   }
 }
 
-export default SplitButton
+export default MenuButton
 

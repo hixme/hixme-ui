@@ -31,6 +31,8 @@ import { Button, OutlineButton } from '@hixme-ui/button'
 | gold            | boolean     | false          |
 | disabled        | boolean     | false          |
 | block           | boolean     | false          |
+| split           | boolean     | false          |
+| menu            | boolean     | false          |
 
 
 ## OutlineButton Props
