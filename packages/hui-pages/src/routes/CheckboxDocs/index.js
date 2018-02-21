@@ -14,13 +14,18 @@ const CheckboxDocs = () => (
       subtitle='A Hixme UI styled checkbox component'
     />
     <Grid fluid>
-      <Row center='xs' style={{ marginBottom: '40px' }}>
+      <Row center='xs' middle='xs'>
         <Col xs>
           <Checkbox defaultChecked text='Checkbox with a label' />
         </Col>
         <Col xs>
           <Checkbox defaultChecked small text='Small checkbox with a label' />
         </Col>
+        <Col xs>
+          <Checkbox defaultChecked jumbo text='Jumbo checkbox' />
+        </Col>
+      </Row>
+      <Row center='xs' style={{ margin: '20px 0 30px 0' }}>
         <Col xs>
           <Checkbox disabled text='Disabled checkbox' />
         </Col>
@@ -29,6 +34,7 @@ const CheckboxDocs = () => (
         <Code>
           {`<Checkbox defaultChecked text='Checkbox with a label' />
 <Checkbox defaultChecked small text='Small checkbox with a label' />
+<Checkbox defaultChecked jumbo text='Jumbo checkbox' />
 <Checkbox disabled text='Disabled checkbox' />`}
         </Code>
       </Row>
@@ -72,6 +78,12 @@ const CheckboxDocs = () => (
                 <td>Small checkbox size</td>
               </tr>
               <tr>
+                <td>jumbo</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Big checkbox size</td>
+              </tr>
+              <tr>
                 <td>defaultChecked</td>
                 <td>bool</td>
                 <td>false</td>
@@ -104,4 +116,3 @@ const CheckboxDocs = () => (
 )
 
 export default CheckboxDocs
-

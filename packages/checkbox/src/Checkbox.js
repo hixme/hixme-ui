@@ -14,6 +14,7 @@ export default class Checkbox extends Component {
     name: PropTypes.string,
     text: PropTypes.string,
     small: PropTypes.bool,
+    jumbo: PropTypes.bool,
     defaultChecked: PropTypes.bool,
     checked: PropTypes.bool,
     onChange: PropTypes.func,
@@ -25,6 +26,7 @@ export default class Checkbox extends Component {
     name: '',
     text: '',
     small: false,
+    jumbo: false,
     defaultChecked: null,
     onChange: null,
     checked: null,
@@ -73,7 +75,7 @@ export default class Checkbox extends Component {
     return (
       <label>
         <StyledCheckbox type='checkbox' {...this.getProps()} />
-        <StyledFakeCheckbox small={this.props.small} disabled={this.props.disabled} />
+        <StyledFakeCheckbox jumbo={this.props.jumbo} small={this.props.small} disabled={this.props.disabled} />
         <StyledLabel disabled={this.props.disabled}>{this.props.text}</StyledLabel>
       </label>
     )
