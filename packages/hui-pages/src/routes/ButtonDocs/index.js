@@ -13,7 +13,7 @@ const padded = {
 }
 
 const SplitContent = () => (
-  <Card style={{ position: 'absolute', left: '0', top: '100%' }}>
+  <Card style={{ position: 'absolute', left: '0', top: '100%', zIndex: 1 }}>
     I get rendered when the split button arrow is clicked
   </Card>
 )
@@ -90,6 +90,11 @@ const ButtonDocs = () => (
             Split Button light
           </Button>
         </div>
+        <div style={padded}>
+          <Button light menu contentComponent={SplitContent}>
+            Menu Button light
+          </Button>
+        </div>
       </Col>
     </Row>
     <div style={{ margin: '10px' }}>
@@ -126,21 +131,25 @@ import Text from '@hixme-ui/text'
 </Button>`}
       </Code>
     </div>
-    <CategoryHeader title='Split Button' />
+    <CategoryHeader title='Menu Button and Split Button' />
     <Row>
       <Col xs={12} style={{ marginBottom: '20px' }}>
         <Text medium thin>
-          Split button offers some additional button functionality. This is an example of its usage.
+          These button options offer some additional functionality. This is an example of their usage.
         </Text>
       </Col>
       <Col xs={12}>
         <Code>
-          {`// Component to be rendered by the split button
+          {`// Component to be rendered by the split and menu button
 const SplitContent = () => (
   <Card style={{ position: 'absolute', left: '0', top: '100%' }}>
     I get rendered when the split button arrow is clicked
   </Card>
 )
+
+<Button light menu contentComponent={SplitContent}>
+  Menu Button light
+</Button>
 
 <Button
   light
