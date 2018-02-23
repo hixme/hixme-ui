@@ -21,6 +21,7 @@ import CreditCard from './Icons/CreditCard'
 import CurveArrowRight from './Icons/CurveArrowRight'
 import Doctor from './Icons/Doctor'
 import Document from './Icons/Document'
+import Documents from './Icons/Documents'
 import DocumentSign from './Icons/DocumentSign'
 import Dollar from './Icons/Dollar'
 import Download from './Icons/Download'
@@ -88,6 +89,7 @@ const iconList = {
   curveArrowRight: CurveArrowRight,
   doctor: Doctor,
   document: Document,
+  documents: Documents,
   documentSign: DocumentSign,
   dollar: Dollar,
   download: Download,

@@ -30,6 +30,7 @@ const iconList = {
   curveArrowRight: 'red',
   doctor: '',
   document: 'red',
+  documents: 'purple',
   documentSign: '',
   dollar: 'green',
   download: '',
