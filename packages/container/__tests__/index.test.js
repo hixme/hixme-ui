@@ -256,6 +256,16 @@ describe('Container', () => {
     expect(tree).toHaveStyleRule('border-color', 'red')
   })
 
+  test('it should render a green bottom border', () => {
+    const component = renderer.create(
+      <ThemeProvider><Container borderBottom='1px solid green' /></ThemeProvider>,
+    )
+
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+    expect(tree).toHaveStyleRule('border-bottom', '1px solid green')
+  })
+
   test('it should render with background: black', () => {
     const component = renderer.create(
       <ThemeProvider><Container background='black' /></ThemeProvider>,

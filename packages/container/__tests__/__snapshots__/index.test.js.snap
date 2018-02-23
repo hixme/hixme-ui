@@ -203,6 +203,24 @@ exports[`Container it should contain text-align: right 1`] = `
 />
 `;
 
+exports[`Container it should render a green bottom border 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid green;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  width={null}
+/>
+`;
+
 exports[`Container it should render a red border-color 1`] = `
 .c0 {
   background: none;
