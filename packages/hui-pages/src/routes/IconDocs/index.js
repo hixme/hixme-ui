@@ -33,6 +33,7 @@ const iconList = {
   documentSign: '',
   dollar: 'green',
   download: '',
+  graph: 'red',
   group: 'purple',
   home: 'light',
   heart: 'red',

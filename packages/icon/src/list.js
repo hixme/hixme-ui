@@ -24,6 +24,7 @@ import Document from './Icons/Document'
 import DocumentSign from './Icons/DocumentSign'
 import Dollar from './Icons/Dollar'
 import Download from './Icons/Download'
+import Graph from './Icons/Graph'
 import Group from './Icons/Group'
 import Heart from './Icons/Heart'
 import HeartOutline from './Icons/HeartOutline'
@@ -90,6 +91,7 @@ const iconList = {
   documentSign: DocumentSign,
   dollar: Dollar,
   download: Download,
+  graph: Graph,
   group: Group,
   heart: Heart,
   heartOutline: HeartOutline,
