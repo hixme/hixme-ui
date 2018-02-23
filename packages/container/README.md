@@ -61,6 +61,10 @@ import Container from '@hixme-ui/container'
 | --------------- | ----------- | ------------------------------------- |
 | border          | string      | Apply CSS border properties           |
 | borderColor     | string      | Apply CSS border-color properties     |
+| borderTop       | string      | Apply CSS border-top properties       |
+| borderBottom    | string      | Apply CSS border-bottom properties    |
+| borderLeft      | string      | Apply CSS border-left properties      |
+| borderRight     | string      | Apply CSS border-right properties     |
 | dashed          | bool        | Apply 2px, grey dashed border         |
 | rounded         | bool        | Apply 6px, border radius to container |
 
