@@ -4,6 +4,7 @@ import { getBackgroundColor } from '@hixme-ui/theme-props'
 
 import getMargin from './utils/getMargin'
 import getPadding from './utils/getPadding'
+import getBorder from './utils/getBorder'
 
 const flexKeys = ['flex', 'inlineFlex', 'flexRow', 'flexColumn', 'flexBasis', 'flexGrow', 'flexShrink']
 const isFlex = props => Object.keys(props).filter(prop => flexKeys.includes(prop) && props[prop]).length > 0
@@ -78,8 +79,7 @@ const ContainerBase = styled.div`
   ${({ minHeight }) => minHeight && `min-height: ${minHeight};`}
   ${({ noPadding, ...props }) => (noPadding ? 'padding: 0;' : getPadding(props))}
   ${getMargin}
-  ${({ border }) => border && `border: ${border};`}
-  ${({ borderColor }) => borderColor && `border-color: ${borderColor};`}
+  ${getBorder}
   ${({ dashed }) => dashed && 'border: 2px dashed;'}
   ${({ rounded }) => rounded && 'border-radius: 6px;'}
   ${({ shadow }) => shadow && `box-shadow: 0 3px 3px ${colors.grey120};`}
