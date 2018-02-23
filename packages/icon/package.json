@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/icon",
-  "version": "1.15.0",
+  "version": "1.15.3",
   "description": "hixme-ui Icon component",
   "publishConfig": {
     "access": "public"
