@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/forms",
-  "version": "1.15.2",
+  "version": "1.15.3",
   "description": "hixme-ui forms category for access to all HUI form components",
   "publishConfig": {
     "access": "public"
@@ -76,7 +76,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/button": "^1.15.2",
+    "@hixme-ui/button": "^1.15.3",
     "@hixme-ui/checkbox": "^1.15.1",
     "@hixme-ui/form-group": "^1.15.0",
     "@hixme-ui/input": "^1.15.0",
