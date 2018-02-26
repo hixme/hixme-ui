@@ -38,30 +38,26 @@ class CardDrawer extends Component {
     disabled: false,
   }
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      open: props.open,
-    }
-  }
+  state = { stateOpen: this.props.open }
 
   render() {
     const {
       cardContent,
       cardHeader,
       collapsible,
+      open,
       children,
       disabled,
       hideArrow,
     } = this.props
 
     const {
-      open,
+      stateOpen,
     } = this.state
 
     const toggleDrawer = () => {
       this.setState(prevState => ({
-        open: !prevState.open,
+        stateOpen: !prevState.stateOpen,
       }))
     }
 
@@ -70,20 +66,20 @@ class CardDrawer extends Component {
         {collapsible ?
           <Collapsible
             easing='ease'
-            open={open}
+            open={stateOpen}
             handleTriggerClick={toggleDrawer}
             contentInnerClassName={ContentInnerClassName}
             triggerClassName={TriggerClassName}
             triggerOpenedClassName={TriggerClassName}
             trigger={
-              <StyledTrigger open={open} rounded shadow className={TriggerClassName}>
+              <StyledTrigger open={stateOpen} rounded shadow className={TriggerClassName}>
                 {hideArrow ?
                   <Container flex noPadding alignCenter>
                     {cardHeader}
                   </Container> :
                   <Container flex noPadding justifySpaceBetween alignCenter>
                     <Container flex noPadding flexGrow={1}>{cardHeader}</Container>
-                    <ChevronRow open={open} center='xs'>
+                    <ChevronRow open={stateOpen} center='xs'>
                       <Icon arrowRight size={1.25} />
                     </ChevronRow>
                   </Container>
