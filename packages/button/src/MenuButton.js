@@ -19,7 +19,6 @@ const toggleButtonStyles = {
 }
 
 const MenuButtonContainer = styled.div`
- display: inline-flex;
  justify-content: center;
  position: relative;
  white-space: nowrap;
