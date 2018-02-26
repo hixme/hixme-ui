@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/card-drawer",
-  "version": "1.15.3",
+  "version": "1.15.4",
   "description": "hixme-ui CardDrawer component",
   "publishConfig": {
     "access": "public"
