@@ -33,7 +33,7 @@ const Step = ({
     {completed ?
       <Icon primary checkMarkCircle fontSize={48} /> :
       <Circle color={uncompletedColor}>
-        <Title thin white small style={{ margin: '4px 0 0 0' }}>{children}</Title>
+        <Title thin white small>{children}</Title>
       </Circle>
     }
   </IconContainer>
