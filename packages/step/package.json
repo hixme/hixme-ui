@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/step",
-  "version": "1.15.3",
+  "version": "1.15.5",
   "description": "hixme-ui Step component",
   "publishConfig": {
     "access": "public"
