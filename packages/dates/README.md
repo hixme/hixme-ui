@@ -16,7 +16,7 @@ Displays datetime, or date, in a default format, or a provided format.
 
 ### Usage
 ```
-import { FormatDate } from 'hixme-ui/lib/Dates
+import { FormatDate } from '@hixme-ui/dates'
 
 const date = FormatDate.format({ date: '2016-10-10', format='DD-MM-YYYY'})
 const isValid = FormatDate.isValid({ date: '20-2016-01', inputFormat='DD-YYYY-MM'})
