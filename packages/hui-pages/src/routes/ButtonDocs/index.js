@@ -91,7 +91,7 @@ const ButtonDocs = () => (
           </Button>
         </div>
         <div style={padded}>
-          <Button light menu contentComponent={SplitContent}>
+          <Button light menu contentComponent={SplitContent} block>
             Menu Button light
           </Button>
         </div>
