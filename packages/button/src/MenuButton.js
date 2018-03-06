@@ -29,16 +29,18 @@ class MenuButton extends Component {
   static displayName = 'MenuButton'
 
   static propTypes = {
-    onClick: PropTypes.func,
+    block: PropTypes.bool,
     children: PropTypes.string,
     contentComponent: PropTypes.func,
+    onClick: PropTypes.func,
     split: PropTypes.bool,
   }
 
   static defaultProps = {
-    onClick: null,
+    block: false,
     children: '',
     contentComponent: () => null,
+    onClick: null,
     split: false,
   }
 
@@ -77,7 +79,7 @@ class MenuButton extends Component {
   }
 
   render() {
-    const { split, onClick, children, contentComponent, ...rest } = this.props
+    const { split, onClick, children, contentComponent, block, ...rest } = this.props
     const hasMini = Object.keys(this.props).includes('mini')
     const ContentComponent = contentComponent
 
@@ -87,6 +89,7 @@ class MenuButton extends Component {
           outline
           style={split ? mainButtonStyles : null}
           onClick={split ? onClick : this.handleTrigger}
+          block={block}
           {...rest}
         >
           {children}
