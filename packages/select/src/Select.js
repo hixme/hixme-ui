@@ -5,9 +5,11 @@ import SelectBase from './SelectBase'
 const Select = ({
   list,
   children,
+  placeholder,
   ...props
 }) => (
-  <SelectBase {...props}>
+  <SelectBase {...props} defaultValue={placeholder && ''} placeholder={placeholder}>
+    {placeholder && <option defaultSelected disabled value=''>{placeholder}</option>}
     {list && list.map(item =>
       <option
         key={`hui:select-${item.name}-${item.id}`}
@@ -25,11 +27,13 @@ Select.huiName = 'Select'
 Select.propTypes = {
   children: PropTypes.any,
   list: PropTypes.array,
+  placeholder: PropTypes.string,
 }
 
 Select.defaultProps = {
   children: null,
   list: undefined,
+  placeholder: null,
 }
 
 export default Select
