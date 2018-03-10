@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MaskedInput from 'react-maskedinput'
+
+import Animate from '@hixme-ui/animate'
+import Icon from '@hixme-ui/icon'
+
 import InputBase from './InputBase'
 
 // Remove all styled specific props as to not
@@ -24,6 +28,7 @@ const Input = ({
   phone,
   ssn,
   textarea,
+  submitting,
   ...props
 }) => {
   if (phone || ssn || date || mask) {
@@ -40,6 +45,19 @@ const Input = ({
     return <InputTextarea {...props} />
   }
 
+  if (submitting) {
+    return (
+      <div style={{ position: 'relative' }}>
+        <InputBase disabled {...props} />
+        <span style={{ position: 'absolute', top: '10px', right: '15px' }}>
+          <Animate rotateIn count='infinite' trigger fillMode='both'>
+            <Icon cog light size={1.2} />
+          </Animate>
+        </span>
+      </div>
+    )
+  }
+
   return (
     <InputBase {...props} />
   )
@@ -53,6 +71,7 @@ Input.propTypes = {
   ssn: PropTypes.bool,
   date: PropTypes.bool,
   textarea: PropTypes.bool,
+  submitting: PropTypes.bool,
   mask: PropTypes.string,
 }
 Input.defaultProps = {
@@ -60,6 +79,7 @@ Input.defaultProps = {
   ssn: false,
   date: false,
   textarea: false,
+  submitting: false,
   mask: null,
 }
 
