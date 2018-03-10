@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import Table from '@hixme-ui/table'
 import Title from '@hixme-ui/title'
 
-import { Code, DocsTitle } from 'components'
+import { Code, DocsTitle } from '../../components'
 
 const CheckboxDocs = () => (
   <Grid fluid>
