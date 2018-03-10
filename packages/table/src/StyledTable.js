@@ -8,6 +8,7 @@ const StyledTable = styled.table`
   border-collapse: collapse;
 
   thead {
+    text-align: ${({ alignHeader }) => alignHeader || 'center'};
     tr {
       background-color: #f2f6f9;
       border-radius: 6px;
@@ -35,6 +36,7 @@ const StyledTable = styled.table`
   }
 
   tbody {
+    text-align: ${({ alignBody }) => alignBody || 'left'};
     tr {
       &:nth-child(even) {
         background-color: ${props => (props.striped ? '#f2f6f9' : 'white')};
