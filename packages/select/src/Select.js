@@ -8,15 +8,16 @@ const Select = ({
   placeholder,
   ...props
 }) => (
-  <SelectBase {...props} defaultValue={placeholder && ''} placeholder={placeholder}>
-    {placeholder && <option defaultSelected disabled value=''>{placeholder}</option>}
-    {list && list.map(item =>
+  <SelectBase {...props} placeholder={placeholder}>
+    {placeholder && <option disabled value=''>{placeholder}</option>}
+    {list && list.map(item => (
       <option
         key={`hui:select-${item.name}-${item.id}`}
         value={item.id}
-      >{item.name}
-      </option>)
-    }
+      >
+        {item.name}
+      </option>
+    ))}
     {!list && children}
   </SelectBase>
 )

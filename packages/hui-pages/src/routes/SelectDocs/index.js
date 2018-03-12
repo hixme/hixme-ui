@@ -33,12 +33,12 @@ const SelectDocs = () => (
           </Code>
         </Col>
         <Col xs={12} sm={6}>
-          <Select placeholder='Select any option...'>
+          <Select placeholder='Select any option...' defaultValue=''>
             <option value='hello'>Hello</option>
             <option value='goodbye'>Goodbye</option>
           </Select>
           <Code>
-            {`<Select placeholder='Select any option...'>
+            {`<Select placeholder='Select any option...' defaultValue=''>
   <option value='hello'>Hello</option>
   <option value='goodbye'>Goodbye</option>
 </Select>`}
