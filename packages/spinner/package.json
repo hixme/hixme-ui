@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/spinner",
-  "version": "1.15.3",
+  "version": "1.16.0",
   "description": "hixme-ui Spinner component",
   "publishConfig": {
     "access": "public"
