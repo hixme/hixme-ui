@@ -241,6 +241,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/spinner'>
+          <Text primary cursor='pointer'>
+            Spinner
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/step'>
           <Text primary cursor='pointer'>
             Step
