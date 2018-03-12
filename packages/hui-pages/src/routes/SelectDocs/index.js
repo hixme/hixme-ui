@@ -68,7 +68,7 @@ const SelectDocs = () => (
                 <td>placeholder</td>
                 <td>string</td>
                 <td>null</td>
-                <td>Select placeholder value</td>
+                <td>Select placeholder text. Placeholder option has value of empty string</td>
               </tr>
             </tbody>
           </Table>
