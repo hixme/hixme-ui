@@ -25,27 +25,21 @@ const TextDocs = () => (
         marginBottom: '10px',
       }}
     >
-      <Col xs={2}>
+      <Col xs={3}>
         <Title smallest>Size</Title>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Title smallest>Weight</Title>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Title smallest>State</Title>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Title smallest>Color</Title>
-      </Col>
-      <Col xs={2}>
-        <Title smallest>Tag</Title>
-      </Col>
-      <Col xs={2}>
-        <Title smallest>Transform</Title>
       </Col>
     </Row>
     <Row>
-      <Col xs={2}>
+      <Col xs={3}>
         <Text smallest>smallest</Text>
         <br />
         <Text smaller>smaller</Text>
@@ -62,7 +56,7 @@ const TextDocs = () => (
         <br />
         <Text jumbo>jumbo</Text>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Text thinnest>thinnest</Text>
         <br />
         <Text thinner>thinner</Text>
@@ -75,7 +69,7 @@ const TextDocs = () => (
         <br />
         <Text boldest>boldest</Text>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Text defaultColor>defaultColor</Text>
         <br />
         <Text primary>primary</Text>
@@ -88,7 +82,7 @@ const TextDocs = () => (
         <br />
         <Text muted>muted</Text>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Text white style={{ background: 'black' }}>white</Text>
         <br />
         <Text black>black</Text>
@@ -102,12 +96,39 @@ const TextDocs = () => (
         <Text red>red</Text>
         <br />
         <Text yellow>yellow</Text>
-        <br />
+      </Col>
+    </Row>
+
+    <Row
+      style={{
+        borderBottom: '1px solid black',
+        marginBottom: '10px',
+        marginTop: '40px',
+      }}
+    >
+      <Col xs={3}>
+        <Title smallest>Shade</Title>
+      </Col>
+      <Col xs={3}>
+        <Title smallest>Decoration</Title>
+      </Col>
+      <Col xs={3}>
+        <Title smallest>Tag</Title>
+      </Col>
+      <Col xs={3}>
+        <Title smallest>Transform</Title>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={3}>
         <Text light>light</Text>
         <br />
         <Text lighter>lighter</Text>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
+        <Text>dashed</Text>
+      </Col>
+      <Col xs={3}>
         <Text>a</Text>
         <br />
         <Text>label</Text>
@@ -116,7 +137,7 @@ const TextDocs = () => (
         <br />
         <Text>div</Text>
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Text>capitalize</Text>
         <br />
         <Text>lowercase</Text>
@@ -124,7 +145,6 @@ const TextDocs = () => (
         <Text>uppercase</Text>
       </Col>
     </Row>
-
     <Row>
       <Col xs={12}>
         <Title small margin='50px 0px 20px'>String Props</Title>
