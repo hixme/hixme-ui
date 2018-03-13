@@ -246,7 +246,7 @@ const TextDocs = () => (
       </Col>
     </Row>
     <Row center='sm' start='xs' middle='xs'>
-      <Col xs='12'>
+      <Col xs={12}>
         <Title smaller margin='40px 0 20px 0'>Font Sizes</Title>
       </Col>
     </Row>
