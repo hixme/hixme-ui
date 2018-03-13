@@ -29,16 +29,18 @@ import Text, {
 |-----------------|-----------------|-------------|
 | Tags            |                 |             |
 |                 | a               | bool        |
-|                 | p               | bool        |
+|                 | div             | bool        |
 |                 | label           | bool        |
-| Colors          |                 |             |
-|                 | color           | string      |
-|                 | default         | bool        |
+|                 | p               | bool        |
+| States          |                 |             |
+|                 | defaultColor    | bool        |
 |                 | primary         | bool        |
 |                 | success         | bool        |
 |                 | warning         | bool        |
 |                 | error           | bool        |
 |                 | muted           | bool        |
+| Colors          |                 |             |
+|                 | color           | string      |
 |                 | white           | bool        |
 |                 | black           | bool        |
 |                 | red             | bool        |
@@ -48,39 +50,53 @@ import Text, {
 |                 | green           | bool        |
 |                 | light           | bool        |
 |                 | lighter         | bool        |
-|                 | lightest        | bool        |
 | Font Sizes      |                 |             |
 |                 | fontSize        | string      |
 |                 | default         | bool        |
-|                 | small           | bool        |
-|                 | smaller         | bool        |
 |                 | smallest        | bool        |
+|                 | smaller         | bool        |
+|                 | small           | bool        |
 |                 | medium          | bool        |
 |                 | large           | bool        |
+|                 | larger          | bool        |
 |                 | jumbo           | bool        |
+| Font Weights    |                 |             |
+|                 | fontWeight      | string      |
+|                 | thinnest        | bool        |
+|                 | thinner         | bool        |
+|                 | thin            | bool        |
+|                 | normal          | bool        |
+|                 | bold            | bool        |
+|                 | bolder          | bool        |
+|                 | boldest         | bool        |
 | Text Align      |                 |             |
 |                 | left            | bool        |
 |                 | center          | bool        |
 |                 | right           | bool        |
-| Case            |                 |             |
+| Text Decoration |                 |             |
+|                 | dashed          | bool        |
+| Transforms      |                 |             |
 |                 | uppercase       | bool        |
 |                 | lowercase       | bool        |
 |                 | capitalize      | bool        |
 | Other           |                 |             |
 |                 | cursor          | string      |
 |                 | display         | string      |
-|                 | fontWeight      | string      |
+|                 | fontFamily      | string      |
+|                 | href            | string      |
+|                 | justifyContent  | string      |
 |                 | lineHeight      | string      |
-|                 | userSelect      | string      |
+|                 | onClick         | string      |
 |                 | textIndent      | string      |
 |                 | textOverflow    | string      |
+|                 | userSelect      | string      |
 |                 | whiteSpace      | string      |
 |                 | wordBreak       | string      |
 
 
 # TextLink and HyperLink
 
-These components default to using the <a /> tag as it's rendered form.
+These components default to using the `<a />` tag as it's rendered form.
 HyperLink goes one step further in defaulting to a cursor pointer and a default primary color
 
 
