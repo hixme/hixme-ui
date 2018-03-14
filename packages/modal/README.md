@@ -9,9 +9,9 @@ npm i --save @hixme-ui/modal
 ## Usage 
 
 ```jsx
-import { MrModal } from '@hixme/modal'
+import Modal from '@hixme-ui/modal'
 
-<MrModal 
+<Modal
   dialog 
   medium
   title='All your base are belong to us' 
@@ -19,7 +19,7 @@ import { MrModal } from '@hixme/modal'
   cancelLabel='Eh, maybe not...'
 >
   {/* Modal content here */}
-</MrModal>
+</Modal>
 ```
 
 ## Props

@@ -80,7 +80,6 @@
     "@hixme-ui/button": "^1.15.1",
     "@hixme-ui/close-button": "^1.15.1",
     "@hixme-ui/title": "^1.15.0",
-    "@hixme/modal": "^2.1.8",
     "react-flexbox-grid": "^2.0.0",
     "react-modal": "^3.1.8"
   },
