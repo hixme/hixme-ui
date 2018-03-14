@@ -4,6 +4,8 @@ import { withRouter } from 'react-router'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Link } from 'react-router-dom'
 
+import Container from '@hixme-ui/container'
+import Icon from '@hixme-ui/icon'
 import Text from '@hixme-ui/text'
 
 const DocsHeader = ({ location }) => (
@@ -13,7 +15,12 @@ const DocsHeader = ({ location }) => (
         <Col>
           <Link to='/'>
             <Text light cursor='pointer'>
-              {'< Back to Home'}
+              <Container flex noPadding alignItems='center'>
+                <Container flex noPadding marginRight='6px' marginBottom='3px'>
+                  <Icon arrowLeft light />
+                </Container>
+                Back to Home
+              </Container>
             </Text>
           </Link>
         </Col>

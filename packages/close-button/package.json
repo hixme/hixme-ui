@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/close-button",
-  "version": "1.15.3",
+  "version": "1.15.6",
   "description": "hixme-ui CloseButton component",
   "publishConfig": {
     "access": "public"
@@ -80,7 +80,7 @@
   "license": "MIT",
   "dependencies": {
     "@hixme-ui/container": "^1.15.3",
-    "@hixme-ui/icon": "^1.15.3",
+    "@hixme-ui/icon": "^1.15.6",
     "@hixme-ui/text": "^1.15.0",
     "@hixme-ui/theme": "^1.15.0",
     "@hixme-ui/theme-props": "^1.14.1",

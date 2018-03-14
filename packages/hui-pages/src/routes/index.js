@@ -40,6 +40,7 @@ import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
 import SidebarDocs from './SidebarDocs'
 import SocialSecurityDocs from './SocialSecurityDocs'
+import SpinnerDocs from './SpinnerDocs'
 import StepDocs from './StepDocs'
 import TableDocs from './TableDocs'
 import TextDocs from './TextDocs'
@@ -81,6 +82,7 @@ const Routes = () => (
           <Route path='/separator' component={SeparatorDocs} />
           <Route path='/sidebar' component={SidebarDocs} />
           <Route path='/social-security' component={SocialSecurityDocs} />
+          <Route path='/spinner' component={SpinnerDocs} />
           <Route path='/step' component={StepDocs} />
           <Route path='/table' component={TableDocs} />
           <Route path='/text' component={TextDocs} />
