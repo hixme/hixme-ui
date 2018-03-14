@@ -260,7 +260,7 @@ const MrModal = ({
 MrModal.propTypes = {
   backgroundColor: PropTypes.string,
   children: PropTypes.node,
-  handleClose: PropTypes.func,
+  handleClose: PropTypes.func.isRequired,
   hideCloseButton: PropTypes.bool,
   isOpen: PropTypes.bool,
   style: PropTypes.object,
@@ -300,7 +300,6 @@ MrModal.propTypes = {
 MrModal.defaultProps = {
   backgroundColor: null,
   children: <div />,
-  handleClose: () => null,
   hideCloseButton: false,
   isOpen: false,
   // isProcessing: false,
