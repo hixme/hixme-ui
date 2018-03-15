@@ -16,7 +16,7 @@ const DocsHeader = ({ location }) => (
           <Link to='/'>
             <Text light cursor='pointer'>
               <Container flex noPadding alignItems='center'>
-                <Container flex noPadding marginRight='6px' marginBottom='3px'>
+                <Container flex noPadding marginRight='2px' marginBottom='3px'>
                   <Icon arrowLeft light />
                 </Container>
                 Back to Home
