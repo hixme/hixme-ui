@@ -213,6 +213,8 @@ class ModalDocs extends React.Component {
   title='Error dialog modal' 
   errorDialog
   small
+  cancelLabel='If it bleeds, we can kill it'
+  confirmLabel="Kill me, I'm here!"
   isOpen={this.state.openErrorDialog} 
   handleClose={() => this.handleClose('openErrorDialog')}
   ariaHideApp={false}
@@ -260,9 +262,9 @@ class ModalDocs extends React.Component {
         <Row style={{ margin: '20px 0' }}>
           <Title smaller>Props</Title>
         </Row>
-        <Row center='xs'>
+        <Row>
           <Col xs={12}>
-            <Table striped>
+            <Table striped alignHeader='left'>
               <thead>
                 <tr>
                   <th>Name</th>
@@ -378,9 +380,9 @@ class ModalDocs extends React.Component {
         <Row style={{ margin: '40px 0 20px 0' }}>
           <Title smaller>Dialog props</Title>
         </Row>
-        <Row center='xs'>
+        <Row>
           <Col xs={12}>
-            <Table striped>
+            <Table striped alignHeader='left'>
               <thead>
                 <tr>
                   <th>Name</th>
