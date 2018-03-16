@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import { ThemeProvider } from '@hixme-ui/theme'
 
-import Animate from '../src/index.js'
+import Animate from '../src/index'
 
 describe('Animate', () => {
   test('Should render ok', () => {

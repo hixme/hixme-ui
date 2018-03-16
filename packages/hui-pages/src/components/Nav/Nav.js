@@ -151,6 +151,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/modal'>
+          <Text primary cursor='pointer'>
+            Modal
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/label'>
           <Text primary cursor='pointer'>
             Label
