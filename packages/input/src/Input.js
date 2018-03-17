@@ -1,11 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import MaskedInput from 'react-maskedinput'
 
-import Animate from '@hixme-ui/animate'
+import Spinner from '@hixme-ui/spinner'
 import Icon from '@hixme-ui/icon'
 
 import InputBase from './InputBase'
+
+export const SpinnerContainer = styled.span`
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: not-allowed;
+`
 
 // Remove all styled specific props as to not
 // pass them onto the Masked component.
@@ -49,11 +57,11 @@ const Input = ({
     return (
       <div style={{ position: 'relative' }}>
         <InputBase disabled {...props} />
-        <span style={{ position: 'absolute', top: '10px', right: '15px' }}>
-          <Animate rotateIn count='infinite' trigger fillMode='both'>
-            <Icon cog light size={1.2} />
-          </Animate>
-        </span>
+        <SpinnerContainer>
+          <Spinner animate duration='2s'>
+            <Icon cog lighter size={1.2} />
+          </Spinner>
+        </SpinnerContainer>
       </div>
     )
   }
