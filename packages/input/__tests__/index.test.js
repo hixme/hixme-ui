@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import 'jest-styled-components'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Input, { InputBase } from '../src'
+import Input, { InputBase, SpinnerContainer } from '../src'
 
 describe('InputBase', () => {
   it('no props', () => {
@@ -85,6 +86,31 @@ describe('Input', () => {
 
     const tree = component.toJSON()
     expect(tree.type).toBe('input')
+  })
+
+  it('Date - submitting', () => {
+    const component = renderer.create(
+      (<ThemeProvider><Input submitting /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('div')
+  })
+})
+
+describe('SpinnerContainer', () => {
+  it('Should have all styles', () => {
+    const component = renderer.create(
+      <ThemeProvider>
+        <SpinnerContainer />
+      </ThemeProvider>,
+    )
+
+    const tree = component.toJSON()
+    expect(tree).toHaveStyleRule('position', 'absolute')
+    expect(tree).toHaveStyleRule('top', '12px')
+    expect(tree).toHaveStyleRule('right', '12px')
+    expect(tree).toHaveStyleRule('cursor', 'not-allowed')
   })
 })
 
