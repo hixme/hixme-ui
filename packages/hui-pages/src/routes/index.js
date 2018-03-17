@@ -29,16 +29,18 @@ import FormsDocs from './FormsDocs'
 import IconDocs from './IconDocs'
 import InputDocs from './InputDocs'
 import LabelDocs from './LabelDocs'
+import ModalDocs from './ModalDocs'
 import NotFound from './NotFound'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
-import PrintDocs from './PrintDocs'
 import PriceDocs from './PriceDocs'
+import PrintDocs from './PrintDocs'
 import RadioButtonDocs from './RadioButtonDocs'
 import SelectDocs from './SelectDocs'
 import SeparatorDocs from './SeparatorDocs'
 import SidebarDocs from './SidebarDocs'
 import SocialSecurityDocs from './SocialSecurityDocs'
+import SpinnerDocs from './SpinnerDocs'
 import StepDocs from './StepDocs'
 import TableDocs from './TableDocs'
 import TextDocs from './TextDocs'
@@ -70,15 +72,17 @@ const Routes = () => (
           <Route path='/icon' component={IconDocs} />
           <Route path='/input' component={InputDocs} />
           <Route path='/label' component={LabelDocs} />
+          <Route path='/modal' component={ModalDocs} />
           <Route path='/percentage' component={PercentageDocs} />
-          <Route path='/print' component={PrintDocs} />
           <Route path='/phone' component={PhoneDocs} />
           <Route path='/price' component={PriceDocs} />
+          <Route path='/print' component={PrintDocs} />
           <Route path='/radio-button' component={RadioButtonDocs} />
           <Route path='/select' component={SelectDocs} />
           <Route path='/separator' component={SeparatorDocs} />
           <Route path='/sidebar' component={SidebarDocs} />
           <Route path='/social-security' component={SocialSecurityDocs} />
+          <Route path='/spinner' component={SpinnerDocs} />
           <Route path='/step' component={StepDocs} />
           <Route path='/table' component={TableDocs} />
           <Route path='/text' component={TextDocs} />

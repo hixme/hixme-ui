@@ -151,6 +151,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/modal'>
+          <Text primary cursor='pointer'>
+            Modal
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/label'>
           <Text primary cursor='pointer'>
             Label
@@ -235,6 +244,15 @@ const Nav = () => (
         <Link to='/social-security'>
           <Text primary cursor='pointer'>
             Social Security
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
+        <Link to='/spinner'>
+          <Text primary cursor='pointer'>
+            Spinner
           </Text>
         </Link>
       </Col>

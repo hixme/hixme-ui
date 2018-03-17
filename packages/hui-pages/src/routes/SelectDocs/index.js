@@ -33,12 +33,12 @@ const SelectDocs = () => (
           </Code>
         </Col>
         <Col xs={12} sm={6}>
-          <Select>
+          <Select placeholder='Select any option...' defaultValue=''>
             <option value='hello'>Hello</option>
             <option value='goodbye'>Goodbye</option>
           </Select>
           <Code>
-            {`<Select>
+            {`<Select placeholder='Select any option...' defaultValue=''>
   <option value='hello'>Hello</option>
   <option value='goodbye'>Goodbye</option>
 </Select>`}
@@ -63,6 +63,12 @@ const SelectDocs = () => (
                 <td>array</td>
                 <td>N/A</td>
                 <td>Array populated with ID and Name for each option on the Select component</td>
+              </tr>
+              <tr>
+                <td>placeholder</td>
+                <td>string</td>
+                <td>null</td>
+                <td>Select placeholder text. Placeholder option has value of empty string</td>
               </tr>
             </tbody>
           </Table>

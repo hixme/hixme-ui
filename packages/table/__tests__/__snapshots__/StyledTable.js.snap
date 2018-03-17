@@ -8,6 +8,10 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
   border-collapse: collapse;
 }
 
+.c0 thead {
+  text-align: center;
+}
+
 .c0 thead tr {
   background-color: #f2f6f9;
   border-radius: 6px;
@@ -34,6 +38,10 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
 .c0 thead th:last-child {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+.c0 tbody {
+  text-align: left;
 }
 
 .c0 tbody tr:nth-child(even) {
