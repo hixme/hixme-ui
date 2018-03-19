@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/form-group",
-  "version": "1.15.0",
+  "version": "1.16.1",
   "description": "hixme-ui form group container",
   "publishConfig": {
     "access": "public"
@@ -79,8 +79,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/label": "^1.15.0",
-    "@hixme-ui/text": "^1.15.0",
+    "@hixme-ui/label": "^1.16.1",
+    "@hixme-ui/text": "^1.16.1",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
