@@ -83,6 +83,16 @@ const InputDocs = () => (
           </Code>
         </Col>
       </Row>
+      <Row style={rowExampleStyles}>
+        <Col xs={4}>
+          <Input submitting />
+        </Col>
+        <Col xs={8}>
+          <Code>
+            {'<Input submitting />'}
+          </Code>
+        </Col>
+      </Row>
 
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
