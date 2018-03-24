@@ -199,6 +199,17 @@ const MrModal = ({
               </Row>
               {dialog &&
                 <Row center='xs' style={{ marginTop: '20px' }}>
+                  <Col {...getButtonGrid()}>
+                    <Button
+                      secondary
+                      block
+                      onClick={cancelHandler || handleClose}
+                      submitting={cancelProcessing}
+                      submittingText={cancelSubmittingText}
+                    >
+                      {cancelLabel}
+                    </Button>
+                  </Col>
                   <Col {...getButtonGrid()} style={{ marginBottom: '10px' }}>
                     <Button
                       primary
@@ -210,6 +221,10 @@ const MrModal = ({
                       {confirmLabel}
                     </Button>
                   </Col>
+                </Row>
+              }
+              {errorDialog &&
+                <Row center='xs' style={{ marginTop: '20px' }}>
                   <Col {...getButtonGrid()}>
                     <Button
                       secondary
@@ -221,10 +236,6 @@ const MrModal = ({
                       {cancelLabel}
                     </Button>
                   </Col>
-                </Row>
-              }
-              {errorDialog &&
-                <Row center='xs' style={{ marginTop: '20px' }}>
                   <Col {...getButtonGrid()} style={{ marginBottom: '10px' }}>
                     <Button
                       red
@@ -234,17 +245,6 @@ const MrModal = ({
                       submittingText={confirmSubmittingText}
                     >
                       {confirmLabel}
-                    </Button>
-                  </Col>
-                  <Col {...getButtonGrid()}>
-                    <Button
-                      secondary
-                      block
-                      onClick={cancelHandler || handleClose}
-                      submitting={cancelProcessing}
-                      submittingText={cancelSubmittingText}
-                    >
-                      {cancelLabel}
                     </Button>
                   </Col>
                 </Row>
