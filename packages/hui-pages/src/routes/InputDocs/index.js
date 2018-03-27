@@ -39,6 +39,21 @@ const InputDocs = () => (
 
       <Row style={rowExampleStyles}>
         <Col xs={4}>
+          <Input currency defaultValue='46.93' onChange={e => console.log(e.target.value)} />
+        </Col>
+        <Col xs={8}>
+          <Code>
+            {`<Input 
+  currency
+  defaultValue='46.93' 
+  onChange={e => console.log(e.target.value)} 
+/>`}
+          </Code>
+        </Col>
+      </Row>
+
+      <Row style={rowExampleStyles}>
+        <Col xs={4}>
           <Input phone error value='1234567890' onChange={e => console.log(e.target.value)} />
         </Col>
         <Col xs={8}>

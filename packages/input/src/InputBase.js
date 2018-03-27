@@ -18,9 +18,9 @@ const InputBase = styled.input`
   };
   background-color: white;
   background-repeat: no-repeat;
-  background-position: ${props => (props.search ? '13px' : '0px')};
-  background-image: ${(props) => {
-    if (props.search) {
+  background-position: ${({ search }) => (search ? '13px' : '0px')};
+  background-image: ${({ search }) => {
+    if (search) {
       // magnifying glass
       return 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAC/klEQVQ4T' +
       '6WUT2hUVxjFz7kvvphkkknVqthKEnEUC9aJjWQcpTRgRko3kkUXRcFALbqzRaRQ6EJxk5bSglDahQiFrkoVDUInxqGUTP6QZqJpuklikLQVb' +
@@ -56,8 +56,9 @@ const InputBase = styled.input`
   margin-bottom: 5px;
   outline: none;
   padding: 6px 12px;
-  padding-left: ${(props) => {
-    if (props.search) return '48px'
+  padding-left: ${({ search, currency }) => {
+    if (search) return '48px'
+    if (currency) return '28px'
     return '12px'
   }};
   transition: border 0.2s ease-in-out;

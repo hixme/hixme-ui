@@ -5,6 +5,7 @@ import MaskedInput from 'react-maskedinput'
 
 import Spinner from '@hixme-ui/spinner'
 import Icon from '@hixme-ui/icon'
+import Text from '@hixme-ui/text'
 
 import InputBase from './InputBase'
 
@@ -13,6 +14,12 @@ export const SpinnerContainer = styled.span`
   top: 12px;
   right: 12px;
   cursor: not-allowed;
+`
+
+export const PrefixContainer = styled.span`
+  position: absolute;
+  top: 9px;
+  left: 12px;
 `
 
 // Remove all styled specific props as to not
@@ -31,14 +38,26 @@ const Masked = InputBase.withComponent(({
 const InputTextarea = InputBase.withComponent('textarea')
 
 const Input = ({
+  currency,
   date,
   mask,
   phone,
   ssn,
-  textarea,
   submitting,
+  textarea,
   ...props
 }) => {
+  if (currency) {
+    return (
+      <div style={{ position: 'relative' }}>
+        <InputBase currency {...props} />
+        <PrefixContainer>
+          <Text light large>$</Text>
+        </PrefixContainer>
+      </div>
+    )
+  }
+
   if (phone || ssn || date || mask) {
     let masked = mask || ''
     if (phone) masked = '(111) 111 - 1111'
@@ -75,20 +94,23 @@ Input.displayName = 'hui:Input'
 Input.huiName = 'Input'
 
 Input.propTypes = {
+  currency: PropTypes.bool,
+  date: PropTypes.bool,
+  mask: PropTypes.string,
   phone: PropTypes.bool,
   ssn: PropTypes.bool,
-  date: PropTypes.bool,
-  textarea: PropTypes.bool,
   submitting: PropTypes.bool,
-  mask: PropTypes.string,
+  textarea: PropTypes.bool,
 }
+
 Input.defaultProps = {
+  currency: false,
+  date: false,
+  mask: null,
   phone: false,
   ssn: false,
-  date: false,
-  textarea: false,
   submitting: false,
-  mask: null,
+  textarea: false,
 }
 
 export default Input
