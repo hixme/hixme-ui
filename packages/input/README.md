@@ -15,11 +15,13 @@ npm i --save @hixme-ui/input
 
 | Name            | Type        |
 | --------------- | ----------- |
-| textarea        | bool        |
-| phone           | bool        |
+| currency        | bool        |
 | date            | bool        |
-| ssn             | bool        |
 | mask            | bool        |
+| phone           | bool        |
+| ssn             | bool        |
+| submitting      | bool        |
+| textarea        | bool        |
 
 
 ## Basic Usage

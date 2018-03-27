@@ -23,6 +23,15 @@ describe('InputBase', () => {
     expect(tree.type).toBe('input')
   })
 
+  it('currency prop', () => {
+    const component = renderer.create(
+      (<ThemeProvider><InputBase currency /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('input')
+  })
+
   it('large prop', () => {
     const component = renderer.create(
       (<ThemeProvider><InputBase large /></ThemeProvider>),
@@ -41,6 +50,15 @@ describe('Input', () => {
 
     const tree = component.toJSON()
     expect(tree.type).toBe('input')
+  })
+
+  it('Input', () => {
+    const component = renderer.create(
+      (<ThemeProvider><Input currency /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('div')
   })
 
   it('Phone - Masked Input', () => {
