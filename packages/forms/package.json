@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/forms",
-  "version": "1.16.2",
+  "version": "1.16.3",
   "description": "hixme-ui forms category for access to all HUI form components",
   "publishConfig": {
     "access": "public"
@@ -79,10 +79,10 @@
     "@hixme-ui/button": "^1.16.0",
     "@hixme-ui/checkbox": "^1.15.1",
     "@hixme-ui/form-group": "^1.16.1",
-    "@hixme-ui/input": "^1.16.2",
+    "@hixme-ui/input": "^1.16.3",
     "@hixme-ui/label": "^1.16.1",
     "@hixme-ui/radio-button": "^1.16.1",
-    "@hixme-ui/select": "^1.16.2",
+    "@hixme-ui/select": "^1.16.3",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
