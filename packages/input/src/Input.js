@@ -50,7 +50,7 @@ const Input = ({
   if (currency) {
     return (
       <div style={{ position: 'relative' }}>
-        <InputBase currency={currency} {...props} />
+        <InputBase currency {...props} />
         <PrefixContainer>
           <Text light large>$</Text>
         </PrefixContainer>
