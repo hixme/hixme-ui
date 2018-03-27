@@ -39,11 +39,15 @@ const InputDocs = () => (
 
       <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input currency value={46.93} />
+          <Input currency defaultValue='46.93' onChange={e => console.log(e.target.value)} />
         </Col>
         <Col xs={8}>
           <Code>
-            {'<Input currency value={46.93} />'}
+            {`<Input 
+  currency
+  defaultValue='46.93' 
+  onChange={e => console.log(e.target.value)} 
+/>`}
           </Code>
         </Col>
       </Row>
