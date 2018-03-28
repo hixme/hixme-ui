@@ -9,17 +9,21 @@ import Text from '@hixme-ui/text'
 
 import InputBase from './InputBase'
 
-export const SpinnerContainer = styled.span`
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: not-allowed;
-`
-
 export const PrefixContainer = styled.span`
   position: absolute;
   top: 9px;
   left: 12px;
+`
+
+export const SuffixContainer = styled.span`
+  position: absolute;
+  top: 9px;
+  right: 12px;
+`
+
+export const SpinnerContainer = SuffixContainer.extend`
+  top: 12px;
+  cursor: not-allowed;
 `
 
 // Remove all styled specific props as to not
@@ -41,6 +45,7 @@ const Input = ({
   currency,
   date,
   mask,
+  percentage,
   phone,
   ssn,
   submitting,
@@ -54,6 +59,17 @@ const Input = ({
         <PrefixContainer>
           <Text light large>$</Text>
         </PrefixContainer>
+      </div>
+    )
+  }
+
+  if (percentage) {
+    return (
+      <div style={{ position: 'relative' }}>
+        <InputBase {...props} />
+        <SuffixContainer>
+          <Text light large>%</Text>
+        </SuffixContainer>
       </div>
     )
   }
@@ -97,6 +113,7 @@ Input.propTypes = {
   currency: PropTypes.bool,
   date: PropTypes.bool,
   mask: PropTypes.string,
+  percentage: PropTypes.bool,
   phone: PropTypes.bool,
   ssn: PropTypes.bool,
   submitting: PropTypes.bool,
@@ -107,6 +124,7 @@ Input.defaultProps = {
   currency: false,
   date: false,
   mask: null,
+  percentage: false,
   phone: false,
   ssn: false,
   submitting: false,

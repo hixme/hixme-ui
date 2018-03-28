@@ -18,6 +18,7 @@ npm i --save @hixme-ui/input
 | currency        | bool        |
 | date            | bool        |
 | mask            | bool        |
+| percentage      | bool        |
 | phone           | bool        |
 | ssn             | bool        |
 | submitting      | bool        |
