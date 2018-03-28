@@ -199,7 +199,7 @@ const MrModal = ({
               </Row>
               {dialog &&
                 <Row center='xs' style={{ marginTop: '20px' }}>
-                  <Col {...getButtonGrid()}>
+                  <Col {...getButtonGrid()} style={{ marginBottom: '10px' }}>
                     <Button
                       secondary
                       block
@@ -210,7 +210,7 @@ const MrModal = ({
                       {cancelLabel}
                     </Button>
                   </Col>
-                  <Col {...getButtonGrid()} style={{ marginBottom: '10px' }}>
+                  <Col {...getButtonGrid()}>
                     <Button
                       primary
                       block
@@ -225,7 +225,7 @@ const MrModal = ({
               }
               {errorDialog &&
                 <Row center='xs' style={{ marginTop: '20px' }}>
-                  <Col {...getButtonGrid()}>
+                  <Col {...getButtonGrid()} style={{ marginBottom: '10px' }}>
                     <Button
                       secondary
                       block
@@ -236,7 +236,7 @@ const MrModal = ({
                       {cancelLabel}
                     </Button>
                   </Col>
-                  <Col {...getButtonGrid()} style={{ marginBottom: '10px' }}>
+                  <Col {...getButtonGrid()}>
                     <Button
                       red
                       block
