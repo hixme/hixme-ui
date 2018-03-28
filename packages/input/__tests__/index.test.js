@@ -32,6 +32,15 @@ describe('InputBase', () => {
     expect(tree.type).toBe('input')
   })
 
+  it('percentage prop', () => {
+    const component = renderer.create(
+      (<ThemeProvider><InputBase percentage /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('input')
+  })
+
   it('large prop', () => {
     const component = renderer.create(
       (<ThemeProvider><InputBase large /></ThemeProvider>),
@@ -55,6 +64,15 @@ describe('Input', () => {
   it('Input', () => {
     const component = renderer.create(
       (<ThemeProvider><Input currency /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('div')
+  })
+
+  it('Input', () => {
+    const component = renderer.create(
+      (<ThemeProvider><Input percentage /></ThemeProvider>),
     )
 
     const tree = component.toJSON()
