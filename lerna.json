@@ -2,6 +2,7 @@
   "lerna": "2.1.0",
   "commands": {
     "publish": {
+      "message": "release/%s: publish",
       "allowBranch": [
         "master",
         "release/*"
