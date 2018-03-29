@@ -4,7 +4,6 @@
     "publish": {
       "message": "release/%s: publish",
       "allowBranch": [
-        "master",
         "release/*"
       ],
       "ignore": [
