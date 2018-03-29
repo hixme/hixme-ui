@@ -516,6 +516,25 @@ exports[`Container it should render with left padding of 30px 1`] = `
 />
 `;
 
+exports[`Container it should render with opacity .6 1`] = `
+.c0 {
+  background: none;
+  padding: 20px;
+  border: none;
+  opacity: .6;
+}
+
+<div
+  className="c0"
+  default={false}
+  direction=""
+  height={null}
+  muted={false}
+  opacity=".6"
+  width={null}
+/>
+`;
+
 exports[`Container it should render with right margin of 90px 1`] = `
 .c0 {
   background: none;
