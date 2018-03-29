@@ -78,6 +78,8 @@ const ContainerBase = styled.div`
   ${({ minWidth }) => minWidth && `min-width: ${minWidth};`}
   ${({ minHeight }) => minHeight && `min-height: ${minHeight};`}
   ${({ noPadding, ...props }) => (noPadding ? 'padding: 0;' : getPadding(props))}
+
+  ${({ opacity }) => opacity && `opacity: ${opacity};`}
   ${getMargin}
   ${getBorder}
   ${({ dashed }) => dashed && 'border: 2px dashed;'}
