@@ -71,22 +71,23 @@ const ContainerBase = styled.div`
   }};
   ${getTextAlign}
   ${getFlexProps}
-  ${({ width }) => width && `width: ${width};`}
-  ${({ height }) => height && `height: ${height};`}
-  ${({ maxWidth }) => maxWidth && `max-width: ${maxWidth};`}
-  ${({ maxHeight }) => maxHeight && `max-height: ${maxHeight};`}
-  ${({ minWidth }) => minWidth && `min-width: ${minWidth};`}
-  ${({ minHeight }) => minHeight && `min-height: ${minHeight};`}
-  ${({ noPadding, ...props }) => (noPadding ? 'padding: 0;' : getPadding(props))}
-
-  ${({ opacity }) => opacity && `opacity: ${opacity};`}
-  ${getMargin}
-  ${getBorder}
   ${({ dashed }) => dashed && 'border: 2px dashed;'}
+  ${({ heavyShadow }) => heavyShadow && `box-shadow: 0px 3px 10px 0px ${colors.grey100};`}
+  ${({ height }) => height && `height: ${height};`}
+  ${({ maxHeight }) => maxHeight && `max-height: ${maxHeight};`}
+  ${({ maxWidth }) => maxWidth && `max-width: ${maxWidth};`}
+  ${({ minHeight }) => minHeight && `min-height: ${minHeight};`}
+  ${({ minWidth }) => minWidth && `min-width: ${minWidth};`}
+  ${({ noPadding, ...props }) => (noPadding ? 'padding: 0;' : getPadding(props))}
+  ${({ opacity }) => opacity && `opacity: ${opacity};`}
   ${({ rounded }) => rounded && 'border-radius: 6px;'}
   ${({ shadow }) => shadow && `box-shadow: 0 3px 3px ${colors.grey120};`}
-  ${({ heavyShadow }) => heavyShadow && `box-shadow: 0px 3px 10px 0px ${colors.grey100};`}
+  ${({ width }) => width && `width: ${width};`}
   ${({ withOutline }) => withOutline && 'outline: 1px solid red;'}
+  ${getBorder}
+  ${getMargin}
+  ${getBorder}
+  ${getMargin}
   ${getAnimate};
 `
 
