@@ -13,6 +13,10 @@ import Container from '@hixme-ui/container'
 <Container padding='30px' shadow>
   <p>Content goes here</p>
 </Container>
+
+<Container flex textCenter opacity='.6'>
+  <p>Flex content goes here</p>
+</Container>
 ```
 
 ## Default Props
@@ -149,5 +153,6 @@ import Container from '@hixme-ui/container'
 | shadow          | bool        | Add box shadow to container           |
 | heavyShadow     | bool        | Add heavy box shadow to container     |
 | animate         | bool        | Add animation property to container   |
+| opacity         | number      | Add opacity for container.            |
 
 
