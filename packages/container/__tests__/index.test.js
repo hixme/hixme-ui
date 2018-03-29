@@ -338,4 +338,14 @@ describe('Container', () => {
     expect(tree).toMatchSnapshot()
     expect(tree).toHaveStyleRule('padding', '0')
   })
+
+  test('it should render with opacity .6', () => {
+    const component = renderer.create(
+      <ThemeProvider><Container opacity='.6' /></ThemeProvider>,
+    )
+
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+    expect(tree).toHaveStyleRule('opacity', '.6')
+  })
 })
