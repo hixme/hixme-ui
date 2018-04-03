@@ -52,9 +52,9 @@ const SelectDocs = () => (
       </Row>
       <Row>
         <Col xs={12}>
-          <Select submitting list={[{ id: 0, name: 'Hello' }]} />
+          <Select loading list={[{ id: 0, name: 'Hello' }]} />
           <Code>
-            {'<Select submitting list={[{ id: 0, name: \'Hello\' }]} />'}
+            {'<Select loading list={[{ id: 0, name: \'Hello\' }]} />'}
           </Code>
         </Col>
       </Row>
@@ -84,7 +84,7 @@ const SelectDocs = () => (
                 <td>Select placeholder text. Placeholder option has value of empty string</td>
               </tr>
               <tr>
-                <td>submitting</td>
+                <td>loading</td>
                 <td>bool</td>
                 <td>false</td>
                 <td>Loading state for Select</td>

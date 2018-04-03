@@ -19,10 +19,10 @@ const Select = ({
   list,
   children,
   placeholder,
-  submitting,
+  loading,
   ...props
 }) => {
-  if (submitting) {
+  if (loading) {
     return (
       <div style={{ position: 'relative' }}>
         <SelectBase {...props} placeholder={placeholder} disabled>
@@ -67,7 +67,7 @@ Select.huiName = 'Select'
 
 Select.propTypes = {
   children: PropTypes.any,
-  submitting: PropTypes.bool,
+  loading: PropTypes.bool,
   list: PropTypes.array,
   placeholder: PropTypes.string,
 }
@@ -75,7 +75,7 @@ Select.propTypes = {
 Select.defaultProps = {
   children: null,
   list: undefined,
-  submitting: false,
+  loading: false,
   placeholder: null,
 }
 
