@@ -115,11 +115,11 @@ const InputDocs = () => (
       </Row>
       <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input submitting />
+          <Input loading />
         </Col>
         <Col xs={8}>
           <Code>
-            {'<Input submitting />'}
+            {'<Input loading />'}
           </Code>
         </Col>
       </Row>
@@ -146,38 +146,56 @@ const InputDocs = () => (
               <tr>
                 <td>search</td>
                 <td>bool</td>
-                <td>N/A</td>
+                <td>false</td>
                 <td>Input field with search icon</td>
+              </tr>
+              <tr>
+                <td>percentage</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Input field with percent icon</td>
+              </tr>
+              <tr>
+                <td>currency</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Input field with dollar icon</td>
+              </tr>
+              <tr>
+                <td>loading</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Input field loading state</td>
               </tr>
               <tr>
                 <td>date</td>
                 <td>bool</td>
                 <td>N/A</td>
                 <td>
-      Masked input field with formatting for date number
-      <br />
-      ** you can not use the placeholder attribute with masked inputs
-    </td>
+                  Masked input field with formatting for date number
+                  <br />
+                  ** you can not use the placeholder attribute with masked inputs
+                </td>
               </tr>
               <tr>
                 <td>phone</td>
                 <td>bool</td>
                 <td>N/A</td>
                 <td>
-      Masked input field with formatting for phone number
-      <br />
-      ** you can not use the placeholder attribute with masked inputs
-    </td>
+                  Masked input field with formatting for phone number
+                  <br />
+                  ** you can not use the placeholder attribute with masked inputs
+                </td>
               </tr>
               <tr>
                 <td>ssn</td>
                 <td>bool</td>
                 <td>N/A</td>
                 <td>
-      Masked input field with formatting for social security number
-      <br />
-      ** you can not use the placeholder attribute with masked inputs
-    </td>
+                  Masked input field with formatting for social security number
+                  <br />
+                  ** you can not use the placeholder attribute with masked inputs
+                </td>
               </tr>
               <tr>
                 <td>error</td>
