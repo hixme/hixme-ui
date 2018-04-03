@@ -78,7 +78,9 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@hixme-ui/icon": "^1.15.0",
     "@hixme-ui/input": "^1.16.4",
+    "@hixme-ui/spinner": "^1.15.0",
     "@hixme-ui/theme": "^1.15.0",
     "@hixme-ui/theme-props": "^1.14.1",
     "react-maskedinput": "^4.0.0",
