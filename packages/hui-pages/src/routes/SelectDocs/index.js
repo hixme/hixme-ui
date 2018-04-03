@@ -45,6 +45,19 @@ const SelectDocs = () => (
           </Code>
         </Col>
       </Row>
+      <Row style={{ margin: '20px 0' }}>
+        <Col xs={12}>
+          <Text thin>Additionally, the Select has a loading state:</Text>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12}>
+          <Select submitting list={[{ id: 0, name: 'Hello' }]} />
+          <Code>
+            {'<Select submitting list={[{ id: 0, name: \'Hello\' }]} />'}
+          </Code>
+        </Col>
+      </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
         <Col xs={12}>
@@ -69,6 +82,12 @@ const SelectDocs = () => (
                 <td>string</td>
                 <td>null</td>
                 <td>Select placeholder text. Placeholder option has value of empty string</td>
+              </tr>
+              <tr>
+                <td>submitting</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Loading state for Select</td>
               </tr>
             </tbody>
           </Table>
