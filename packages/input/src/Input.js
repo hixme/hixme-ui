@@ -44,6 +44,7 @@ const InputTextarea = InputBase.withComponent('textarea')
 const Input = ({
   currency,
   date,
+  loading,
   mask,
   percentage,
   phone,
@@ -88,7 +89,7 @@ const Input = ({
     return <InputTextarea {...props} />
   }
 
-  if (submitting) {
+  if (submitting || loading) {
     return (
       <div style={{ position: 'relative' }}>
         <InputBase disabled {...props} />
@@ -112,6 +113,7 @@ Input.huiName = 'Input'
 Input.propTypes = {
   currency: PropTypes.bool,
   date: PropTypes.bool,
+  loading: PropTypes.bool,
   mask: PropTypes.string,
   percentage: PropTypes.bool,
   phone: PropTypes.bool,
@@ -123,6 +125,7 @@ Input.propTypes = {
 Input.defaultProps = {
   currency: false,
   date: false,
+  loading: false,
   mask: null,
   percentage: false,
   phone: false,
