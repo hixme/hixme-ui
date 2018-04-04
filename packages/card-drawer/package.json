@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/card-drawer",
-  "version": "1.15.6",
+  "version": "1.16.5",
   "description": "hixme-ui CardDrawer component",
   "publishConfig": {
     "access": "public"
@@ -79,8 +79,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/card": "^1.15.3",
-    "@hixme-ui/container": "^1.15.3",
+    "@hixme-ui/card": "^1.16.5",
+    "@hixme-ui/container": "^1.16.5",
     "@hixme-ui/icon": "^1.15.6",
     "@hixme-ui/theme": "^1.15.0",
     "react-collapsible": "^2.0.3",
