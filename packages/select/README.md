@@ -41,4 +41,5 @@ import Select from '@hixme-ui/select'
 | --------------- | ----------- | --------- |
 | list            | array       | undefined |
 | placeholder     | string      | null      |
+| loading         | bool        | false     |
 
