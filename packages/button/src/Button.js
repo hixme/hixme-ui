@@ -11,6 +11,8 @@ const Button = ({
   menu,
   outline,
   split,
+  loading,
+  loadingText,
   submitting,
   submittingText,
   ...props
@@ -19,9 +21,9 @@ const Button = ({
     return (
       <OutlineButton
         {...props}
-        disabled={submitting || disabled}
+        disabled={loading || submitting || disabled}
       >
-        {submitting ? submittingText : children}
+        {(loading || submitting) ? (loadingText || submittingText) : children}
       </OutlineButton>
     )
   }
@@ -31,9 +33,9 @@ const Button = ({
       <MenuButton
         split={split}
         {...props}
-        disabled={submitting || disabled}
+        disabled={loading || submitting || disabled}
       >
-        {submitting ? submittingText : children}
+        {(loading || submitting) ? (loadingText || submittingText) : children}
       </MenuButton>
     )
   }
@@ -41,9 +43,9 @@ const Button = ({
   return (
     <GradientButton
       {...props}
-      disabled={submitting || disabled}
+      disabled={loading || submitting || disabled}
     >
-      {submitting ? submittingText : children}
+      {(loading || submitting) ? (loadingText || submittingText) : children}
     </GradientButton>
   )
 }
@@ -59,6 +61,8 @@ Button.propTypes = {
   split: PropTypes.bool,
   submitting: PropTypes.bool,
   submittingText: PropTypes.string,
+  loading: PropTypes.bool,
+  loadingText: PropTypes.string,
 }
 
 Button.defaultProps = {
@@ -69,6 +73,8 @@ Button.defaultProps = {
   split: false,
   submitting: false,
   submittingText: 'Submitting...',
+  loading: false,
+  loadingText: 'Submitting...',
 }
 
 export default Button
