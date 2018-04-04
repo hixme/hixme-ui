@@ -33,6 +33,7 @@ import { Button, OutlineButton } from '@hixme-ui/button'
 | block           | boolean     | false          |
 | split           | boolean     | false          |
 | menu            | boolean     | false          |
+| loading         | boolean     | false          |
 
 
 ## OutlineButton Props
