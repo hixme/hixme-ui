@@ -24,7 +24,7 @@ const ButtonDocs = () => (
       title='Button'
       subtitle='A button component, with five color gradients,
       and outline option. Outine buttons use the colorTheme. Any button may
-      be a submit button, just add submitting (bool) and submittingText (string)'
+      be a submit button, just add loading (bool) and loadingText (string)'
     />
     <Row center='xs' style={{ marginBottom: '60px' }}>
       <Col>
@@ -49,10 +49,10 @@ const ButtonDocs = () => (
           </Button>
         </div>
         <div style={padded}>
-          <Button block submitting>default</Button>
+          <Button block loading>default</Button>
         </div>
         <div style={padded}>
-          <Button block submitting={false} submittingText='Processing...'>Not Processing</Button>
+          <Button block loading={false} loadingText='Processing...'>Not Processing</Button>
         </div>
       </Col>
 
@@ -67,10 +67,10 @@ const ButtonDocs = () => (
           <Button outline blue>blue button</Button>
         </div>
         <div style={padded}>
-          <Button outline blue block submitting>Click to send</Button>
+          <Button outline blue block loading>Click to send</Button>
         </div>
         <div style={padded}>
-          <Button outline blue block submitting submittingText='Processing request'>Click to send</Button>
+          <Button outline blue block loading loadingText='Processing request'>Click to send</Button>
         </div>
         <div style={padded}>
           <Button large outline red>large outline red</Button>
@@ -120,8 +120,8 @@ import Text from '@hixme-ui/text'
   purple
   outline
   block
-  submitting={false}
-  submittingText='Doing that thing...'
+  loading={false}
+  loadingText='Doing that thing...'
 >
   Update
 </Button>
