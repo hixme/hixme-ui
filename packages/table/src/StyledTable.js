@@ -21,7 +21,7 @@ const StyledTable = styled.table`
       font-weight: 400;
       letter-spacing: -0.32px;
       line-height: 19px;
-      vertical-align: top;
+      ${({ compact }) => !compact && 'vertical-align: top;'}
 
       &:first-child {
         border-top-left-radius: 6px;
@@ -49,8 +49,8 @@ const StyledTable = styled.table`
   }
 
   th, td {
-    padding: 15px;
-    height: 46px;
+    padding: ${({ compact }) => (compact ? '0 15px' : '15px')};
+    height: ${({ compact }) => (compact ? '32px' : '46px')};
   }
 
   td {
