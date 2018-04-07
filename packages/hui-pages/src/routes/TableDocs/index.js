@@ -110,6 +110,44 @@ const CheckboxDocs = () => (
         </Table>
       </Col>
     </Row>
+    <Row center='xs' style={{ margin: '20px 0' }}>
+      <Col xs={12} sm={8}>
+        <Row style={{ margin: '20px 0' }}>
+          <Title smaller>Compact table</Title>
+        </Row>
+        <Table striped compact>
+          <thead>
+            <tr>
+              <th>Header</th>
+              <th>Header</th>
+              <th>Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Table data</td>
+              <td>Table data</td>
+              <td>Table data</td>
+            </tr>
+            <tr>
+              <td>Table data</td>
+              <td>Table data</td>
+              <td>Table data</td>
+            </tr>
+            <tr>
+              <td>Table data</td>
+              <td>Table data</td>
+              <td>Table data</td>
+            </tr>
+            <tr>
+              <td>Table data</td>
+              <td>Table data</td>
+              <td>Table data</td>
+            </tr>
+          </tbody>
+        </Table>
+      </Col>
+    </Row>
     <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
     <Row center='xs'>
       <Col xs={12}>
@@ -123,6 +161,12 @@ const CheckboxDocs = () => (
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>compact</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>Table with less height and padding</td>
+            </tr>
             <tr>
               <td>striped</td>
               <td>boolean</td>

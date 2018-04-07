@@ -39,6 +39,9 @@ import Table from '@hixme-ui/table'
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
+| alignBody       | string      | ''             |
+| alignHeader     | string      | ''             |
+| compact         | boolean     | false          |
 | striped         | boolean     | false          |
 
 

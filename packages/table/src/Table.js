@@ -9,26 +9,34 @@ const Table = ({
   striped,
   alignBody,
   alignHeader,
+  compact,
 }) => (
   <OverflowContainer>
-    <StyledTable striped={striped} alignBody={alignBody} alignHeader={alignHeader}>
+    <StyledTable
+      compact={compact}
+      striped={striped}
+      alignBody={alignBody}
+      alignHeader={alignHeader}
+    >
       {children}
     </StyledTable>
   </OverflowContainer>
 )
 
 Table.propTypes = {
-  children: PropTypes.node,
-  striped: PropTypes.bool,
   alignBody: PropTypes.string,
   alignHeader: PropTypes.string,
+  children: PropTypes.node,
+  compact: PropTypes.bool,
+  striped: PropTypes.bool,
 }
 
 Table.defaultProps = {
-  children: null,
-  striped: false,
   alignBody: '',
   alignHeader: '',
+  children: null,
+  compact: false,
+  striped: false,
 }
 
 Table.huiName = 'Table'
