@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import { ThemeProvider } from '@hixme-ui/theme'
-import Input, { InputBase, SpinnerContainer } from '../src'
+import Input, { InputBase, SpinnerContainer, SuffixContainer, PrefixContainer } from '../src'
 
 describe('InputBase', () => {
   it('no props', () => {
@@ -165,11 +165,50 @@ describe('SpinnerContainer', () => {
 describe('Textarea', () => {
   it('textarea tag', () => {
     const component = renderer.create(
-    (<ThemeProvider><Input textarea /></ThemeProvider>),
-  )
+      (<ThemeProvider><Input textarea /></ThemeProvider>),
+    )
 
     const tree = component.toJSON()
     expect(tree.type).toBe('textarea')
   })
 })
 
+describe('SuffixContainer', () => {
+  it('Should be a span', () => {
+    const component = renderer.create(
+      (<ThemeProvider><SuffixContainer /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('span')
+  })
+
+  it('Should have top of 5px when receiving mini prop', () => {
+    const component = renderer.create(
+      (<ThemeProvider><SuffixContainer mini /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree).toHaveStyleRule('top', '5px')
+  })
+})
+
+describe('PrefixContainer', () => {
+  it('Should be a span', () => {
+    const component = renderer.create(
+      (<ThemeProvider><PrefixContainer /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('span')
+  })
+
+  it('Should have top of 5px when receiving mini prop', () => {
+    const component = renderer.create(
+      (<ThemeProvider><PrefixContainer mini /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree).toHaveStyleRule('top', '5px')
+  })
+})
