@@ -43,22 +43,25 @@ const InputBase = styled.input`
   border-color: ${props => getBorderColor({ ...props })};
   border-radius: 4px;
   box-shadow: inset 0 1px 1px 0 #DBE2E8;
-  font-size: ${(props) => {
-    if (props.large) return '21px'
+  font-size: ${({ large, mini }) => {
+    if (large) return '21px'
+    if (mini) return '14px'
     return '16px'
   }};
   font-weight: 500;
-  height: ${(props) => {
-    if (props.large) return '65px'
+  height: ${({ large, mini }) => {
+    if (large) return '65px'
+    if (mini) return '28px'
     return '42px'
   }};
   line-height: 22px;
   margin-bottom: 5px;
   outline: none;
   padding: 6px 12px;
-  padding-left: ${({ search, currency }) => {
+  padding-left: ${({ mini, search, currency }) => {
     if (search) return '48px'
     if (currency) return '28px'
+    if (mini) return '8px'
     return '12px'
   }};
   transition: border 0.2s ease-in-out;
