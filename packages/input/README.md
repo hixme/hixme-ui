@@ -23,6 +23,8 @@ npm i --save @hixme-ui/input
 | ssn             | bool        |
 | submitting      | bool        |
 | textarea        | bool        |
+| large           | bool        |
+| mini            | bool        |
 
 
 ## Basic Usage
