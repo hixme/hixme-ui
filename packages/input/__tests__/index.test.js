@@ -49,6 +49,18 @@ describe('InputBase', () => {
     const tree = component.toJSON()
     expect(tree.type).toBe('input')
   })
+
+  it('mini prop', () => {
+    const component = renderer.create(
+      (<ThemeProvider><InputBase mini /></ThemeProvider>),
+    )
+
+    const tree = component.toJSON()
+    expect(tree.type).toBe('input')
+    expect(tree).toHaveStyleRule('height', '28px')
+    expect(tree).toHaveStyleRule('padding-left', '8px')
+    expect(tree).toHaveStyleRule('font-size', '14px')
+  })
 })
 
 describe('Input', () => {
