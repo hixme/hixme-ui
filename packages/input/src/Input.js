@@ -11,13 +11,13 @@ import InputBase from './InputBase'
 
 export const PrefixContainer = styled.span`
   position: absolute;
-  top: 9px;
+  top: ${({ mini }) => (mini ? '5px' : '9px')};
   left: 12px;
 `
 
 export const SuffixContainer = styled.span`
   position: absolute;
-  top: 9px;
+  top: ${({ mini }) => (mini ? '5px' : '9px')};
   right: 12px;
 `
 
@@ -54,22 +54,24 @@ const Input = ({
   ...props
 }) => {
   if (currency) {
+    const { mini } = props
     return (
       <div style={{ position: 'relative' }}>
         <InputBase currency {...props} />
-        <PrefixContainer>
-          <Text light large>$</Text>
+        <PrefixContainer {...props}>
+          <Text light large={!mini}>$</Text>
         </PrefixContainer>
       </div>
     )
   }
 
   if (percentage) {
+    const { mini } = props
     return (
       <div style={{ position: 'relative' }}>
         <InputBase {...props} />
-        <SuffixContainer>
-          <Text light large>%</Text>
+        <SuffixContainer {...props}>
+          <Text light large={!mini}>%</Text>
         </SuffixContainer>
       </div>
     )
@@ -120,6 +122,7 @@ Input.propTypes = {
   ssn: PropTypes.bool,
   submitting: PropTypes.bool,
   textarea: PropTypes.bool,
+  mini: PropTypes.bool,
 }
 
 Input.defaultProps = {
@@ -132,6 +135,7 @@ Input.defaultProps = {
   ssn: false,
   submitting: false,
   textarea: false,
+  mini: false,
 }
 
 export default Input
