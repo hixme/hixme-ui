@@ -123,6 +123,16 @@ const InputDocs = () => (
           </Code>
         </Col>
       </Row>
+      <Row style={rowExampleStyles}>
+        <Col xs={4}>
+          <Input mini />
+        </Col>
+        <Col xs={8}>
+          <Code>
+            {'<Input mini />'}
+          </Code>
+        </Col>
+      </Row>
 
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
@@ -142,6 +152,12 @@ const InputDocs = () => (
                 <td>bool</td>
                 <td>false</td>
                 <td>Large Input field component. Field is regular size by default</td>
+              </tr>
+              <tr>
+                <td>mini</td>
+                <td>bool</td>
+                <td>false</td>
+                <td>Mini Input field component. Field is regular size by default</td>
               </tr>
               <tr>
                 <td>search</td>
