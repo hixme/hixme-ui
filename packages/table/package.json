@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/table",
-  "version": "1.16.0",
+  "version": "1.16.6",
   "description": "hixme-ui Table component",
   "publishConfig": {
     "access": "public"
