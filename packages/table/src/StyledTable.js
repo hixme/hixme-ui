@@ -1,10 +1,10 @@
 import styled from 'styled-components'
+import theme from '@hixme-ui/theme'
 
 /* eslint-disable max-len */
 const StyledTable = styled.table`
   width: 100%;
   min-width: 350px;
-  font-family: 'Avenir-Next_Demi', 'HelveticaNeue-Medium', 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   border-collapse: collapse;
 
   thead {
@@ -16,6 +16,7 @@ const StyledTable = styled.table`
     }
 
     th {
+      font-family: ${theme.fontFamily.bold}; 
       color: #8f9da8;
       font-size: 14px;
       font-weight: 400;
@@ -38,6 +39,7 @@ const StyledTable = styled.table`
   tbody {
     text-align: ${({ alignBody }) => alignBody || 'left'};
     tr {
+      font-family: ${({ compact }) => (compact ? theme.fontFamily.normal : theme.fontFamily.bold)}; 
       &:nth-child(even) {
         background-color: ${props => (props.striped ? '#f2f6f9' : 'white')};
       }
@@ -50,7 +52,7 @@ const StyledTable = styled.table`
 
   th, td {
     padding: ${({ compact }) => (compact ? '0 15px' : '15px')};
-    height: ${({ compact }) => (compact ? '32px' : '46px')};
+    height: ${({ compact }) => (compact ? '22px' : '46px')};
   }
 
   td {
