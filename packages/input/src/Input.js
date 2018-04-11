@@ -33,6 +33,7 @@ const Masked = InputBase.withComponent(({
   date,
   error,
   large,
+  mini,
   phone,
   search,
   ssn,
