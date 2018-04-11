@@ -4,7 +4,6 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
 .c0 {
   width: 100%;
   min-width: 350px;
-  font-family: 'Avenir-Next_Demi','HelveticaNeue-Medium','Helvetica Neue Medium','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
   border-collapse: collapse;
 }
 
@@ -19,6 +18,7 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
 }
 
 .c0 thead th {
+  font-family: 'Avenir-Next_Demi','HelveticaNeue-Medium','Helvetica Neue Medium','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
   color: #8f9da8;
   font-size: 14px;
   font-weight: 400;
@@ -42,6 +42,10 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
 
 .c0 tbody {
   text-align: left;
+}
+
+.c0 tbody tr {
+  font-family: 'Avenir-Next_Demi','HelveticaNeue-Medium','Helvetica Neue Medium','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
 }
 
 .c0 tbody tr:nth-child(even) {
