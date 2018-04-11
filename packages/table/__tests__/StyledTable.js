@@ -10,7 +10,7 @@ describe('StyledTable', () => {
     const component = renderer.create(
       <ThemeProvider>
         <StyledTable />
-      </ThemeProvider>
+      </ThemeProvider>,
     )
 
     const tree = component.toJSON()
@@ -29,7 +29,6 @@ describe('StyledTable', () => {
     expect(tree).toHaveStyleRule('width', '100%')
     expect(tree).toHaveStyleRule('border-collapse', 'collapse')
     expect(tree).toHaveStyleRule('min-width', '350px')
-    expect(tree).toHaveStyleRule('font-family', '\'Avenir-Next_Demi\',\'HelveticaNeue-Medium\',\'Helvetica Neue Medium\',\'Helvetica Neue\',Helvetica,Arial,\'Lucida Grande\',sans-serif')
   })
 })
 
