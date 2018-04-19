@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/select",
-  "version": "1.16.6",
+  "version": "1.16.7",
   "description": "hixme-ui Select component",
   "publishConfig": {
     "access": "public"
@@ -79,7 +79,7 @@
   "license": "MIT",
   "dependencies": {
     "@hixme-ui/icon": "^1.15.0",
-    "@hixme-ui/input": "^1.16.6",
+    "@hixme-ui/input": "^1.16.7",
     "@hixme-ui/spinner": "^1.15.0",
     "@hixme-ui/theme": "^1.15.0",
     "@hixme-ui/theme-props": "^1.14.1",

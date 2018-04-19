@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/input",
-  "version": "1.16.6",
+  "version": "1.16.7",
   "description": "hixme-ui Input component",
   "publishConfig": {
     "access": "public"
