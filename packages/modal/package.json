@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/modal",
-  "version": "1.16.5",
+  "version": "1.16.8",
   "description": "hixme-ui Modal component",
   "publishConfig": {
     "access": "public"
@@ -77,7 +77,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/button": "^1.16.5",
+    "@hixme-ui/button": "^1.16.8",
     "@hixme-ui/close-button": "^1.16.5",
     "@hixme-ui/title": "^1.16.1",
     "react-flexbox-grid": "^2.0.0",
