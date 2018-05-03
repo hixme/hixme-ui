@@ -19,11 +19,8 @@ const Button = ({
 }) => {
   if (outline) {
     return (
-      <OutlineButton
-        {...props}
-        disabled={loading || submitting || disabled}
-      >
-        {(loading || submitting) ? (loadingText || submittingText) : children}
+      <OutlineButton {...props} disabled={loading || submitting || disabled}>
+        {loading || submitting ? loadingText || submittingText : children}
       </OutlineButton>
     )
   }
@@ -35,17 +32,14 @@ const Button = ({
         {...props}
         disabled={loading || submitting || disabled}
       >
-        {(loading || submitting) ? (loadingText || submittingText) : children}
+        {loading || submitting ? loadingText || submittingText : children}
       </MenuButton>
     )
   }
 
   return (
-    <GradientButton
-      {...props}
-      disabled={loading || submitting || disabled}
-    >
-      {(loading || submitting) ? (loadingText || submittingText) : children}
+    <GradientButton {...props} disabled={loading || submitting || disabled}>
+      {loading || submitting ? loadingText || submittingText : children}
     </GradientButton>
   )
 }
@@ -74,7 +68,7 @@ Button.defaultProps = {
   submitting: false,
   submittingText: 'Submitting...',
   loading: false,
-  loadingText: 'Submitting...',
+  loadingText: null,
 }
 
 export default Button
