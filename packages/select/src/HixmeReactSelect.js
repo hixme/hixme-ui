@@ -304,14 +304,10 @@ const HixmeReactSelect = styled(ReactSelect)`
   }
   & .Select-option.is-selected {
     background-color: #f5faff;
-    /* Fallback color for IE 8 */
-    background-color: rgba(0, 126, 255, 0.04);
     color: #333;
   }
   & .Select-option.is-focused {
     background-color: #ebf5ff;
-    /* Fallback color for IE 8 */
-    background-color: rgba(0, 126, 255, 0.08);
     color: #333;
   }
   & .Select-option.is-disabled {
@@ -373,21 +369,15 @@ const HixmeReactSelect = styled(ReactSelect)`
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
     border-right: 1px solid #c2e0ff;
-    /* Fallback color for IE 8 */
-    border-right: 1px solid rgba(0, 126, 255, 0.24);
     padding: 1px 5px 3px;
   }
   & .Select--multi .Select-value-icon:hover,
   & .Select--multi .Select-value-icon:focus {
     background-color: #d8eafd;
-    /* Fallback color for IE 8 */
-    background-color: rgba(0, 113, 230, 0.08);
     color: #0071e6;
   }
   & .Select--multi .Select-value-icon:active {
     background-color: #c2e0ff;
-    /* Fallback color for IE 8 */
-    background-color: rgba(0, 126, 255, 0.24);
   }
   & .Select--multi.Select--rtl .Select-value {
     margin-left: 0;
@@ -396,8 +386,6 @@ const HixmeReactSelect = styled(ReactSelect)`
   & .Select--multi.Select--rtl .Select-value-icon {
     border-right: none;
     border-left: 1px solid #c2e0ff;
-    /* Fallback color for IE 8 */
-    border-left: 1px solid rgba(0, 126, 255, 0.24);
   }
   & .Select--multi.is-disabled .Select-value {
     background-color: #fcfcfc;
