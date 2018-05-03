@@ -107,7 +107,7 @@ const HixmeReactSelect = styled(ReactSelect)`
   &.Select.has-value.is-pseudo-focused .Select-input {
     opacity: 0;
   }
-  .Select.is-open .Select-arrow,
+  &.Select.is-open .Select-arrow,
   &.Select .Select-arrow-zone:hover > .Select-arrow {
     border-top-color: #666;
   }
@@ -139,7 +139,7 @@ const HixmeReactSelect = styled(ReactSelect)`
     background: #fff;
   }
   & .Select-placeholder,
-  & .Select--single > .Select-control .Select-value {
+  &.Select--single > .Select-control .Select-value {
     bottom: 0;
     color: #aaa;
     left: 0;
@@ -174,10 +174,10 @@ const HixmeReactSelect = styled(ReactSelect)`
     line-height: 17px;
     padding: 8px 0 12px;
   }
-  & .is-focused .Select-input > input {
+  &.is-focused .Select-input > input {
     cursor: text;
   }
-  & .has-value.is-pseudo-focused .Select-input {
+  &.has-value.is-pseudo-focused .Select-input {
     opacity: 0;
   }
   & .Select-control:not(.is-searchable) > .Select-input {
