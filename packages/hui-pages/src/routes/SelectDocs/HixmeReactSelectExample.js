@@ -20,6 +20,7 @@ class HixmeReactSelectExample extends Component {
     const { value } = this.state
     return (
       <HixmeReactSelect
+        multi
         onChange={this.handleOnChange}
         value={value}
         options={[

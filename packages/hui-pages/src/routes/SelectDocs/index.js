@@ -56,9 +56,30 @@ const SelectDocs = () => (
           <Code>{"<Select loading list={[{ id: 0, name: 'Hello' }]} />"}</Code>
         </Col>
       </Row>
+      <Row style={{ margin: '20px 0' }}>
+        <Col xs={12}>
+          <Text thin>
+            We&#39;ve also reimplemented the react-select pacakge with styled-components in order to use
+            without a stylesheet.
+          </Text>
+        </Col>
+      </Row>
       <Row>
         <Col xs={12}>
           <HixmeReactSelectExample />
+          <Code>{`<HixmeReactSelect
+  multi
+  onChange={this.handleOnChange}
+  value={value}
+  options={[
+    { value: 1, label: 'You' },
+    { value: 2, label: 'were' },
+    { value: 3, label: 'my' },
+    { value: 4, label: 'brother' },
+    { value: 5, label: 'Anakin' },
+  ]}
+/>
+`}</Code>
         </Col>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}>
