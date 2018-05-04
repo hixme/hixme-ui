@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/forms",
-  "version": "1.16.8",
+  "version": "1.17.0",
   "description": "hixme-ui forms category for access to all HUI form components",
   "publishConfig": {
     "access": "public"
@@ -82,7 +82,7 @@
     "@hixme-ui/input": "^1.16.7",
     "@hixme-ui/label": "^1.16.1",
     "@hixme-ui/radio-button": "^1.16.1",
-    "@hixme-ui/select": "^1.16.7",
+    "@hixme-ui/select": "^1.17.0",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
