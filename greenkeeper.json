@@ -1,0 +1,47 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/animate/package.json",
+        "packages/app-layout/package.json",
+        "packages/benefit-price/package.json",
+        "packages/bullet-list/package.json",
+        "packages/button/package.json",
+        "packages/card-drawer/package.json",
+        "packages/card/package.json",
+        "packages/checkbox/package.json",
+        "packages/close-button/package.json",
+        "packages/container/package.json",
+        "packages/content-container/package.json",
+        "packages/currency/package.json",
+        "packages/dates/package.json",
+        "packages/email/package.json",
+        "packages/form-group/package.json",
+        "packages/forms/package.json",
+        "packages/hui-pages/package.json",
+        "packages/icon/package.json",
+        "packages/input/package.json",
+        "packages/label/package.json",
+        "packages/modal/package.json",
+        "packages/percentage/package.json",
+        "packages/phone/package.json",
+        "packages/price/package.json",
+        "packages/print/package.json",
+        "packages/radio-button/package.json",
+        "packages/select/package.json",
+        "packages/separator/package.json",
+        "packages/sidebar/package.json",
+        "packages/social-security/package.json",
+        "packages/spinner/package.json",
+        "packages/step/package.json",
+        "packages/table/package.json",
+        "packages/text/package.json",
+        "packages/theme-props/package.json",
+        "packages/theme/package.json",
+        "packages/title/package.json",
+        "packages/upload-box/package.json"
+      ]
+    }
+  }
+}
