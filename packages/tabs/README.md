@@ -1,30 +1,32 @@
-# Price
+# Tabs
 
 ## Installation
 
 ```bash
-npm i --save @hixme-ui/price
+npm i --save @hixme-ui/tabs
 ```
-[View it live](https://hixme.github.io/hixme-ui/price)
+[View it live](https://hixme.github.io/hixme-ui/tabs)
 
 ## Usage
 
 ```js
-import Price from '@hixme-ui/price'
+import Tabs from '@hixme-ui/tabs'
 
-<Price value={46.93} />
-<Price value={-46.93} />
-<Price primary value={46.93} label='Hixme UI' />
+const tabsArray = [{
+  name: 'Some tab name 1',
+  content: <SomeComponent {...stuff} />
+},{
+  name: 'Some tab name 2',
+  content: <SomeOtherComponent {...stuff} />
+}]
+
+<Tabs id='uniqueString' list={tabsArray} initWithIndex={1} />
 ```
 
 ## Props
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
-| value           | string      | N/A            |
-| label           | string      | N/A            | 
-
-Additionally, the Price component will take any color boolean from the theme.
-
-
-
+| id              | string      | N/A            |
+| list            | array       | N/A            |
+| initWithIndex   | number      | 0              |
