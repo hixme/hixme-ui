@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/app-layout",
-  "version": "1.16.5",
+  "version": "1.17.1",
   "description": "hixme-ui AppLayout component",
   "publishConfig": {
     "access": "public"
@@ -39,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.15.0",
+    "@hixme-ui/theme": "^1.17.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -80,8 +80,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.16.5",
-    "@hixme-ui/icon": "^1.15.6",
+    "@hixme-ui/container": "^1.17.1",
+    "@hixme-ui/icon": "^1.17.1",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
