@@ -10,6 +10,7 @@ const Table = ({
   alignBody,
   alignHeader,
   compact,
+  ...rest
 }) => (
   <OverflowContainer>
     <StyledTable
@@ -17,6 +18,7 @@ const Table = ({
       striped={striped}
       alignBody={alignBody}
       alignHeader={alignHeader}
+      {...rest}
     >
       {children}
     </StyledTable>
