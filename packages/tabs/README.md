@@ -20,7 +20,7 @@ const tabsArray = [{
   content: <SomeOtherComponent {...stuff} />
 }]
 
-<Tabs id='uniqueString' list={tabsArray} initWithIndex={1} />
+<Tabs blue id='uniqueString' list={tabsArray} initWithIndex={1} />
 ```
 
 ## Props
