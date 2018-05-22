@@ -277,6 +277,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/tabs'>
+          <Text primary cursor='pointer'>
+            Tabs
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/text'>
           <Text primary cursor='pointer'>
             Text
