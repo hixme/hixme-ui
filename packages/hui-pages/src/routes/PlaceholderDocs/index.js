@@ -17,7 +17,7 @@ const PlaceholderDocs = () => (
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
       <Col center='xs' style={{ marginBottom: '20px' }}>
         <Placeholder colorStop1='crimson' colorStop2='turquoise' height='4px' width='100%' />
-        <Placeholder colorStop1='darkorange' colorStop2='lemonchiffon' width='66%' />
+        <Placeholder colorStop1='lemonchiffon' colorStop2='deepskyblue' width='66%' />
         <Placeholder colorStop1='turquoise' colorStop2='deeppink' width='50%' />
         <Placeholder colorStop1='mediumaquamarine' colorStop2='slateblue' />
         <Placeholder />
