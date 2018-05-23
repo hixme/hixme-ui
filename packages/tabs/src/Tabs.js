@@ -8,20 +8,9 @@ import Container from '@hixme-ui/container'
 import LineTab from './tab-types'
 
 class Tabs extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      id: null,
-      activeIndex: 0,
-    }
-  }
-
-  componentDidMount() {
-    // eslint-disable-next-line react/no-did-mount-set-state
-    this.setState({
-      id: this.props.id,
-      activeIndex: this.props.initWithIndex,
-    })
+  state = {
+    id: this.props.id,
+    activeIndex: this.props.initWithIndex,
   }
 
   handleTabClick = (clickedIndex) => {
