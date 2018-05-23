@@ -12,10 +12,16 @@ const tabList = [{
   content: <div style={{ border: '1px solid blue' }}>One</div>,
 }, {
   name: 'Two',
-  content: <div style={{ border: '1px solid green' }}>initWithIndex 1</div>,
+  content: <div style={{ border: '1px solid green' }}>Two</div>,
 }, {
   name: 'Three',
   content: <div style={{ border: '1px solid orange' }}>Three</div>,
+}, {
+  name: 'Four',
+  content: <div style={{ border: '1px solid skyblue' }}>Four</div>,
+}, {
+  name: 'Five',
+  content: <div style={{ border: '1px solid crimson' }}>Five</div>,
 }]
 
 const TabsDocs = () => (
@@ -27,7 +33,7 @@ const TabsDocs = () => (
     <Grid fluid>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Examples</Title></Row>
       <Row center='xs' style={{ marginBottom: '20px' }}>
-        <Tabs id='8881234567' list={tabList} initWithIndex={1} />
+        <Tabs id='1' list={tabList} />
       </Row>
       <Row center='xs'>
         <Code>

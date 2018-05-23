@@ -5,32 +5,34 @@ import PropTypes from 'prop-types'
 import Text from '@hixme-ui/text'
 import Container from '@hixme-ui/container'
 
-import StyledTab from './StyledTab'
+import LineTab from './tab-types'
 
 class Tabs extends React.Component {
   constructor() {
     super()
     this.state = {
-      tabIndex: 0,
+      id: null,
+      activeIndex: 0,
     }
   }
 
   componentDidMount() {
     // eslint-disable-next-line react/no-did-mount-set-state
     this.setState({
-      tabIndex: this.props.initWithIndex,
+      id: this.props.id,
+      activeIndex: this.props.initWithIndex,
     })
   }
 
   handleTabClick = (clickedIndex) => {
     this.setState({
-      tabIndex: clickedIndex,
+      activeIndex: clickedIndex,
     })
   }
 
   render() {
     return (
-      <Container flex noPadding direction='column' width='100%' height='100%'>
+      <Container id={this.props.id} flex noPadding direction='column' width='100%' height='100%'>
         <Container flex noPadding>
           {this.props.list && this.props.list.map((tab, index) => (
             <Container
@@ -39,15 +41,20 @@ class Tabs extends React.Component {
               key={`${tab.name}${this.props.id}tab`}
               margin='0 20px 0 0'
             >
-              <StyledTab blue active={this.state.tabIndex === index}>
+              <LineTab blue active={this.state.activeIndex === index}>
                 <Text
-                  light={this.state.tabIndex !== index}
+                  style={{ outline: 'none' }}
+                  a
+                  tabIndex={index + 1}
+                  black={this.state.activeIndex === index}
+                  light={this.state.activeIndex !== index}
                   cursor='pointer'
                   onClick={() => this.handleTabClick(index)}
+                  onFocus={() => this.handleTabClick(index)}
                 >
                   {tab.name}
                 </Text>
-              </StyledTab>
+              </LineTab>
             </Container>
             ))}
         </Container>
@@ -59,7 +66,7 @@ class Tabs extends React.Component {
           width='100%'
         >
           {this.props.list && this.props.list.map((tab, index) => {
-            if (this.state.tabIndex === index) {
+            if (this.state.activeIndex === index) {
               return (
                 <div
                   key={`${tab.name}${this.props.id}content`}

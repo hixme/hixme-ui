@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { getTextColor } from '@hixme-ui/theme-props'
 
-const StyledTab = styled.div`
+const LineTab = styled.div`
   transition: all 0.2s ease;
   margin-bottom: 4px;
   border-bottom: ${(props) => {
@@ -11,4 +11,4 @@ const StyledTab = styled.div`
   border-bottom-width: 4px;
 `
 
-export default StyledTab
+export default LineTab
