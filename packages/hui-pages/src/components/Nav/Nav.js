@@ -187,6 +187,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/placeholder'>
+          <Text primary cursor='pointer'>
+            Placeholder
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/price'>
           <Text primary cursor='pointer'>
             Price
