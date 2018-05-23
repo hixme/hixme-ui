@@ -13,12 +13,14 @@ const animateGradient = keyframes`
 `
 
 const Placeholder = styled.div`
-  background: linear-gradient(90deg, #e7e7e7, white);
+  background: linear-gradient(90deg,
+    ${props => props.colorStop1 || '#e7e7e7'},
+    ${props => props.colorStop2 || 'white'});
   background-size: 200% 400%;
   animation: 1.5s ${animateGradient} infinite;
-  width: ${props => props.width};
-  height: ${props => props.height};
-  margin: ${props => props.margin};
+  width: ${props => props.width || '200px'};
+  height: ${props => props.height || '30px'};
+  margin: ${props => props.margin || '20px'};
   padding: ${props => props.padding};
   border-radius: 4px;
 `
