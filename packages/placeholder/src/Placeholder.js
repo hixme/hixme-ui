@@ -2,13 +2,13 @@ import styled, { keyframes } from 'styled-components'
 
 const animateGradient = keyframes`
   0% {
-    background-position: 0% 15%
+    background-position: 0% 25%
   }
   50% {
-    background-position: 100% 85%
+    background-position: 100% 65%
   }
   100% {
-    background-position: 0% 15%
+    background-position: 0% 25%
   }
 `
 
