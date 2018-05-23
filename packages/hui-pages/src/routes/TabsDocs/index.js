@@ -31,7 +31,7 @@ const TabsDocs = () => (
       </Row>
       <Row center='xs'>
         <Code>
-          {'<Tabs id=\'1\' list=\'{[{name: \'one\', content:\'\one content\'\},...]}\' initWithIndex\=\{1} />'}
+          {'<Tabs id=\'1\' list=\'{[{name: \'one\', content:\'one content\'},...]}\' initWithIndex={1} />'}
         </Code>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}>
