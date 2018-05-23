@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import theme from '@hixme-ui/theme'
 import { getTextColor } from '@hixme-ui/theme-props'
 
 const StyledTab = styled.div`
