@@ -4,13 +4,8 @@ import PropTypes from 'prop-types'
 // hixme-ui
 import Text from '@hixme-ui/text'
 import Container from '@hixme-ui/container'
-import theme from '@hixme-ui/theme'
 
 import StyledTab from './StyledTab'
-
-const {
-  backgroundColors,
-} = theme
 
 class Tabs extends React.Component {
   constructor() {
