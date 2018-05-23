@@ -32,7 +32,7 @@ class Tabs extends React.Component {
 
   render() {
     return (
-      <Container id={this.props.id} flex noPadding direction='column' width='100%' height='100%'>
+      <Container flex noPadding direction='column' width='100%' height='100%'>
         <Container flex noPadding>
           {this.props.list && this.props.list.map((tab, index) => (
             <Container
