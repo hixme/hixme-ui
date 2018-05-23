@@ -12,18 +12,6 @@ const {
   backgroundColors,
 } = theme
 
-const defaultStyle = {
-  transition: 'all 0.25s ease',
-  borderBottomWidth: '0',
-  marginBottom: '4px',
-}
-
-const active = {
-  transition: 'all 0.25s ease',
-  borderBottom: `4px solid ${backgroundColors.blue}`,
-  borderBottomWidth: '4px',
-}
-
 class Tabs extends React.Component {
   constructor() {
     super()
