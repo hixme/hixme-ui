@@ -34,6 +34,7 @@
     "@hixme-ui/modal": "^1.0.0",
     "@hixme-ui/percentage": "^1.0.0",
     "@hixme-ui/phone": "^1.0.0",
+    "@hixme-ui/placeholder": "^1.0.0",
     "@hixme-ui/price": "^1.0.0",
     "@hixme-ui/print": "^1.0.0",
     "@hixme-ui/radio-button": "^1.0.0",
