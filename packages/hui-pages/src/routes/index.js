@@ -44,6 +44,7 @@ import SocialSecurityDocs from './SocialSecurityDocs'
 import SpinnerDocs from './SpinnerDocs'
 import StepDocs from './StepDocs'
 import TableDocs from './TableDocs'
+import TabsDocs from './TabsDocs'
 import TextDocs from './TextDocs'
 import TitleDocs from './TitleDocs'
 import UploadBoxDocs from './UploadBoxDocs'
@@ -87,6 +88,7 @@ const Routes = () => (
           <Route path='/spinner' component={SpinnerDocs} />
           <Route path='/step' component={StepDocs} />
           <Route path='/table' component={TableDocs} />
+          <Route path='/tabs' component={TabsDocs} />
           <Route path='/text' component={TextDocs} />
           <Route path='/title' component={TitleDocs} />
           <Route path='/upload-box' component={UploadBoxDocs} />
