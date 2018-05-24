@@ -33,6 +33,7 @@ import ModalDocs from './ModalDocs'
 import NotFound from './NotFound'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
+import PlaceholderDocs from './PlaceholderDocs'
 import PriceDocs from './PriceDocs'
 import PrintDocs from './PrintDocs'
 import RadioButtonDocs from './RadioButtonDocs'
@@ -75,6 +76,7 @@ const Routes = () => (
           <Route path='/modal' component={ModalDocs} />
           <Route path='/percentage' component={PercentageDocs} />
           <Route path='/phone' component={PhoneDocs} />
+          <Route path='/placeholder' component={PlaceholderDocs} />
           <Route path='/price' component={PriceDocs} />
           <Route path='/print' component={PrintDocs} />
           <Route path='/radio-button' component={RadioButtonDocs} />
