@@ -24,9 +24,13 @@ const tabsArray = [{
 ```
 
 ## Props
+```js
+tabStyles={{ blue: true, width: '200px', marginBottom: '40px' }}
+```
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
 | id              | string      | N/A            |
 | list            | array       | N/A            |
 | initWithIndex   | number      | 0              |
+| tabStyles       | object      | N/A            |

@@ -21,8 +21,14 @@ class Tabs extends React.Component {
 
   render() {
     return (
-      <Container flex noPadding direction='column' width='100%' height='100%'>
-        <Container flex noPadding>
+      <Container
+        flex
+        noPadding
+        direction={this.props.direction === 'row' ? 'column' : 'row'}
+        width='100%'
+        height='100%'
+      >
+        <Container flex noPadding direction={this.props.direction}>
           {this.props.list && this.props.list.map((tab, index) => (
             <Container
               flex
@@ -30,27 +36,32 @@ class Tabs extends React.Component {
               key={`${tab.name}${this.props.id}tab`}
               margin='0 20px 0 0'
             >
-              <LineTab blue active={this.state.activeIndex === index}>
-                <Text
-                  style={{ outline: 'none' }}
-                  a
-                  tabIndex={index + 1}
-                  black={this.state.activeIndex === index}
-                  light={this.state.activeIndex !== index}
-                  cursor='pointer'
+              <div style={{ height: this.props.height }}>
+                <LineTab
                   onClick={() => this.handleTabClick(index)}
                   onFocus={() => this.handleTabClick(index)}
+                  {...this.props.tabStyles}
+                  active={this.state.activeIndex === index}
                 >
-                  {tab.name}
-                </Text>
-              </LineTab>
+                  <Text
+                    style={{ outline: 'none', width: '100%' }}
+                    a
+                    tabIndex={index + 1}
+                    black={this.state.activeIndex === index}
+                    light={this.state.activeIndex !== index}
+                    cursor='pointer'
+                  >
+                    {tab.name}
+                  </Text>
+                </LineTab>
+              </div>
             </Container>
             ))}
         </Container>
         <Container
           flex
           noPadding
-          margin='20px 0 0 0'
+          direction={this.props.direction}
           height='100%'
           width='100%'
         >
@@ -79,10 +90,15 @@ Tabs.propTypes = {
   id: PropTypes.string.isRequired,
   list: PropTypes.array.isRequired,
   initWithIndex: PropTypes.number,
+  direction: PropTypes.string,
+  tabStyles: PropTypes.object,
 }
 
 Tabs.defaultProps = {
   initWithIndex: 0,
+  styles: {},
+  direction: 'row',
+  tabStyles: {},
 }
 
 export default Tabs
