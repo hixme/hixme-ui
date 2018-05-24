@@ -87,10 +87,11 @@ class Tabs extends React.Component {
 Tabs.displayName = 'Tabs'
 
 Tabs.propTypes = {
-  id: PropTypes.string.isRequired,
-  list: PropTypes.array.isRequired,
-  initWithIndex: PropTypes.number,
   direction: PropTypes.string,
+  height: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  initWithIndex: PropTypes.number,
+  list: PropTypes.array.isRequired,
   tabStyles: PropTypes.object,
 }
 
@@ -99,6 +100,7 @@ Tabs.defaultProps = {
   styles: {},
   direction: 'row',
   tabStyles: {},
+  height: 'auto',
 }
 
 export default Tabs
