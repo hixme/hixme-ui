@@ -121,6 +121,12 @@ const TabsDocs = () => (
                 <td>Initialise component at a specfic tab index</td>
               </tr>
               <tr>
+                <td>direction</td>
+                <td>string</td>
+                <td>row</td>
+                <td>'row' or 'column'</td>
+              </tr>
+              <tr>
                 <td>tabStyles</td>
                 <td>object</td>
                 <td>N/A</td>
