@@ -105,13 +105,13 @@ const TabsDocs = () => (
               <tr>
                 <td>id</td>
                 <td>string</td>
-                <td>REQUIRED</td>
+                <td>required</td>
                 <td>Tabs component unique id</td>
               </tr>
               <tr>
                 <td>list</td>
                 <td>array</td>
-                <td>REQUIRED</td>
+                <td>required</td>
                 <td>Children for tabs</td>
               </tr>
               <tr>
@@ -119,6 +119,12 @@ const TabsDocs = () => (
                 <td>number</td>
                 <td>0</td>
                 <td>Initialise component at a specfic tab index</td>
+              </tr>
+              <tr>
+                <td>tabStyles</td>
+                <td>object</td>
+                <td>N/A</td>
+                <td>width, bottomMargin, huiTextColor</td>
               </tr>
             </tbody>
           </Table>
