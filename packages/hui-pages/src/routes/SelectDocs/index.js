@@ -59,15 +59,18 @@ const SelectDocs = () => (
       <Row style={{ margin: '20px 0' }}>
         <Col xs={12}>
           <Text thin>
-            We&#39;ve also reimplemented the react-select pacakge with styled-components in order to use
-            without a stylesheet.
+            We&#39;ve also reimplemented the react-select pacakge with
+            styled-components in order to use without a stylesheet.
           </Text>
         </Col>
       </Row>
       <Row>
         <Col xs={12}>
           <HixmeReactSelectExample />
-          <Code>{`<HixmeReactSelect
+          <br />
+          <Code>{`import { HixmeReactSelect } from '@hixme-ui/select'
+
+<HixmeReactSelect
   multi
   onChange={this.handleOnChange}
   value={value}
