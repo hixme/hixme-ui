@@ -80,7 +80,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^1.15.0",
     "@hixme-ui/text": "^1.15.0",
     "styled-components": "^2.3.3"
   },
