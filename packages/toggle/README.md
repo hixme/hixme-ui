@@ -1,48 +1,33 @@
-# Table
+# Toggle
 
 ## Installation
 
 ```bash
-npm i --save @hixme-ui/table
+npm i --save @hixme-ui/toggle
 ```
-[View it live](https://hixme.github.io/hixme-ui/table)
+[View it live](https://hixme.github.io/hixme-ui/toggle)
 
 ## Usage
 
 ```jsx
-import Table from '@hixme-ui/table'
+import Toggle from '@hixme-ui/toggle'
 
-<Table>
-  <thead>
-    <tr>
-      <th>Header</th>
-      <th>Header</th>
-      <th>Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Table data</td>
-      <td>Table data</td>
-      <td>Table data</td>
-    </tr>
-    <tr>
-      <td>Table data</td>
-      <td>Table data</td>
-      <td>Table data</td>
-    </tr>
-  </tbody>
-</Table>
+<Toggle
+  checked={this.state.checked}
+  truthyText='Ya'
+  falsyText='Nah'
+  onChange={e => this.handleToggle(e)}
+/>
 ```
 
 ## Props
 
 | Name            | Type        | Default        |
 | --------------- | ----------- | -------------- |
-| alignBody       | string      | ''             |
-| alignHeader     | string      | ''             |
-| compact         | boolean     | false          |
-| striped         | boolean     | false          |
+| truthyText      | string      | 'Yes'          |
+| falsyText       | string      | 'No'           |
+| checked         | boolean     | undefined      |
+| noLabels        | boolean     | false          |
 
 
 
