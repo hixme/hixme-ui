@@ -28,6 +28,7 @@ import Toggle from '@hixme-ui/toggle'
 | falsyText       | string      | 'No'           |
 | checked         | boolean     | undefined      |
 | noLabels        | boolean     | false          |
+| withIcons       | boolean     | false          |
 
 
 
