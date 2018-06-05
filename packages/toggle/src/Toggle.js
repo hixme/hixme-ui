@@ -10,7 +10,7 @@ const ToggleButton = ({
   truthyText,
   falsyText,
   noLabels,
-  withIcons,
+  // withIcons,
   ...rest
 }) => {
   // restrict redux form props
@@ -74,14 +74,14 @@ ToggleButton.propTypes = {
   truthyText: PropTypes.string,
   falsyText: PropTypes.string,
   noLabels: PropTypes.bool,
-  withIcons: PropTypes.bool,
+  // withIcons: PropTypes.bool,
 }
 
 ToggleButton.defaultProps = {
   truthyText: 'Yes',
   falsyText: 'No',
   noLabels: false,
-  withIcons: false,
+  // withIcons: false,
 }
 
 export default ToggleButton
