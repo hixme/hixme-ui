@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/index.js"],"names":["Toggle"],"mappings":";;;;;;AAAA;;;;;;kBAEeA,gB","file":"index.js","sourcesContent":["import Toggle from './Toggle'\n\nexport default Toggle\n"]}
