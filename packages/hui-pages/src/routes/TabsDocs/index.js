@@ -64,13 +64,13 @@ const TabsDocs = () => (
       subtitle='A Hixme UI styled tabs component'
     />
     <Grid fluid>
-      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Row Example</Title></Row>
+      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Example</Title></Row>
       <Row center='xs' style={{ marginBottom: '20px' }}>
         <Tabs id='1' list={tabListRow} tabStyles={{ primary: true }} />
       </Row>
       <Row center='xs'>
         <Code>
-          {'<Tabs id=\'1\' list=\'{[{name: \'one\', content:\'one content\'}]}\'/>'}
+          {'<Tabs id=\'1\' list=\'{[{name: \'one\', content:\'one content\', state:\'ERROR\', message:\'Form error\'}]}\'/>'}
         </Code>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}>
@@ -112,12 +112,32 @@ const TabsDocs = () => (
                 <td>N/A</td>
                 <td>width, bottomMargin, huiTextColor</td>
               </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+      <Row style={{ margin: '40px 0 20px 0' }}>
+        <Title smaller>List Props</Title>
+      </Row>
+      <Row center='xs'>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
               <tr>
                 <td>state</td>
                 <td>string</td>
                 <td>N/A</td>
                 <td>WARN or ERROR</td>
-              </tr><tr>
+              </tr>
+              <tr>
                 <td>message</td>
                 <td>string</td>
                 <td>N/A</td>
