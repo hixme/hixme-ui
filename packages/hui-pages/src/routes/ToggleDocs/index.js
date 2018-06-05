@@ -24,6 +24,7 @@ class ToggleDocs extends React.Component {
         <Row center='xs' style={{ marginBottom: '20px' }}>
           <Col xs={12}>
             <Toggle
+              withIcons
               checked={this.state.checked}
               truthyText='Ya'
               falsyText='Nah'
@@ -37,6 +38,7 @@ class ToggleDocs extends React.Component {
               {`import Toggle from '@hixme-ui/toggle'
 
 <Toggle
+  withIcons
   checked={this.state.checked}
   truthyText='Ya'
   falsyText='Nah'
@@ -75,6 +77,12 @@ class ToggleDocs extends React.Component {
                   <td>string</td>
                   <td>&apos;No&apos;</td>
                   <td>Label shown when toggle is false</td>
+                </tr>
+                <tr>
+                  <td>withIcons</td>
+                  <td>boolean</td>
+                  <td>false</td>
+                  <td>Show check and x icons</td>
                 </tr>
                 <tr>
                   <td>noLabels</td>
