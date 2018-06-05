@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ReactTooltip from 'react-tooltip'
 
 // hixme-ui
 import Text from '@hixme-ui/text'
 import Container from '@hixme-ui/container'
 
 import LineTab from './tab-types'
+import { StateIndicator } from './components'
 
 class Tabs extends React.Component {
   state = {
@@ -34,7 +36,7 @@ class Tabs extends React.Component {
               flex
               noPadding
               key={`${tab.name}${this.props.id}tab`}
-              margin='0 20px 0 0'
+              margin='0 15px 0 0'
             >
               <div style={{ height: this.props.height }}>
                 <LineTab
@@ -43,16 +45,39 @@ class Tabs extends React.Component {
                   {...this.props.tabStyles}
                   active={this.state.activeIndex === index}
                 >
-                  <Text
-                    style={{ outline: 'none', width: '100%' }}
-                    a
-                    tabIndex={index + 1}
-                    black={this.state.activeIndex === index}
-                    light={this.state.activeIndex !== index}
-                    cursor='pointer'
+                  <Container
+                    flex
+                    noPadding
+                    data-tip
+                    data-for={tab.name}
                   >
-                    {tab.name}
-                  </Text>
+                    <Text
+                      style={{ outline: 'none', width: '100%' }}
+                      a
+                      tabIndex={index + 1}
+                      black={this.state.activeIndex === index}
+                      light={this.state.activeIndex !== index}
+                      cursor='pointer'
+                    >
+                      {tab.name}
+                    </Text>
+                    {tab.state &&
+                      <Container
+                        flex
+                        noPadding
+                        justifyContent='center'
+                        alignItems='center'
+                        marginLeft='5px'
+                      >
+                        {tab.message &&
+                          <ReactTooltip id={tab.name} effect='solid'>
+                            {tab.message}
+                          </ReactTooltip>
+                        }
+                        <StateIndicator state={tab.state} />
+                      </Container>
+                    }
+                  </Container>
                 </LineTab>
               </div>
             </Container>
@@ -96,11 +121,11 @@ Tabs.propTypes = {
 }
 
 Tabs.defaultProps = {
+  direction: 'row',
+  height: 'auto',
   initWithIndex: 0,
   styles: {},
-  direction: 'row',
   tabStyles: {},
-  height: 'auto',
 }
 
 export default Tabs
