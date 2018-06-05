@@ -55,13 +55,12 @@ const ToggleButton = ({
     }
     return <span />
   }
-  console.log('getProps() --- ', getProps())
 
   return (
     <StyledToggle>
       <div>
         <input type='checkbox' {...getProps()} />
-        <Slider {...getProps()} />
+        <Slider id='slider' {...getProps()} />
         <ToggleLabel />
       </div>
     </StyledToggle>
