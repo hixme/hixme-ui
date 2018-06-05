@@ -313,6 +313,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/toggle'>
+          <Text primary cursor='pointer'>
+            Toggle
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/upload-box'>
           <Text primary cursor='pointer'>
             UploadBox
