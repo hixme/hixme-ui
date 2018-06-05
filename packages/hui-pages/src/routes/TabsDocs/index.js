@@ -21,6 +21,8 @@ const tabListRow = [{
   </Container>,
 }, {
   name: 'Two',
+  state: 'ERROR',
+  message: 'There was an error submitting the form',
   content: <Container
     flex
     background='white'
@@ -42,6 +44,8 @@ const tabListRow = [{
     Three
   </Container> }, {
     name: 'Old MacDonald had a Farm',
+    state: 'WARN',
+    message: 'You have unsaved changes',
     content: <Container
       flex
       background='white'
@@ -53,20 +57,6 @@ const tabListRow = [{
     </Container>,
   }]
 
-const tabListCol = [{
-  name: 'One',
-  content: <Container flex rounded background='white' border='1px solid Gainsboro'>One</Container>,
-}, {
-  name: 'Two',
-  content: <Container flex rounded background='white' border='1px solid Gainsboro'>Two</Container>,
-}, {
-  name: 'Three',
-  content: <Container flex rounded background='white' border='1px solid Gainsboro'>Three</Container>,
-}, {
-  name: 'Old MacDonald had a Farm',
-  content: <Container flex rounded background='white' border='1px solid Gainsboro'>E-I-E-I-O</Container>,
-}]
-
 const TabsDocs = () => (
   <div>
     <DocsTitle
@@ -74,17 +64,13 @@ const TabsDocs = () => (
       subtitle='A Hixme UI styled tabs component'
     />
     <Grid fluid>
-      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Row Example</Title></Row>
+      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Example</Title></Row>
       <Row center='xs' style={{ marginBottom: '20px' }}>
         <Tabs id='1' list={tabListRow} tabStyles={{ primary: true }} />
       </Row>
-      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Column Example</Title></Row>
-      <Row style={{ marginBottom: '20px', height: '300px' }}>
-        <Tabs id='2' list={tabListCol} direction='column' tabStyles={{ blue: true, width: '200px', marginBottom: '40px' }} />
-      </Row>
       <Row center='xs'>
         <Code>
-          {'<Tabs id=\'1\' direction=\'row\' list=\'{[{name: \'one\', content:\'one content\'}]}\'/>'}
+          {'<Tabs id=\'1\' list=\'{[{name: \'one\', content:\'one content\', state:\'ERROR\', message:\'Form error\'}]}\'/>'}
         </Code>
       </Row>
       <Row style={{ margin: '40px 0 20px 0' }}>
@@ -121,16 +107,41 @@ const TabsDocs = () => (
                 <td>Initialise component at a specfic tab index</td>
               </tr>
               <tr>
-                <td>direction</td>
-                <td>string</td>
-                <td>row</td>
-                <td>'row' or 'column'</td>
-              </tr>
-              <tr>
                 <td>tabStyles</td>
                 <td>object</td>
                 <td>N/A</td>
                 <td>width, bottomMargin, huiTextColor</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+      <Row style={{ margin: '40px 0 20px 0' }}>
+        <Title smaller>List Props</Title>
+      </Row>
+      <Row center='xs'>
+        <Col xs={12}>
+          <Table striped>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>state</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>WARN or ERROR</td>
+              </tr>
+              <tr>
+                <td>message</td>
+                <td>string</td>
+                <td>N/A</td>
+                <td>Text for tooltip</td>
               </tr>
             </tbody>
           </Table>
