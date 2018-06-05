@@ -33,6 +33,7 @@ import ModalDocs from './ModalDocs'
 import NotFound from './NotFound'
 import PercentageDocs from './PercentageDocs'
 import PhoneDocs from './PhoneDocs'
+import PlaceholderDocs from './PlaceholderDocs'
 import PriceDocs from './PriceDocs'
 import PrintDocs from './PrintDocs'
 import RadioButtonDocs from './RadioButtonDocs'
@@ -43,9 +44,10 @@ import SocialSecurityDocs from './SocialSecurityDocs'
 import SpinnerDocs from './SpinnerDocs'
 import StepDocs from './StepDocs'
 import TableDocs from './TableDocs'
-import ToggleDocs from './ToggleDocs'
+import TabsDocs from './TabsDocs'
 import TextDocs from './TextDocs'
 import TitleDocs from './TitleDocs'
+import ToggleDocs from './ToggleDocs'
 import UploadBoxDocs from './UploadBoxDocs'
 
 const Routes = () => (
@@ -76,6 +78,7 @@ const Routes = () => (
           <Route path='/modal' component={ModalDocs} />
           <Route path='/percentage' component={PercentageDocs} />
           <Route path='/phone' component={PhoneDocs} />
+          <Route path='/placeholder' component={PlaceholderDocs} />
           <Route path='/price' component={PriceDocs} />
           <Route path='/print' component={PrintDocs} />
           <Route path='/radio-button' component={RadioButtonDocs} />
@@ -86,9 +89,10 @@ const Routes = () => (
           <Route path='/spinner' component={SpinnerDocs} />
           <Route path='/step' component={StepDocs} />
           <Route path='/table' component={TableDocs} />
-          <Route path='/toggle' component={ToggleDocs} />
+          <Route path='/tabs' component={TabsDocs} />
           <Route path='/text' component={TextDocs} />
           <Route path='/title' component={TitleDocs} />
+          <Route path='/toggle' component={ToggleDocs} />
           <Route path='/upload-box' component={UploadBoxDocs} />
           <Route component={NotFound} />
         </Switch>

@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/theme-props",
-  "version": "1.14.1",
+  "version": "1.17.2",
   "description": "hixme-ui theme props getters",
   "main": "lib/index.js",
   "scripts": {
@@ -10,8 +10,7 @@
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "flow": "flow",
-    "postinstall": "npm run clean && npm run lint && npm run build && npm run test",
-    "prepublishOnly": "npm run clean && npm run lint && npm run build && npm run test"
+    "prepare": "npm run clean && npm run lint && npm run build && npm run test"
   },
   "directories": {
     "example": "examples",

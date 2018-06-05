@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/forms",
-  "version": "1.17.0",
+  "version": "1.17.2",
   "description": "hixme-ui forms category for access to all HUI form components",
   "publishConfig": {
     "access": "public"
@@ -13,8 +13,7 @@
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "flow": "flow",
-    "postinstall": "npm run clean && npm run lint && npm run build && npm run test",
-    "prepublishOnly": "npm run clean && npm run lint && npm run build && npm run test"
+    "prepare": "npm run clean && npm run lint && npm run build && npm run test"
   },
   "directories": {
     "example": "examples",
@@ -77,13 +76,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/button": "^1.16.8",
-    "@hixme-ui/checkbox": "^1.15.1",
-    "@hixme-ui/form-group": "^1.16.1",
-    "@hixme-ui/input": "^1.16.7",
-    "@hixme-ui/label": "^1.16.1",
-    "@hixme-ui/radio-button": "^1.16.1",
-    "@hixme-ui/select": "^1.17.0",
+    "@hixme-ui/button": "^1.17.2",
+    "@hixme-ui/checkbox": "^1.17.2",
+    "@hixme-ui/form-group": "^1.17.2",
+    "@hixme-ui/input": "^1.17.2",
+    "@hixme-ui/label": "^1.17.2",
+    "@hixme-ui/radio-button": "^1.17.2",
+    "@hixme-ui/select": "^1.17.2",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {

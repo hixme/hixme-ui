@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/currency",
-  "version": "1.16.1",
+  "version": "1.17.2",
   "description": "hixme-ui Currency component",
   "publishConfig": {
     "access": "public"
@@ -13,8 +13,7 @@
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "flow": "flow",
-    "postinstall": "npm run clean && npm run lint && npm run build && npm run test",
-    "prepublishOnly": "npm run clean && npm run lint && npm run build && npm run test"
+    "prepare": "npm run clean && npm run lint && npm run build && npm run test"
   },
   "directories": {
     "example": "examples",
@@ -40,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.15.0",
+    "@hixme-ui/theme": "^1.17.2",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -81,7 +80,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.16.1"
+    "@hixme-ui/text": "^1.17.2"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
