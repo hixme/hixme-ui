@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/toggle",
-  "version": "1.16.6",
+  "version": "1.19.0",
   "description": "hixme-ui Toggle component",
   "publishConfig": {
     "access": "public"

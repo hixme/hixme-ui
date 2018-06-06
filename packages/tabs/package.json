@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/tabs",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "hixme-ui Tabs component",
   "publishConfig": {
     "access": "public"
