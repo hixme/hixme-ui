@@ -83,6 +83,7 @@
     "@hixme-ui/label": "^1.17.2",
     "@hixme-ui/radio-button": "^1.17.2",
     "@hixme-ui/select": "^1.17.2",
+    "@hixme-ui/toggle": "^1.19.0",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
