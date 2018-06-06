@@ -10,7 +10,7 @@ const ToggleButton = ({
   truthyText,
   falsyText,
   noLabels,
-  // withIcons,
+  withIcons,
   ...rest
 }) => {
   // restrict redux form props
@@ -57,10 +57,10 @@ const ToggleButton = ({
   }
 
   return (
-    <StyledToggle>
+    <StyledToggle withIcons={withIcons}>
       <div>
         <input type='checkbox' {...getProps()} />
-        <Slider id='slider' {...getProps()} />
+        <Slider id='slider' {...getProps()} withIcons={withIcons} />
         <ToggleLabel />
       </div>
     </StyledToggle>
@@ -74,14 +74,14 @@ ToggleButton.propTypes = {
   truthyText: PropTypes.string,
   falsyText: PropTypes.string,
   noLabels: PropTypes.bool,
-  // withIcons: PropTypes.bool,
+  withIcons: PropTypes.bool,
 }
 
 ToggleButton.defaultProps = {
   truthyText: 'Yes',
   falsyText: 'No',
   noLabels: false,
-  // withIcons: false,
+  withIcons: false,
 }
 
 export default ToggleButton
