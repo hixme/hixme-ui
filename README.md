@@ -64,6 +64,7 @@ const AppContainer = () => (
 - [Label](https://github.com/hixme/hixme-ui/tree/master/packages/label)
 - [Modal](https://github.com/hixme/hixme-ui/tree/master/packages/modal)
 - [Percentage](https://github.com/hixme/hixme-ui/tree/master/packages/percentage)
+- [Placeholder](https://github.com/hixme/hixme-ui/tree/master/packages/placeholder)
 - [Phone](https://github.com/hixme/hixme-ui/tree/master/packages/phone)
 - [Price](https://github.com/hixme/hixme-ui/tree/master/packages/price)
 - [Print](https://github.com/hixme/hixme-ui/tree/master/packages/print)

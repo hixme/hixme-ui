@@ -1,4 +1,4 @@
-# hixme-ui card-drawer
+# Card Drawer
 
 ```bash
 npm i --save @hixme-ui/card-drawer

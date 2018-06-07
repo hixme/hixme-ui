@@ -1,4 +1,4 @@
-# hixme-ui animate
+# Animate
 
 ```bash
 npm i --save @hixme-ui/animate

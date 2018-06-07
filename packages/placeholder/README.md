@@ -1,4 +1,4 @@
-# hixme-ui placeholder
+# Placeholder
 
 ```bash
 npm i --save @hixme-ui/placeholder

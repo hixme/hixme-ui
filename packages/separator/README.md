@@ -1,4 +1,4 @@
-# hixme-ui separator
+# Separator
 
 ```bash
 npm i --save @hixme-ui/separator

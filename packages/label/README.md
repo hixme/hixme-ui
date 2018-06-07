@@ -1,4 +1,4 @@
-# hixme-ui label
+# Label
 
 
 ```bash

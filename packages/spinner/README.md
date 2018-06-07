@@ -1,4 +1,4 @@
-# hixme-ui spinner
+# Spinner
 
 ```bash
 npm i --save @hixme-ui/spinner

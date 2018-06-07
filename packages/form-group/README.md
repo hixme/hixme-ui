@@ -1,4 +1,4 @@
-# hixme-ui form-group
+# Form Group
 
 ```bash
 npm i --save @hixme-ui/form-group

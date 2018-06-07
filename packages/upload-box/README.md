@@ -1,4 +1,4 @@
-# hixme-ui upload-box
+# Upload Box
 
 ```bash
 npm i --save @hixme-ui/upload-box

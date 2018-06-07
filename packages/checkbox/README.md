@@ -1,4 +1,4 @@
-# hixme-ui checkbox
+# Checkbox
 
 ```bash
 npm i --save @hixme-ui/checkbox

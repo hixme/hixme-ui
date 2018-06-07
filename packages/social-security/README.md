@@ -1,4 +1,4 @@
-# hixme-ui social-security
+# Social Security
 
 ```bash
 npm i --save @hixme-ui/social-security

@@ -1,4 +1,4 @@
-# hixme-ui title
+# Title
 
 ```bash
 npm i --save @hixme-ui/title
