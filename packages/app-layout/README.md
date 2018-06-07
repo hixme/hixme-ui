@@ -1,4 +1,4 @@
-# hixme-ui app-layout
+# App Layout
 
 ```bash
 npm i --save @hixme-ui/app-layout

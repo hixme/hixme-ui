@@ -1,4 +1,4 @@
-# hixme-ui phone
+# Phone
 
 ```bash
 npm i --save @hixme-ui/phone

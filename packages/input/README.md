@@ -1,4 +1,4 @@
-# hixme-ui input
+# Input
 
 Input is built with two layers. A style-component CSS base which is then
 wrapped with in React JSX to allow props to drive different types of input

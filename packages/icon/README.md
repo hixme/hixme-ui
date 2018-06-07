@@ -1,4 +1,4 @@
-# hixme-ui icon
+# Icon
 
 ```bash
 npm i --save @hixme-ui/icon

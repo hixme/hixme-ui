@@ -1,4 +1,4 @@
-# hixme-ui bullet-list
+# Bullet List
 
 ```bash
 npm i --save @hixme-ui/bullet-list

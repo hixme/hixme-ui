@@ -1,4 +1,4 @@
-# hixme-ui close-button
+# Close Button
 
 ```bash
 npm i --save @hixme-ui/close-button

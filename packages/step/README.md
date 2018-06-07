@@ -1,4 +1,4 @@
-# hixme-ui step
+# Step
 
 ```bash
 npm i --save @hixme-ui/step

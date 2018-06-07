@@ -1,4 +1,4 @@
-# hixme-ui email
+# Email
 
 
 ```bash

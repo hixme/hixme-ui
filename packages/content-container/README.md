@@ -1,4 +1,4 @@
-# hixme-ui content-container
+# Content Container
 
 ```bash
 npm i --save @hixme-ui/content-container

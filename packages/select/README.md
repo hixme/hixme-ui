@@ -1,4 +1,4 @@
-# hixme-ui select
+# Select
 
 ```bash
 npm i --save @hixme-ui/select

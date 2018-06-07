@@ -1,4 +1,4 @@
-# hixme-ui radio-button
+# Radio Button
 
 ```bash
 npm i --save @hixme-ui/radio-button

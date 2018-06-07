@@ -1,4 +1,4 @@
-# hixme-ui card
+# Card
 
 ```bash
 npm i --save @hixme-ui/card

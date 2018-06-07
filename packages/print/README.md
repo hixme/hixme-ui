@@ -1,4 +1,4 @@
-# hixme-ui print
+# Print
 
 ```bash
 npm i --save @hixme-ui/print

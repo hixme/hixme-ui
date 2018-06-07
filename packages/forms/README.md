@@ -1,4 +1,4 @@
-# hixme-ui forms
+# Forms
 
 ```bash
 npm i --save @hixme-ui/forms

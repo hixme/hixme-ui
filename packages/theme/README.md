@@ -1,4 +1,4 @@
-# hixme-ui theme
+# Theme
 
 ```bash
 npm i --save @hixme-ui/theme

@@ -1,4 +1,4 @@
-# hixme-ui text
+# Text
 
 ```bash
 npm i --save @hixme-ui/text

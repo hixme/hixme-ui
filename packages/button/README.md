@@ -1,4 +1,4 @@
-# hixme-ui button
+# Button
 
 ```bash
 npm i --save @hixme-ui/button

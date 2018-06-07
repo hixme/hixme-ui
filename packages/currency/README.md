@@ -1,4 +1,4 @@
-# hixme-ui currency
+# Currency
 
 
 ```bash

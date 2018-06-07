@@ -1,4 +1,4 @@
-# hixme-ui sidebar
+# Sidebar
 
 ```bash
 npm i --save @hixme-ui/sidebar

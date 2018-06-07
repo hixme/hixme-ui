@@ -1,4 +1,4 @@
-# hixme-ui percentage
+# Percentage
 
 
 ```bash

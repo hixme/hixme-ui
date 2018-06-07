@@ -1,4 +1,4 @@
-# hixme-ui modal
+# Modal
 
 ```bash
 npm i --save @hixme-ui/modal
