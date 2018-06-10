@@ -10,19 +10,14 @@ import { Code, DocsTitle } from '../../components'
 const rowExampleStyles = { paddingBottom: '15px' }
 const InputDocs = () => (
   <div>
-    <DocsTitle
-      title='Input'
-      subtitle='A Hixme UI styled input component'
-    />
+    <DocsTitle title='Input' subtitle='A Hixme UI styled input component' />
     <Grid fluid>
       <Row style={rowExampleStyles}>
         <Col xs={4}>
           <Input type='email' />
         </Col>
         <Col xs={8}>
-          <Code>
-            {'<Input type=\'email\' />'}
-          </Code>
+          <Code>{"<Input type='email' />"}</Code>
         </Col>
       </Row>
 
@@ -31,15 +26,17 @@ const InputDocs = () => (
           <Input search />
         </Col>
         <Col xs={8}>
-          <Code>
-            {'<Input search />'}
-          </Code>
+          <Code>{'<Input search />'}</Code>
         </Col>
       </Row>
 
       <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input currency defaultValue='46.93' onChange={e => console.log(e.target.value)} />
+          <Input
+            currency
+            defaultValue='46.93'
+            onChange={e => console.log(e.target.value)}
+          />
         </Col>
         <Col xs={8}>
           <Code>
@@ -54,7 +51,11 @@ const InputDocs = () => (
 
       <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input percentage defaultValue='46.93' onChange={e => console.log(e.target.value)} />
+          <Input
+            percentage
+            defaultValue='46.93'
+            onChange={e => console.log(e.target.value)}
+          />
         </Col>
         <Col xs={8}>
           <Code>
@@ -69,7 +70,12 @@ const InputDocs = () => (
 
       <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input phone error value='1234567890' onChange={e => console.log(e.target.value)} />
+          <Input
+            phone
+            error
+            value='1234567890'
+            onChange={e => console.log(e.target.value)}
+          />
         </Col>
         <Col xs={8}>
           <Code>
@@ -81,7 +87,11 @@ const InputDocs = () => (
 
       <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input date value='01/01/2018' onChange={e => console.log(e.target.value)} />
+          <Input
+            date
+            value='01/01/2018'
+            onChange={e => console.log(e.target.value)}
+          />
         </Col>
         <Col xs={8}>
           <Code>
@@ -93,7 +103,11 @@ const InputDocs = () => (
 
       <Row style={rowExampleStyles}>
         <Col xs={4}>
-          <Input ssn value='123456789' onChange={e => console.log(e.target.value)} />
+          <Input
+            ssn
+            value='123456789'
+            onChange={e => console.log(e.target.value)}
+          />
         </Col>
         <Col xs={8}>
           <Code>
@@ -108,9 +122,7 @@ const InputDocs = () => (
           <Input large />
         </Col>
         <Col xs={8}>
-          <Code>
-            {'<Input large />'}
-          </Code>
+          <Code>{'<Input large />'}</Code>
         </Col>
       </Row>
       <Row style={rowExampleStyles}>
@@ -118,9 +130,7 @@ const InputDocs = () => (
           <Input loading />
         </Col>
         <Col xs={8}>
-          <Code>
-            {'<Input loading />'}
-          </Code>
+          <Code>{'<Input loading />'}</Code>
         </Col>
       </Row>
       <Row style={rowExampleStyles}>
@@ -128,13 +138,21 @@ const InputDocs = () => (
           <Input mini />
         </Col>
         <Col xs={8}>
-          <Code>
-            {'<Input mini />'}
-          </Code>
+          <Code>{'<Input mini />'}</Code>
+        </Col>
+      </Row>
+      <Row style={rowExampleStyles}>
+        <Col xs={4}>
+          <Input loading mini />
+        </Col>
+        <Col xs={8}>
+          <Code>{'<Input loading mini />'}</Code>
         </Col>
       </Row>
 
-      <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
+      <Row style={{ margin: '40px 0 20px 0' }}>
+        <Title smaller>Props</Title>
+      </Row>
       <Row center='xs'>
         <Col xs={12}>
           <Table striped>
@@ -151,13 +169,17 @@ const InputDocs = () => (
                 <td>large</td>
                 <td>bool</td>
                 <td>false</td>
-                <td>Large Input field component. Field is regular size by default</td>
+                <td>
+                  Large Input field component. Field is regular size by default
+                </td>
               </tr>
               <tr>
                 <td>mini</td>
                 <td>bool</td>
                 <td>false</td>
-                <td>Mini Input field component. Field is regular size by default</td>
+                <td>
+                  Mini Input field component. Field is regular size by default
+                </td>
               </tr>
               <tr>
                 <td>search</td>
@@ -190,7 +212,8 @@ const InputDocs = () => (
                 <td>
                   Masked input field with formatting for date number
                   <br />
-                  ** you can not use the placeholder attribute with masked inputs
+                  ** you can not use the placeholder attribute with masked
+                  inputs
                 </td>
               </tr>
               <tr>
@@ -200,7 +223,8 @@ const InputDocs = () => (
                 <td>
                   Masked input field with formatting for phone number
                   <br />
-                  ** you can not use the placeholder attribute with masked inputs
+                  ** you can not use the placeholder attribute with masked
+                  inputs
                 </td>
               </tr>
               <tr>
@@ -210,14 +234,18 @@ const InputDocs = () => (
                 <td>
                   Masked input field with formatting for social security number
                   <br />
-                  ** you can not use the placeholder attribute with masked inputs
+                  ** you can not use the placeholder attribute with masked
+                  inputs
                 </td>
               </tr>
               <tr>
                 <td>error</td>
                 <td>bool</td>
                 <td>false</td>
-                <td>Render the error state of the input by providing the error prop</td>
+                <td>
+                  Render the error state of the input by providing the error
+                  prop
+                </td>
               </tr>
             </tbody>
           </Table>
