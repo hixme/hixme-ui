@@ -19,9 +19,9 @@ npm install --save @hixme-ui/theme @hixme-ui/container @hixme-ui/title
 Add the theme via the theme provider and begin using HUI components
 
 ```javascript
-import { ThemeProvider } from 'hixme-ui/theme'
-import Container from 'hixme-ui/container'
-import Title from 'hixme-ui/title'
+import { ThemeProvider } from '@hixme-ui/theme'
+import Container from '@hixme-ui/container'
+import Title from '@hixme-ui/title'
 
 const AppContainer = () => (
   <ThemeProvider>
