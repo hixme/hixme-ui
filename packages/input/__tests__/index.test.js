@@ -160,6 +160,16 @@ describe('SpinnerContainer', () => {
     expect(tree).toHaveStyleRule('right', '12px')
     expect(tree).toHaveStyleRule('cursor', 'not-allowed')
   })
+
+  it('Should have top of 5px when receiving the mini prop', () => {
+    const component = renderer.create(
+      <ThemeProvider>
+        <SpinnerContainer mini />
+      </ThemeProvider>,
+    )
+    const tree = component.toJSON()
+    expect(tree).toHaveStyleRule('top', '5px')
+  })
 })
 
 describe('Textarea', () => {

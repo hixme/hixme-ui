@@ -22,23 +22,18 @@ export const SuffixContainer = styled.span`
 `
 
 export const SpinnerContainer = SuffixContainer.extend`
-  top: 12px;
+  top: ${({ mini }) => (mini ? '5px' : '12px')};
   cursor: not-allowed;
 `
 
 // Remove all styled specific props as to not
 // pass them onto the Masked component.
 // This is to prevent React errors in the console
-const Masked = InputBase.withComponent(({
-  date,
-  error,
-  large,
-  mini,
-  phone,
-  search,
-  ssn,
-  ...props
-}) => <MaskedInput {...props} />)
+const Masked = InputBase.withComponent(
+  ({ date, error, large, mini, phone, search, ssn, ...props }) => (
+    <MaskedInput {...props} />
+  ),
+)
 
 const InputTextarea = InputBase.withComponent('textarea')
 
@@ -60,7 +55,9 @@ const Input = ({
       <div style={{ position: 'relative' }}>
         <InputBase currency {...props} />
         <PrefixContainer {...props}>
-          <Text light large={!mini}>$</Text>
+          <Text light large={!mini}>
+            $
+          </Text>
         </PrefixContainer>
       </div>
     )
@@ -72,7 +69,9 @@ const Input = ({
       <div style={{ position: 'relative' }}>
         <InputBase {...props} />
         <SuffixContainer {...props}>
-          <Text light large={!mini}>%</Text>
+          <Text light large={!mini}>
+            %
+          </Text>
         </SuffixContainer>
       </div>
     )
@@ -83,9 +82,7 @@ const Input = ({
     if (phone) masked = '(111) 111 - 1111'
     if (ssn) masked = '111 - 11 - 1111'
     if (date) masked = '11/11/1111'
-    return (
-      <Masked mask={masked} {...props} />
-    )
+    return <Masked mask={masked} {...props} />
   }
 
   if (textarea) {
@@ -93,10 +90,11 @@ const Input = ({
   }
 
   if (submitting || loading) {
+    const { mini } = props
     return (
       <div style={{ position: 'relative' }}>
         <InputBase disabled {...props} />
-        <SpinnerContainer>
+        <SpinnerContainer mini={mini}>
           <Spinner animate duration='2s'>
             <Icon cog lighter size={1.2} />
           </Spinner>
@@ -105,9 +103,7 @@ const Input = ({
     )
   }
 
-  return (
-    <InputBase {...props} />
-  )
+  return <InputBase {...props} />
 }
 
 Input.displayName = 'hui:Input'
