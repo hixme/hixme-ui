@@ -7,7 +7,7 @@ import {
 } from '@hixme-ui/theme-props'
 
 const TextBase = styled.span`
-  color: ${props => props.color || getTextColor(props)};
+  color: ${props => props.color || getTextColor(props, 'inherit')};
   font-family: ${props => props.fontFamily || getFontFamily(props)};
   font-size: ${props => props.fontSize || getFontSize(props, 'inherit')};
   font-weight: ${props => props.fontWeight || getFontWeight(props)};
