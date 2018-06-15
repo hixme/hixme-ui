@@ -10,6 +10,7 @@
     "lint": "lerna run lint --parallel --no-sort ",
     "test": "lerna run test --no-sort --ignore hui-pages",
     "refresh": "npm run clean && npm run bootstrap",
-    "deploy": "cd ./packages/hui-pages && npm run deploy"
+    "deploy": "cd ./packages/hui-pages && npm run deploy",
+    "start": "cd ./packages/hui-pages && npm start"
   }
 }
