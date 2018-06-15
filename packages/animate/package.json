@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/animate",
-  "version": "1.17.2",
+  "version": "1.19.2",
   "description": "hixme-ui Animate component",
   "publishConfig": {
     "access": "public"
@@ -79,8 +79,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^1.17.2",
-    "@hixme-ui/theme-props": "^1.17.2",
+    "@hixme-ui/theme": "^1.19.2",
+    "@hixme-ui/theme-props": "^1.19.2",
     "react-animations": "^1.0.0",
     "react-maskedinput": "^4.0.0",
     "styled-components": "^2.3.3"

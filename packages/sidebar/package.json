@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/sidebar",
-  "version": "1.17.2",
+  "version": "1.19.2",
   "description": "hixme-ui Sidebar component",
   "publishConfig": {
     "access": "public"
@@ -80,9 +80,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/close-button": "^1.17.2",
-    "@hixme-ui/theme": "^1.17.2",
-    "@hixme-ui/theme-props": "^1.17.2",
+    "@hixme-ui/close-button": "^1.19.2",
+    "@hixme-ui/theme": "^1.19.2",
+    "@hixme-ui/theme-props": "^1.19.2",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
