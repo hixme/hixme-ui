@@ -29,3 +29,18 @@ const App = ({ children }) => (
   </ThemeProvider>
 )
 ```
+
+### withGlobal prop
+
+The HUI was built with some global settings, including the [normalize CSS](https://necolas.github.io/normalize.css/). These global styles are not set by default and are enabled by adding the `withGlobal` property on the ThemeProvider.
+
+```javascript
+
+const App = ({ children }) => (
+  <ThemeProvider withGlobal>
+    {children}
+  </ThemeProvider>
+)
+```
+ 
+

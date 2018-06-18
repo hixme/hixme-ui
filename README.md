@@ -24,7 +24,7 @@ import Container from '@hixme-ui/container'
 import Title from '@hixme-ui/title'
 
 const AppContainer = () => (
-  <ThemeProvider>
+  <ThemeProvider withGlobal>
     <Container padding='10px'>
       <Title jumbo primary>Welcome to your App</Title>
 
