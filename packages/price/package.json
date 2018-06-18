@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/price",
-  "version": "1.19.2",
+  "version": "1.20.0",
   "description": "hixme-ui Price component",
   "publishConfig": {
     "access": "public"
@@ -83,9 +83,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.19.2",
-    "@hixme-ui/text": "^1.19.2",
-    "@hixme-ui/theme": "^1.19.2",
+    "@hixme-ui/container": "^1.20.0",
+    "@hixme-ui/text": "^1.20.0",
+    "@hixme-ui/theme": "^1.20.0",
     "@hixme-ui/theme-props": "^1.19.2",
     "styled-components": "^2.3.3"
   },
