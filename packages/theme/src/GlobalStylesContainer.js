@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-expressions, max-len */
 import React from 'react'
+import PropTypes from 'prop-types'
 import { injectGlobal } from 'styled-components'
 
 export default class GlobalStylesContainer extends React.Component {
   componentWillMount() {
     injectGlobal`
+@import '~normalize.css/normalize';
 @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=79a1ceb5-780f-4fc9-ae1d-104008072ee2&fontids=1437336,1437356,1437416,1437426,1437456,1437496,1437516,1437536,1437546,1437556,1437566");
 
 @font-face{
@@ -93,3 +96,8 @@ a {
     return this.props.children
   }
 }
+
+GlobalStylesContainer.propTypes = {
+  children: PropTypes.element.isRequired,
+}
+

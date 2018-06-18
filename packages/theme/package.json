@@ -76,6 +76,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
