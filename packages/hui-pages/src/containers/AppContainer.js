@@ -7,7 +7,7 @@ const AppContainer = ({
   children,
 }) => (
   <BrowserRouter>
-    <ThemeProvider>
+    <ThemeProvider withGlobal>
       <div style={{ height: '100%' }}>
         {children}
       </div>
