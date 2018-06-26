@@ -18,7 +18,7 @@ const textProps = {
 const App = () => (
   <Grid fluid>
     <div style={{ width: '100%', textAlign: 'center' }}>
-      <img src={Logo} alt='hixme logo' style={{ margin: '50px 0 70px', padding: '0 20px' }} />
+      <img src={Logo} alt='hixme logo' width='200px' height='auto' style={{ marginBottom: '20px' }} />
     </div>
     <Row center='xs' style={{ marginBottom: '20px' }}>
       <Col style={{ marginRight: '2px' }}>

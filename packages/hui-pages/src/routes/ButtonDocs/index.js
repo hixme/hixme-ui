@@ -44,11 +44,6 @@ const ButtonDocs = () => (
           <Button gold>gold</Button>
         </div>
         <div style={padded}>
-          <Button gold>
-            <Text bold blue>Gold button, blue text</Text>
-          </Button>
-        </div>
-        <div style={padded}>
           <Button block loading>default</Button>
         </div>
         <div style={padded}>

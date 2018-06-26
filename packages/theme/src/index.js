@@ -57,9 +57,9 @@ const buttonFontSizes = {
 }
 
 const buttonHeights = {
-  mini: '28px',
-  small: '36px',
-  default: '42px',
+  mini: '26px',
+  small: '31px',
+  default: '36px',
   large: '50px',
   jumbo: '65px',
 }
@@ -95,7 +95,7 @@ const shadows = {
 
 const buttonBorderRadius = {
   none: '0',
-  default: '4px',
+  default: '2px',
 }
 
 /* eslint-disable max-len */
