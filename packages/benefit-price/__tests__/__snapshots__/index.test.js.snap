@@ -83,12 +83,13 @@ exports[`BenefitPrice it has 0px padding by default 1`] = `
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
+  font-weight: 700;
   color: #3A4951;
 }
 
 .c5 {
   font-size: 13pt;
-  font-weight: bold;
+  font-weight: 700;
   color: #3A4951;
 }
 
@@ -240,12 +241,13 @@ exports[`BenefitPrice it should render with background: none 1`] = `
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
+  font-weight: 700;
   color: #3A4951;
 }
 
 .c5 {
   font-size: 13pt;
-  font-weight: bold;
+  font-weight: 700;
   color: #3A4951;
 }
 
@@ -397,12 +399,13 @@ exports[`BenefitPrice it should render with display: flex 1`] = `
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
+  font-weight: 700;
   color: #3A4951;
 }
 
 .c5 {
   font-size: 13pt;
-  font-weight: bold;
+  font-weight: 700;
   color: #3A4951;
 }
 
