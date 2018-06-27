@@ -40,10 +40,10 @@ const InputDocs = () => (
         </Col>
         <Col xs={8}>
           <Code>
-            {`<Input 
+            {`<Input
   currency
-  defaultValue='46.93' 
-  onChange={e => console.log(e.target.value)} 
+  defaultValue='46.93'
+  onChange={e => console.log(e.target.value)}
 />`}
           </Code>
         </Col>
@@ -59,10 +59,10 @@ const InputDocs = () => (
         </Col>
         <Col xs={8}>
           <Code>
-            {`<Input 
+            {`<Input
   percentage
-  defaultValue='46.93' 
-  onChange={e => console.log(e.target.value)} 
+  defaultValue='46.93'
+  onChange={e => console.log(e.target.value)}
 />`}
           </Code>
         </Col>
