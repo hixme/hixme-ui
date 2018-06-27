@@ -11,7 +11,7 @@ import InputBase from './InputBase'
 
 export const PrefixContainer = styled.span`
   position: absolute;
-  top: ${({ mini }) => (mini ? '5px' : '9px')};
+  top: ${({ mini }) => (mini ? '5px' : '7px')};
   left: 12px;
 `
 
