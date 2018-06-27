@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const StyledTable = styled.table`
   width: 100%;
   min-width: 350px;
-  font-family: 'Avenir-Next_Demi', 'HelveticaNeue-Medium', 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   border-collapse: collapse;
 
   thead {
@@ -68,4 +67,3 @@ const StyledTable = styled.table`
 `
 
 export default StyledTable
-

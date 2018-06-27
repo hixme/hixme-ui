@@ -72,4 +72,3 @@ InputBase.displayName = 'hui:InputBase'
 InputBase.huiName = 'InputBase'
 
 export default InputBase
-
