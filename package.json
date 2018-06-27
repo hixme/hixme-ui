@@ -5,7 +5,7 @@
     "lerna": "^2.9.0"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist --loglevel verbose",
+    "bootstrap": "npm run clean && lerna bootstrap --hoist --loglevel verbose",
     "clean": "lerna clean --yes",
     "lint": "lerna run lint --parallel --no-sort ",
     "test": "lerna run test --no-sort --ignore hui-pages",
