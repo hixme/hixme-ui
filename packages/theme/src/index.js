@@ -1,7 +1,7 @@
 export const colors = {
   white: 'white',
   black: 'black',
-  grey30: '#3A4951',
+  grey30: '#333333',
   grey80: '#8F9DA8',
   grey100: '#AAB5BD',
   grey110: '#B9C5CD',
@@ -108,7 +108,7 @@ const defaults = {
 }
 
 export const colorTheme = {
-  default: colors.teal,
+  default: colors.grey80,
   primary: colors.teal,
   secondary: colors.grey80,
   success: colors.teal,

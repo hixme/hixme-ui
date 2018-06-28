@@ -4,7 +4,7 @@ import theme from '@hixme-ui/theme'
 const StyledLabel = styled.span`
   cursor: ${props => (props.disabled ? 'default' : 'pointer')};
   display: inline-block;
-  color: ${props => (props.disabled ? theme.colors.lighter : theme.colors.default)};
+  color: ${props => (props.disabled ? theme.colors.light : theme.colors.grey30)};
   margin: 0 0 0 16px;
   vertical-align: top;
 `

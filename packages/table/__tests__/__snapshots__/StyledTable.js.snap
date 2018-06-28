@@ -12,7 +12,7 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
 }
 
 .c0 thead tr {
-  background-color: #2EAE8F;
+  background-color: #8F9DA8;
   border-color: transparent;
   color: white;
 }
