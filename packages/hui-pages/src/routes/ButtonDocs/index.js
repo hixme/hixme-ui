@@ -4,9 +4,9 @@ import Button from '@hixme-ui/button'
 import Card from '@hixme-ui/card'
 import Text from '@hixme-ui/text'
 
-import Code from 'components/Code'
-import DocsTitle from 'components/DocsTitle'
-import CategoryHeader from 'components/CategoryHeader'
+import Code from '../../components/Code'
+import DocsTitle from '../../components/DocsTitle'
+import CategoryHeader from '../../components/CategoryHeader'
 
 const padded = {
   padding: '10px',
@@ -22,9 +22,8 @@ const ButtonDocs = () => (
   <Grid fluid>
     <DocsTitle
       title='Button'
-      subtitle='A button component, with five color gradients,
-      and outline option. Outine buttons use the colorTheme. Any button may
-      be a submit button, just add loading (bool) and loadingText (string)'
+      subtitle='A button component, with five colors, five sizes,
+      and outline option.'
     />
     <Row center='xs' style={{ marginBottom: '60px' }}>
       <Col>

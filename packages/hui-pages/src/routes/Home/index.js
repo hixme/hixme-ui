@@ -3,9 +3,9 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Text from '@hixme-ui/text'
 
-import Code from 'components/Code'
-import Nav from 'components/Nav'
-import CategoryHeader from 'components/CategoryHeader'
+import Code from '../../components/Code'
+import Nav from '../../components/Nav'
+import CategoryHeader from '../../components/CategoryHeader'
 
 import Logo from '../../assets/logo.png'
 

@@ -16,8 +16,8 @@ const CheckboxDocs = () => (
       <Col xs={12}>
         <Code>
           {`import Table from '@hixme-ui/table'
-          
-<Table striped alignHeader='left' alignBody='right'>
+
+<Table striped blue alignHeader='left' alignBody='right'>
   <thead>
     <tr>
       <th>Header</th>
@@ -75,9 +75,9 @@ const CheckboxDocs = () => (
     <Row center='xs' style={{ margin: '20px 0' }}>
       <Col xs={12} sm={8}>
         <Row style={{ margin: '20px 0' }}>
-          <Title smaller>Striped Table</Title>
+          <Title smaller>Striped Blue Table</Title>
         </Row>
-        <Table striped>
+        <Table striped blue>
           <thead>
             <tr>
               <th>Header</th>
@@ -113,9 +113,9 @@ const CheckboxDocs = () => (
     <Row center='xs' style={{ margin: '20px 0' }}>
       <Col xs={12} sm={8}>
         <Row style={{ margin: '20px 0' }}>
-          <Title smaller>Compact table</Title>
+          <Title smaller>Compact Secondary Table</Title>
         </Row>
-        <Table striped compact>
+        <Table striped compact secondary>
           <thead>
             <tr>
               <th>Header</th>
@@ -185,6 +185,12 @@ const CheckboxDocs = () => (
               <td>{"'left'"}</td>
               <td>Text align on the {'<tbody />'}</td>
             </tr>
+            <tr>
+              <td>themeColor</td>
+              <td>boolean</td>
+              <td>{"'primary'"}</td>
+              <td>Background color for Table Header</td>
+            </tr>
           </tbody>
         </Table>
       </Col>
@@ -193,4 +199,3 @@ const CheckboxDocs = () => (
 )
 
 export default CheckboxDocs
-

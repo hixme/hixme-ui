@@ -108,8 +108,9 @@ const defaults = {
 }
 
 export const colorTheme = {
-  default: colors.grey30,
+  default: colors.teal,
   primary: colors.teal,
+  secondary: colors.grey80,
   success: colors.teal,
   warning: colors.yellow,
   error: colors.red,
@@ -129,28 +130,17 @@ export const colorTheme = {
   lightest: colors.grey130,
 }
 
-const outlineButtonColors = {
-  ...colorTheme,
-  default: colors.grey80,
-}
-
 const theme = {
   colors: colorTheme,
-  backgroundColors: {
-    ...colorTheme,
-    default: defaults.backgroundColor,
-  },
-  borderColors: {
-    ...colorTheme,
-    default: defaults.borderColor,
-  },
+  backgroundColors: colorTheme,
+  borderColors: colorTheme,
   buttonTextColors,
   buttonFlatColors,
   buttonFontSizes,
   buttonHeights,
   buttonMinWidths,
   buttonBorderRadius,
-  outlineButtonColors,
+  outlineButtonColors: colorTheme,
   defaults,
   fontSizes,
   fontWeights,

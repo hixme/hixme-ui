@@ -8,35 +8,26 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
 }
 
 .c0 thead {
-  text-align: center;
+  text-align: left;
 }
 
 .c0 thead tr {
-  background-color: #f2f6f9;
-  border-radius: 6px;
+  background-color: #2EAE8F;
   border-color: transparent;
+  color: white;
 }
 
 .c0 thead th {
-  color: #8f9da8;
-  font-size: 14px;
   font-weight: 400;
-  -webkit-letter-spacing: -0.32px;
-  -moz-letter-spacing: -0.32px;
-  -ms-letter-spacing: -0.32px;
-  letter-spacing: -0.32px;
-  line-height: 19px;
   vertical-align: top;
 }
 
 .c0 thead th:first-child {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-radius: 2px 0 0;
 }
 
 .c0 thead th:last-child {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 0 2px 0 0;
 }
 
 .c0 tbody {
@@ -59,13 +50,6 @@ exports[`StyledTable Should have all necessary global styles 1`] = `
 
 .c0 td {
   color: #3a4951;
-  font-size: 12px;
-  font-weight: 500;
-  -webkit-letter-spacing: -0.1px;
-  -moz-letter-spacing: -0.1px;
-  -ms-letter-spacing: -0.1px;
-  letter-spacing: -0.1px;
-  line-height: 16px;
 }
 
 .c0 tr {

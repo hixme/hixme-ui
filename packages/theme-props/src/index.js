@@ -6,7 +6,7 @@ export function getThemePropsComposer(propName = 'colors', defaultValue = '') {
   }
 }
 
-export const getBackgroundColor = getThemePropsComposer('backgroundColors', 'inherit')
+export const getBackgroundColor = getThemePropsComposer('backgroundColors', 'primary')
 export const getBorderColor = getThemePropsComposer('borderColors', 'inherit')
 export const getFontFamily = getThemePropsComposer('fontFamily', 'inherit')
 export const getFontSize = getThemePropsComposer('fontSizes', 'inherit')

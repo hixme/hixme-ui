@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { getBackgroundColor } from '@hixme-ui/theme-props'
+
 /* eslint-disable max-len */
 const StyledTable = styled.table`
   width: 100%;
@@ -7,29 +9,23 @@ const StyledTable = styled.table`
   border-collapse: collapse;
 
   thead {
-    text-align: ${({ alignHeader }) => alignHeader || 'center'};
+    text-align: ${({ alignHeader }) => alignHeader || 'left'};
     tr {
-      background-color: #f2f6f9;
-      border-radius: 6px;
+      background-color: ${props => getBackgroundColor(props)};
       border-color: transparent;
+      color: white;
     }
 
     th {
-      color: #8f9da8;
-      font-size: 14px;
       font-weight: 400;
-      letter-spacing: -0.32px;
-      line-height: 19px;
       ${({ compact }) => !compact && 'vertical-align: top;'}
 
       &:first-child {
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
+        border-radius: 2px 0 0;
       }
 
       &:last-child {
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
+        border-radius: 0 2px 0 0;
       }
     }
   }
@@ -38,7 +34,7 @@ const StyledTable = styled.table`
     text-align: ${({ alignBody }) => alignBody || 'left'};
     tr {
       &:nth-child(even) {
-        background-color: ${props => (props.striped ? '#f2f6f9' : 'white')};
+        background-color: ${props => (props.striped ? 'WhiteSmoke' : 'white')};
       }
 
       &:nth-child(odd) {
@@ -54,10 +50,6 @@ const StyledTable = styled.table`
 
   td {
     color: #3a4951;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: -0.1px;
-    line-height: 16px;
   }
 
   tr {
