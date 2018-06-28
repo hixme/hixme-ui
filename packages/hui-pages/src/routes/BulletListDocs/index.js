@@ -28,10 +28,9 @@ const BulletListDocs = () => {
         <Row center='xs'>
           <Code>
             {`const myUnorderedList = [
-  'One fish',
-  'Two fish',
-  'Red fish',
-  'Blue fish',
+  'HTML',
+  'JavaScript',
+  'CSS',
 ]
 
 <BulletList blue bulletArray={myUnorderedList} />`}
