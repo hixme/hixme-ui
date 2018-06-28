@@ -6,8 +6,8 @@ export function getThemePropsComposer(propName = 'colors', defaultValue = '') {
   }
 }
 
-export const getBackgroundColor = getThemePropsComposer('backgroundColors', 'inherit')
-export const getBorderColor = getThemePropsComposer('borderColors', 'inherit')
+export const getBackgroundColor = getThemePropsComposer('backgroundColors')
+export const getBorderColor = getThemePropsComposer('borderColors', 'secondary')
 export const getFontFamily = getThemePropsComposer('fontFamily', 'inherit')
 export const getFontSize = getThemePropsComposer('fontSizes', 'inherit')
 export const getFontWeight = getThemePropsComposer('fontWeights', 'inherit')
@@ -15,7 +15,7 @@ export const getTextColor = getThemePropsComposer('textColors', 'inherit')
 
 export const getButtonBorderRadius = getThemePropsComposer('buttonBorderRadius')
 export const getButtonFontSize = getThemePropsComposer('buttonFontSizes')
-export const getButtonGradientColor = getThemePropsComposer('buttonGradientColors')
+export const getButtonFlatColor = getThemePropsComposer('buttonFlatColors')
 export const getButtonHeight = getThemePropsComposer('buttonHeights')
 export const getButtonMinWidth = getThemePropsComposer('buttonMinWidths')
 export const getButtonTextColor = getThemePropsComposer('buttonTextColors')

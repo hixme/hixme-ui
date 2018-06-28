@@ -276,16 +276,6 @@ describe('Container', () => {
     expect(tree).toHaveStyleRule('background', 'black')
   })
 
-  test('it should render with background: white', () => {
-    const component = renderer.create(
-      <ThemeProvider><Container default /></ThemeProvider>,
-    )
-
-    const tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
-    expect(tree).toHaveStyleRule('background', 'white')
-  })
-
   test('it should render with display: flex', () => {
     const component = renderer.create(
       <ThemeProvider><Container flex /></ThemeProvider>,

@@ -5,7 +5,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import AppLayout from '@hixme-ui/app-layout'
 import ContentContainer from '@hixme-ui/content-container'
 
-import DocsHeader from '../components/DocsHeader/DocsHeader'
 import Nav from '../components/Nav'
 import MenuHeader from '../components/MenuHeader'
 
@@ -54,7 +53,6 @@ const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <AppLayout HeaderComponent={MenuHeader} SidebarComponent={Nav} fixed open>
       <ContentContainer>
-        <DocsHeader />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/animate' component={AnimateDocs} />

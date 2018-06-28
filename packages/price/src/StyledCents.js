@@ -4,9 +4,8 @@ import { getTextColor } from '@hixme-ui/theme-props'
 
 const StyledDollars = styled.span`
   font-size: 13pt;
-  font-family: ${theme.fontFamily.bolder};
+  font-weight: ${theme.fontWeights.bold};
   color: ${props => getTextColor(props)};
 `
 
 export default StyledDollars
-

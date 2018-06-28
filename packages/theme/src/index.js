@@ -1,7 +1,7 @@
 export const colors = {
   white: 'white',
   black: 'black',
-  grey30: '#3A4951',
+  grey30: '#333333',
   grey80: '#8F9DA8',
   grey100: '#AAB5BD',
   grey110: '#B9C5CD',
@@ -10,17 +10,9 @@ export const colors = {
   teal: '#2EAE8F',
   blue: '#3997E2',
   red: '#EB5565',
-  yellow: '#E0BC4D',
+  yellow: '#ecb718',
   purple: '#A374D2',
   green: '#88b963',
-}
-
-const gradients = {
-  teal: 'linear-gradient(180deg, #20BCA1 0%, #159777 100%)',
-  red: 'linear-gradient(0deg, #DE293C 0%, #FF7272 100%)',
-  yellow: 'linear-gradient(-1deg, #FF8C00 0%, #F3C200 100%)',
-  blue: 'linear-gradient(-1deg, #2583C4 0%, #30A0EE 100%)',
-  grey: 'linear-gradient(180deg, #CCD2D6 0%, #a4adb3 100%)',
 }
 
 const fontSizes = {
@@ -36,6 +28,13 @@ const fontSizes = {
 
 const fontWeights = {
   default: 'normal',
+  thinnest: '100',
+  thinner: '200',
+  thin: '300',
+  normal: 'normal',
+  bold: '700',
+  bolder: '800',
+  boldest: '900',
 }
 
 const titleFontSizes = {
@@ -57,9 +56,9 @@ const buttonFontSizes = {
 }
 
 const buttonHeights = {
-  mini: '28px',
-  small: '36px',
-  default: '42px',
+  mini: '26px',
+  small: '31px',
+  default: '36px',
   large: '50px',
   jumbo: '65px',
 }
@@ -76,54 +75,42 @@ const buttonTextColors = {
   default: colors.white,
 }
 
-const buttonGradientColors = {
-  primary: gradients.teal,
-  secondary: gradients.grey,
-  default: gradients.teal,
-  red: gradients.red,
-  danger: gradients.red,
-  error: gradients.red,
-  blue: gradients.blue,
-  gold: gradients.yellow,
+const buttonFlatColors = {
+  primary: colors.teal,
+  secondary: colors.grey80,
+  default: colors.teal,
+  red: colors.red,
+  danger: colors.red,
+  error: colors.red,
+  blue: colors.blue,
+  gold: colors.yellow,
 }
 
 const shadows = {
-  medium: '0px 5px 9px 0px rgba(56,59,60,0.22);',
-  default: '0px 2px 6px 0px rgba(56,59,60,0.18);',
+  medium: '0px 2px 6px 0px rgba(56,59,60,0.22);',
+  default: '0px 1px 4px 0px rgba(56,59,60,0.18);',
   none: '0px 0px 0px 0px rgba(0,0,0,0);',
 }
 
 const buttonBorderRadius = {
   none: '0',
-  default: '4px',
-}
-
-/* eslint-disable max-len */
-export const fontFamily = {
-  thinnest: '\'Avenir-Next_UltraLight\', \'HelveticaNeue-UltraLight\', \'Helvetica Neue Ultra Light\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  thinner: '\'Avenir-Next_Light\', \'HelveticaNeue-Thin\', \'Helvetica Neue Thin\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  thin: '\'Avenir-Next_Regular\', \'HelveticaNeue-Light\', \'Helvetica Neue Light\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  normal: '\'Avenir-Next_Medium\', \'HelveticaNeue-Roman\', \'Helvetica Neue Roman\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  bold: '\'Avenir-Next_Demi\', \'HelveticaNeue-Medium\', \'Helvetica Neue Medium\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  bolder: '\'Avenir-Next_Bold\', \'HelveticaNeue-Bold\', \'Helvetica Neue Bold\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  boldest: '\'Avenir-Next_Heavy\', \'HelveticaNeue-Heavy\', \'Helvetica Neue Heavy\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
+  default: '2px',
 }
 
 const defaults = {
-  gradient: gradients.teal,
   fontSize: fontSizes.default,
   buttonHeight: buttonHeights.default,
   textColor: colors.grey30,
-  fontFamily: fontFamily.normal,
   fontWeight: fontWeights.default,
   backgroundColor: colors.white,
-  borderColor: colors.grey110,
+  borderColor: colors.grey80,
   titleFontSize: titleFontSizes.default,
 }
 
 export const colorTheme = {
-  default: colors.grey30,
+  default: colors.grey80,
   primary: colors.teal,
+  secondary: colors.grey80,
   success: colors.teal,
   warning: colors.yellow,
   error: colors.red,
@@ -143,33 +130,20 @@ export const colorTheme = {
   lightest: colors.grey130,
 }
 
-const outlineButtonColors = {
-  ...colorTheme,
-  default: colors.grey110,
-}
-
 const theme = {
   colors: colorTheme,
-  backgroundColors: {
-    ...colorTheme,
-    default: defaults.backgroundColor,
-  },
-  borderColors: {
-    ...colorTheme,
-    default: defaults.borderColor,
-  },
+  backgroundColors: colorTheme,
+  borderColors: colorTheme,
   buttonTextColors,
-  buttonGradientColors,
+  buttonFlatColors,
   buttonFontSizes,
   buttonHeights,
   buttonMinWidths,
   buttonBorderRadius,
-  outlineButtonColors,
+  outlineButtonColors: colorTheme,
   defaults,
   fontSizes,
-  fontFamily,
   fontWeights,
-  gradients,
   shadows,
   textColors: {
     ...colorTheme,

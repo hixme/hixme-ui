@@ -9,11 +9,8 @@ import {
 
 const ButtonBase = styled.button`
   transition: all .25s ease;
-  :hover:enabled {
-    background-size: 100%;
-  };
   :disabled {
-    opacity: .4;
+    opacity: .5;
     cursor: not-allowed;
   };
   height: ${props => getButtonHeight(props)};

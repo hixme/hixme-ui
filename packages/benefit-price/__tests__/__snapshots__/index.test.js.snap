@@ -52,7 +52,6 @@ exports[`BenefitPrice it has 0px padding by default 1`] = `
 
 .c7 {
   color: #8F9DA8;
-  font-family: inherit;
   font-size: 8pt;
   font-weight: normal;
   border-bottom: none;
@@ -77,21 +76,21 @@ exports[`BenefitPrice it has 0px padding by default 1`] = `
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
-  font-family: 'Avenir-Next_Regular','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 300;
+  color: #333333;
 }
 
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 700;
+  color: #333333;
 }
 
 .c5 {
   font-size: 13pt;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 700;
+  color: #333333;
 }
 
 <div
@@ -211,7 +210,6 @@ exports[`BenefitPrice it should render with background: none 1`] = `
 
 .c7 {
   color: #8F9DA8;
-  font-family: inherit;
   font-size: 8pt;
   font-weight: normal;
   border-bottom: none;
@@ -236,21 +234,21 @@ exports[`BenefitPrice it should render with background: none 1`] = `
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
-  font-family: 'Avenir-Next_Regular','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 300;
+  color: #333333;
 }
 
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 700;
+  color: #333333;
 }
 
 .c5 {
   font-size: 13pt;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 700;
+  color: #333333;
 }
 
 <div
@@ -370,7 +368,6 @@ exports[`BenefitPrice it should render with display: flex 1`] = `
 
 .c7 {
   color: #8F9DA8;
-  font-family: inherit;
   font-size: 8pt;
   font-weight: normal;
   border-bottom: none;
@@ -395,21 +392,21 @@ exports[`BenefitPrice it should render with display: flex 1`] = `
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
-  font-family: 'Avenir-Next_Regular','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 300;
+  color: #333333;
 }
 
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 700;
+  color: #333333;
 }
 
 .c5 {
   font-size: 13pt;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
-  color: #3A4951;
+  font-weight: 700;
+  color: #333333;
 }
 
 <div

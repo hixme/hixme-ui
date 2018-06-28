@@ -6,7 +6,7 @@ import {
 
 const InputBase = styled.input`
   :focus:enabled {
-    border-color: ${props => getBorderColor({ ...props, primary: true })};
+    border-color: ${props => getBorderColor(props)};
   };
   :disabled {
     box-shadow: none;
@@ -72,4 +72,3 @@ InputBase.displayName = 'hui:InputBase'
 InputBase.huiName = 'InputBase'
 
 export default InputBase
-

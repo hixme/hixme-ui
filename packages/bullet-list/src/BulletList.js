@@ -6,16 +6,14 @@ import styled from 'styled-components'
 import Container from '@hixme-ui/container'
 import Text from '@hixme-ui/text'
 
-const Circle = styled.span`
-  border-radius: 50%;
+import { getBackgroundColor } from '@hixme-ui/theme-props'
+
+const Circle = styled.div`
+  border-radius: 3px;
   width: 6px;
   height: 6px;
-  background: #2eae8f;
-  margin: 10px 10px 2px 10px;
-`
-
-const LineContainer = styled.div`
-  line-height: 25px;
+  background: ${props => getBackgroundColor(props)};
+  margin-right: 15px;
 `
 
 /* eslint-disable react/no-array-index-key */
@@ -23,18 +21,16 @@ const BulletList = ({
   bulletArray,
   ...restProps
 }) => (
-  <LineContainer>
+  <div>
     {bulletArray.map((item, index) => (
-      <Container flex noPadding id='bullet-item' key={`bullet-list-${index}`}>
-        <Container flex noPadding>
-          <Circle />
-        </Container>
-        <Text {...restProps}>
-          {item}
-        </Text>
+      <Container flex noPadding id='bullet-item' key={`bullet-list-${index}`} alignItems='center'>
+        <div>
+          <Circle {...restProps} />
+        </div>
+        <Text>{item}</Text>
       </Container>
     ))}
-  </LineContainer>
+  </div>
 )
 
 BulletList.propTypes = {
@@ -42,4 +38,3 @@ BulletList.propTypes = {
 }
 
 export default BulletList
-

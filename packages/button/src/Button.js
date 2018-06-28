@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import MenuButton from './MenuButton'
 import OutlineButton from './OutlineButton'
-import GradientButton from './GradientButton'
+import FlatButton from './FlatButton'
 
 const Button = ({
   children,
@@ -38,9 +38,9 @@ const Button = ({
   }
 
   return (
-    <GradientButton {...props} disabled={loading || submitting || disabled}>
+    <FlatButton {...props} disabled={loading || submitting || disabled}>
       {loading || submitting ? loadingText || submittingText : children}
-    </GradientButton>
+    </FlatButton>
   )
 }
 

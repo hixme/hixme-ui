@@ -7,10 +7,9 @@ import { Code, DocsTitle } from '../../components'
 
 const BulletListDocs = () => {
   const myUnorderedList = [
-    'One fish',
-    'Two fish',
-    'Red fish',
-    'Blue fish',
+    'HTML',
+    'JavaScript',
+    'CSS',
   ]
 
   return (
@@ -20,16 +19,21 @@ const BulletListDocs = () => {
         <Row center='xs' style={{ marginBottom: '30px' }}>
           <BulletList bulletArray={myUnorderedList} />
         </Row>
+        <Row center='xs' style={{ marginBottom: '30px' }}>
+          <BulletList primary bulletArray={myUnorderedList} />
+        </Row>
+        <Row center='xs' style={{ marginBottom: '30px' }}>
+          <BulletList blue bulletArray={myUnorderedList} />
+        </Row>
         <Row center='xs'>
           <Code>
             {`const myUnorderedList = [
-  'One fish',
-  'Two fish',
-  'Red fish',
-  'Blue fish',
+  'HTML',
+  'JavaScript',
+  'CSS',
 ]
 
-<BulletList bulletArray={myUnorderedList} />`}
+<BulletList blue bulletArray={myUnorderedList} />`}
           </Code>
         </Row>
       </Grid>
@@ -38,4 +42,3 @@ const BulletListDocs = () => {
 }
 
 export default BulletListDocs
-

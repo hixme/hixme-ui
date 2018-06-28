@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import {
-  getFontFamily,
   getFontSize,
   getFontWeight,
   getTextColor,
@@ -8,7 +7,6 @@ import {
 
 const TextBase = styled.span`
   color: ${props => props.color || getTextColor(props, 'inherit')};
-  font-family: ${props => props.fontFamily || getFontFamily(props)};
   font-size: ${props => props.fontSize || getFontSize(props, 'inherit')};
   font-weight: ${props => props.fontWeight || getFontWeight(props)};
   border-bottom: ${(props) => {

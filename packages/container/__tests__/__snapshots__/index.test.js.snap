@@ -338,23 +338,6 @@ exports[`Container it should render with background: black 1`] = `
 />
 `;
 
-exports[`Container it should render with background: white 1`] = `
-.c0 {
-  background: white;
-  padding: 20px;
-  border: none;
-}
-
-<div
-  className="c0"
-  default={true}
-  direction=""
-  height={null}
-  muted={false}
-  width={null}
-/>
-`;
-
 exports[`Container it should render with border: 130px solid purple 1`] = `
 .c0 {
   background: none;

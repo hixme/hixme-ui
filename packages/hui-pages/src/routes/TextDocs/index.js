@@ -7,7 +7,6 @@ import Title from '@hixme-ui/title'
 
 import { Code, DocsTitle } from '../../components'
 
-
 const TextDocs = () => (
   <Grid fluid>
     <DocsTitle
@@ -57,17 +56,17 @@ const TextDocs = () => (
         <Text jumbo>jumbo</Text>
       </Col>
       <Col xs={3}>
-        <Text thinnest>thinnest</Text>
+        <Text larger thinnest>thinnest</Text>
         <br />
-        <Text thinner>thinner</Text>
+        <Text larger thinner>thinner</Text>
         <br />
-        <Text thin>thin</Text>
+        <Text large thin>thin</Text>
         <br />
-        <Text normal>normal</Text>
+        <Text large normal>normal</Text>
         <br />
-        <Text bolder>bolder</Text>
+        <Text large bold>bold</Text>
         <br />
-        <Text boldest>boldest</Text>
+        <Text large boldest>boldest</Text>
       </Col>
       <Col xs={3}>
         <Text defaultColor>defaultColor</Text>

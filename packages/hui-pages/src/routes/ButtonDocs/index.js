@@ -4,9 +4,9 @@ import Button from '@hixme-ui/button'
 import Card from '@hixme-ui/card'
 import Text from '@hixme-ui/text'
 
-import Code from 'components/Code'
-import DocsTitle from 'components/DocsTitle'
-import CategoryHeader from 'components/CategoryHeader'
+import Code from '../../components/Code'
+import DocsTitle from '../../components/DocsTitle'
+import CategoryHeader from '../../components/CategoryHeader'
 
 const padded = {
   padding: '10px',
@@ -22,64 +22,67 @@ const ButtonDocs = () => (
   <Grid fluid>
     <DocsTitle
       title='Button'
-      subtitle='A button component, with five color gradients,
-      and outline option. Outine buttons use the colorTheme. Any button may
-      be a submit button, just add loading (bool) and loadingText (string)'
+      subtitle='A button component, with five colors, five sizes,
+      and outline option.'
     />
     <Row center='xs' style={{ marginBottom: '60px' }}>
       <Col>
         <div style={padded}>
-          <Button>default</Button>
+          <Button mini>mini</Button>
+        </div>
+        <div style={padded}>
+          <Button blue small>blue small</Button>
         </div>
         <div style={padded}>
           <Button secondary>secondary</Button>
         </div>
         <div style={padded}>
-          <Button blue>blue</Button>
-        </div>
-        <div style={padded}>
           <Button red>red</Button>
         </div>
         <div style={padded}>
-          <Button gold>gold</Button>
+          <Button>default</Button>
         </div>
         <div style={padded}>
-          <Button gold>
-            <Text bold blue>Gold button, blue text</Text>
-          </Button>
+          <Button large gold>large gold</Button>
         </div>
         <div style={padded}>
-          <Button block loading>default</Button>
+          <Button jumbo>jumbo</Button>
         </div>
         <div style={padded}>
-          <Button block loading={false} loadingText='Processing...'>Not Processing</Button>
+          <Button loading>default</Button>
+        </div>
+        <div style={padded}>
+          <Button loading={false} loadingText='Processing...'>Not Processing</Button>
         </div>
       </Col>
 
       <Col>
         <div style={padded}>
-          <Button mini light outline>mini light outline</Button>
+          <Button mini outline>mini outline</Button>
         </div>
         <div style={padded}>
-          <Button small green outline secondary>small green outline</Button>
+          <Button small blue outline>small blue outline</Button>
         </div>
         <div style={padded}>
-          <Button outline blue>blue button</Button>
+          <Button secondary outline>secondary outline</Button>
         </div>
         <div style={padded}>
-          <Button outline blue block loading>Click to send</Button>
+          <Button outline red>red outline</Button>
+        </div>
+        <div style={padded}>
+          <Button outline>outline</Button>
+        </div>
+
+        <div style={padded}>
+          <Button outline large yellow>outline large yellow</Button>
+        </div>
+        <div style={padded}>
+          <Button outline jumbo primary>outline jumbo primary</Button>
         </div>
         <div style={padded}>
           <Button outline blue block loading loadingText='Processing request'>Click to send</Button>
         </div>
-        <div style={padded}>
-          <Button large outline red>large outline red</Button>
-        </div>
-        <div style={padded}>
-          <Button jumbo outline purple>
-            <Text blue>Purple outline, blue text</Text>
-          </Button>
-        </div>
+
         <div style={padded}>
           <Button
             light
