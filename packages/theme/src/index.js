@@ -65,10 +65,10 @@ const buttonHeights = {
 
 const buttonMinWidths = {
   mini: '80px',
-  small: '80px',
-  default: '100px',
-  large: '100px',
-  jumbo: '100px',
+  small: '100px',
+  default: '120px',
+  large: '140px',
+  jumbo: '160px',
 }
 
 const buttonTextColors = {

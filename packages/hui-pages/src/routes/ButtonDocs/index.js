@@ -31,7 +31,7 @@ const ButtonDocs = () => (
           <Button mini>mini</Button>
         </div>
         <div style={padded}>
-          <Button blue small>blue small</Button>
+          <Button blue small>small</Button>
         </div>
         <div style={padded}>
           <Button secondary>secondary</Button>
