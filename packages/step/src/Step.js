@@ -9,8 +9,8 @@ import theme from '@hixme-ui/theme'
 
 const Circle = styled.div`
   display: flex;
-  height: 48px;
-  width: 48px;
+  height: 36px;
+  width: 36px;
   background-color: ${({ color }) => (color || theme.colors.light)};
   border-radius: 50%;
   margin: 0;
@@ -31,9 +31,9 @@ const Step = ({
 }) => (
   <IconContainer>
     {completed ?
-      <Icon primary checkMarkCircle fontSize={48} /> :
+      <Icon primary checkMarkCircle fontSize={36} /> :
       <Circle color={uncompletedColor}>
-        <Title thin white small>{children}</Title>
+        <Title white smaller>{children}</Title>
       </Circle>
     }
   </IconContainer>
