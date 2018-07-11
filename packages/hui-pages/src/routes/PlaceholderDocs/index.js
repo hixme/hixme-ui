@@ -45,7 +45,7 @@ const PlaceholderDocs = () => (
               <tr>
                 <td>height</td>
                 <td>string</td>
-                <td>30px</td>
+                <td>36px</td>
                 <td>Height</td>
               </tr>
               <tr>
