@@ -46,13 +46,13 @@ const InputBase = styled.input`
   font-size: ${({ large, mini }) => {
     if (large) return '21px'
     if (mini) return '14px'
-    return '16px'
+    return '14px'
   }};
   font-weight: 500;
   height: ${({ large, mini }) => {
     if (large) return '65px'
     if (mini) return '28px'
-    return '42px'
+    return '36px'
   }};
   line-height: 22px;
   margin-bottom: 5px;
