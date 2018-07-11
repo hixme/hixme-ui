@@ -27,7 +27,7 @@ const RadioText = LabelBase.extend`
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  font: 500 16px/18px;
+  font: 500 14px;
   color: #4a5b64;
   margin: 0 0 0 16px;
   max-width: calc(100% - 46px);
@@ -46,6 +46,7 @@ const RadioDisplay = styled.span`
   font-size: 0;
   line-height: 0;
   vertical-align: top;
+  top: 2px;
   &:after {
     position: absolute;
     left: 2px;
@@ -90,4 +91,3 @@ RadioButton.propTypes = {
 }
 
 export default RadioButton
-
