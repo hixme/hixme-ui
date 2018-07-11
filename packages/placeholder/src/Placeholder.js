@@ -19,7 +19,7 @@ const Placeholder = styled.div`
   background-size: 200% 400%;
   animation: 1.5s ${animateGradient} infinite;
   width: ${props => props.width || '200px'};
-  height: ${props => props.height || '30px'};
+  height: ${props => props.height || '36px'};
   margin: ${props => props.margin || '20px'};
   padding: ${props => props.padding};
   border-radius: 4px;
