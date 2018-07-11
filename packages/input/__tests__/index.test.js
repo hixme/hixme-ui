@@ -156,7 +156,7 @@ describe('SpinnerContainer', () => {
 
     const tree = component.toJSON()
     expect(tree).toHaveStyleRule('position', 'absolute')
-    expect(tree).toHaveStyleRule('top', '12px')
+    expect(tree).toHaveStyleRule('top', '10px')
     expect(tree).toHaveStyleRule('right', '12px')
     expect(tree).toHaveStyleRule('cursor', 'not-allowed')
   })
