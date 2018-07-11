@@ -11,18 +11,18 @@ import InputBase from './InputBase'
 
 export const PrefixContainer = styled.span`
   position: absolute;
-  top: ${({ mini }) => (mini ? '5px' : '7px')};
+  top: 5px;
   left: 12px;
 `
 
 export const SuffixContainer = styled.span`
   position: absolute;
-  top: ${({ mini }) => (mini ? '5px' : '9px')};
+  top: 5px;
   right: 12px;
 `
 
 export const SpinnerContainer = SuffixContainer.extend`
-  top: ${({ mini }) => (mini ? '5px' : '12px')};
+  top: ${({ mini }) => (mini ? '5px' : '10px')};
   cursor: not-allowed;
 `
 
