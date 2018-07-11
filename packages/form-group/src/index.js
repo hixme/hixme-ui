@@ -8,8 +8,9 @@ export const FormGroupBase = styled.div`
   padding: 13px 0px;
   > label {
     display: inline-block;
-    margin-bottom:7px;
-    margin-left: 2px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: medium;
   }
   > button {
     display: block;
