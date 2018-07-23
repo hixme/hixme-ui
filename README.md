@@ -8,7 +8,7 @@ Another React component library, built to facilitate the
 
 [Website](https://hixme.github.io/hixme-ui)
 
-# Getting started
+# Usage
 
 Install the theme and your needed components.
 
@@ -34,6 +34,32 @@ const AppContainer = () => (
     </Container>
   </ThemeProvider>
 )
+```
+
+# Installation
+
+To get started with a local installation run the following:
+
+```bash
+git clone https://github.com/hixme/hixme-ui.git
+cd hixme-ui
+lerna boostrap
+```
+
+Keep in mind [lerna](https://github.com/lerna/lerna) must be installed globally: 
+
+```bash
+npm install -g lerna
+```
+
+To start the documentation React app, run `npm start` inside the `/hui-pages` directory.
+
+## Troubleshooting
+
+Occasionally -- on a fresh install -- `lerna bootstrap` will fail because of a missing `react` dependency. This can be rectified by installing, but not saving the react dependency.
+
+```bash
+npm install react --no-save
 ```
 
 # Theming 
