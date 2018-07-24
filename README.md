@@ -8,7 +8,7 @@ Another React component library, built to facilitate the
 
 [Website](https://hixme.github.io/hixme-ui)
 
-# Usage
+# Getting started
 
 Install the theme and your needed components.
 
