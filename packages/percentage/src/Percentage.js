@@ -16,8 +16,16 @@ const Percentage = ({
   })}</Text>
 )
 
-Percentage.format = ({ value, children, hideDecimals }) => {
-  let displayValue = parseFloat(value || children)
+Percentage.format = ({ value, children, hideDecimals } = {}) => {
+  const property = value !== null && !isNaN(value) ? value : children
+  let displayValue = parseFloat(property)
+  // console.log('displayValue = ', displayValue, property, value, children)
+
+
+  if (isNaN(displayValue)) {
+    console.error(`${Percentage.huiName}: Could not parse ${property} as a percentage.`)
+    return 'Invalid'
+  }
 
   displayValue *= 100
 
