@@ -11,11 +11,18 @@ To get started with development, clone the repo and bootstrap the
 dependencies.
 
 ```bash
-git clone git@github.com:hixme/hixme-ui.git
+git clone https://github.com/hixme/hixme-ui.git
 cd hixme-ui
-npm install
-npm run bootstrap
+lerna boostrap
 ```
+
+Keep in mind [lerna](https://github.com/lerna/lerna) must be installed globally: 
+
+```bash
+npm install -g lerna
+```
+
+To start the documentation React app, run `npm start` inside the `/hui-pages` directory.
 
 ## Gotchas
 
@@ -26,6 +33,13 @@ or pulling down changes. Do a refresh and get your environment back to health.
 ```bash
 npm run refresh
 ```
+
+Occasionally -- on a fresh install -- `lerna bootstrap` will fail because of a missing `react` dependency. This can be rectified by installing, but not saving the react dependency.
+
+```bash
+npm install react --no-save
+```
+
 
 #
 [Hixme UI](https://github.com/hixme/hixme-ui)
