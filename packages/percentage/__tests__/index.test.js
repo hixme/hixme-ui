@@ -13,6 +13,33 @@ describe('Percentage', () => {
     expect(tree.type).toBe('span')
   })
 
+
+  describe('Property.format()', () => {
+    it('should return "Invalid" for bad data - no params', () => {
+      expect(Percentage.format()).toBe('%')
+    })
+    it('should return "Invalid" for bad data - empty params', () => {
+      expect(Percentage.format({})).toBe('%')
+    })
+    it('should return "Invalid" for bad data - value string', () => {
+      expect(Percentage.format({ value: 'hello' })).toBe('%')
+    })
+    it('should return "Invalid" for bad data - children string', () => {
+      expect(Percentage.format({ children: 'hello' })).toBe('%')
+    })
+
+    it('should return 0.00% for value zero', () => {
+      expect(Percentage.format({ value: 0 })).toBe('0.00%')
+    })
+    it('should return 0.00% for value zero- override children', () => {
+      expect(Percentage.format({ value: 0, children: 17 })).toBe('0.00%')
+    })
+
+    it('should return 100.00% for value 1', () => {
+      expect(Percentage.format({ value: 1 })).toBe('100.00%')
+    })
+  })
+
   it('render integer value prop', () => {
     const component = renderer.create(
       (<ThemeProvider><Percentage value={0.10} /></ThemeProvider>),
