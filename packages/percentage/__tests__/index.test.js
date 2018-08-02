@@ -16,16 +16,16 @@ describe('Percentage', () => {
 
   describe('Property.format()', () => {
     it('should return "Invalid" for bad data - no params', () => {
-      expect(Percentage.format()).toBe('Invalid')
+      expect(Percentage.format()).toBe('%')
     })
     it('should return "Invalid" for bad data - empty params', () => {
-      expect(Percentage.format({})).toBe('Invalid')
+      expect(Percentage.format({})).toBe('%')
     })
     it('should return "Invalid" for bad data - value string', () => {
-      expect(Percentage.format({ value: 'hello' })).toBe('Invalid')
+      expect(Percentage.format({ value: 'hello' })).toBe('%')
     })
     it('should return "Invalid" for bad data - children string', () => {
-      expect(Percentage.format({ children: 'hello' })).toBe('Invalid')
+      expect(Percentage.format({ children: 'hello' })).toBe('%')
     })
 
     it('should return 0.00% for value zero', () => {
