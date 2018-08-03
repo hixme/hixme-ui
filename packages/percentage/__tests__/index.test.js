@@ -14,7 +14,7 @@ describe('Percentage', () => {
   })
 
 
-  describe('Property.format()', () => {
+  describe('Percentage.format()', () => {
     it('should return "Invalid" for bad data - no params', () => {
       expect(Percentage.format()).toBe('%')
     })
