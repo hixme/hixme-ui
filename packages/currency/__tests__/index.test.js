@@ -26,6 +26,9 @@ describe('Currency', () => {
     it('should return "$" for bad data - children string', () => {
       expect(Currency.format({ children: 'hello' })).toBe('$')
     })
+    it('should return "$$" for bad data with alternate symbol', () => {
+      expect(Currency.format({ defaultSymbol: '$$' })).toBe('$$')
+    })
 
     it('should return $0.00 for value zero', () => {
       expect(Currency.format({ value: 0 })).toBe('$0.00')

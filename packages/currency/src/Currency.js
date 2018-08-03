@@ -48,11 +48,8 @@ Currency.getValue = (props = {}) => {
 Currency.format = (props = {}) => {
   const { hideCommas, defaultSymbol, noSymbol } = props
   const symbol = defaultSymbol || Currency.defaultProps.defaultSymbol
-  const roundedValue = Currency.getValue(props)
+  const roundedValue = Currency.getValue(props) || ''
 
-  if (!roundedValue) {
-    return symbol
-  }
   const formattedValue = noSymbol
       ? roundedValue
       : symbol + roundedValue
