@@ -13,6 +13,36 @@ describe('Currency', () => {
     expect(tree.type).toBe('span')
   })
 
+  describe('Currency.format()', () => {
+    it('should return "$" for bad data - no params', () => {
+      expect(Currency.format()).toBe('$')
+    })
+    it('should return "$" for bad data - empty params', () => {
+      expect(Currency.format({})).toBe('$')
+    })
+    it('should return "$" for bad data - value string', () => {
+      expect(Currency.format({ value: 'hello' })).toBe('$')
+    })
+    it('should return "$" for bad data - children string', () => {
+      expect(Currency.format({ children: 'hello' })).toBe('$')
+    })
+    it('should return "$$" for bad data with alternate symbol', () => {
+      expect(Currency.format({ defaultSymbol: '$$' })).toBe('$$')
+    })
+
+    it('should return $0.00 for value zero', () => {
+      expect(Currency.format({ value: 0 })).toBe('$0.00')
+    })
+    it('should return $0.00 for value zero- override children', () => {
+      expect(Currency.format({ value: 0, children: 17 })).toBe('$0.00')
+    })
+
+    it('should return $1.00 for value 1', () => {
+      expect(Currency.format({ value: 1 })).toBe('$1.00')
+    })
+  })
+
+
   it('render integer value prop', () => {
     const component = renderer.create(
       (<ThemeProvider><Currency value={10} /></ThemeProvider>),

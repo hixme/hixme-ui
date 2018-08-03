@@ -30,18 +30,26 @@ Currency.roundToSignificantFigures = value => (
     Math.round(value)
 )
 
-Currency.getValue = (props) => {
+Currency.getValue = (props = {}) => {
   const { value, children, hideCents, round } = props
-  const displayValue = parseFloat(value || children || 0)
+
+  const property = value !== null && !isNaN(value) ? value : children
+  const displayValue = parseFloat(property)
+  if (isNaN(displayValue)) {
+    console.error(`${Currency.huiName}: Could not parse ${property} for currency amount.`)
+    return null
+  }
+
   const roundedValue = hideCents ? displayValue.toFixed(0) : displayValue.toFixed(2)
   const result = round ? Currency.roundToSignificantFigures(roundedValue) : roundedValue
   return result
 }
 
-Currency.format = (props) => {
+Currency.format = (props = {}) => {
   const { hideCommas, defaultSymbol, noSymbol } = props
   const symbol = defaultSymbol || Currency.defaultProps.defaultSymbol
-  const roundedValue = Currency.getValue(props)
+  const roundedValue = Currency.getValue(props) || ''
+
   const formattedValue = noSymbol
       ? roundedValue
       : symbol + roundedValue
