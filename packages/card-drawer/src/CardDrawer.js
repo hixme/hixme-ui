@@ -26,6 +26,7 @@ class CardDrawer extends Component {
     collapsible: PropTypes.bool,
     open: PropTypes.bool,
     disabled: PropTypes.bool,
+    triggerSibling: PropTypes.node,
   }
 
   static defaultProps = {
@@ -36,6 +37,7 @@ class CardDrawer extends Component {
     collapsible: false,
     open: true,
     disabled: false,
+    triggerSibling: null,
   }
 
   state = { stateOpen: this.props.open }
@@ -86,6 +88,7 @@ class CardDrawer extends Component {
                 }
               </StyledTrigger>
             }
+            triggerSibling={triggerSibling}
             transitionTime={250}
           >
             <InnerContent className={ContentInnerClassName}>
