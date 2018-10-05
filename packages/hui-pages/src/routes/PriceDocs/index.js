@@ -23,6 +23,14 @@ const PriceDocs = () => (
           {'<Price value={46.93} label=\'hixme-ui\' />'}
         </Code>
       </Row>
+      <Row center='xs' style={{ margin: '40px 0' }}>
+        <Price value={18033.43} includeCommas label='hixme-ui' />
+      </Row>
+      <Row center='xs'>
+        <Code>
+          {'<Price value={18033.43} includeCommas label=\'hixme-ui\' />'}
+        </Code>
+      </Row>
       <Row style={{ margin: '40px 0 20px 0' }}><Title smaller>Props</Title></Row>
       <Row center='xs'>
         <Col xs={12}>
@@ -47,6 +55,12 @@ const PriceDocs = () => (
                 <td>string</td>
                 <td>N/A</td>
                 <td>Applies a label beneath the styled price</td>
+              </tr>
+              <tr>
+                <td>includeCommas</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Add thousand comma separator</td>
               </tr>
             </tbody>
           </Table>
