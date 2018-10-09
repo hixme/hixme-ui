@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/bullet-list",
-  "version": "1.20.0",
+  "version": "1.20.1",
   "description": "hixme-ui BulletList component",
   "publishConfig": {
     "access": "public"
@@ -79,10 +79,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.20.0",
-    "@hixme-ui/text": "^1.20.0",
-    "@hixme-ui/theme": "^1.20.0",
-    "@hixme-ui/theme-props": "^1.19.2",
+    "@hixme-ui/container": "^1.20.1",
+    "@hixme-ui/text": "^1.20.1",
+    "@hixme-ui/theme": "^1.20.1",
+    "@hixme-ui/theme-props": "^1.20.1",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
