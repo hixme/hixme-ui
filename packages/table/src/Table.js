@@ -7,6 +7,7 @@ import OverflowContainer from './OverflowContainer'
 const Table = ({
   children,
   striped,
+  vertStriped,
   alignBody,
   alignHeader,
   compact,
@@ -18,6 +19,7 @@ const Table = ({
       striped={striped}
       alignBody={alignBody}
       alignHeader={alignHeader}
+      vertStriped={vertStriped}
       {...rest}
     >
       {children}
@@ -31,6 +33,7 @@ Table.propTypes = {
   children: PropTypes.node,
   compact: PropTypes.bool,
   striped: PropTypes.bool,
+  vertStriped: PropTypes.bool,
 }
 
 Table.defaultProps = {
@@ -39,6 +42,7 @@ Table.defaultProps = {
   children: null,
   compact: false,
   striped: false,
+  vertStriped: false,
 }
 
 Table.huiName = 'Table'

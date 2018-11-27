@@ -54,6 +54,9 @@ const StyledTable = styled.table`
   }
 
   td {
+    &:nth-child(even) {
+      ${({ vertStriped }) => (vertStriped && 'background-color: #f2f6f9;')}
+    }
     color: #3a4951;
     font-size: 12px;
     font-weight: 500;
