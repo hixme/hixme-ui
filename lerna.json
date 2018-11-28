@@ -1,18 +1,18 @@
 {
   "lerna": "2.1.0",
-  "commands": {
+  "packages": [
+    "packages/*"
+  ],
+  "version": "1.20.1",
+  "command": {
     "publish": {
       "message": "release/%s: publish",
       "allowBranch": [
         "release/*"
       ],
-      "ignore": [
+      "ignoreChanges": [
         "hui-pages"
       ]
     }
-  },
-  "packages": [
-    "packages/*"
-  ],
-  "version": "1.20.0"
+  }
 }
