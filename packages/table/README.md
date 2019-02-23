@@ -43,6 +43,4 @@ import Table from '@hixme-ui/table'
 | alignHeader     | string      | ''             |
 | compact         | boolean     | false          |
 | striped         | boolean     | false          |
-
-
-
+| vertStriped     | boolean     | false          |
