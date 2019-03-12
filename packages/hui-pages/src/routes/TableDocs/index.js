@@ -180,6 +180,12 @@ const CheckboxDocs = () => (
               <td>Different background color on alternating rows</td>
             </tr>
             <tr>
+              <td>vertStriped</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>Different background color on alternating columns</td>
+            </tr>
+            <tr>
               <td>alignHeader</td>
               <td>string</td>
               <td>{"'center'"}</td>
