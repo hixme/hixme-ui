@@ -42,5 +42,6 @@ import Table from '@hixme-ui/table'
 | alignBody       | string      | ''             |
 | alignHeader     | string      | ''             |
 | compact         | boolean     | false          |
+| overflow        | boolean     | true           |
 | striped         | boolean     | false          |
 | vertStriped     | boolean     | false          |

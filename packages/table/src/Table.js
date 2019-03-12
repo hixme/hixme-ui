@@ -11,20 +11,36 @@ const Table = ({
   alignBody,
   alignHeader,
   compact,
+  overflow,
   ...rest
 }) => (
-  <OverflowContainer>
-    <StyledTable
-      compact={compact}
-      striped={striped}
-      alignBody={alignBody}
-      alignHeader={alignHeader}
-      vertStriped={vertStriped}
-      {...rest}
-    >
-      {children}
-    </StyledTable>
-  </OverflowContainer>
+  <div>
+    {overflow ? (
+      <OverflowContainer>
+        <StyledTable
+          compact={compact}
+          striped={striped}
+          alignBody={alignBody}
+          alignHeader={alignHeader}
+          vertStriped={vertStriped}
+          {...rest}
+        >
+          {children}
+        </StyledTable>
+      </OverflowContainer>
+    ) : (
+      <StyledTable
+        compact={compact}
+        striped={striped}
+        alignBody={alignBody}
+        alignHeader={alignHeader}
+        vertStriped={vertStriped}
+        {...rest}
+      >
+        {children}
+      </StyledTable>
+    )}
+  </div>
 )
 
 Table.propTypes = {
@@ -33,6 +49,7 @@ Table.propTypes = {
   children: PropTypes.node,
   compact: PropTypes.bool,
   striped: PropTypes.bool,
+  overflow: PropTypes.bool,
   vertStriped: PropTypes.bool,
 }
 
@@ -42,6 +59,7 @@ Table.defaultProps = {
   children: null,
   compact: false,
   striped: false,
+  overflow: true,
   vertStriped: false,
 }
 
