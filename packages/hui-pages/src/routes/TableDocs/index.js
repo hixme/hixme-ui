@@ -168,6 +168,12 @@ const CheckboxDocs = () => (
               <td>Table with less height and padding</td>
             </tr>
             <tr>
+              <td>overflow</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td>Apply an x overflow of auto to the table</td>
+            </tr>
+            <tr>
               <td>striped</td>
               <td>boolean</td>
               <td>false</td>
