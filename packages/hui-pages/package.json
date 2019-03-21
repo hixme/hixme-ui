@@ -1,6 +1,6 @@
 {
   "name": "hui-pages",
-  "version": "1.20.2",
+  "version": "1.20.3",
   "private": true,
   "homepage": "https://hixme.github.io/hixme-ui/",
   "scripts": {
@@ -23,7 +23,7 @@
     "@hixme-ui/close-button": "^1.20.2",
     "@hixme-ui/container": "^1.20.2",
     "@hixme-ui/content-container": "^1.20.2",
-    "@hixme-ui/currency": "^1.20.2",
+    "@hixme-ui/currency": "^1.20.3",
     "@hixme-ui/dates": "^1.20.2",
     "@hixme-ui/email": "^1.20.2",
     "@hixme-ui/form-group": "^1.20.2",
