@@ -36,7 +36,6 @@ Currency.getValue = (props = {}) => {
   const property = value !== null && !isNaN(value) ? value : children
   const displayValue = parseFloat(property)
   if (isNaN(displayValue)) {
-    console.error(`${Currency.huiName}: Could not parse ${property} for currency amount.`)
     return null
   }
 
