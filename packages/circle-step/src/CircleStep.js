@@ -10,34 +10,34 @@ const CircleStep = ({
   borderWidth,
   children,
   completed,
-  display,
   openCircle,
   size,
   uncompletedColor,
 }) => (
   <div>
     {completed ? (
-      <Container flex noPadding justifyContent='center' alignItems='center'>
+      <Container flex noPadding alignItems='center'>
         <Icon primary checkMarkCircle fontSize={size} />
       </Container>
     ) : (
-      <div
+      <Container
+        flex
+        noPadding
+        height={`${size}px`}
+        width={`${size}px`}
+        margin='0'
         style={{
-          display,
-          height: `${size}px`,
-          width: `${size}px`,
           borderRadius: '50%',
-          margin: '0',
           backgroundColor: !openCircle && uncompletedColor,
           border: openCircle && `${borderWidth} solid ${uncompletedColor}`,
         }}
       >
         {children && (
-          <Title thin white small style={{ margin: '4px 0 0 0' }}>
+          <Title thin white small style={{ margin: '4px auto 0' }}>
             {children}
           </Title>
         )}
-      </div>
+      </Container>
     )}
   </div>
 )
@@ -47,7 +47,6 @@ CircleStep.propTypes = {
   borderWidth: PropTypes.string,
   children: PropTypes.node,
   completed: PropTypes.bool,
-  display: PropTypes.string,
   openCircle: PropTypes.bool,
   size: PropTypes.number,
   uncompletedColor: PropTypes.string,
@@ -57,7 +56,6 @@ CircleStep.defaultProps = {
   borderWidth: '3px',
   children: null,
   completed: false,
-  display: 'inline-block',
   openCircle: false,
   size: 48,
   uncompletedColor: '#677786',
