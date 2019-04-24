@@ -5,14 +5,15 @@ import styled from 'styled-components'
 // hixme-ui
 import Icon from '@hixme-ui/icon'
 import Title from '@hixme-ui/title'
-import theme from '@hixme-ui/theme'
 
 const Circle = styled.div`
   display: flex;
-  height: 48px;
-  width: 48px;
-  background-color: ${({ color }) => (color || theme.colors.light)};
+  height: ${({ size }) => `${size}px` || '48px'};
+  width: ${({ size }) => `${size}px` || '48px'};
+  background-color: ${({ color, openCircle }) => !openCircle && color};
   border-radius: 50%;
+  border: ${({ openCircle, color, width }) =>
+    openCircle && `${width} solid ${color}`};
   margin: 0;
   justify-content: center;
   align-items: center;
@@ -25,30 +26,50 @@ const IconContainer = styled.div`
 `
 
 const Step = ({
+  borderWidth,
   children,
   completed,
+  openCircle,
+  size,
   uncompletedColor,
 }) => (
   <IconContainer>
-    {completed ?
-      <Icon primary checkMarkCircle fontSize={48} /> :
-      <Circle color={uncompletedColor}>
-        <Title thin white small>{children}</Title>
+    {completed ? (
+      <Icon primary checkMarkCircle fontSize={size} />
+    ) : (
+      <Circle
+        color={uncompletedColor}
+        size={size}
+        openCircle={openCircle}
+        width={borderWidth}
+      >
+        {children && (
+          <Title thin white small>
+            {children}
+          </Title>
+        )}
       </Circle>
-    }
+    )}
   </IconContainer>
 )
 
 Step.displayName = 'Step'
 Step.propTypes = {
-  children: PropTypes.node.isRequired,
+  borderWidth: PropTypes.string,
+  children: PropTypes.node,
   completed: PropTypes.bool,
+  openCircle: PropTypes.bool,
+  size: PropTypes.number,
   uncompletedColor: PropTypes.string,
 }
 
 Step.defaultProps = {
+  borderWidth: '3px',
+  children: null,
   completed: false,
-  uncompletedColor: null,
+  openCircle: false,
+  size: 48,
+  uncompletedColor: '#677786',
 }
 
 export default Step

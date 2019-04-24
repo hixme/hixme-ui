@@ -20,6 +20,11 @@ import Step from '@hixme-ui/step'
 
 | Name             | Type        | Default        |
 | ---------------- | ----------- | -------------- |
-| completed        | boolean     | false          |
-| uncompletedColor | string      | false          |
+| borderWidth      | string      | '3px'          |
+| children         | node        | null           |
+| completed        | bool        | false          |
+| display          | string      | 'inline-block' |
+| openCircle       | bool        | false          |
+| size             | number      | 48             |
+| uncompletedColor | string      | '#677786'      |
 
