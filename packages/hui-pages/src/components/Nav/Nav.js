@@ -52,6 +52,15 @@ const Nav = () => (
     </Row>
     <Row>
       <Col xs={12}>
+        <Link to='/circle-step'>
+          <Text primary cursor='pointer'>
+            CircleStep
+          </Text>
+        </Link>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
         <Link to='/card'>
           <Text primary cursor='pointer'>
             Card

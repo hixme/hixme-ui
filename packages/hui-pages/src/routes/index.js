@@ -18,6 +18,7 @@ import ButtonDocs from './ButtonDocs'
 import CardDocs from './CardDocs'
 import CardDrawerDocs from './CardDrawerDocs'
 import CheckboxDocs from './CheckboxDocs'
+import CircleStepDocs from './CircleStepDocs'
 import CloseButtonDocs from './CloseButtonDocs'
 import ContainerDocs from './ContainerDocs'
 import ContentContainerDocs from './ContentContainerDocs'
@@ -64,6 +65,7 @@ const Routes = () => (
           <Route path='/card' component={CardDocs} />
           <Route path='/card-drawer' component={CardDrawerDocs} />
           <Route path='/checkbox' component={CheckboxDocs} />
+          <Route path='/circle-step' component={CircleStepDocs} />
           <Route path='/close-button' component={CloseButtonDocs} />
           <Route path='/container' component={ContainerDocs} />
           <Route path='/content-container' component={ContentContainerDocs} />
