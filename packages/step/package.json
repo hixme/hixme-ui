@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/step",
-  "version": "1.20.2",
+  "version": "1.20.4",
   "description": "hixme-ui Step component",
   "publishConfig": {
     "access": "public"
@@ -80,9 +80,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/icon": "^1.20.2",
-    "@hixme-ui/theme": "^1.20.2",
-    "@hixme-ui/title": "^1.20.2",
+    "@hixme-ui/icon": "^1.20.4",
+    "@hixme-ui/theme": "^1.20.4",
+    "@hixme-ui/title": "^1.20.4",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {

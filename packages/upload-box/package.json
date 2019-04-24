@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/upload-box",
-  "version": "1.20.2",
+  "version": "1.20.4",
   "description": "hixme-ui UploadBox component",
   "publishConfig": {
     "access": "public"
@@ -80,11 +80,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.20.2",
-    "@hixme-ui/icon": "^1.20.2",
-    "@hixme-ui/text": "^1.20.2",
-    "@hixme-ui/theme": "^1.20.2",
-    "@hixme-ui/title": "^1.20.2",
+    "@hixme-ui/container": "^1.20.4",
+    "@hixme-ui/icon": "^1.20.4",
+    "@hixme-ui/text": "^1.20.4",
+    "@hixme-ui/theme": "^1.20.4",
+    "@hixme-ui/title": "^1.20.4",
     "react-dropzone": "^4.2.7",
     "styled-components": "^2.3.3"
   },
