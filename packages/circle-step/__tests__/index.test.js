@@ -5,7 +5,7 @@ import { ThemeProvider } from '@hixme-ui/theme'
 import CircleStep from '../src'
 
 describe('CircleStep', () => {
-  it('no props', () => {
+  test('Renders a parent div', () => {
     const component = renderer.create(
       (<ThemeProvider><CircleStep /></ThemeProvider>),
     )
