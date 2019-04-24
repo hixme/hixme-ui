@@ -51,7 +51,6 @@ const AppContainer = () => (
 - [Card Drawer](https://github.com/hixme/hixme-ui/tree/master/packages/card-drawer)
 - [Card](https://github.com/hixme/hixme-ui/tree/master/packages/card)
 - [Checkbox](https://github.com/hixme/hixme-ui/tree/master/packages/checkbox)
-- [CircleStep](https://github.com/hixme/hixme-ui/tree/master/packages/circle-step)
 - [Close Button](https://github.com/hixme/hixme-ui/tree/master/packages/close-button)
 - [Container](https://github.com/hixme/hixme-ui/tree/master/packages/container)
 - [Content Container](https://github.com/hixme/hixme-ui/tree/master/packages/content-container)
