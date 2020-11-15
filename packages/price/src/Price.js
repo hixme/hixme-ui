@@ -15,7 +15,7 @@ export const getValue = num => ({
   // Cents don't round up exactly as needed.
   // 0.3950 doesn't round up to 0.40 like it should
   // Math.round will do it correctly
-  cents: parseFloat(Math.round(num * 100)/100).toFixed(2).split('.')[1],
+  cents: parseFloat(Math.round(num * 100) / 100).toFixed(2).split('.')[1],
 })
 
 const Price = ({
@@ -24,7 +24,6 @@ const Price = ({
   includeCommas,
   ...restProps
 }) => {
-
   const getColor = val => (val < 0)
   return (
     <Container flex alignStart noPadding>
