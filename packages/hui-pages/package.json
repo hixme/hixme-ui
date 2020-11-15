@@ -1,6 +1,6 @@
 {
   "name": "hui-pages",
-  "version": "1.20.5",
+  "version": "1.20.6",
   "private": true,
   "homepage": "https://hixme.github.io/hixme-ui/",
   "scripts": {
@@ -14,7 +14,7 @@
   "dependencies": {
     "@hixme-ui/animate": "^1.20.5",
     "@hixme-ui/app-layout": "^1.20.5",
-    "@hixme-ui/benefit-price": "^1.20.5",
+    "@hixme-ui/benefit-price": "^1.20.6",
     "@hixme-ui/bullet-list": "^1.20.5",
     "@hixme-ui/button": "^1.20.5",
     "@hixme-ui/card": "^1.20.5",
@@ -35,7 +35,7 @@
     "@hixme-ui/percentage": "^1.20.5",
     "@hixme-ui/phone": "^1.20.5",
     "@hixme-ui/placeholder": "^1.20.5",
-    "@hixme-ui/price": "^1.20.5",
+    "@hixme-ui/price": "^1.20.6",
     "@hixme-ui/print": "^1.20.5",
     "@hixme-ui/radio-button": "^1.20.5",
     "@hixme-ui/select": "^1.20.5",
