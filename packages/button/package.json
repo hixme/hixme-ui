@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/button",
-  "version": "1.20.5",
+  "version": "1.20.7",
   "description": "hixme-ui Button component",
   "publishConfig": {
     "access": "public"
@@ -79,9 +79,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/icon": "^1.20.5",
-    "@hixme-ui/theme": "^1.20.5",
-    "@hixme-ui/theme-props": "^1.20.5",
+    "@hixme-ui/icon": "^1.20.7",
+    "@hixme-ui/theme": "^1.20.7",
+    "@hixme-ui/theme-props": "^1.20.7",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
