@@ -9,16 +9,21 @@ import StyledDollarSign from './StyledDollarSign'
 import StyledDollars from './StyledDollars'
 import StyledCents from './StyledCents'
 
+
+export const getValue = num => ({
+  dollars: parseFloat(num).toFixed(2).split('.')[0],
+  // Cents don't round up exactly as needed.
+  // 0.3950 doesn't round up to 0.40 like it should
+  // Math.round will do it correctly
+  cents: parseFloat(Math.round(num * 100)/100).toFixed(2).split('.')[1],
+})
+
 const Price = ({
   label,
   value,
   includeCommas,
   ...restProps
 }) => {
-  const getValue = num => ({
-    dollars: parseFloat(num).toFixed(2).split('.')[0],
-    cents: parseFloat(num).toFixed(2).split('.')[1],
-  })
 
   const getColor = val => (val < 0)
   return (
