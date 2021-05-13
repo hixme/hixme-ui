@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {
   getButtonTextColor,
-  getButtonColor,
   getButtonBorderRadius,
   getButtonHeight,
   getButtonMinWidth,
