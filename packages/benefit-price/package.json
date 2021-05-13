@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/benefit-price",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "hixme-ui Benefit Price component",
   "publishConfig": {
     "access": "public"
@@ -80,9 +80,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/price": "^2.0.0-alpha.0",
-    "@hixme-ui/theme": "^2.0.0-alpha.0",
-    "@hixme-ui/theme-props": "^2.0.0-alpha.0",
+    "@hixme-ui/price": "^2.0.0-alpha.1",
+    "@hixme-ui/theme": "^2.0.0-alpha.1",
+    "@hixme-ui/theme-props": "^2.0.0-alpha.1",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
