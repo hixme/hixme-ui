@@ -8,7 +8,9 @@ export const colors = {
   grey120: '#CBD6DB',
   grey130: '#f7fcff',
   teal: '#2EAE8F',
+  lightGreen: '#31d5a3',
   blue: '#3997E2',
+  darkBlue: '#5874d0',
   red: '#EB5565',
   yellow: '#E0BC4D',
   purple: '#A374D2',
@@ -20,6 +22,7 @@ const gradients = {
   red: 'linear-gradient(0deg, #DE293C 0%, #FF7272 100%)',
   yellow: 'linear-gradient(-1deg, #FF8C00 0%, #F3C200 100%)',
   blue: 'linear-gradient(-1deg, #2583C4 0%, #30A0EE 100%)',
+  darkBlue: 'linear-gradient(-1deg, #5874d0 0%, #313677 100%)',
   grey: 'linear-gradient(180deg, #CCD2D6 0%, #a4adb3 100%)',
 }
 
@@ -77,15 +80,54 @@ const buttonTextColors = {
 }
 
 const buttonGradientColors = {
-  primary: gradients.teal,
+  primary: gradients.lightGreen,
   secondary: gradients.grey,
-  default: gradients.teal,
+  default: gradients.darkBlue,
   red: gradients.red,
   danger: gradients.red,
   error: gradients.red,
   blue: gradients.blue,
   gold: gradients.yellow,
 }
+
+const backgroundColorStates = {
+  darkBlue: {
+    default: colors.darkBlue,
+    hover: '#313677',
+  },
+  grey: {
+    default: '#CCD2D6',
+    hover: '#a4adb3',
+  },
+  default: {
+    default: colors.darkBlue,
+    hover: '#313677',
+  },
+  red: {
+    default: '#DE293C',
+    hover: '#FF7272',
+  },
+  yellow: {
+    default: '#FF8C00',
+    hover: '#F3C200',
+  },
+  blue: {
+    default: '#2583C4',
+    hover: '#30A0EE',
+  },
+}
+
+const buttonColors = {
+  primary: backgroundColorStates.darkBlue,
+  secondary: backgroundColorStates.grey,
+  default: backgroundColorStates.darkBlue,
+  red: backgroundColorStates.red,
+  danger: backgroundColorStates.red,
+  error: backgroundColorStates.red,
+  blue: backgroundColorStates.blue,
+  gold: backgroundColorStates.yellow,
+}
+
 
 const shadows = {
   medium: '0px 5px 9px 0px rgba(56,59,60,0.22);',
@@ -100,17 +142,17 @@ const buttonBorderRadius = {
 
 /* eslint-disable max-len */
 export const fontFamily = {
-  thinnest: '\'Avenir-Next_UltraLight\', \'HelveticaNeue-UltraLight\', \'Helvetica Neue Ultra Light\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  thinner: '\'Avenir-Next_Light\', \'HelveticaNeue-Thin\', \'Helvetica Neue Thin\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  thin: '\'Avenir-Next_Regular\', \'HelveticaNeue-Light\', \'Helvetica Neue Light\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  normal: '\'Avenir-Next_Medium\', \'HelveticaNeue-Roman\', \'Helvetica Neue Roman\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  bold: '\'Avenir-Next_Demi\', \'HelveticaNeue-Medium\', \'Helvetica Neue Medium\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  bolder: '\'Avenir-Next_Bold\', \'HelveticaNeue-Bold\', \'Helvetica Neue Bold\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
-  boldest: '\'Avenir-Next_Heavy\', \'HelveticaNeue-Heavy\', \'Helvetica Neue Heavy\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
+  thinnest: "'SF Pro Text', 'Arial', 'sans-serif'",
+  thinner: "'SF Pro Text', 'Arial', 'sans-serif'",
+  thin: "'SF Pro Text', 'Arial', 'sans-serif'",
+  normal: "'SF Pro Text', 'Arial', 'sans-serif'",
+  bold: "'SF Pro Text', 'Arial', 'sans-serif'",
+  bolder: "'SF Pro Text', 'Arial', 'sans-serif'",
+  boldest: "'SF Pro Text', 'Arial', 'sans-serif'",
 }
 
 const defaults = {
-  gradient: gradients.teal,
+  gradient: gradients.darkBlue,
   fontSize: fontSizes.default,
   buttonHeight: buttonHeights.default,
   textColor: colors.grey30,
@@ -123,8 +165,8 @@ const defaults = {
 
 export const colorTheme = {
   default: colors.grey30,
-  primary: colors.teal,
-  success: colors.teal,
+  primary: colors.lightGreen,
+  success: colors.lightGreen,
   warning: colors.yellow,
   error: colors.red,
   danger: colors.red,
@@ -134,6 +176,7 @@ export const colorTheme = {
   black: colors.black,
   red: colors.red,
   blue: colors.blue,
+  darkBlue: colors.darkBlue,
   purple: colors.purple,
   yellow: colors.yellow,
   green: colors.green,
@@ -159,6 +202,7 @@ const theme = {
     default: defaults.borderColor,
   },
   buttonTextColors,
+  buttonColors,
   buttonGradientColors,
   buttonFontSizes,
   buttonHeights,

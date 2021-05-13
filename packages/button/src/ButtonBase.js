@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {
   getButtonTextColor,
+  getButtonColor,
   getButtonBorderRadius,
   getButtonHeight,
   getButtonMinWidth,
@@ -8,7 +9,6 @@ import {
  } from '@hixme-ui/theme-props'
 
 const ButtonBase = styled.button`
-  transition: all .25s ease;
   :hover:enabled {
     background-size: 100%;
   };

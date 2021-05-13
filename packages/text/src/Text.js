@@ -10,7 +10,7 @@ export const TextDiv = TextBase.withComponent('div')
 
 export const TextLink = TextBase.withComponent('a')
 export const HyperLink = TextLink.extend`
-  color: ${props => props.color || getTextColor(props, theme.textColors.primary)};
+  color: ${props => props.color || getTextColor(props, theme.textColors.lightGreen)};
   cursor: pointer;
 `
 

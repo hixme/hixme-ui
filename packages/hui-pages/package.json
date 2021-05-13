@@ -51,7 +51,7 @@
     "@hixme-ui/title": "^1.20.7",
     "@hixme-ui/toggle": "^1.20.7",
     "@hixme-ui/upload-box": "^1.20.7",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.1.1",
