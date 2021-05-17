@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/email",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "description": "hixme-ui Email component",
   "publishConfig": {
     "access": "public"
@@ -39,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^2.0.0-alpha.3",
+    "@hixme-ui/theme": "^2.0.0-alpha.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -79,7 +79,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^2.0.0-alpha.3"
+    "@hixme-ui/text": "^2.0.0-alpha.4"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
