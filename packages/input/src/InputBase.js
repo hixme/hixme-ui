@@ -7,6 +7,7 @@ import {
 const InputBase = styled.input`
   :focus:enabled {
     border-color: ${props => getBorderColor({ ...props, primary: true })};
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%), 0 2px 6px 0 rgb(0 0 0 / 14%);
   };
   :disabled {
     box-shadow: none;

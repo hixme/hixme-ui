@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/tabs",
-  "version": "2.0.0-alpha.6",
+  "version": "2.0.0-alpha.7",
   "description": "hixme-ui Tabs component",
   "publishConfig": {
     "access": "public"
@@ -83,10 +83,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^2.0.0-alpha.6",
-    "@hixme-ui/text": "^2.0.0-alpha.6",
-    "@hixme-ui/theme": "^2.0.0-alpha.6",
-    "@hixme-ui/theme-props": "^2.0.0-alpha.6",
+    "@hixme-ui/container": "^2.0.0-alpha.7",
+    "@hixme-ui/text": "^2.0.0-alpha.7",
+    "@hixme-ui/theme": "^2.0.0-alpha.7",
+    "@hixme-ui/theme-props": "^2.0.0-alpha.7",
     "react-tooltip": "^3.2.2",
     "styled-components": "^2.3.3"
   },

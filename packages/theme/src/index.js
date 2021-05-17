@@ -165,7 +165,7 @@ const defaults = {
 
 export const colorTheme = {
   default: colors.grey30,
-  primary: colors.lightGreen,
+  primary: colors.darkBlue,
   success: colors.lightGreen,
   warning: colors.yellow,
   error: colors.red,
