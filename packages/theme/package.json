@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/theme",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "description": "hixme-ui theme",
   "main": "lib/index.js",
   "scripts": {

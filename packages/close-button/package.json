@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/close-button",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "description": "hixme-ui CloseButton component",
   "publishConfig": {
     "access": "public"
@@ -79,11 +79,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^2.0.0-alpha.4",
-    "@hixme-ui/icon": "^2.0.0-alpha.4",
-    "@hixme-ui/text": "^2.0.0-alpha.4",
-    "@hixme-ui/theme": "^2.0.0-alpha.4",
-    "@hixme-ui/theme-props": "^2.0.0-alpha.4",
+    "@hixme-ui/container": "^2.0.0-alpha.5",
+    "@hixme-ui/icon": "^2.0.0-alpha.5",
+    "@hixme-ui/text": "^2.0.0-alpha.5",
+    "@hixme-ui/theme": "^2.0.0-alpha.5",
+    "@hixme-ui/theme-props": "^2.0.0-alpha.5",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
