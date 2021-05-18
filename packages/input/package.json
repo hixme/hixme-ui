@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/input",
-  "version": "2.0.0-alpha.7",
+  "version": "2.0.0-alpha.8",
   "description": "hixme-ui Input component",
   "publishConfig": {
     "access": "public"
@@ -79,11 +79,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/icon": "^2.0.0-alpha.7",
-    "@hixme-ui/spinner": "^2.0.0-alpha.7",
-    "@hixme-ui/text": "^2.0.0-alpha.7",
-    "@hixme-ui/theme": "^2.0.0-alpha.7",
-    "@hixme-ui/theme-props": "^2.0.0-alpha.7",
+    "@hixme-ui/icon": "^2.0.0-alpha.8",
+    "@hixme-ui/spinner": "^2.0.0-alpha.8",
+    "@hixme-ui/text": "^2.0.0-alpha.8",
+    "@hixme-ui/theme": "^2.0.0-alpha.8",
+    "@hixme-ui/theme-props": "^2.0.0-alpha.8",
     "react-maskedinput": "^4.0.0",
     "styled-components": "^2.3.3"
   },

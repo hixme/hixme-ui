@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/step",
-  "version": "2.0.0-alpha.7",
+  "version": "2.0.0-alpha.8",
   "description": "hixme-ui Step component",
   "publishConfig": {
     "access": "public"
@@ -39,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^2.0.0-alpha.7",
+    "@hixme-ui/theme": "^2.0.0-alpha.8",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -80,9 +80,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/icon": "^2.0.0-alpha.7",
-    "@hixme-ui/theme": "^2.0.0-alpha.7",
-    "@hixme-ui/title": "^2.0.0-alpha.7",
+    "@hixme-ui/icon": "^2.0.0-alpha.8",
+    "@hixme-ui/theme": "^2.0.0-alpha.8",
+    "@hixme-ui/title": "^2.0.0-alpha.8",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
