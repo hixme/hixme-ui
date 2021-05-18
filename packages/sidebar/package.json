@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/sidebar",
-  "version": "2.0.0-alpha.9",
+  "version": "2.0.0-alpha.10",
   "description": "hixme-ui Sidebar component",
   "publishConfig": {
     "access": "public"
@@ -80,9 +80,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/close-button": "^2.0.0-alpha.9",
-    "@hixme-ui/theme": "^2.0.0-alpha.9",
-    "@hixme-ui/theme-props": "^2.0.0-alpha.9",
+    "@hixme-ui/close-button": "^2.0.0-alpha.10",
+    "@hixme-ui/theme": "^2.0.0-alpha.10",
+    "@hixme-ui/theme-props": "^2.0.0-alpha.10",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
