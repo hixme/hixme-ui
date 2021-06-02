@@ -30,7 +30,7 @@ class AppLayout extends Component {
     SidebarComponent: () => null,
     sidebarWidth: '225px',
     fixed: false,
-    contentBackgroundColor: '#E5ECF1',
+    contentBackgroundColor: '#F6F9FC',
   }
 
   state = { open: this.props.open }
