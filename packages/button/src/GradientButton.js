@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import {
   getButtonGradientColor,
   getButtonBorderRadius,
@@ -5,7 +6,7 @@ import {
 
 import ButtonBase from './ButtonBase'
 
-const GradientButton = ButtonBase.extend`
+const GradientButton = styled(ButtonBase)`
   background: ${props => getButtonGradientColor(props)};
   background-size: 200%;
   border-style: none;

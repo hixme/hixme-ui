@@ -88,7 +88,7 @@
     "@hixme-ui/theme": "^1.20.7",
     "@hixme-ui/theme-props": "^1.20.7",
     "react-tooltip": "^3.2.2",
-    "styled-components": "^2.3.3"
+    "styled-components": "^5.3.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

@@ -21,7 +21,7 @@ export const SuffixContainer = styled.span`
   right: 12px;
 `
 
-export const SpinnerContainer = SuffixContainer.extend`
+export const SpinnerContainer = styled(SuffixContainer)`
   top: ${({ mini }) => (mini ? '5px' : '12px')};
   cursor: not-allowed;
 `

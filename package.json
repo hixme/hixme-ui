@@ -2,7 +2,7 @@
   "name": "@hixme-ui/repo",
   "description": "Base repo manamangement. Nothing to see here",
   "devDependencies": {
-    "lerna": "^2.9.0"
+    "lerna": "^4.0.0"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",

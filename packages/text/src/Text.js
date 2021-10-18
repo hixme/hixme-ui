@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import theme from '@hixme-ui/theme'
 import { getTextColor } from '@hixme-ui/theme-props'
 
@@ -9,13 +10,13 @@ export const Paragraph = TextBase.withComponent('p')
 export const TextDiv = TextBase.withComponent('div')
 
 export const TextLink = TextBase.withComponent('a')
-export const HyperLink = TextLink.extend`
+export const HyperLink = styled(TextLink)`
   color: ${props => props.color || getTextColor(props, theme.textColors.primary)};
   cursor: pointer;
 `
 
 export const LabelBase = TextBase.withComponent('label')
-export const Label = LabelBase.extend`
+export const Label = styled(LabelBase)`
   color: ${props => props.color || getTextColor(props, '#394651')};
   line-height: ${props => props.lineHeight || '19px'};
   user-select: none;

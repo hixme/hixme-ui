@@ -79,7 +79,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "styled-components": "^2.3.3"
+    "styled-components": "^5.3.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

@@ -2,8 +2,8 @@
 
 exports[`Animate Count Should have default count of 1 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -24,8 +24,8 @@ exports[`Animate Count Should have default count of 1 1`] = `
 
 exports[`Animate Count Should take count prop 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -46,8 +46,8 @@ exports[`Animate Count Should take count prop 1`] = `
 
 exports[`Animate Delay Should have default display of inherit 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -68,8 +68,8 @@ exports[`Animate Delay Should have default display of inherit 1`] = `
 
 exports[`Animate Delay Should take display prop 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -94,8 +94,8 @@ exports[`Animate Delay Should take display prop 1`] = `
 
 exports[`Animate Display Should have default display of inherit 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -116,8 +116,8 @@ exports[`Animate Display Should have default display of inherit 1`] = `
 
 exports[`Animate Display Should take display prop 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -142,8 +142,8 @@ exports[`Animate Display Should take display prop 1`] = `
 
 exports[`Animate Fill Mode Should have default fill mode of none 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -164,8 +164,8 @@ exports[`Animate Fill Mode Should have default fill mode of none 1`] = `
 
 exports[`Animate Fill Mode Should take fillMode prop 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -186,8 +186,8 @@ exports[`Animate Fill Mode Should take fillMode prop 1`] = `
 
 exports[`Animate Time Should have 1s default time 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -208,8 +208,8 @@ exports[`Animate Time Should have 1s default time 1`] = `
 
 exports[`Animate Time Should take time prop 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-delay: 0s;
@@ -230,8 +230,8 @@ exports[`Animate Time Should take time prop 1`] = `
 
 exports[`Animate Trigger Should have default trigger of false 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;
@@ -252,8 +252,8 @@ exports[`Animate Trigger Should have default trigger of false 1`] = `
 
 exports[`Animate Trigger Should take trigger prop 1`] = `
 .c0 {
-  -webkit-animation: hdAbiq;
-  animation: hdAbiq;
+  -webkit-animation: hVlBnv;
+  animation: hVlBnv;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 0s;

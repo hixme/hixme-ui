@@ -81,7 +81,7 @@
   "dependencies": {
     "@hixme-ui/label": "^1.20.7",
     "@hixme-ui/text": "^1.20.7",
-    "styled-components": "^2.3.3"
+    "styled-components": "^5.3.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

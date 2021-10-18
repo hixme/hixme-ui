@@ -1,28 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { TextBase } from '@hixme-ui/text'
 
-export const TitleBase = TextBase.withComponent('h1').extend`
+export const TitleBase = styled(TextBase.withComponent('h1'))`
   margin: ${props => props.margin || '0px'};
   padding: ${props => props.padding || '0px'};
 `
 
-export const TitleDefault = TitleBase.extend`
+export const TitleDefault = styled(TitleBase)`
   font-size: ${props => props.fontSize || '34px'};
 `
 
-export const TitleJumbo = TitleBase.extend`
+export const TitleJumbo = styled(TitleBase)`
   font-size: ${props => props.fontSize || '38px'};
 `
 
-export const TitleSmall = TitleBase.withComponent('h2').extend`
+export const TitleSmall = styled(TitleBase.withComponent('h2'))`
   font-size: ${props => props.fontSize || '28px'};
 `
 
-export const TitleSmaller = TitleBase.withComponent('h3').extend`
+export const TitleSmaller = styled(TitleBase.withComponent('h3'))`
   font-size: ${props => props.fontSize || '20px'};
 `
-export const TitleSmallest = TitleBase.withComponent('h4').extend`
+export const TitleSmallest = styled(TitleBase.withComponent('h4'))`
   font-size: ${props => props.fontSize || '18px'};
 `
 

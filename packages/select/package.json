@@ -85,7 +85,7 @@
     "@hixme-ui/theme-props": "^1.20.7",
     "react-maskedinput": "^4.0.0",
     "react-select": "^1.2.0",
-    "styled-components": "^2.3.3"
+    "styled-components": "^5.3.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
