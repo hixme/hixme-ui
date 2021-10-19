@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/form-group",
-  "version": "1.20.7",
+  "version": "2.0.0-alpha.0+4a6e678",
   "description": "hixme-ui form group container",
   "publishConfig": {
     "access": "public"
@@ -39,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.20.7",
+    "@hixme-ui/theme": "^2.0.0-alpha.0+4a6e678",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -79,12 +79,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/label": "^1.20.7",
-    "@hixme-ui/text": "^1.20.7",
+    "@hixme-ui/label": "^2.0.0-alpha.0+4a6e678",
+    "@hixme-ui/text": "^2.0.0-alpha.0+4a6e678",
     "styled-components": "^5.3.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "~15 || ~16"
-  }
+  },
+  "gitHead": "4a6e6788702d436b53e11f7bef5b44ef8d5cb290"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/input",
-  "version": "1.20.7",
+  "version": "2.0.0-alpha.0+4a6e678",
   "description": "hixme-ui Input component",
   "publishConfig": {
     "access": "public"
@@ -79,10 +79,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/icon": "^1.20.7",
-    "@hixme-ui/spinner": "^1.20.7",
-    "@hixme-ui/text": "^1.20.7",
-    "@hixme-ui/theme": "^1.20.7",
+    "@hixme-ui/icon": "^2.0.0-alpha.0+4a6e678",
+    "@hixme-ui/spinner": "^2.0.0-alpha.0+4a6e678",
+    "@hixme-ui/text": "^2.0.0-alpha.0+4a6e678",
+    "@hixme-ui/theme": "^2.0.0-alpha.0+4a6e678",
     "@hixme-ui/theme-props": "^1.20.7",
     "react-maskedinput": "^4.0.0",
     "styled-components": "^5.3.1"
@@ -101,5 +101,6 @@
         "statements": -10
       }
     }
-  }
+  },
+  "gitHead": "4a6e6788702d436b53e11f7bef5b44ef8d5cb290"
 }

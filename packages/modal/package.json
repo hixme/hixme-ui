@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/modal",
-  "version": "1.20.7",
+  "version": "2.0.0-alpha.0+4a6e678",
   "description": "hixme-ui Modal component",
   "publishConfig": {
     "access": "public"
@@ -77,14 +77,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/button": "^1.20.7",
-    "@hixme-ui/close-button": "^1.20.7",
-    "@hixme-ui/title": "^1.20.7",
+    "@hixme-ui/button": "^2.0.0-alpha.0+4a6e678",
+    "@hixme-ui/close-button": "^2.0.0-alpha.0+4a6e678",
+    "@hixme-ui/title": "^2.0.0-alpha.0+4a6e678",
     "react-flexbox-grid": "^2.0.0",
     "react-modal": "^3.1.8"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "~15 || ~16"
-  }
+  },
+  "gitHead": "4a6e6788702d436b53e11f7bef5b44ef8d5cb290"
 }
