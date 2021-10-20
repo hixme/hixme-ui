@@ -12,7 +12,4 @@ coverage
 # lib/
 .env
 
-# Package Lock - just not ready
-package-lock.json
-
 .tern-port
