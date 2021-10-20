@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/toggle",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "hixme-ui Toggle component",
   "publishConfig": {
     "access": "public"
@@ -79,8 +79,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^3.0.0",
-    "@hixme-ui/theme": "^3.0.0",
+    "@hixme-ui/text": "^3.0.1",
+    "@hixme-ui/theme": "^3.0.1",
     "styled-components": "^5.3.1"
   },
   "peerDependencies": {
