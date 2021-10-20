@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/table",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "hixme-ui Table component",
   "publishConfig": {
     "access": "public"
@@ -79,7 +79,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^3.0.1",
+    "@hixme-ui/theme": "^3.0.2",
     "@hixme-ui/theme-props": "^1.20.7",
     "styled-components": "^5.3.1"
   },
