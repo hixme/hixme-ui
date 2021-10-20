@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/checkbox",
-  "version": "1.20.7",
+  "version": "3.0.2",
   "description": "hixme-ui Checkbox component",
   "publishConfig": {
     "access": "public"
@@ -78,13 +78,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^1.20.7",
+    "@hixme-ui/theme": "^3.0.2",
     "react-animations": "^1.0.0",
     "react-maskedinput": "^4.0.0",
-    "styled-components": "^2.3.3"
+    "styled-components": "^5.3.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "~15 || ~16"
-  }
+  },
+  "gitHead": "4a6e6788702d436b53e11f7bef5b44ef8d5cb290"
 }

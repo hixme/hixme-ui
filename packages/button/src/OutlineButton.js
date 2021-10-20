@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import {
   getBorderColor,
   getShadow,
@@ -6,7 +7,7 @@ import {
 
 import ButtonBase from './ButtonBase'
 
-const OutlineButton = ButtonBase.extend`
+const OutlineButton = styled(ButtonBase)`
   :hover:enabled {
     box-shadow: ${props => getShadow(props)};
   };

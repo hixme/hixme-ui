@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/placeholder",
-  "version": "1.20.7",
+  "version": "3.0.2",
   "description": "hixme-ui placeholder component for implied views that are pending api results.",
   "publishConfig": {
     "access": "public"
@@ -39,7 +39,7 @@
     "David Cotelessa"
   ],
   "devDependencies": {
-    "@hixme-ui/theme": "^1.20.7",
+    "@hixme-ui/theme": "^3.0.2",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.0-beta.6",
@@ -79,7 +79,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "styled-components": "^2.3.3"
+    "styled-components": "^5.3.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
@@ -95,5 +95,6 @@
         "statements": -10
       }
     }
-  }
+  },
+  "gitHead": "4a6e6788702d436b53e11f7bef5b44ef8d5cb290"
 }

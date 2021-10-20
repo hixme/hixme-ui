@@ -23,7 +23,7 @@ const RadioInput = styled.input`
     }
 `
 
-const RadioText = LabelBase.extend`
+const RadioText = styled(LabelBase)`
   cursor: pointer;
   display: inline-block;
   font-weight: 500;

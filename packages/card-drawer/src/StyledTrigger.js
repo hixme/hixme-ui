@@ -1,6 +1,7 @@
+import styled from 'styled-components'
 import StyledCard from './StyledCard'
 
-const StyledTrigger = StyledCard.extend`
+const StyledTrigger = styled(StyledCard)`
   user-select: none;
   cursor: pointer;
   border-radius: ${props => (props.open ? '6px 6px 0 0 !important' : '6px')};
