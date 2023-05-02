@@ -1,6 +1,6 @@
 export function getThemePropsComposer(propName = 'colors', defaultValue = '') {
   return ({ theme = {}, ...props = {} } = {}, defaultValueOverride) => {
-    const propGroup = theme[propName]
+    const propGroup = theme[propName] || {}
     const foundProp = propGroup && Object.keys(propGroup).find(prop => props[prop])
     return foundProp ? propGroup[foundProp] : defaultValueOverride || propGroup.default || defaultValue
   }
