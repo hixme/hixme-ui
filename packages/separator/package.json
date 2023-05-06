@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/separator",
-  "version": "2.0.0-alpha.12",
+  "version": "2.0.0",
   "description": "hixme-ui Separator component",
   "publishConfig": {
     "access": "public"
@@ -79,8 +79,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/theme": "^2.0.0-alpha.12",
-    "@hixme-ui/theme-props": "^2.0.0-alpha.12",
+    "@hixme-ui/theme": "^2.0.0",
+    "@hixme-ui/theme-props": "^2.0.0",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {
