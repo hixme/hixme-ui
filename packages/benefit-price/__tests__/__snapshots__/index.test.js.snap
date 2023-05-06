@@ -77,20 +77,20 @@ exports[`BenefitPrice it has 0px padding by default 1`] = `
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
-  font-family: 'Avenir-Next_Regular','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
 .c5 {
   font-size: 13pt;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
@@ -236,20 +236,20 @@ exports[`BenefitPrice it should render with background: none 1`] = `
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
-  font-family: 'Avenir-Next_Regular','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
 .c5 {
   font-size: 13pt;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
@@ -395,20 +395,20 @@ exports[`BenefitPrice it should render with display: flex 1`] = `
 .c3 {
   font-size: 15pt;
   padding: 0 5px 0 0;
-  font-family: 'Avenir-Next_Regular','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
 .c4 {
   font-size: 32pt;
   margin-top: -10px;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 
 .c5 {
   font-size: 13pt;
-  font-family: 'Avenir-Next_Bold','HelveticaNeue-Bold','Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: 'SF Pro Text','Arial','sans-serif';
   color: #3A4951;
 }
 

@@ -89,6 +89,8 @@ const TextDocs = () => (
         <br />
         <Text blue>blue</Text>
         <br />
+        <Text darkBlue>dark blue</Text>
+        <br />
         <Text green>green</Text>
         <br />
         <Text purple>purple</Text>

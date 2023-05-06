@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/price",
-  "version": "1.20.8",
+  "version": "2.0.0-alpha.12",
   "description": "hixme-ui Price component",
   "publishConfig": {
     "access": "public"
@@ -83,10 +83,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/container": "^1.20.8",
-    "@hixme-ui/text": "^1.20.8",
-    "@hixme-ui/theme": "^1.20.7",
-    "@hixme-ui/theme-props": "^1.20.8",
+    "@hixme-ui/container": "^2.0.0-alpha.12",
+    "@hixme-ui/text": "^2.0.0-alpha.12",
+    "@hixme-ui/theme": "^2.0.0-alpha.12",
+    "@hixme-ui/theme-props": "^2.0.0-alpha.12",
     "styled-components": "^2.3.3"
   },
   "peerDependencies": {

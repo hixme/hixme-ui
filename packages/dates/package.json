@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/dates",
-  "version": "1.20.8",
+  "version": "2.0.0-alpha.12",
   "description": "hixme-ui Dates utils",
   "publishConfig": {
     "access": "public"
@@ -80,9 +80,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hixme-ui/text": "^1.20.8",
-    "@hixme-ui/theme": "^1.20.7",
-    "@hixme-ui/theme-props": "^1.20.8",
+    "@hixme-ui/text": "^2.0.0-alpha.12",
+    "@hixme-ui/theme": "^2.0.0-alpha.12",
+    "@hixme-ui/theme-props": "^2.0.0-alpha.12",
     "moment": "^2.20.0"
   },
   "peerDependencies": {

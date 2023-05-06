@@ -15,6 +15,7 @@ export const getTextColor = getThemePropsComposer('textColors', 'inherit')
 
 export const getButtonBorderRadius = getThemePropsComposer('buttonBorderRadius')
 export const getButtonFontSize = getThemePropsComposer('buttonFontSizes')
+export const getButtonColor = getThemePropsComposer('buttonColors')
 export const getButtonGradientColor = getThemePropsComposer('buttonGradientColors')
 export const getButtonHeight = getThemePropsComposer('buttonHeights')
 export const getButtonMinWidth = getThemePropsComposer('buttonMinWidths')

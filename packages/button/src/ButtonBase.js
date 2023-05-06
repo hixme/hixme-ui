@@ -8,7 +8,6 @@ import {
  } from '@hixme-ui/theme-props'
 
 const ButtonBase = styled.button`
-  transition: all .25s ease;
   :hover:enabled {
     background-size: 100%;
   };
