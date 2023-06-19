@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-expressions, max-len */
+/* eslint-disable no-unused-expressions, max-len, camelcase, class-methods-use-this */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { injectGlobal } from 'styled-components'
