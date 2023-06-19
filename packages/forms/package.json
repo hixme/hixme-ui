@@ -88,6 +88,6 @@
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
-    "react": "~15 || ~16"
+    "react": "~15 || ~16 || ~17"
   }
 }

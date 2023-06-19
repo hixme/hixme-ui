@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { injectGlobal } from 'styled-components'
 
 export default class GlobalStylesContainer extends React.Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     injectGlobal`
 @import '~normalize.css/normalize';
 

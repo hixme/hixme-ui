@@ -51,7 +51,7 @@ class MenuButton extends Component {
     }
   }
 
-  componentWillUnmount() {
+  UNSAFE_componentWillMount() {
     // removes the document event listener when navigating away from route
     this.closeMenu()
   }
