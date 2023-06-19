@@ -1,10 +1,10 @@
-/* eslint-disable no-unused-expressions, max-len */
+/* eslint-disable no-unused-expressions, max-len, camelcase, class-methods-use-this */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { injectGlobal } from 'styled-components'
 
 export default class GlobalStylesContainer extends React.Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     injectGlobal`
 @import '~normalize.css/normalize';
 
