@@ -10,7 +10,7 @@ export const colors = {
   teal: '#2EAE8F',
   lightGreen: '#31d5a3',
   blue: '#3997E2',
-  darkBlue: '#5874d0',
+  darkBlue: '#003146', // '#5874d0',
   red: '#FF1442',
   yellow: '#E0BC4D',
   purple: '#A374D2',
@@ -93,7 +93,7 @@ const buttonGradientColors = {
 const backgroundColorStates = {
   darkBlue: {
     default: colors.darkBlue,
-    hover: '#313677',
+    hover: '#00a0a8',
   },
   grey: {
     default: '#CCD2D6',
@@ -101,7 +101,7 @@ const backgroundColorStates = {
   },
   default: {
     default: colors.darkBlue,
-    hover: '#313677',
+    hover: '#00a0a8',
   },
   red: {
     default: '#DE293C',

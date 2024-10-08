@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/placeholder",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "hixme-ui placeholder component for implied views that are pending api results.",
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/modal",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "hixme-ui Modal component",
   "publishConfig": {
     "access": "public"

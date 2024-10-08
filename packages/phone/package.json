@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/phone",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "hixme-ui phone component for linking and formatting phone numbers.",
   "publishConfig": {
     "access": "public"

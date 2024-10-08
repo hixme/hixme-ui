@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/forms",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "hixme-ui forms category for access to all HUI form components",
   "publishConfig": {
     "access": "public"
