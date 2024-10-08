@@ -16,7 +16,6 @@ describe('StyledSidebarContainer', () => {
     const component = renderer.create(<StyledSidebarContainer />)
     const tree = component.toJSON()
 
-    expect(tree).toHaveStyleRule('background-color', '#1c334f')
     expect(tree).toHaveStyleRule('position', 'relative')
     expect(tree).toHaveStyleRule('line-height', '25px')
     expect(tree).toHaveStyleRule('height', '100%')

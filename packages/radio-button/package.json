@@ -1,6 +1,6 @@
 {
   "name": "@hixme-ui/radio-button",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "hixme-ui Radio Button component",
   "publishConfig": {
     "access": "public"
